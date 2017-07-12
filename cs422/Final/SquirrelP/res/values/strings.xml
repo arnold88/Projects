@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="setting_array">
+        <item>Single Family House or Duplex</item>
+        <item>Multiple Family Dwelling (e.g. Apartment Building)</item>
+        <item>Highrise Building</item>
+        <item>Neighborhood Park</item>
+        <item>Forest or Nature Preserve</item>
+        <item>Zoo, Arboretum or Botanical Garden</item>
+        <item>Commercial Establishment</item>
+        <item>School, College or University Campus</item>
+        <item>Vacant Lot</item>
+        <item>Cemetery</item>
+        <item>Farmland</item>
+    </string-array>
+    <string-array name="often_array">
+        <item>Never</item>
+        <item>Low</item>
+        <item>Medium</item>
+        <item>High</item>
+    </string-array>
+    <string-array name="tree_array">
+        <item>Don\'t Know</item>
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="feed_array">
+        <item>Never</item>
+        <item>Seldom</item>
+        <item>Often</item>
+        <item>Regularly</item>
+    </string-array>
+    <string name="finish">Thank you for your submission!</string>
+    <string name="hello">Hello, Welcome to Project Squirrel!</string>
+    <string name="app_name">Squirrel Project</string>
+    <string name="logintext">Please Enter Your E-mail Address for tracking purposes(optional)</string>
+    <string name="buttontext">Next</string>
+    <string name="email">youremail@email.com</string>
+    <string name="time">Time/Date of Observation</string>
+    <string name="location">Location (Zip Code)</string>
+    <string name="zip">60607</string>
+    <string name="squirrelnum">Enter Numbers of Each Squirrel</string>
+    <string name="graysquirrel"># of Gray Squirrel</string>
+    <string name="foxsquirrelnum"># of Fox Squirrels</string>
+    <string name="emptyzero">0</string>
+    <string name="ordash">------- or -------</string>
+    <string name="citystate">City</string>
+    <string name="chic">Chicago</string>
+    <string name="setting">Setting of Squirrel Observation</string>
+    <string name="trees">Are there any of the following?</string>
+    <string name="nuts">Nut-bearing trees</string>
+    <string name="seed">Seed-bearing trees</string>
+    <string name="fruit">Fruit-bearing trees</string>
+    <string name="tinyseed">Tiny-seeded trees</string>
+    <string name="conif">Coniferous trees</string>
+    <string name="observeregular">Do you observe squirrels regularly obtaining food from any of the following?</string>
+    <string name="birdf">Bird Feeders</string>
+    <string name="human">Human Handouts</string>
+    <string name="garbage">Garbage</string>
+    <string name="treesplants">Trees and plants</string>
+    <string name="compare">Compared to this time last year, do you think the number of squirrels in your neighborhood has:</string>
+    <string name="increased">Increased</string>
+    <string name="staysame">Stayed the Same</string>
+    <string name="dec">Decreased</string>
+    <string name="predators">How often are predators seen near the observation site?</string>
+    <string name="dogs">Dogs</string>
+    <string name="cats">Cats</string>
+    <string name="haveever">Have you ever submitted data for THIS observation site before?</string>
+    <string name="haveever2">Have you ever submitted data for a DIFFERENT observation site?</string>
+    <string name="com">Additional Comments/Observations</string>
+    <string name="done">Done</string>
+    <string name="inc">Increased</string>
+    <string name="state">State</string>
+    <string name="ill">Illinois</string>
+    <string name="setting_prompt">Choose a Setting</string>
+    <string name="coyotes">Coyotes</string>
+    <string name="hawks">Hawks</string>
+    <string name="poisoned_grain">Poisoned Grain</string>
+    <color name="white">#fffafa</color>
+    <color name="black">#000000</color>
+    <color name="brown">#795535</color>
+    <string name="empty"></string>
+    <string name="myemail">m@m</string>
+</resources>

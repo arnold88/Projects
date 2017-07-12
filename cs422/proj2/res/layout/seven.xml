@@ -1,0 +1,31 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:layout_height="fill_parent" android:background="@color/brown">
+        <CheckBox android:layout_width="wrap_content" android:text="@string/haveever" android:layout_height="wrap_content" android:id="@+id/checkBox1" android:layout_weight="1"></CheckBox>
+        <CheckBox android:layout_width="wrap_content" android:text="@string/haveever2" android:layout_height="wrap_content" android:id="@+id/checkBox2" android:layout_weight="1"></CheckBox>
+        <TextView 
+        	android:layout_width="wrap_content" 
+        	android:id="@+id/textView1" 
+        	android:text="@string/com" 
+        	android:layout_height="wrap_content" 
+        	android:layout_weight="1" 
+        	android:textColor="@color/white" 
+        	android:textSize="18dp"
+        	android:gravity="bottom"></TextView>
+        <EditText 
+        	android:layout_width="fill_parent" 
+        	android:id="@+id/editText1" 
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"></EditText>
+        <Button 
+        	android:layout_gravity="center_horizontal" 
+        	android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content" 
+        	android:id="@+id/button8" 
+        	android:text="Thanks" 
+        	android:layout_weight="0"
+        	android:background="@drawable/leaf" 
+        	android:textColor="@color/white" 
+        	android:textSize="20dp" 
+        	android:textStyle="bold" 
+        	android:layout_margin="4dip"></Button>
+    </LinearLayout>

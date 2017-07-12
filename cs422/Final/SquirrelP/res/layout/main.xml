@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/brown"
+    android:isScrollContainer="true">
+<TextView  
+    android:layout_height="wrap_content" android:text="@string/hello" android:layout_width="wrap_content" android:layout_gravity="center_horizontal" android:layout_weight="1" android:textSize="30dp" android:gravity="center" android:textColor="@color/white"/>
+<ImageView android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/mpic" android:layout_gravity="center_horizontal" android:layout_weight="1"></ImageView>
+<TextView android:text="@string/logintext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:id="@+id/textView1" android:layout_weight="1" android:textColor="@color/white" android:gravity="center"></TextView>
+<EditText android:layout_height="wrap_content" android:id="@+id/editText1" android:layout_gravity="center_horizontal" android:layout_width="fill_parent" android:layout_weight="1" android:gravity="center" android:hint="youremail@email.com" android:inputType="textEmailAddress" ></EditText>
+<Button android:id="@+id/button1" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0" android:layout_margin="4dip" android:background="@drawable/leaf" android:text="Enter" android:textColor="@color/white" android:textSize="20dp" android:textStyle="bold"></Button>
+</LinearLayout>

@@ -1,0 +1,805 @@
+// CS 422 Project Squirrel
+// Group 8
+// Main source code file
+
+package com.squirrel;
+
+import java.io.BufferedOutputStream;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+
+import android.app.Activity;
+import android.content.Context;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.DatePicker;
+import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Spinner;
+import android.widget.TextView;
+import android.widget.TimePicker;
+import android.view.View.OnKeyListener;
+import android.view.KeyEvent;
+import android.widget.Toast;
+
+public class squirrel extends Activity implements OnClickListener{
+    /** Called when the activity is first created. */
+    
+	String email ="";
+	Date day = new Date();
+	String ampm = "";
+	int fox = 0;
+	int gray = 0;
+	int zip = 0;
+	int page;
+	String city = "";
+	String state = "";
+	String nuts = "", fruit = "", tiny = "", conif ="", seed ="", otherTrees="";
+	String birdfeed="", human="", garbage="", treeandother="", otherS="", otherC="";
+	String changed="";
+	String setting="";
+	String dogs="", cats="", coyotes="", hawks="", grain="";
+	String everbefore="", diffsite="";
+	String comments="";
+	KeyEvent Dummy;
+	
+	private static final String TAG = "Project_2_Group_8";
+	
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.main);
+        Button button = (Button)findViewById(R.id.button1);
+        button.setOnClickListener(this);
+
+    }
+
+	@Override
+	public void onClick(View arg0) {
+		// TODO Auto-generated method stub
+		
+		if(arg0.getId()==R.id.button1){
+			EditText tv_ = (EditText)findViewById(R.id.editText1);
+			email = tv_.getText().toString();
+			page = 1;
+			
+			Context context = getApplicationContext();
+			CharSequence text = "Invalid Email address - Try Again!";
+			int duration = Toast.LENGTH_SHORT;
+
+			if ((email.indexOf('@') == -1) && (email.length() != 0))
+			{		  
+				   Toast.makeText(context, text, duration).show();
+			   	
+			}
+			else
+			{
+			setContentView(R.layout.first);
+		    Button button1 = (Button)findViewById(R.id.button2);
+		    button1.setOnClickListener(this);
+			}
+		}
+		if(arg0.getId()==R.id.button2){
+			TimePicker tv_ = (TimePicker)findViewById(R.id.timePicker1);
+			DatePicker tb_ = (DatePicker)findViewById(R.id.datePicker1);
+			int hour = tv_.getCurrentHour();
+			if(hour>=0 && hour<=11){
+				ampm = "am";
+				if(hour==0)hour=12;
+			}
+			else{
+				ampm = "pm";
+				if(hour!=12)hour=hour-12;
+			}
+			int minute = tv_.getCurrentMinute();
+			int day_ = tb_.getDayOfMonth();
+			int month = tb_.getMonth();
+			int year = tb_.getYear();
+			day = new Date(year-1900,month,day_,hour,minute);
+			
+			page = 2;
+				
+			setContentView(R.layout.sec);
+	        Button button2 = (Button)findViewById(R.id.button3);
+	        button2.setOnClickListener(this);
+	        
+			}
+		if(arg0.getId()==R.id.button3){
+			NumberPicker pick = (NumberPicker)findViewById(R.id.Picker1);
+			fox = pick.getValue();
+			pick = (NumberPicker)findViewById(R.id.Picker2);
+			gray = pick.getValue();	
+			
+			page = 3;
+			
+			setContentView(R.layout.third);
+	        Button button3 = (Button)findViewById(R.id.button4);
+	        button3.setOnClickListener(this);
+	       
+	        			
+	        EditText tv_ = (EditText)findViewById(R.id.editText1);
+	        tv_.setOnClickListener(this);
+	        
+			}
+		if(arg0.getId()==R.id.button4){
+			page = 4;    
+	        
+			setContentView(R.layout.fourth);
+			////////////////////////////////////////////////////
+			Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+			ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+	                this, R.array.tree_array, android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner2);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner3);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner4);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner5);
+	        spinner.setAdapter(adapter);
+			////////////////////////////////////////////////////
+	        Button button = (Button)findViewById(R.id.button5);
+	        button.setOnClickListener(this);
+		}
+		if(arg0.getId()==R.id.button5){
+			page = 5;
+			////////////////////////////////////////////////////
+			Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+			nuts = spinner.getSelectedItem().toString();
+			spinner = (Spinner) findViewById(R.id.spinner2);
+			seed = spinner.getSelectedItem().toString();
+			spinner = (Spinner) findViewById(R.id.spinner3);
+			fruit = spinner.getSelectedItem().toString();
+			spinner = (Spinner) findViewById(R.id.spinner4);
+			tiny = spinner.getSelectedItem().toString();
+			spinner = (Spinner) findViewById(R.id.spinner5);
+			conif = spinner.getSelectedItem().toString();
+			EditText tv_ = (EditText)findViewById(R.id.editText1);
+			otherTrees = tv_.getText().toString();
+			////////////////////////////////////////////////////
+			
+			setContentView(R.layout.fifth);
+			////////////////////////////////////////////////////
+			spinner = (Spinner) findViewById(R.id.spinner1);
+			ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+	                this, R.array.feed_array, android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner2);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner3);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner4);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner5);
+	        spinner.setAdapter(adapter);
+			////////////////////////////////////////////////////
+	        Button button = (Button)findViewById(R.id.button6);
+	        button.setOnClickListener(this);
+			}
+		if(arg0.getId()==R.id.button6){
+			page = 6;
+			///////////////////////////////////////////////////////
+			Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+			birdfeed = spinner.getSelectedItem().toString();
+			spinner = (Spinner) findViewById(R.id.spinner2);
+			human = spinner.getSelectedItem().toString();
+			spinner = (Spinner) findViewById(R.id.spinner3);
+			garbage = spinner.getSelectedItem().toString();
+			spinner = (Spinner) findViewById(R.id.spinner4);
+			treeandother = spinner.getSelectedItem().toString();
+			spinner = (Spinner) findViewById(R.id.spinner5);
+			otherS = spinner.getSelectedItem().toString();
+			EditText tv_ = (EditText)findViewById(R.id.editText1);
+			otherC = tv_.getText().toString();
+			////////////////////////////////////////////////////////
+			
+			setContentView(R.layout.sixth);
+	        Button button = (Button)findViewById(R.id.button7);
+	        button.setOnClickListener(this);
+	        spinner = (Spinner) findViewById(R.id.spinner1);
+	        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+	                this, R.array.setting_array, android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        spinner.setAdapter(adapter);
+			}
+		if(arg0.getId()==R.id.button7){
+			page= 7;
+			RadioButton rb0 = (RadioButton)findViewById(R.id.radio0);///////////////////////////
+			RadioButton rb1 = (RadioButton)findViewById(R.id.radio1);///////////////////////////
+			RadioButton rb2 = (RadioButton)findViewById(R.id.radio2);///////////////////////////
+			if(rb0.isChecked())
+				changed = "Increased";
+			if(rb1.isChecked())
+				changed = "Decreased";
+			if(rb2.isChecked())
+				changed = "Same";
+			
+			Spinner spinner = (Spinner) findViewById(R.id.spinner1);
+			setting = spinner.getSelectedItem().toString();
+			
+			setContentView(R.layout.eigth);
+			////////////////////////////////////////////////////
+			spinner = (Spinner) findViewById(R.id.spinner2);
+			ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+	                this, R.array.often_array, android.R.layout.simple_spinner_item);
+	        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner3);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner4);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner5);
+	        spinner.setAdapter(adapter);
+	        
+	        spinner = (Spinner) findViewById(R.id.spinner6);
+	        spinner.setAdapter(adapter);
+			////////////////////////////////////////////////////
+	        Button button = (Button)findViewById(R.id.button9);
+	        button.setOnClickListener(this);
+			}
+		if(arg0.getId()==R.id.button9){
+			page = 8;
+			////////////////////////////////////////////////////
+			Spinner spinner = (Spinner) findViewById(R.id.spinner2);
+			dogs = spinner.getSelectedItem().toString();
+			
+			spinner = (Spinner) findViewById(R.id.spinner3);
+			cats = spinner.getSelectedItem().toString();
+
+			spinner = (Spinner) findViewById(R.id.spinner4);
+			coyotes = spinner.getSelectedItem().toString();
+
+			spinner = (Spinner) findViewById(R.id.spinner5);
+			hawks = spinner.getSelectedItem().toString();
+
+			spinner = (Spinner) findViewById(R.id.spinner6);
+			grain = spinner.getSelectedItem().toString();
+			///////////////////////////////////////////////////
+			
+			setContentView(R.layout.seven);
+	        Button button = (Button)findViewById(R.id.button8);
+	        button.setOnClickListener(this);
+	        EditText tv_ = (EditText)findViewById(R.id.editText1);
+	        tv_.setOnClickListener(this);
+		}
+		if(arg0.getId()==R.id.button8){
+			page = 9;
+			boolean yes = ((CheckBox)findViewById(R.id.checkBox1)).isChecked();
+			if(yes)
+				everbefore = "Yes";
+			else
+				everbefore = "No";
+			
+			yes = ((CheckBox)findViewById(R.id.checkBox2)).isChecked();
+			if(yes)
+				diffsite = "Yes";
+			else
+				diffsite = "No";
+			
+			comments = ((EditText)findViewById(R.id.editText1)).toString();
+			
+			setContentView(R.layout.finish);
+	        Button button = (Button)findViewById(R.id.button81);
+	        button.setOnClickListener(this);
+	        
+	        sendInfo();
+			}
+		
+		if(arg0.getId()==R.id.button81){
+			
+			setContentView(R.layout.main);
+	        Button button = (Button)findViewById(R.id.button1);
+	        button.setOnClickListener(this);
+	        EditText tv_ = (EditText)findViewById(R.id.editText1);
+	        tv_.setText(email);
+			
+		}
+		                                                                                                                                                                          
+	}
+
+
+// CSV file
+	public void sendInfo(){
+		String value = "Day, "+Integer.toString(day.getDay())+
+		"\nMonth, "+Integer.toString(day.getMonth())+
+		"\nYear, "+Integer.toString(day.getYear())+
+		"\nHour, "+Integer.toString(day.getHours())+
+		"\nMinute, "+Integer.toString(day.getMinutes())+
+		"\nAMPM, "+ampm+
+		"\nZIP, "+Integer.toString(zip)+
+		"\nCITY, "+city+
+		"\nSTATE, "+state+
+		"\nEMAIL, "+email+
+		"\nNUM_GRAY_SQUIRRELS, "+Integer.toString(gray)+
+		"\nNUM_FOX_SQUIRRELS, "+Integer.toString(fox)+
+		"\nSETTING, "+setting+
+		"\nNUT_TREES, "+nuts+
+		"\nSEED_TREES, "+seed+
+		"\nFRUIT_TREES, "+fruit+
+		"\nTINY_TREES, "+tiny+
+		"\nCON_TREES, "+conif+
+		"\nOTHER_TREES, "+otherTrees+
+		"\nFEED_BIRD_FEEDER, "+birdfeed+
+		"\nFEED_HANDOUTS,"+human+
+		"\nFEED_GARBAGE, "+garbage+
+		"\nFEED_TREES, "+treeandother+
+		"\nFEED_OTHER, "+otherS+
+		"\nFEED_OTHER_DETAILS, "+otherC+
+		"\nNUM_SQUIRREL_CHANGE, "+changed+
+		"\nSITE_DOGS, "+dogs+
+		"\nSITE_CATS, "+cats+
+		"\nSITE_COYOTES, "+coyotes+
+		"\nSITE_HAWKS, "+hawks+
+		"\nSITE_GRAIN, "+grain+
+		"\nTHIS_NEW_SITE, "+everbefore+
+		"\nUSED_DIFFERENT_SITE, "+diffsite+
+		"\nCOMMENTS, "+comments;
+		Log.i(TAG,value);
+	}
+	
+	static final String[] states = new String[] {
+		"Alabama"
+		,"Alaska"
+		,"Arizona"
+		,"Arkansas"
+		,"California"
+		,"Colorado"
+		,"Connecticut"
+		,"Delaware"
+		,"Florida"
+		,"Georgia"
+		,"Hawaii"
+		,"Idaho"
+		,"Illinois"
+		,"Indiana"
+		,"Iowa"
+		,"Kansas"
+		,"Kentucky"
+		,"Louisiana"
+		,"Maine"
+		,"Maryland"
+		,"Massachusetts"
+		,"Michigan"
+		,"Minnesota"
+		,"Mississippi"
+		,"Missouri"
+		,"Montana"
+		,"Nebraska"
+		,"Nevada"
+		,"New Hampshire"
+		,"New Jersey"
+		,"New Mexico"
+		,"New York"
+		,"North Carolina"
+		,"North Dakota"
+		,"Ohio"
+		,"Oklahoma"
+		,"Oregon"
+		,"Pennsylvania"
+		,"Rhode Island"
+		,"South Carolina"
+		,"South Dakota"
+		,"Tennessee"
+		,"Texas"
+		,"Utah"
+		,"Vermont"
+		,"Virginia"
+		,"Washington"
+		,"West Virginia"
+		,"Wisconsin"
+		,"Wyoming"};
+	
+	static final String[] cities = new String[] {
+"Aberdeen"
+,"Abilene"
+,"Akron"
+,"Albany"
+,"Albuquerque"
+,"Alexandria"
+,"Allentown"
+,"Amarillo"
+,"Anaheim"
+,"Anchorage"
+,"Ann Arbor"
+,"Antioch"
+,"Apple Valley"
+,"Appleton"
+,"Arlington"
+,"Arvada"
+,"Asheville"
+,"Athens"
+,"Atlanta"
+,"Atlantic City"
+,"Augusta"
+,"Aurora"
+,"Austin"
+,"Bakersfield"
+,"Baltimore"
+,"Barnstable"
+,"Baton Rouge"
+,"Beaumont"
+,"Bel Air"
+,"Bellevue"
+,"Berkeley"
+,"Bethlehem"
+,"Billings"
+,"Birmingham"
+,"Bloomington"
+,"Boise"
+,"Boise City"
+,"Bonita Springs"
+,"Boston"
+,"Boulder"
+,"Bradenton"
+,"Bremerton"
+,"Bridgeport"
+,"Brighton"
+,"Brownsville"
+,"Bryan"
+,"Buffalo"
+,"Burbank"
+,"Burlington"
+,"Cambridge"
+,"Canton"
+,"Cape Coral"
+,"Carrollton"
+,"Cary"
+,"Cathedral City"
+,"Cedar Rapids"
+,"Champaign"
+,"Chandler"
+,"Charleston"
+,"Charlotte"
+,"Chattanooga"
+,"Chesapeake"
+,"Chicago"
+,"Chula Vista"
+,"Cincinnati"
+,"Clarke County"
+,"Clarksville"
+,"Clearwater"
+,"Cleveland"
+,"College Station"
+,"Colorado Springs"
+,"Columbia"
+,"Columbus"
+,"Concord"
+,"Coral Springs"
+,"Corona"
+,"Corpus Christi"
+,"Costa Mesa"
+,"Dallas"
+,"Daly City"
+,"Danbury"
+,"Davenport"
+,"Davidson County"
+,"Dayton"
+,"Daytona Beach"
+,"Deltona"
+,"Denton"
+,"Denver"
+,"Des Moines"
+,"Detroit"
+,"Downey"
+,"Duluth"
+,"Durham"
+,"El Monte"
+,"El Paso"
+,"Elizabeth"
+,"Elk Grove"
+,"Elkhart"
+,"Erie"
+,"Escondido"
+,"Eugene"
+,"Evansville"
+,"Fairfield"
+,"Fargo"
+,"Fayetteville"
+,"Fitchburg"
+,"Flint"
+,"Fontana"
+,"Fort Collins"
+,"Fort Lauderdale"
+,"Fort Smith"
+,"Fort Walton Beach"
+,"Fort Wayne"
+,"Fort Worth"
+,"Frederick"
+,"Fremont"
+,"Fresno"
+,"Fullerton"
+,"Gainesville"
+,"Garden Grove"
+,"Garland"
+,"Gastonia"
+,"Gilbert"
+,"Glendale"
+,"Grand Prairie"
+,"Grand Rapids"
+,"Grayslake"
+,"Green Bay"
+,"GreenBay"
+,"Greensboro"
+,"Greenville"
+,"Gulfport-Biloxi"
+,"Hagerstown"
+,"Hampton"
+,"Harlingen"
+,"Harrisburg"
+,"Hartford"
+,"Havre de Grace"
+,"Hayward"
+,"Hemet"
+,"Henderson"
+,"Hesperia"
+,"Hialeah"
+,"Hickory"
+,"High Point"
+,"Hollywood"
+,"Honolulu"
+,"Houma"
+,"Houston"
+,"Howell"
+,"Huntington"
+,"Huntington Beach"
+,"Huntsville"
+,"Independence"
+,"Indianapolis"
+,"Inglewood"
+,"Irvine"
+,"Irving"
+,"Jackson"
+,"Jacksonville"
+,"Jefferson"
+,"Jersey City"
+,"Johnson City"
+,"Joliet"
+,"Kailua"
+,"Kalamazoo"
+,"Kaneohe"
+,"Kansas City"
+,"Kennewick"
+,"Kenosha"
+,"Killeen"
+,"Kissimmee"
+,"Knoxville"
+,"Lacey"
+,"Lafayette"
+,"Lake Charles"
+,"Lakeland"
+,"Lakewood"
+,"Lancaster"
+,"Lansing"
+,"Laredo"
+,"Las Cruces"
+,"Las Vegas"
+,"Layton"
+,"Leominster"
+,"Lewisville"
+,"Lexington"
+,"Lincoln"
+,"Little Rock"
+,"Long Beach"
+,"Lorain"
+,"Los Angeles"
+,"Louisville"
+,"Lowell"
+,"Lubbock"
+,"Macon"
+,"Madison"
+,"Manchester"
+,"Marina"
+,"Marysville"
+,"McAllen"
+,"McHenry"
+,"Medford"
+,"Melbourne"
+,"Memphis"
+,"Merced"
+,"Mesa"
+,"Mesquite"
+,"Miami"
+,"Milwaukee"
+,"Minneapolis"
+,"Miramar"
+,"Mission Viejo"
+,"Mobile"
+,"Modesto"
+,"Monroe"
+,"Monterey"
+,"Montgomery"
+,"Moreno Valley"
+,"Murfreesboro"
+,"Murrieta"
+,"Muskegon"
+,"Myrtle Beach"
+,"Naperville"
+,"Naples"
+,"Nashua"
+,"Nashville"
+,"New Bedford"
+,"New Haven"
+,"New London"
+,"New Orleans"
+,"New York"
+,"New York City"
+,"Newark"
+,"Newburgh"
+,"Newport News"
+,"Norfolk"
+,"Normal"
+,"Norman"
+,"North Charleston"
+,"North Las Vegas"
+,"North Port"
+,"Norwalk"
+,"Norwich"
+,"Oakland"
+,"Ocala"
+,"Oceanside"
+,"Odessa"
+,"Ogden"
+,"Oklahoma City"
+,"Olathe"
+,"Olympia"
+,"Omaha"
+,"Ontario"
+,"Orange"
+,"Orem"
+,"Orlando"
+,"Overland Park"
+,"Oxnard"
+,"Palm Bay"
+,"Palm Springs"
+,"Palmdale"
+,"Panama City"
+,"Pasadena"
+,"Paterson"
+,"Pembroke Pines"
+,"Pensacola"
+,"Peoria"
+,"Philadelphia"
+,"Phoenix"
+,"Pittsburgh"
+,"Plano"
+,"Pomona"
+,"Pompano Beach"
+,"Port Arthur"
+,"Port Orange"
+,"Port Saint Lucie"
+,"Port St. Lucie"
+,"Portland"
+,"Portsmouth"
+,"Poughkeepsie"
+,"Providence"
+,"Provo"
+,"Pueblo"
+,"Punta Gorda"
+,"Racine"
+,"Raleigh"
+,"Rancho Cucamonga"
+,"Reading"
+,"Redding"
+,"Reno"
+,"Richland"
+,"Richmond"
+,"Richmond County"
+,"Riverside"
+,"Roanoke"
+,"Rochester"
+,"Rockford"
+,"Roseville"
+,"Round Lake Beach"
+,"Sacramento"
+,"Saginaw"
+,"Saint Louis"
+,"Saint Paul"
+,"Saint Petersburg"
+,"Salem"
+,"Salinas"
+,"Salt Lake City"
+,"San Antonio"
+,"San Bernardino"
+,"San Buenaventura"
+,"San Diego"
+,"San Francisco"
+,"San Jose"
+,"Santa Ana"
+,"Santa Barbara"
+,"Santa Clara"
+,"Santa Clarita"
+,"Santa Cruz"
+,"Santa Maria"
+,"Santa Rosa"
+,"Sarasota"
+,"Savannah"
+,"Scottsdale"
+,"Scranton"
+,"Seaside"
+,"Seattle"
+,"Sebastian"
+,"Shreveport"
+,"Simi Valley"
+,"Sioux City"
+,"Sioux Falls"
+,"South Bend"
+,"South Lyon"
+,"Spartanburg"
+,"Spokane"
+,"Springdale"
+,"Springfield"
+,"St. Louis"
+,"St. Paul"
+,"St. Petersburg"
+,"Stamford"
+,"Sterling Heights"
+,"Stockton"
+,"Sunnyvale"
+,"Syracuse"
+,"Tacoma"
+,"Tallahassee"
+,"Tampa"
+,"Temecula"
+,"Tempe"
+,"Thornton"
+,"Thousand Oaks"
+,"Toledo"
+,"Topeka"
+,"Torrance"
+,"Trenton"
+,"Tucson"
+,"Tulsa"
+,"Tuscaloosa"
+,"Tyler"
+,"Utica"
+,"Vallejo"
+,"Vancouver"
+,"Vero Beach"
+,"Victorville"
+,"Virginia Beach"
+,"Visalia"
+,"Waco"
+,"Warren"
+,"Washington"
+,"Waterbury"
+,"Waterloo"
+,"West Covina"
+,"West Valley City"
+,"Westminster"
+,"Wichita"
+,"Wilmington"
+,"Winston"
+,"Winter Haven"
+,"Worcester"
+,"Yakima"
+,"Yonkers"
+,"York"
+,"Youngstown" };
+	
+}
