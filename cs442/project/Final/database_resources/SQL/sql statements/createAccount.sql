@@ -1,0 +1,23 @@
+INSERT INTO imdb.accounts
+(first_name,
+middle_name,
+last_name,
+address_1,
+address_2,
+city,
+state,
+zip_code,
+username,
+password)
+VALUES
+(
+first_name,
+middle_name,
+last_name,
+address_1,
+address_2,
+city,
+state,
+zip_code,
+username,
+password);
