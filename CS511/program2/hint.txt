@@ -1,0 +1,3 @@
+make a 11x11 square
+
+mark your surroudning square ( not the square you are in)  with appropriate indicators if there is any signal.
