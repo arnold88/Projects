@@ -1,0 +1,427 @@
+Inferred memory devices in process
+        in routine RamChip line 29 in file
+                '/home/alee/ram_module.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|    data_out_reg     | Latch |   8   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Warning:  /home/alee/ram_module.v:154: Net io__SWIFT_BUS__1 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/alee/ram_module.v:159: Net io__SWIFT_BUS__2 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/alee/ram_module.v:164: Net io__SWIFT_BUS__3 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/alee/ram_module.v:169: Net io__SWIFT_BUS__4 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/alee/ram_module.v:174: Net io__SWIFT_BUS__5 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/alee/ram_module.v:179: Net io__SWIFT_BUS__6 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/alee/ram_module.v:184: Net io__SWIFT_BUS__7 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Warning:  /home/alee/ram_module.v:189: Net io__SWIFT_BUS__8 or a directly connected net may be driven by more than one process or block. (ELAB-405)
+Presto compilation completed successfully.
+Current design is now '/home/alee/RamChip.db:RamChip'
+Loaded 3 designs.
+{"RamChip", "km68257c_mx_bw", "km68257c_mx"}
+
+
+
+
+Using operating conditions 'WCCOM' found in library 'tcbn90ghpwc'.
+1
+
+1et_load 3.0 data_out
+
+Warning: Can't find port 'cs' in design 'RamChip'. (UID-95)
+Error: Design object list required for the '<port_list>' argument. (EQN-19)
+Usage: set_drive
+        -rise           (set rise resistance only)
+        -fall           (set fall resistance only)
+        -min            (set minimum resistance only)
+        -max            (set maximum resistance only)
+        <resistance>    (port drive resistance:
+                               value >= 0)
+        <port_list>     (list of input ports)
+
+1
+
+Warning: Can't find port 'we' in design 'RamChip'. (UID-95)
+Error: Design object list required for the '<port_list>' argument. (EQN-19)
+Usage: set_drive
+        -rise           (set rise resistance only)
+        -fall           (set fall resistance only)
+        -min            (set minimum resistance only)
+        -max            (set maximum resistance only)
+        <resistance>    (port drive resistance:
+                               value >= 0)
+        <port_list>     (list of input ports)
+
+1
+
+Warning: Can't find port 'oe' in design 'RamChip'. (UID-95)
+Error: Design object list required for the '<port_list>' argument. (EQN-19)
+Usage: set_drive
+        -rise           (set rise resistance only)
+        -fall           (set fall resistance only)
+        -min            (set minimum resistance only)
+        -max            (set maximum resistance only)
+        <resistance>    (port drive resistance:
+                               value >= 0)
+        <port_list>     (list of input ports)
+
+1
+
+
+
+Warning:  File /home/alee/km68257c_mx-verilog.pvl for module km68257c_mx cannot be found. (ELAB-320)
+Warning: Parameter mismatch in linking reference 'km68257c_mx' by name.
+        Can't find design. (LINK-18)
+Information: Building the design 'km68257c_mx' instantiated from design 'km68257c_mx_bw' with
+        the parameters "DefaultData="11111111",DelayRange="Max",MemoryFile=".",MessageLevel="15",ModelAlias=".",ModelConfig="32'h0",ModelId="-2",TimingVersion="12"". (HDL-193)
+Running PRESTO HDLC
+Warning:  File /home/alee/km68257c_mx-verilog.pvl for module km68257c_mx cannot be found. (ELAB-320)
+Error:  Module 'km68257c_mx' cannot be found for elaboration. (ELAB-357)
+*** Presto compilation terminated with 1 errors. ***
+Error: 'km68257c_mx' was not identified as a synthetic library module
+        and could not be successfully elaborated from design library 'WORK'. (LINK-10)
+Warning: Unable to resolve reference 'km68257c_mx' in 'km68257c_mx_bw.db:km68257c_mx_bw'. (LINK-5)
+Warning: Can't find object 'cs' in design 'RamChip'. (UID-95)
+Error: Design object list required for the '<source_objects>' argument. (EQN-19)
+Usage: create_clock
+        <source_objects>            (list of ports and/or pins)
+        -name <clock_name>         (name for the clock)
+        -period <period_value>     (period of the clock)
+        -waveform <edge_list>      (alternating rise, fall times for 1 period)
+        -add          (add to the existing clock in port_pin_list)
+
+0
+
+Warning: Design 'RamChip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Can't find object 'we' in design 'RamChip'. (UID-95)
+Warning: Design 'RamChip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Warning: Can't find object 'oe' in design 'RamChip'. (UID-95)
+Error: Design object list required for the '<port_pin_list>' argument. (EQN-19)
+Usage: set_input_delay
+        -clock <clock>      (relative clock)
+        -clock_fall         (delay is relative to falling edge of clock)
+        -level_sensitive    (delay is from level-sensitive latch)
+        -rise               (specifies rising delay)
+        -fall               (specifies falling delay)
+        -network_latency_included  (specifies that clock_network_latency is included)
+        -source_latency_included  (specifies that clock_source_latency is included)
+        -max                (specifies maximum delay)
+        -min                (specifies minimum delay)
+        -add_delay          (don't remove existing input delay)
+        <delay_value>       (path delay)
+        <port_pin_list>     (list of ports and/or pins)
+
+0
+
+Error: Cannot find clock 'cs'. (UID-250)in
+0
+
+Error: Cannot find clock 'cs'. (UID-250)_out
+0
+
+1et_max_area 50000
+
+Error: Value required for the '<object_list>' argument. (EQN-19)
+Usage: set_max_capacitance
+        <capacitance_value>
+        <object_list>     (list of ports or designs)
+
+0
+
+1et_multicycle_path 0 -from data_in -to data_out
+
+
+
+Warning: Design 'RamChip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library       |      Version       | Available |
+============================================================================
+| Basic DW Building Blocks                | W-2004.12-DWF_0503 |     *     |
+| Licensed DW Building Blocks             |                    |           |
+============================================================================
+
+Warning: In design 'km68257c_mx_bw', there are 18 multiple-driver nets with unknown wired-logic type. (LINT-30)
+
+Information: Use the 'check_design' command for 
+         more information about warnings. (LINT-99)
+
+Warning: Setting dont_use on dont_touched lib_cell 'tcbn90ghpwc'/'TIEH'. (OPT-1307)
+Warning: Setting dont_use on dont_touched lib_cell 'tcbn90ghpwc'/'TIEL'. (OPT-1307)
+  Loading target library 'tcbn90ghpwc'
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'km68257c_mx_bw'
+  Processing 'RamChip'
+
+  Updating timing information
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+  Structuring 'RamChip'
+  Mapping 'RamChip'
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:14      81.8      0.00       0.0     185.3                          
+    0:00:14      81.8      0.00       0.0     185.3                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:14      81.8      0.00       0.0     185.3                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:14      81.8      0.00       0.0     185.3                          
+    0:00:15     290.7      0.00       0.0       5.8                          
+
+
+  Beginning Area-Recovery Phase  (max_area 50000)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:15     290.7      0.00       0.0       5.8                          
+    0:00:16     290.7      0.00       0.0       5.8                          
+    0:00:16     290.7      0.00       0.0       5.8                          
+    0:00:16     290.7      0.00       0.0       5.8                          
+
+  Optimization Complete
+  ---------------------
+  Transferring design 'RamChip' to database 'RamChip.db'
+
+Warning:  File /home/alee/km68257c_mx-verilog.pvl for module km68257c_mx cannot be found. (ELAB-320)
+Warning: Parameter mismatch in linking reference 'km68257c_mx' by name.
+        Can't find design. (LINK-18)
+Information: Building the design 'km68257c_mx' instantiated from design 'km68257c_mx_bw' with
+        the parameters "DefaultData="11111111",DelayRange="Max",MemoryFile=".",MessageLevel="15",ModelAlias=".",ModelConfig="32'h0",ModelId="-2",TimingVersion="12"". (HDL-193)
+Running PRESTO HDLC
+Warning:  File /home/alee/km68257c_mx-verilog.pvl for module km68257c_mx cannot be found. (ELAB-320)
+Error:  Module 'km68257c_mx' cannot be found for elaboration. (ELAB-357)
+*** Presto compilation terminated with 1 errors. ***
+Error: 'km68257c_mx' was not identified as a synthetic library module
+        and could not be successfully elaborated from design library 'WORK'. (LINK-10)
+Warning: Unable to resolve reference 'km68257c_mx' in 'km68257c_mx_bw.db:km68257c_mx_bw'. (LINK-5)
+Current design is 'RamChip'.
+1
+
+
+Warning: Design 'RamChip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : clocks
+Design : RamChip
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:55:51 2006
+****************************************
+
+No clocks in this design.
+
+1
+
+Warning: Design 'RamChip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : design
+Design : RamChip
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:55:51 2006
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    tcbn90ghpwc (File: /home/alee/tcbn90ghpwc.db)
+
+Local Link Library:
+
+    {tcbn90ghpwc.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WCCOM
+    Library : tcbn90ghpwc
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   0.90
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   ZeroWireload
+Location       :   tcbn90ghpwc
+Resistance     :   1e-05
+Capacitance    :   1
+Area           :   0
+Slope          :   0
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.00
+     2     0.00
+     3     0.00
+     4     0.00
+     5     0.00
+     6     0.00
+     7     0.00
+     8     0.00
+     9     0.00
+    10     0.00
+    11     0.00
+    12     0.00
+    13     0.00
+    14     0.00
+    15     0.00
+    16     0.00
+    17     0.00
+    18     0.00
+    19     0.00
+    20     0.00
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+
+Information: This design contains black box (unknown) components. (RPT-8)
+1
+
+Warning: Design 'RamChip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : constraint
+Design : RamChip
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:55:51 2006
+****************************************
+
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_transition                                   0.00 (MET)
+    max_capacitance                                  5.82 (VIOLATED)
+    max_area                                         0.00 (MET)
+
+
+1
+
+Warning: Design 'RamChip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing_requirements
+        -attributes
+Design : RamChip
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:55:51 2006
+****************************************
+
+Description                            Setup               Hold
+--------------------------------------------------------------------------------
+TIMING EXCEPTION                       cycles=0            cycles=0
+        -from    { data_in[1]\
+                   data_in[2]\
+                   data_in[3]\
+                   data_in[4]\
+                   data_in[5]\
+                   data_in[6]\
+                   data_in[7]\
+                   data_in[8] }\
+        -to      { data_out[1]\
+                   data_out[2]\
+                   data_out[3]\
+                   data_out[4]\
+                   data_out[5]\
+                   data_out[6]\
+                   data_out[7]\
+                   data_out[8] }
+
+1
+
+Warning: Design 'RamChip' has '1' unresolved references. For more detailed information, use the "link" command. (UID-341)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RamChip
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:55:51 2006
+****************************************
+
+Operating Conditions: WCCOM   Library: tcbn90ghpwc
+Wire Load Model Mode: segmented
+
+  Startpoint: data_out_reg[8]
+              (positive level-sensitive latch)
+  Endpoint: data_out[8]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RamChip            ZeroWireload          tcbn90ghpwc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  data_out_reg[8]/E (LHQD2)                0.00       0.00 r
+  data_out_reg[8]/Q (LHQD2)                0.21       0.21 f
+  U15/ZN (INVD1)                           0.23       0.44 r
+  U16/CN (CKND16)                          0.57       1.01 f
+  data_out[8] (out)                        0.00       1.01 f
+  data arrival time                                   1.01
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

@@ -1,0 +1,38 @@
+
+target_library = tcbn90ghpwc.db
+symbol_library = tcbn90ghp.sdb
+link_library = "*" + target_library
+
+
+read_file tcbn90ghp.sdb
+read_file tcbn90ghpwc.db
+
+analyze -format verilog km68257c_mx.v
+read_file -format verilog km68257c_mx.v
+
+analyze -format verilog km68257c_mx_bw.v
+read_file -format verilog km68257c_mx_bw.v
+
+analyze -format verilog testmem.v
+read_file -format verilog testmem.v
+
+
+
+set_operating_conditions WCCOM
+set_load 3.0 all_outputs()
+
+
+
+compile
+
+report_clock
+report_design
+report_constraint
+report_timing_requirements
+report_timing
+
+
+
+
+
+

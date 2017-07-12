@@ -1,0 +1,270 @@
+----------------------------
+seed = 2000
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.240965
+occurrence 11 (out of 1048576); 
+false positive rate: 0.000010490
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.264372
+occurrence 4 (out of 1048576); 
+false positive rate: 0.000003815
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.285383
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.309424
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.328127
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1900
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.227807
+occurrence 11 (out of 1048576); 
+false positive rate: 0.000010490
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.256175
+occurrence 4 (out of 1048576); 
+false positive rate: 0.000003815
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.285459
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.313847
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.331724
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1800
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.223152
+occurrence 16 (out of 1048576); 
+false positive rate: 0.000015259
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.248659
+occurrence 5 (out of 1048576); 
+false positive rate: 0.000004768
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.272424
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.294817
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.314767
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1700
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.239642
+occurrence 14 (out of 1048576); 
+false positive rate: 0.000013351
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.270620
+occurrence 3 (out of 1048576); 
+false positive rate: 0.000002861
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.292243
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.311926
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.328235
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1600
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.239282
+occurrence 15 (out of 1048576); 
+false positive rate: 0.000014305
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.265903
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.286230
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.308153
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.323282
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1500
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.235038
+occurrence 16 (out of 1048576); 
+false positive rate: 0.000015259
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.259038
+occurrence 4 (out of 1048576); 
+false positive rate: 0.000003815
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.280760
+occurrence 3 (out of 1048576); 
+false positive rate: 0.000002861
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.304183
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.316010
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1400
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.238078
+occurrence 15 (out of 1048576); 
+false positive rate: 0.000014305
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.258380
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.281123
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.308109
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.319207
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1300
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.247923
+occurrence 15 (out of 1048576); 
+false positive rate: 0.000014305
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.271621
+occurrence 3 (out of 1048576); 
+false positive rate: 0.000002861
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.290496
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.312758
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.325149
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1200
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.231849
+occurrence 17 (out of 1048576); 
+false positive rate: 0.000016212
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.257156
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.279104
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.300488
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.321763
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+----------------------------
+seed = 1100
+
+m=20, n=14, k=4, testlen=20
+standard deviation: 0.240296
+occurrence 11 (out of 1048576); 
+false positive rate: 0.000010490
+
+m=20, n=14, k=5, testlen=20
+standard deviation: 0.262402
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+
+m=20, n=14, k=6, testlen=20
+standard deviation: 0.284463
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+
+m=20, n=14, k=7, testlen=20
+standard deviation: 0.311686
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+
+m=20, n=14, k=8, testlen=20
+standard deviation: 0.329616
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000

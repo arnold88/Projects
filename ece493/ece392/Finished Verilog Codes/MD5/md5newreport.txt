@@ -1,0 +1,452 @@
+****************************************
+Report : clocks
+Design : md5
+Version: W-2004.12-SP2
+Date   : Tue Aug  8 22:42:22 2006
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             20.00   {0 10}                        {clk}
+--------------------------------------------------------------------------------
+1
+report_design
+ 
+****************************************
+Report : design
+Design : md5
+Version: W-2004.12-SP2
+Date   : Tue Aug  8 22:42:22 2006
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    tcbn90ghpwc (File: /home/alee/tcbn90ghpwc.db)
+
+Local Link Library:
+
+    {tcbn90ghpwc.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WCCOM
+    Library : tcbn90ghpwc
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   0.90
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   ZeroWireload
+Location       :   tcbn90ghpwc
+Resistance     :   1e-05
+Capacitance    :   1
+Area           :   0
+Slope          :   0
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.00
+     2     0.00
+     3     0.00
+     4     0.00
+     5     0.00
+     6     0.00
+     7     0.00
+     8     0.00
+     9     0.00
+    10     0.00
+    11     0.00
+    12     0.00
+    13     0.00
+    14     0.00
+    15     0.00
+    16     0.00
+    17     0.00
+    18     0.00
+    19     0.00
+    20     0.00
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+report_constraint
+ 
+****************************************
+Report : constraint
+Design : md5
+Version: W-2004.12-SP2
+Date   : Tue Aug  8 22:42:22 2006
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk                          0.00         0      0.00
+    default                      0.00         0      0.00
+    -----------------------------------------------------
+    critical_range                                   0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk (no fix_hold)            0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_transition                                   0.00 (MET)
+    max_capacitance                                 93.91 (VIOLATED)
+    max_delay/setup                                  0.00 (MET)
+    critical_range                                   0.00 (MET)
+    max_area                                         0.00 (MET)
+
+
+1
+report_timing_requirements
+ 
+****************************************
+Report : timing_requirements
+        -attributes
+Design : md5
+Version: W-2004.12-SP2
+Date   : Tue Aug  8 22:42:23 2006
+****************************************
+
+Description                            Setup               Hold
+--------------------------------------------------------------------------------
+TIMING EXCEPTION                       cycles=0            cycles=0
+        -from    text\
+        -to      { dataout[0]\
+                   dataout[100]\
+                   dataout[101]\
+                   dataout[102]\
+                   dataout[103]\
+                   dataout[104]\
+                   dataout[105]\
+                   dataout[106]\
+                   dataout[107]\
+                   dataout[108]\
+                   dataout[109]\
+                   dataout[10]\
+                   dataout[110]\
+                   dataout[111]\
+                   dataout[112]\
+                   dataout[113]\
+                   dataout[114]\
+                   dataout[115]\
+                   dataout[116]\
+                   dataout[117]\
+                   dataout[118]\
+                   dataout[119]\
+                   dataout[11]\
+                   dataout[120]\
+                   dataout[121]\
+                   dataout[122]\
+                   dataout[123]\
+                   dataout[124]\
+                   dataout[125]\
+                   dataout[126]\
+                   dataout[127]\
+                   dataout[12]\
+                   dataout[13]\
+                   dataout[14]\
+                   dataout[15]\
+                   dataout[16]\
+                   dataout[17]\
+                   dataout[18]\
+                   dataout[19]\
+                   dataout[1]\
+                   dataout[20]\
+                   dataout[21]\
+                   dataout[22]\
+                   dataout[23]\
+                   dataout[24]\
+                   dataout[25]\
+                   dataout[26]\
+                   dataout[27]\
+                   dataout[28]\
+                   dataout[29]\
+                   dataout[2]\
+                   dataout[30]\
+                   dataout[31]\
+                   dataout[32]\
+                   dataout[33]\
+                   dataout[34]\
+                   dataout[35]\
+                   dataout[36]\
+                   dataout[37]\
+                   dataout[38]\
+                   dataout[39]\
+                   dataout[3]\
+                   dataout[40]\
+                   dataout[41]\
+                   dataout[42]\
+                   dataout[43]\
+                   dataout[44]\
+                   dataout[45]\
+                   dataout[46]\
+                   dataout[47]\
+                   dataout[48]\
+                   dataout[49]\
+                   dataout[4]\
+                   dataout[50]\
+                   dataout[51]\
+                   dataout[52]\
+                   dataout[53]\
+                   dataout[54]\
+                   dataout[55]\
+                   dataout[56]\
+                   dataout[57]\
+                   dataout[58]\
+                   dataout[59]\
+                   dataout[5]\
+                   dataout[60]\
+                   dataout[61]\
+                   dataout[62]\
+                   dataout[63]\
+                   dataout[64]\
+                   dataout[65]\
+                   dataout[66]\
+                   dataout[67]\
+                   dataout[68]\
+                   dataout[69]\
+                   dataout[6]\
+                   dataout[70]\
+                   dataout[71]\
+                   dataout[72]\
+                   dataout[73]\
+                   dataout[74]\
+                   dataout[75]\
+                   dataout[76]\
+                   dataout[77]\
+                   dataout[78]\
+                   dataout[79]\
+                   dataout[7]\
+                   dataout[80]\
+                   dataout[81]\
+                   dataout[82]\
+                   dataout[83]\
+                   dataout[84]\
+                   dataout[85]\
+                   dataout[86]\
+                   dataout[87]\
+                   dataout[88]\
+                   dataout[89]\
+                   dataout[8]\
+                   dataout[90]\
+                   dataout[91]\
+                   dataout[92]\
+                   dataout[93]\
+                   dataout[94]\
+                   dataout[95]\
+                   dataout[96]\
+                   dataout[97]\
+                   dataout[98]\
+                   dataout[99]\
+                   dataout[9] }
+
+1
+report_timing
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : md5
+Version: W-2004.12-SP2
+Date   : Tue Aug  8 22:42:23 2006
+****************************************
+
+Operating Conditions: WCCOM   Library: tcbn90ghpwc
+Wire Load Model Mode: segmented
+
+  Startpoint: round64_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: B_reg[31] (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  md5                ZeroWireload          tcbn90ghpwc
+  md5_DW01_inc_6_0   ZeroWireload          tcbn90ghpwc
+  md5_MUX_OP_16_4_32 ZeroWireload          tcbn90ghpwc
+  md5_DW01_add_32_1  ZeroWireload          tcbn90ghpwc
+  md5_DW01_add_32_2  ZeroWireload          tcbn90ghpwc
+  md5_DW01_add_32_3  ZeroWireload          tcbn90ghpwc
+  md5_DW01_add_32_5  ZeroWireload          tcbn90ghpwc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  round64_reg[0]/CP (EDFCNQD1)                            0.00       0.00 r
+  round64_reg[0]/Q (EDFCNQD1)                             0.26       0.26 r
+  U3015/ZN (INVD1)                                        0.08       0.34 f
+  U2378/Z (OR2D1)                                         0.10       0.44 f
+  U2377/Z (OR2D1)                                         0.11       0.55 f
+  U2898/ZN (NR2D1)                                        0.13       0.69 r
+  U2258/Z (OR2D1)                                         0.14       0.83 r
+  U2257/Z (OR3D1)                                         0.08       0.91 r
+  U2247/Z (OR3D1)                                         0.08       0.99 r
+  U2246/Z (OR3D1)                                         0.08       1.07 r
+  U2245/Z (OR4D1)                                         0.08       1.15 r
+  C12971/S1 (md5_MUX_OP_16_4_32)                          0.00       1.15 r
+  C12971/U163/Z (BUFFD3)                                  0.50       1.65 r
+  C12971/U218/Z (MUX4D0)                                  0.28       1.93 f
+  C12971/U167/Z (MUX4D0)                                  0.26       2.19 f
+  C12971/Z_30 (md5_MUX_OP_16_4_32)                        0.00       2.19 f
+  add_1_root_add_256_3/A[1] (md5_DW01_add_32_1)           0.00       2.19 f
+  add_1_root_add_256_3/U1_1/CO (FA1D0)                    0.25       2.43 f
+  add_1_root_add_256_3/U1_2/CO (FA1D0)                    0.13       2.56 f
+  add_1_root_add_256_3/U1_3/CO (FA1D0)                    0.13       2.70 f
+  add_1_root_add_256_3/U1_4/CO (FA1D0)                    0.13       2.83 f
+  add_1_root_add_256_3/U1_5/CO (FA1D0)                    0.13       2.96 f
+  add_1_root_add_256_3/U1_6/CO (FA1D0)                    0.13       3.09 f
+  add_1_root_add_256_3/U1_7/CO (FA1D0)                    0.13       3.22 f
+  add_1_root_add_256_3/U1_8/CO (FA1D0)                    0.13       3.35 f
+  add_1_root_add_256_3/U1_9/CO (FA1D0)                    0.13       3.48 f
+  add_1_root_add_256_3/U1_10/CO (FA1D0)                   0.13       3.61 f
+  add_1_root_add_256_3/U1_11/S (FA1D0)                    0.15       3.76 f
+  add_1_root_add_256_3/SUM[11] (md5_DW01_add_32_1)        0.00       3.76 f
+  add_0_root_add_256_3/B[11] (md5_DW01_add_32_2)          0.00       3.76 f
+  add_0_root_add_256_3/U1_11/CO (FA1D0)                   0.23       3.99 f
+  add_0_root_add_256_3/U1_12/CO (FA1D0)                   0.13       4.12 f
+  add_0_root_add_256_3/U1_13/CO (FA1D0)                   0.13       4.25 f
+  add_0_root_add_256_3/U1_14/CO (FA1D0)                   0.13       4.38 f
+  add_0_root_add_256_3/U1_15/CO (FA1D0)                   0.13       4.51 f
+  add_0_root_add_256_3/U1_16/CO (FA1D0)                   0.13       4.64 f
+  add_0_root_add_256_3/U1_17/CO (FA1D0)                   0.13       4.77 f
+  add_0_root_add_256_3/U1_18/CO (FA1D0)                   0.13       4.90 f
+  add_0_root_add_256_3/U1_19/CO (FA1D0)                   0.13       5.03 f
+  add_0_root_add_256_3/U1_20/CO (FA1D0)                   0.13       5.16 f
+  add_0_root_add_256_3/U1_21/CO (FA1D0)                   0.13       5.30 f
+  add_0_root_add_256_3/U1_22/CO (FA1D0)                   0.13       5.43 f
+  add_0_root_add_256_3/U1_23/CO (FA1D0)                   0.13       5.56 f
+  add_0_root_add_256_3/U1_24/CO (FA1D0)                   0.13       5.69 f
+  add_0_root_add_256_3/U1_25/CO (FA1D0)                   0.13       5.82 f
+  add_0_root_add_256_3/U1_26/CO (FA1D0)                   0.13       5.95 f
+  add_0_root_add_256_3/U1_27/CO (FA1D0)                   0.13       6.08 f
+  add_0_root_add_256_3/U1_28/CO (FA1D0)                   0.13       6.21 f
+  add_0_root_add_256_3/U1_29/CO (FA1D0)                   0.13       6.34 f
+  add_0_root_add_256_3/U1_30/CO (FA1D0)                   0.13       6.47 f
+  add_0_root_add_256_3/U1_31/Z (XOR3D1)                   0.20       6.67 f
+  add_0_root_add_256_3/SUM[31] (md5_DW01_add_32_2)        0.00       6.67 f
+  U2873/Z (AO221D0)                                       0.21       6.88 f
+  U2802/ZN (INVD1)                                        0.06       6.94 r
+  U1760/ZN (MOAI22D1)                                     0.05       6.98 f
+  U2791/Z (AO221D0)                                       0.28       7.26 f
+  U1743/Z (AO222D1)                                       0.19       7.46 f
+  add_260/B[0] (md5_DW01_add_32_3)                        0.00       7.46 f
+  add_260/U4/Z (AN2D0)                                    0.09       7.55 f
+  add_260/U1_1/CO (FA1D0)                                 0.13       7.67 f
+  add_260/U1_2/CO (FA1D0)                                 0.13       7.80 f
+  add_260/U1_3/CO (FA1D0)                                 0.13       7.93 f
+  add_260/U1_4/CO (FA1D0)                                 0.13       8.06 f
+  add_260/U1_5/CO (FA1D0)                                 0.13       8.19 f
+  add_260/U1_6/CO (FA1D0)                                 0.13       8.32 f
+  add_260/U1_7/CO (FA1D0)                                 0.13       8.45 f
+  add_260/U1_8/CO (FA1D0)                                 0.13       8.58 f
+  add_260/U1_9/CO (FA1D0)                                 0.13       8.72 f
+  add_260/U1_10/CO (FA1D0)                                0.13       8.85 f
+  add_260/U1_11/CO (FA1D0)                                0.13       8.98 f
+  add_260/U1_12/CO (FA1D0)                                0.13       9.11 f
+  add_260/U1_13/CO (FA1D0)                                0.13       9.24 f
+  add_260/U1_14/CO (FA1D0)                                0.13       9.37 f
+  add_260/U1_15/CO (FA1D0)                                0.13       9.50 f
+  add_260/U1_16/CO (FA1D0)                                0.13       9.63 f
+  add_260/U1_17/CO (FA1D0)                                0.13       9.76 f
+  add_260/U1_18/CO (FA1D0)                                0.13       9.89 f
+  add_260/U1_19/CO (FA1D0)                                0.13      10.02 f
+  add_260/U1_20/CO (FA1D0)                                0.13      10.15 f
+  add_260/U1_21/CO (FA1D0)                                0.13      10.28 f
+  add_260/U1_22/CO (FA1D0)                                0.13      10.41 f
+  add_260/U1_23/CO (FA1D0)                                0.13      10.54 f
+  add_260/U1_24/CO (FA1D0)                                0.13      10.67 f
+  add_260/U1_25/CO (FA1D0)                                0.13      10.80 f
+  add_260/U1_26/CO (FA1D0)                                0.13      10.93 f
+  add_260/U1_27/CO (FA1D0)                                0.13      11.07 f
+  add_260/U1_28/CO (FA1D0)                                0.13      11.20 f
+  add_260/U1_29/CO (FA1D0)                                0.13      11.33 f
+  add_260/U1_30/S (FA1D0)                                 0.18      11.51 r
+  add_260/SUM[30] (md5_DW01_add_32_3)                     0.00      11.51 r
+  add_391/A[30] (md5_DW01_add_32_5)                       0.00      11.51 r
+  add_391/U1_30/CO (FA1D0)                                0.22      11.73 r
+  add_391/U1_31/Z (XOR3D1)                                0.17      11.90 f
+  add_391/SUM[31] (md5_DW01_add_32_5)                     0.00      11.90 f
+  U3020/Z (AO221D0)                                       0.20      12.09 f
+  B_reg[31]/D (DFSNQD1)                                   0.00      12.09 f
+  data arrival time                                                 12.09
+
+  clock clk (rise edge)                                  20.00      20.00
+  clock network delay (ideal)                             0.00      20.00
+  B_reg[31]/CP (DFSNQD1)                                  0.00      20.00 r
+  library setup time                                     -0.06      19.94
+  data required time                                                19.94
+  --------------------------------------------------------------------------
+  data required time                                                19.94
+  data arrival time                                                -12.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.84
+
+
+1
+

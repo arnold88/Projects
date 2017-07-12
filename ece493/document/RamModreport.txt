@@ -1,0 +1,274 @@
+Beginning Implementation Selection
+  ----------------------------------
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:22   50462.4      0.00       0.0       7.6                          
+    0:01:32   49923.3      0.00       0.0       7.6                          
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:33   49923.3      0.00       0.0       7.6                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:33   49923.3      0.00       0.0       7.6                          
+    0:01:33   49934.6      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (max_area 50000)
+  -----------------------------
+
+   ELAPSED            WORST NEG TOTAL NEG  DESIGN                            
+    TIME      AREA      SLACK     SLACK   RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:33   49934.6      0.00       0.0       0.0                          
+    0:01:33   49934.6      0.00       0.0       0.0                          
+    0:01:34   49934.6      0.00       0.0       0.0                          
+    0:01:42   48489.5      0.00       0.0       0.0                          
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'ram_sp_sr_sw' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'clk': 2056 load(s), 1 driver(s)
+  Transferring design 'ram_sp_sr_sw' to database 'ram_sp_sr_sw.db'
+
+Current design is 'ram_sp_sr_sw'.
+1
+
+
+Information: Updating design information... (UID-85)
+Warning: Design 'ram_sp_sr_sw' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : clocks
+Design : ram_sp_sr_sw
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:41:18 2006
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk             10.00   {0 5}                         {clk}
+--------------------------------------------------------------------------------
+1
+
+ eport_design
+****************************************
+Report : design
+Design : ram_sp_sr_sw
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:41:18 2006
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    tcbn90ghpwc (File: /home/alee/tcbn90ghpwc.db)
+
+Local Link Library:
+
+    {tcbn90ghpwc.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WCCOM
+    Library : tcbn90ghpwc
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   0.90
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   ZeroWireload
+Location       :   tcbn90ghpwc
+Resistance     :   1e-05
+Capacitance    :   1
+Area           :   0
+Slope          :   0
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.00
+     2     0.00
+     3     0.00
+     4     0.00
+     5     0.00
+     6     0.00
+     7     0.00
+     8     0.00
+     9     0.00
+    10     0.00
+    11     0.00
+    12     0.00
+    13     0.00
+    14     0.00
+    15     0.00
+    16     0.00
+    17     0.00
+    18     0.00
+    19     0.00
+    20     0.00
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+
+ eport_constraint
+****************************************
+Report : constraint
+Design : ram_sp_sr_sw
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:41:18 2006
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk                          0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk                          0.00         0      0.00
+    default                      0.00         0      0.00
+    -----------------------------------------------------
+    critical_range                                   0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk (no fix_hold)            0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_transition                                   0.00 (MET)
+    max_capacitance                                  0.00 (MET)
+    max_delay/setup                                  0.00 (MET)
+    critical_range                                   0.00 (MET)
+    max_area                                         0.00 (MET)
+
+
+1
+
+ eport_timing_requirements
+****************************************
+Report : timing_requirements
+        -attributes
+Design : ram_sp_sr_sw
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:41:18 2006
+****************************************
+
+1
+
+ eport_timing
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : ram_sp_sr_sw
+Version: W-2004.12-SP2
+Date   : Thu Dec 28 23:41:18 2006
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: WCCOM   Library: tcbn90ghpwc
+Wire Load Model Mode: segmented
+
+  Startpoint: data[0] (input port clocked by clk)
+  Endpoint: mem_reg[0][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  ram_sp_sr_sw       ZeroWireload          tcbn90ghpwc
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     2.00       2.00 f
+  data[0] (inout)                          0.00       2.00 f
+  mem_reg[0][0]/D (EDFQD1)                 0.00       2.00 f
+  data arrival time                                   2.00
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.00      10.00
+  mem_reg[0][0]/CP (EDFQD1)                0.00      10.00 r
+  library setup time                      -0.11       9.89
+  data required time                                  9.89
+  -----------------------------------------------------------
+  data required time                                  9.89
+  data arrival time                                  -2.00
+  -----------------------------------------------------------
+  slack (MET)                                         7.89

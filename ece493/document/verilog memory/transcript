@@ -1,0 +1,82 @@
+# Reading C:/Modeltech_6.0b/tcl/vsim/pref.tcl 
+# //  ModelSim SE 6.0b Dec  1 2004 
+# //
+# //  Copyright Mentor Graphics Corporation 2004
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+#  OpenFile "C:/Documents and Settings/Phucker/Desktop/verilog memory/hy57v161610d_a_mx.v" 
+# Loading project memtest
+# Compile of test_sha1.v was successful.
+# Compile of sha1v12.v was successful.
+# Compile of mempro_pkg.v failed with 1 errors.
+# Compile of sha1v12.v was successful.
+# Compile of test_sha1.v was successful.
+# Compile of hy57v161610d_a_mx.v was successful.
+# Compile of hy57v161610d_a_mx_bw.v was successful.
+# Compile of mempro_pkg01032.v failed with 1 errors.
+# 6 compiles, 2 failed with 2 errors. 
+# Compile of test_sha1.v failed with 1 errors.
+# Compile of sha1v12.v was successful.
+# Compile of test_sha1.v was successful.
+# Compile of hy57v161610d_a_mx.v was successful.
+# Compile of hy57v161610d_a_mx_bw.v was successful.
+# 4 compiles, 0 failed with no errors. 
+# Compile of hy57v161610d_a_mx.v was successful.
+# Compile of hy57v161610d_a_mx.v was successful.
+# Compile of hy57v161610d_a_mx_bw.v was successful.
+# 2 compiles, 0 failed with no errors. 
+# Compile of testmem.v was successful.
+# Compile of testmem.v failed with 1 errors.
+# Compile of hy57v161610d_a_mx_bw.v was successful.
+# Compile of testmem.v failed with 1 errors.
+# Compile of hy57v161610d_a_mx.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of hy57v161610d_a_mx_bw.v was successful.
+# Compile of testmem.v failed with 1 errors.
+# Compile of hy57v161610d_a_mx.v was successful.
+# 3 compiles, 1 failed with 1 error. 
+# Compile of testmem.v failed with 1 errors.
+# Compile of hy57v161610d_a_mx_bw.v was successful.
+# Compile of testmem.v was successful.
+# Compile of hy57v161610d_a_mx.v was successful.
+# 3 compiles, 0 failed with no errors. 
+vsim work.testmem
+# vsim work.testmem 
+# Loading work.testmem
+# Loading work.hy57v161610d_a_mx_bw
+# Loading work.hy57v161610d_a_mx
+# ** Warning: (vsim-3010) [TSCALE] - Module 'hy57v161610d_a_mx' has a `timescale directive in effect, but previous modules do not.
+#         Region: /testmem/memory/I1
+# ** Warning: (vsim-PLI-3003) D:/synopsys/hy57v161610d_a_mx.v(208): [TOFD] - System task or function '$lm_model' is not defined.
+#         Region: /testmem/memory/I1
+# ** Error: (vsim-3053) D:/synopsys/testmem.v(47): Illegal output or inout port connection (port 'dq').
+#         Region: /testmem/memory
+# Error loading design
+vsim work.testmem
+# vsim work.testmem 
+# Loading work.testmem
+# Loading work.hy57v161610d_a_mx_bw
+# Loading work.hy57v161610d_a_mx
+# ** Warning: (vsim-3010) [TSCALE] - Module 'hy57v161610d_a_mx' has a `timescale directive in effect, but previous modules do not.
+#         Region: /testmem/memory/I1
+# ** Warning: (vsim-PLI-3003) D:/synopsys/hy57v161610d_a_mx.v(208): [TOFD] - System task or function '$lm_model' is not defined.
+#         Region: /testmem/memory/I1
+# ** Error: (vsim-3053) D:/synopsys/testmem.v(47): Illegal output or inout port connection (port 'dq').
+#         Region: /testmem/memory
+# Error loading design
+vsim work.hy57v161610d_a_mx_bw
+# vsim work.hy57v161610d_a_mx_bw 
+# Loading work.hy57v161610d_a_mx_bw
+# Loading work.hy57v161610d_a_mx
+# ** Warning: (vsim-3010) [TSCALE] - Module 'hy57v161610d_a_mx' has a `timescale directive in effect, but previous modules do not.
+#         Region: /hy57v161610d_a_mx_bw/I1
+# ** Warning: (vsim-PLI-3003) D:/synopsys/hy57v161610d_a_mx.v(208): [TOFD] - System task or function '$lm_model' is not defined.
+#         Region: /hy57v161610d_a_mx_bw/I1
+run
+exit
+quit -sim

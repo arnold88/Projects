@@ -1,0 +1,2267 @@
+----------------------------
+seed = 100
+m=20 seed=100 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=ammp
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=13 seed=100 bm=ammp
+
+occurrence 25 (out of 1048576); 
+false positive rate: 0.000023842
+m=12 seed=100 bm=ammp
+
+occurrence 495 (out of 1048576); 
+false positive rate: 0.000472069
+m=11 seed=100 bm=ammp
+
+occurrence 5469 (out of 1048576); 
+false positive rate: 0.005215645
+m=10 seed=100 bm=ammp
+
+occurrence 32732 (out of 1048576); 
+false positive rate: 0.031215668
+m=9 seed=100 bm=ammp
+
+occurrence 152527 (out of 1048576); 
+false positive rate: 0.145461082
+m=8 seed=100 bm=ammp
+
+occurrence 455390 (out of 1048576); 
+false positive rate: 0.434293747
+----------------------------
+seed = 100
+m=20 seed=100 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=applu
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=13 seed=100 bm=applu
+
+occurrence 46 (out of 1048576); 
+false positive rate: 0.000043869
+m=12 seed=100 bm=applu
+
+occurrence 647 (out of 1048576); 
+false positive rate: 0.000617027
+m=11 seed=100 bm=applu
+
+occurrence 6605 (out of 1048576); 
+false positive rate: 0.006299019
+m=10 seed=100 bm=applu
+
+occurrence 44927 (out of 1048576); 
+false positive rate: 0.042845726
+m=9 seed=100 bm=applu
+
+occurrence 201618 (out of 1048576); 
+false positive rate: 0.192277908
+m=8 seed=100 bm=applu
+
+occurrence 564507 (out of 1048576); 
+false positive rate: 0.538355827
+----------------------------
+seed = 100
+m=20 seed=100 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=100 bm=art
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=12 seed=100 bm=art
+
+occurrence 18 (out of 1048576); 
+false positive rate: 0.000017166
+m=11 seed=100 bm=art
+
+occurrence 531 (out of 1048576); 
+false positive rate: 0.000506401
+m=10 seed=100 bm=art
+
+occurrence 7941 (out of 1048576); 
+false positive rate: 0.007573128
+m=9 seed=100 bm=art
+
+occurrence 55266 (out of 1048576); 
+false positive rate: 0.052705765
+m=8 seed=100 bm=art
+
+occurrence 162997 (out of 1048576); 
+false positive rate: 0.155446053
+----------------------------
+seed = 100
+m=20 seed=100 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=100 bm=bzip
+
+occurrence 3 (out of 1048576); 
+false positive rate: 0.000002861
+m=12 seed=100 bm=bzip
+
+occurrence 41 (out of 1048576); 
+false positive rate: 0.000039101
+m=11 seed=100 bm=bzip
+
+occurrence 905 (out of 1048576); 
+false positive rate: 0.000863075
+m=10 seed=100 bm=bzip
+
+occurrence 8901 (out of 1048576); 
+false positive rate: 0.008488655
+m=9 seed=100 bm=bzip
+
+occurrence 45153 (out of 1048576); 
+false positive rate: 0.043061256
+m=8 seed=100 bm=bzip
+
+occurrence 140363 (out of 1048576); 
+false positive rate: 0.133860588
+----------------------------
+seed = 100
+m=20 seed=100 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=crafty
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=14 seed=100 bm=crafty
+
+occurrence 19 (out of 1048576); 
+false positive rate: 0.000018120
+m=13 seed=100 bm=crafty
+
+occurrence 510 (out of 1048576); 
+false positive rate: 0.000486374
+m=12 seed=100 bm=crafty
+
+occurrence 5066 (out of 1048576); 
+false positive rate: 0.004831314
+m=11 seed=100 bm=crafty
+
+occurrence 34617 (out of 1048576); 
+false positive rate: 0.033013344
+m=10 seed=100 bm=crafty
+
+occurrence 149587 (out of 1048576); 
+false positive rate: 0.142657280
+m=9 seed=100 bm=crafty
+
+occurrence 511484 (out of 1048576); 
+false positive rate: 0.487789154
+m=8 seed=100 bm=crafty
+
+occurrence 826171 (out of 1048576); 
+false positive rate: 0.787898064
+----------------------------
+seed = 100
+m=20 seed=100 bm=eon
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=eon
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=eon
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=eon
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=eon
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=15 seed=100 bm=eon
+
+occurrence 49 (out of 1048576); 
+false positive rate: 0.000046730
+m=14 seed=100 bm=eon
+
+occurrence 812 (out of 1048576); 
+false positive rate: 0.000774384
+m=13 seed=100 bm=eon
+
+occurrence 8272 (out of 1048576); 
+false positive rate: 0.007888794
+m=12 seed=100 bm=eon
+
+occurrence 46740 (out of 1048576); 
+false positive rate: 0.044574738
+m=11 seed=100 bm=eon
+
+occurrence 206088 (out of 1048576); 
+false positive rate: 0.196540833
+m=10 seed=100 bm=eon
+
+occurrence 604417 (out of 1048576); 
+false positive rate: 0.576416969
+m=9 seed=100 bm=eon
+
+occurrence 949493 (out of 1048576); 
+false positive rate: 0.905507088
+m=8 seed=100 bm=eon
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+----------------------------
+seed = 100
+m=20 seed=100 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=equake
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=13 seed=100 bm=equake
+
+occurrence 7 (out of 1048576); 
+false positive rate: 0.000006676
+m=12 seed=100 bm=equake
+
+occurrence 103 (out of 1048576); 
+false positive rate: 0.000098228
+m=11 seed=100 bm=equake
+
+occurrence 1495 (out of 1048576); 
+false positive rate: 0.001425743
+m=10 seed=100 bm=equake
+
+occurrence 15644 (out of 1048576); 
+false positive rate: 0.014919281
+m=9 seed=100 bm=equake
+
+occurrence 91802 (out of 1048576); 
+false positive rate: 0.087549210
+m=8 seed=100 bm=equake
+
+occurrence 314817 (out of 1048576); 
+false positive rate: 0.300232887
+----------------------------
+seed = 100
+m=20 seed=100 bm=gcc
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=gcc
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=gcc
+
+occurrence 7 (out of 1048576); 
+false positive rate: 0.000006676
+m=17 seed=100 bm=gcc
+
+occurrence 67 (out of 1048576); 
+false positive rate: 0.000063896
+m=16 seed=100 bm=gcc
+
+occurrence 866 (out of 1048576); 
+false positive rate: 0.000825882
+m=15 seed=100 bm=gcc
+
+occurrence 8356 (out of 1048576); 
+false positive rate: 0.007968903
+m=14 seed=100 bm=gcc
+
+occurrence 48724 (out of 1048576); 
+false positive rate: 0.046466827
+m=13 seed=100 bm=gcc
+
+occurrence 217874 (out of 1048576); 
+false positive rate: 0.207780838
+m=12 seed=100 bm=gcc
+
+occurrence 604904 (out of 1048576); 
+false positive rate: 0.576881409
+m=11 seed=100 bm=gcc
+
+occurrence 946632 (out of 1048576); 
+false positive rate: 0.902778625
+m=10 seed=100 bm=gcc
+
+occurrence 1033574 (out of 1048576); 
+false positive rate: 0.985692978
+m=9 seed=100 bm=gcc
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+m=8 seed=100 bm=gcc
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+----------------------------
+seed = 100
+m=20 seed=100 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=100 bm=gzip
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=12 seed=100 bm=gzip
+
+occurrence 52 (out of 1048576); 
+false positive rate: 0.000049591
+m=11 seed=100 bm=gzip
+
+occurrence 836 (out of 1048576); 
+false positive rate: 0.000797272
+m=10 seed=100 bm=gzip
+
+occurrence 9465 (out of 1048576); 
+false positive rate: 0.009026527
+m=9 seed=100 bm=gzip
+
+occurrence 56278 (out of 1048576); 
+false positive rate: 0.053670883
+m=8 seed=100 bm=gzip
+
+occurrence 202735 (out of 1048576); 
+false positive rate: 0.193343163
+----------------------------
+seed = 100
+m=20 seed=100 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=100 bm=lucas
+
+occurrence 17 (out of 1048576); 
+false positive rate: 0.000016212
+m=12 seed=100 bm=lucas
+
+occurrence 348 (out of 1048576); 
+false positive rate: 0.000331879
+m=11 seed=100 bm=lucas
+
+occurrence 4736 (out of 1048576); 
+false positive rate: 0.004516602
+m=10 seed=100 bm=lucas
+
+occurrence 40759 (out of 1048576); 
+false positive rate: 0.038870811
+m=9 seed=100 bm=lucas
+
+occurrence 194640 (out of 1048576); 
+false positive rate: 0.185623169
+m=8 seed=100 bm=lucas
+
+occurrence 614940 (out of 1048576); 
+false positive rate: 0.586452484
+----------------------------
+seed = 100
+m=20 seed=100 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=100 bm=mcf
+
+occurrence 4 (out of 1048576); 
+false positive rate: 0.000003815
+m=12 seed=100 bm=mcf
+
+occurrence 81 (out of 1048576); 
+false positive rate: 0.000077248
+m=11 seed=100 bm=mcf
+
+occurrence 1261 (out of 1048576); 
+false positive rate: 0.001202583
+m=10 seed=100 bm=mcf
+
+occurrence 10550 (out of 1048576); 
+false positive rate: 0.010061264
+m=9 seed=100 bm=mcf
+
+occurrence 50008 (out of 1048576); 
+false positive rate: 0.047691345
+m=8 seed=100 bm=mcf
+
+occurrence 197330 (out of 1048576); 
+false positive rate: 0.188188553
+----------------------------
+seed = 100
+m=20 seed=100 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=mesa
+
+occurrence 3 (out of 1048576); 
+false positive rate: 0.000002861
+m=13 seed=100 bm=mesa
+
+occurrence 103 (out of 1048576); 
+false positive rate: 0.000098228
+m=12 seed=100 bm=mesa
+
+occurrence 2042 (out of 1048576); 
+false positive rate: 0.001947403
+m=11 seed=100 bm=mesa
+
+occurrence 17582 (out of 1048576); 
+false positive rate: 0.016767502
+m=10 seed=100 bm=mesa
+
+occurrence 95534 (out of 1048576); 
+false positive rate: 0.091108322
+m=9 seed=100 bm=mesa
+
+occurrence 355512 (out of 1048576); 
+false positive rate: 0.339042664
+m=8 seed=100 bm=mesa
+
+occurrence 853553 (out of 1048576); 
+false positive rate: 0.814011574
+----------------------------
+seed = 100
+m=20 seed=100 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=100 bm=mgrid
+
+occurrence 26 (out of 1048576); 
+false positive rate: 0.000024796
+m=12 seed=100 bm=mgrid
+
+occurrence 558 (out of 1048576); 
+false positive rate: 0.000532150
+m=11 seed=100 bm=mgrid
+
+occurrence 6747 (out of 1048576); 
+false positive rate: 0.006434441
+m=10 seed=100 bm=mgrid
+
+occurrence 46472 (out of 1048576); 
+false positive rate: 0.044319153
+m=9 seed=100 bm=mgrid
+
+occurrence 178883 (out of 1048576); 
+false positive rate: 0.170596123
+m=8 seed=100 bm=mgrid
+
+occurrence 459254 (out of 1048576); 
+false positive rate: 0.437978745
+----------------------------
+seed = 100
+m=20 seed=100 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=parser
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=15 seed=100 bm=parser
+
+occurrence 4 (out of 1048576); 
+false positive rate: 0.000003815
+m=14 seed=100 bm=parser
+
+occurrence 76 (out of 1048576); 
+false positive rate: 0.000072479
+m=13 seed=100 bm=parser
+
+occurrence 1203 (out of 1048576); 
+false positive rate: 0.001147270
+m=12 seed=100 bm=parser
+
+occurrence 9337 (out of 1048576); 
+false positive rate: 0.008904457
+m=11 seed=100 bm=parser
+
+occurrence 46520 (out of 1048576); 
+false positive rate: 0.044364929
+m=10 seed=100 bm=parser
+
+occurrence 224543 (out of 1048576); 
+false positive rate: 0.214140892
+m=9 seed=100 bm=parser
+
+occurrence 653640 (out of 1048576); 
+false positive rate: 0.623359680
+m=8 seed=100 bm=parser
+
+occurrence 921221 (out of 1048576); 
+false positive rate: 0.878544807
+----------------------------
+seed = 100
+m=20 seed=100 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=perl
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=14 seed=100 bm=perl
+
+occurrence 33 (out of 1048576); 
+false positive rate: 0.000031471
+m=13 seed=100 bm=perl
+
+occurrence 694 (out of 1048576); 
+false positive rate: 0.000661850
+m=12 seed=100 bm=perl
+
+occurrence 7123 (out of 1048576); 
+false positive rate: 0.006793022
+m=11 seed=100 bm=perl
+
+occurrence 37129 (out of 1048576); 
+false positive rate: 0.035408974
+m=10 seed=100 bm=perl
+
+occurrence 159007 (out of 1048576); 
+false positive rate: 0.151640892
+m=9 seed=100 bm=perl
+
+occurrence 480470 (out of 1048576); 
+false positive rate: 0.458211899
+m=8 seed=100 bm=perl
+
+occurrence 813012 (out of 1048576); 
+false positive rate: 0.775348663
+----------------------------
+seed = 100
+m=20 seed=100 bm=sixtrack
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=sixtrack
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=sixtrack
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=sixtrack
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=sixtrack
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=15 seed=100 bm=sixtrack
+
+occurrence 9 (out of 1048576); 
+false positive rate: 0.000008583
+m=14 seed=100 bm=sixtrack
+
+occurrence 162 (out of 1048576); 
+false positive rate: 0.000154495
+m=13 seed=100 bm=sixtrack
+
+occurrence 1499 (out of 1048576); 
+false positive rate: 0.001429558
+m=12 seed=100 bm=sixtrack
+
+occurrence 13464 (out of 1048576); 
+false positive rate: 0.012840271
+m=11 seed=100 bm=sixtrack
+
+occurrence 89706 (out of 1048576); 
+false positive rate: 0.085550308
+m=10 seed=100 bm=sixtrack
+
+occurrence 337495 (out of 1048576); 
+false positive rate: 0.321860313
+m=9 seed=100 bm=sixtrack
+
+occurrence 753827 (out of 1048576); 
+false positive rate: 0.718905449
+m=8 seed=100 bm=sixtrack
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+----------------------------
+seed = 100
+m=20 seed=100 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=swim
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=13 seed=100 bm=swim
+
+occurrence 43 (out of 1048576); 
+false positive rate: 0.000041008
+m=12 seed=100 bm=swim
+
+occurrence 827 (out of 1048576); 
+false positive rate: 0.000788689
+m=11 seed=100 bm=swim
+
+occurrence 8594 (out of 1048576); 
+false positive rate: 0.008195877
+m=10 seed=100 bm=swim
+
+occurrence 54123 (out of 1048576); 
+false positive rate: 0.051615715
+m=9 seed=100 bm=swim
+
+occurrence 211713 (out of 1048576); 
+false positive rate: 0.201905251
+m=8 seed=100 bm=swim
+
+occurrence 588786 (out of 1048576); 
+false positive rate: 0.561510086
+----------------------------
+seed = 100
+m=20 seed=100 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=twolf
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=14 seed=100 bm=twolf
+
+occurrence 33 (out of 1048576); 
+false positive rate: 0.000031471
+m=13 seed=100 bm=twolf
+
+occurrence 655 (out of 1048576); 
+false positive rate: 0.000624657
+m=12 seed=100 bm=twolf
+
+occurrence 5236 (out of 1048576); 
+false positive rate: 0.004993439
+m=11 seed=100 bm=twolf
+
+occurrence 27923 (out of 1048576); 
+false positive rate: 0.026629448
+m=10 seed=100 bm=twolf
+
+occurrence 111597 (out of 1048576); 
+false positive rate: 0.106427193
+m=9 seed=100 bm=twolf
+
+occurrence 359110 (out of 1048576); 
+false positive rate: 0.342473984
+m=8 seed=100 bm=twolf
+
+occurrence 783031 (out of 1048576); 
+false positive rate: 0.746756554
+----------------------------
+seed = 100
+m=20 seed=100 bm=vortex
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=vortex
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=vortex
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=17 seed=100 bm=vortex
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=16 seed=100 bm=vortex
+
+occurrence 16 (out of 1048576); 
+false positive rate: 0.000015259
+m=15 seed=100 bm=vortex
+
+occurrence 337 (out of 1048576); 
+false positive rate: 0.000321388
+m=14 seed=100 bm=vortex
+
+occurrence 3542 (out of 1048576); 
+false positive rate: 0.003377914
+m=13 seed=100 bm=vortex
+
+occurrence 25054 (out of 1048576); 
+false positive rate: 0.023893356
+m=12 seed=100 bm=vortex
+
+occurrence 108979 (out of 1048576); 
+false positive rate: 0.103930473
+m=11 seed=100 bm=vortex
+
+occurrence 355126 (out of 1048576); 
+false positive rate: 0.338674545
+m=10 seed=100 bm=vortex
+
+occurrence 732591 (out of 1048576); 
+false positive rate: 0.698653221
+m=9 seed=100 bm=vortex
+
+occurrence 953197 (out of 1048576); 
+false positive rate: 0.909039497
+m=8 seed=100 bm=vortex
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+----------------------------
+seed = 100
+m=20 seed=100 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=100 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=12 seed=100 bm=vpr
+
+occurrence 41 (out of 1048576); 
+false positive rate: 0.000039101
+m=11 seed=100 bm=vpr
+
+occurrence 729 (out of 1048576); 
+false positive rate: 0.000695229
+m=10 seed=100 bm=vpr
+
+occurrence 7082 (out of 1048576); 
+false positive rate: 0.006753922
+m=9 seed=100 bm=vpr
+
+occurrence 30041 (out of 1048576); 
+false positive rate: 0.028649330
+m=8 seed=100 bm=vpr
+
+occurrence 102275 (out of 1048576); 
+false positive rate: 0.097537041
+----------------------------
+seed = 100
+m=20 seed=100 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=100 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=100 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=100 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=100 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=100 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=100 bm=wup
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=13 seed=100 bm=wup
+
+occurrence 81 (out of 1048576); 
+false positive rate: 0.000077248
+m=12 seed=100 bm=wup
+
+occurrence 1608 (out of 1048576); 
+false positive rate: 0.001533508
+m=11 seed=100 bm=wup
+
+occurrence 14853 (out of 1048576); 
+false positive rate: 0.014164925
+m=10 seed=100 bm=wup
+
+occurrence 80119 (out of 1048576); 
+false positive rate: 0.076407433
+m=9 seed=100 bm=wup
+
+occurrence 334015 (out of 1048576); 
+false positive rate: 0.318541527
+m=8 seed=100 bm=wup
+
+occurrence 640043 (out of 1048576); 
+false positive rate: 0.610392570
+----------------------------
+seed = 200
+m=20 seed=200 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=ammp
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=ammp
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=13 seed=200 bm=ammp
+
+occurrence 23 (out of 1048576); 
+false positive rate: 0.000021935
+m=12 seed=200 bm=ammp
+
+occurrence 483 (out of 1048576); 
+false positive rate: 0.000460625
+m=11 seed=200 bm=ammp
+
+occurrence 5497 (out of 1048576); 
+false positive rate: 0.005242348
+m=10 seed=200 bm=ammp
+
+occurrence 32645 (out of 1048576); 
+false positive rate: 0.031132698
+m=9 seed=200 bm=ammp
+
+occurrence 152541 (out of 1048576); 
+false positive rate: 0.145474434
+m=8 seed=200 bm=ammp
+
+occurrence 454639 (out of 1048576); 
+false positive rate: 0.433577538
+----------------------------
+seed = 200
+m=20 seed=200 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=applu
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=applu
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=13 seed=200 bm=applu
+
+occurrence 37 (out of 1048576); 
+false positive rate: 0.000035286
+m=12 seed=200 bm=applu
+
+occurrence 627 (out of 1048576); 
+false positive rate: 0.000597954
+m=11 seed=200 bm=applu
+
+occurrence 6567 (out of 1048576); 
+false positive rate: 0.006262779
+m=10 seed=200 bm=applu
+
+occurrence 44853 (out of 1048576); 
+false positive rate: 0.042775154
+m=9 seed=200 bm=applu
+
+occurrence 201258 (out of 1048576); 
+false positive rate: 0.191934586
+m=8 seed=200 bm=applu
+
+occurrence 563988 (out of 1048576); 
+false positive rate: 0.537860870
+----------------------------
+seed = 200
+m=20 seed=200 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=art
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=200 bm=art
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=12 seed=200 bm=art
+
+occurrence 22 (out of 1048576); 
+false positive rate: 0.000020981
+m=11 seed=200 bm=art
+
+occurrence 496 (out of 1048576); 
+false positive rate: 0.000473022
+m=10 seed=200 bm=art
+
+occurrence 7983 (out of 1048576); 
+false positive rate: 0.007613182
+m=9 seed=200 bm=art
+
+occurrence 55361 (out of 1048576); 
+false positive rate: 0.052796364
+m=8 seed=200 bm=art
+
+occurrence 162602 (out of 1048576); 
+false positive rate: 0.155069351
+----------------------------
+seed = 200
+m=20 seed=200 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=bzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=200 bm=bzip
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=12 seed=200 bm=bzip
+
+occurrence 62 (out of 1048576); 
+false positive rate: 0.000059128
+m=11 seed=200 bm=bzip
+
+occurrence 887 (out of 1048576); 
+false positive rate: 0.000845909
+m=10 seed=200 bm=bzip
+
+occurrence 8864 (out of 1048576); 
+false positive rate: 0.008453369
+m=9 seed=200 bm=bzip
+
+occurrence 45618 (out of 1048576); 
+false positive rate: 0.043504715
+m=8 seed=200 bm=bzip
+
+occurrence 140021 (out of 1048576); 
+false positive rate: 0.133534431
+----------------------------
+m=20 seed=200 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=crafty
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=crafty
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=14 seed=200 bm=crafty
+
+occurrence 26 (out of 1048576); 
+false positive rate: 0.000024796
+m=13 seed=200 bm=crafty
+
+occurrence 426 (out of 1048576); 
+false positive rate: 0.000406265
+m=12 seed=200 bm=crafty
+
+occurrence 4912 (out of 1048576); 
+false positive rate: 0.004684448
+m=11 seed=200 bm=crafty
+
+occurrence 34187 (out of 1048576); 
+false positive rate: 0.032603264
+m=10 seed=200 bm=crafty
+
+occurrence 149251 (out of 1048576); 
+false positive rate: 0.142336845
+m=9 seed=200 bm=crafty
+
+occurrence 511187 (out of 1048576); 
+false positive rate: 0.487505913
+m=8 seed=200 bm=crafty
+
+occurrence 825899 (out of 1048576); 
+false positive rate: 0.787638664
+----------------------------
+seed = 200
+m=20 seed=200 bm=eon
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=eon
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=eon
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=eon
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=eon
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=15 seed=200 bm=eon
+
+occurrence 50 (out of 1048576); 
+false positive rate: 0.000047684
+m=14 seed=200 bm=eon
+
+occurrence 766 (out of 1048576); 
+false positive rate: 0.000730515
+m=13 seed=200 bm=eon
+
+occurrence 8252 (out of 1048576); 
+false positive rate: 0.007869720
+m=12 seed=200 bm=eon
+
+occurrence 46832 (out of 1048576); 
+false positive rate: 0.044662476
+m=11 seed=200 bm=eon
+
+occurrence 205772 (out of 1048576); 
+false positive rate: 0.196239471
+m=10 seed=200 bm=eon
+
+occurrence 604082 (out of 1048576); 
+false positive rate: 0.576097488
+m=9 seed=200 bm=eon
+
+occurrence 949491 (out of 1048576); 
+false positive rate: 0.905505180
+m=8 seed=200 bm=eon
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+----------------------------
+seed = 200
+m=20 seed=200 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=equake
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=200 bm=equake
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=12 seed=200 bm=equake
+
+occurrence 117 (out of 1048576); 
+false positive rate: 0.000111580
+m=11 seed=200 bm=equake
+
+occurrence 1499 (out of 1048576); 
+false positive rate: 0.001429558
+m=10 seed=200 bm=equake
+
+occurrence 15701 (out of 1048576); 
+false positive rate: 0.014973640
+m=9 seed=200 bm=equake
+
+occurrence 91671 (out of 1048576); 
+false positive rate: 0.087424278
+m=8 seed=200 bm=equake
+
+occurrence 314728 (out of 1048576); 
+false positive rate: 0.300148010
+----------------------------
+seed = 200
+m=20 seed=200 bm=gcc
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=gcc
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=18 seed=200 bm=gcc
+
+occurrence 9 (out of 1048576); 
+false positive rate: 0.000008583
+m=17 seed=200 bm=gcc
+
+occurrence 93 (out of 1048576); 
+false positive rate: 0.000088692
+m=16 seed=200 bm=gcc
+
+occurrence 857 (out of 1048576); 
+false positive rate: 0.000817299
+m=15 seed=200 bm=gcc
+
+occurrence 8481 (out of 1048576); 
+false positive rate: 0.008088112
+m=14 seed=200 bm=gcc
+
+occurrence 49241 (out of 1048576); 
+false positive rate: 0.046959877
+m=13 seed=200 bm=gcc
+
+occurrence 218000 (out of 1048576); 
+false positive rate: 0.207901001
+m=12 seed=200 bm=gcc
+
+occurrence 603225 (out of 1048576); 
+false positive rate: 0.575280190
+m=11 seed=200 bm=gcc
+
+occurrence 946319 (out of 1048576); 
+false positive rate: 0.902480125
+m=10 seed=200 bm=gcc
+
+occurrence 1033518 (out of 1048576); 
+false positive rate: 0.985639572
+m=9 seed=200 bm=gcc
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+m=8 seed=200 bm=gcc
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+----------------------------
+seed = 200
+m=20 seed=200 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=gzip
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=200 bm=gzip
+
+occurrence 4 (out of 1048576); 
+false positive rate: 0.000003815
+m=12 seed=200 bm=gzip
+
+occurrence 62 (out of 1048576); 
+false positive rate: 0.000059128
+m=11 seed=200 bm=gzip
+
+occurrence 834 (out of 1048576); 
+false positive rate: 0.000795364
+m=10 seed=200 bm=gzip
+
+occurrence 9369 (out of 1048576); 
+false positive rate: 0.008934975
+m=9 seed=200 bm=gzip
+
+occurrence 56136 (out of 1048576); 
+false positive rate: 0.053535461
+m=8 seed=200 bm=gzip
+
+occurrence 202856 (out of 1048576); 
+false positive rate: 0.193458557
+----------------------------
+seed = 200
+m=20 seed=200 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=lucas
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=200 bm=lucas
+
+occurrence 28 (out of 1048576); 
+false positive rate: 0.000026703
+m=12 seed=200 bm=lucas
+
+occurrence 373 (out of 1048576); 
+false positive rate: 0.000355721
+m=11 seed=200 bm=lucas
+
+occurrence 4883 (out of 1048576); 
+false positive rate: 0.004656792
+m=10 seed=200 bm=lucas
+
+occurrence 40877 (out of 1048576); 
+false positive rate: 0.038983345
+m=9 seed=200 bm=lucas
+
+occurrence 194280 (out of 1048576); 
+false positive rate: 0.185279846
+m=8 seed=200 bm=lucas
+
+occurrence 614293 (out of 1048576); 
+false positive rate: 0.585835457
+----------------------------
+seed = 200
+m=20 seed=200 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=mcf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=mcf
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=13 seed=200 bm=mcf
+
+occurrence 7 (out of 1048576); 
+false positive rate: 0.000006676
+m=12 seed=200 bm=mcf
+
+occurrence 98 (out of 1048576); 
+false positive rate: 0.000093460
+m=11 seed=200 bm=mcf
+
+occurrence 1185 (out of 1048576); 
+false positive rate: 0.001130104
+m=10 seed=200 bm=mcf
+
+occurrence 10620 (out of 1048576); 
+false positive rate: 0.010128021
+m=9 seed=200 bm=mcf
+
+occurrence 50103 (out of 1048576); 
+false positive rate: 0.047781944
+m=8 seed=200 bm=mcf
+
+occurrence 197370 (out of 1048576); 
+false positive rate: 0.188226700
+----------------------------
+seed = 200
+m=20 seed=200 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=mesa
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=mesa
+
+occurrence 3 (out of 1048576); 
+false positive rate: 0.000002861
+m=13 seed=200 bm=mesa
+
+occurrence 104 (out of 1048576); 
+false positive rate: 0.000099182
+m=12 seed=200 bm=mesa
+
+occurrence 2028 (out of 1048576); 
+false positive rate: 0.001934052
+m=11 seed=200 bm=mesa
+
+occurrence 17358 (out of 1048576); 
+false positive rate: 0.016553879
+m=10 seed=200 bm=mesa
+
+occurrence 95375 (out of 1048576); 
+false positive rate: 0.090956688
+m=9 seed=200 bm=mesa
+
+occurrence 354878 (out of 1048576); 
+false positive rate: 0.338438034
+m=8 seed=200 bm=mesa
+
+occurrence 853548 (out of 1048576); 
+false positive rate: 0.814006805
+----------------------------
+seed = 200
+m=20 seed=200 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=mgrid
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=mgrid
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=13 seed=200 bm=mgrid
+
+occurrence 43 (out of 1048576); 
+false positive rate: 0.000041008
+m=12 seed=200 bm=mgrid
+
+occurrence 538 (out of 1048576); 
+false positive rate: 0.000513077
+m=11 seed=200 bm=mgrid
+
+occurrence 6632 (out of 1048576); 
+false positive rate: 0.006324768
+m=10 seed=200 bm=mgrid
+
+occurrence 46826 (out of 1048576); 
+false positive rate: 0.044656754
+m=9 seed=200 bm=mgrid
+
+occurrence 179102 (out of 1048576); 
+false positive rate: 0.170804977
+m=8 seed=200 bm=mgrid
+
+occurrence 459780 (out of 1048576); 
+false positive rate: 0.438480377
+----------------------------
+seed = 200
+m=20 seed=200 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=parser
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=parser
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=14 seed=200 bm=parser
+
+occurrence 52 (out of 1048576); 
+false positive rate: 0.000049591
+m=13 seed=200 bm=parser
+
+occurrence 1128 (out of 1048576); 
+false positive rate: 0.001075745
+m=12 seed=200 bm=parser
+
+occurrence 9297 (out of 1048576); 
+false positive rate: 0.008866310
+m=11 seed=200 bm=parser
+
+occurrence 46381 (out of 1048576); 
+false positive rate: 0.044232368
+m=10 seed=200 bm=parser
+
+occurrence 224072 (out of 1048576); 
+false positive rate: 0.213691711
+m=9 seed=200 bm=parser
+
+occurrence 653132 (out of 1048576); 
+false positive rate: 0.622875214
+m=8 seed=200 bm=parser
+
+occurrence 920952 (out of 1048576); 
+false positive rate: 0.878288269
+----------------------------
+seed = 200
+m=20 seed=200 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=perl
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=perl
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=14 seed=200 bm=perl
+
+occurrence 29 (out of 1048576); 
+false positive rate: 0.000027657
+m=13 seed=200 bm=perl
+
+occurrence 648 (out of 1048576); 
+false positive rate: 0.000617981
+m=12 seed=200 bm=perl
+
+occurrence 7012 (out of 1048576); 
+false positive rate: 0.006687164
+m=11 seed=200 bm=perl
+
+occurrence 36602 (out of 1048576); 
+false positive rate: 0.034906387
+m=10 seed=200 bm=perl
+
+occurrence 159073 (out of 1048576); 
+false positive rate: 0.151703835
+m=9 seed=200 bm=perl
+
+occurrence 480347 (out of 1048576); 
+false positive rate: 0.458094597
+m=8 seed=200 bm=perl
+
+occurrence 813353 (out of 1048576); 
+false positive rate: 0.775673866
+----------------------------
+seed = 200
+m=20 seed=200 bm=sixtrack
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=sixtrack
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=sixtrack
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=sixtrack
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=sixtrack
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=15 seed=200 bm=sixtrack
+
+occurrence 12 (out of 1048576); 
+false positive rate: 0.000011444
+m=14 seed=200 bm=sixtrack
+
+occurrence 163 (out of 1048576); 
+false positive rate: 0.000155449
+m=13 seed=200 bm=sixtrack
+
+occurrence 1461 (out of 1048576); 
+false positive rate: 0.001393318
+m=12 seed=200 bm=sixtrack
+
+occurrence 13313 (out of 1048576); 
+false positive rate: 0.012696266
+m=11 seed=200 bm=sixtrack
+
+occurrence 89720 (out of 1048576); 
+false positive rate: 0.085563660
+m=10 seed=200 bm=sixtrack
+
+occurrence 337311 (out of 1048576); 
+false positive rate: 0.321684837
+m=9 seed=200 bm=sixtrack
+
+occurrence 753717 (out of 1048576); 
+false positive rate: 0.718800545
+m=8 seed=200 bm=sixtrack
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+----------------------------
+seed = 200
+m=20 seed=200 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=swim
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=swim
+
+occurrence 5 (out of 1048576); 
+false positive rate: 0.000004768
+m=13 seed=200 bm=swim
+
+occurrence 55 (out of 1048576); 
+false positive rate: 0.000052452
+m=12 seed=200 bm=swim
+
+occurrence 809 (out of 1048576); 
+false positive rate: 0.000771523
+m=11 seed=200 bm=swim
+
+occurrence 8435 (out of 1048576); 
+false positive rate: 0.008044243
+m=10 seed=200 bm=swim
+
+occurrence 53274 (out of 1048576); 
+false positive rate: 0.050806046
+m=9 seed=200 bm=swim
+
+occurrence 211014 (out of 1048576); 
+false positive rate: 0.201238632
+m=8 seed=200 bm=swim
+
+occurrence 588471 (out of 1048576); 
+false positive rate: 0.561209679
+----------------------------
+seed = 200
+m=20 seed=200 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=twolf
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=twolf
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=14 seed=200 bm=twolf
+
+occurrence 44 (out of 1048576); 
+false positive rate: 0.000041962
+m=13 seed=200 bm=twolf
+
+occurrence 659 (out of 1048576); 
+false positive rate: 0.000628471
+m=12 seed=200 bm=twolf
+
+occurrence 5220 (out of 1048576); 
+false positive rate: 0.004978180
+m=11 seed=200 bm=twolf
+
+occurrence 27869 (out of 1048576); 
+false positive rate: 0.026577950
+m=10 seed=200 bm=twolf
+
+occurrence 111392 (out of 1048576); 
+false positive rate: 0.106231689
+m=9 seed=200 bm=twolf
+
+occurrence 359761 (out of 1048576); 
+false positive rate: 0.343094826
+m=8 seed=200 bm=twolf
+
+occurrence 783868 (out of 1048576); 
+false positive rate: 0.747554779
+----------------------------
+seed = 200
+m=20 seed=200 bm=vortex
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=vortex
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=vortex
+
+occurrence 1 (out of 1048576); 
+false positive rate: 0.000000954
+m=17 seed=200 bm=vortex
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=16 seed=200 bm=vortex
+
+occurrence 10 (out of 1048576); 
+false positive rate: 0.000009537
+m=15 seed=200 bm=vortex
+
+occurrence 301 (out of 1048576); 
+false positive rate: 0.000287056
+m=14 seed=200 bm=vortex
+
+occurrence 3461 (out of 1048576); 
+false positive rate: 0.003300667
+m=13 seed=200 bm=vortex
+
+occurrence 25372 (out of 1048576); 
+false positive rate: 0.024196625
+m=12 seed=200 bm=vortex
+
+occurrence 109153 (out of 1048576); 
+false positive rate: 0.104096413
+m=11 seed=200 bm=vortex
+
+occurrence 354887 (out of 1048576); 
+false positive rate: 0.338446617
+m=10 seed=200 bm=vortex
+
+occurrence 732602 (out of 1048576); 
+false positive rate: 0.698663712
+m=9 seed=200 bm=vortex
+
+occurrence 952918 (out of 1048576); 
+false positive rate: 0.908773422
+m=8 seed=200 bm=vortex
+
+occurrence 1048576 (out of 1048576); 
+false positive rate: 1.000000000
+----------------------------
+seed = 200
+m=20 seed=200 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=13 seed=200 bm=vpr
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=12 seed=200 bm=vpr
+
+occurrence 52 (out of 1048576); 
+false positive rate: 0.000049591
+m=11 seed=200 bm=vpr
+
+occurrence 747 (out of 1048576); 
+false positive rate: 0.000712395
+m=10 seed=200 bm=vpr
+
+occurrence 7023 (out of 1048576); 
+false positive rate: 0.006697655
+m=9 seed=200 bm=vpr
+
+occurrence 30089 (out of 1048576); 
+false positive rate: 0.028695107
+m=8 seed=200 bm=vpr
+
+occurrence 101581 (out of 1048576); 
+false positive rate: 0.096875191
+----------------------------
+seed = 200
+m=20 seed=200 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=19 seed=200 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=18 seed=200 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=17 seed=200 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=16 seed=200 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=15 seed=200 bm=wup
+
+occurrence 0 (out of 1048576); 
+false positive rate: 0.000000000
+m=14 seed=200 bm=wup
+
+occurrence 2 (out of 1048576); 
+false positive rate: 0.000001907
+m=13 seed=200 bm=wup
+
+occurrence 105 (out of 1048576); 
+false positive rate: 0.000100136
+m=12 seed=200 bm=wup
+
+occurrence 1675 (out of 1048576); 
+false positive rate: 0.001597404
+m=11 seed=200 bm=wup
+
+occurrence 14841 (out of 1048576); 
+false positive rate: 0.014153481
+m=10 seed=200 bm=wup
+
+occurrence 79899 (out of 1048576); 
+false positive rate: 0.076197624
+m=9 seed=200 bm=wup
+
+occurrence 333790 (out of 1048576); 
+false positive rate: 0.318326950
+m=8 seed=200 bm=wup
+
+occurrence 639876 (out of 1048576); 
+false positive rate: 0.610233307

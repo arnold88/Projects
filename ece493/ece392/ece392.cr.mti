@@ -1,0 +1,29 @@
+D:/Homework/ece392/md5test.v {1 {vlog -work work D:/Homework/ece392/md5test.v
+Model Technology ModelSim SE vlog 6.0b Compiler 2004.12 Dec  1 2004
+-- Compiling module md5testbench
+
+Top level modules:
+	md5testbench
+
+} {} {}} D:/Homework/ece392/md5v12.v {1 {vlog -work work D:/Homework/ece392/md5v12.v
+Model Technology ModelSim SE vlog 6.0b Compiler 2004.12 Dec  1 2004
+-- Compiling module md5
+
+Top level modules:
+	md5
+
+} {} {}} {C:/Documents and Settings/Phucker/Desktop/md5test.v} {1 {vlog -work work {C:/Documents and Settings/Phucker/Desktop/md5test.v}
+Model Technology ModelSim SE vlog 6.0b Compiler 2004.12 Dec  1 2004
+-- Compiling module md5testbench
+
+Top level modules:
+	md5testbench
+
+} {} {}} {C:/Documents and Settings/Phucker/Desktop/md5new.v} {1 {vlog -work work {C:/Documents and Settings/Phucker/Desktop/md5new.v}
+Model Technology ModelSim SE vlog 6.0b Compiler 2004.12 Dec  1 2004
+-- Compiling module md5
+
+Top level modules:
+	md5
+
+} {} {}}

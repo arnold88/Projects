@@ -1,0 +1,43 @@
+
+target_library = tcbn90ghpwc.db
+symbol_library = tcbn90ghp.sdb
+link_library = "*" + target_library
+
+
+read_file tcbn90ghp.sdb
+read_file tcbn90ghpwc.db
+
+
+
+analyze -format verilog ram_sp_sr_sw.v
+read_file -format verilog ram_sp_sr_sw.v
+
+
+
+set_operating_conditions WCCOM
+set_load 3.0 data_out
+set_drive 0 clk
+
+
+create_clock clk  -period 10
+set_input_delay -max 2.0 -clk clk {cs,we,oe}
+set_input_delay -max 2.0 -clock clk data
+set_output_delay -max 2.0 -clock clk data_out
+set_max_area 50000
+set_max_capacitance 5000
+set_multicycle_path 0 -from data -to data_out
+
+
+compile
+
+report_clock
+report_design
+report_constraint
+report_timing_requirements
+report_timing
+
+
+
+
+
+

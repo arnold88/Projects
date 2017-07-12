@@ -1,0 +1,349 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : clocks
+Design : sha1v12
+Version: W-2004.12-SP2
+Date   : Mon Aug  7 22:09:55 2006
+****************************************
+
+Attributes:
+    d - dont_touch_network
+    f - fix_hold
+    p - propagated_clock
+    G - generated_clock
+
+Clock          Period   Waveform            Attrs     Sources
+--------------------------------------------------------------------------------
+clk_i           10.00   {0 5}                         {clk_i}
+--------------------------------------------------------------------------------
+1
+
+ eport_design
+****************************************
+Report : design
+Design : sha1v12
+Version: W-2004.12-SP2
+Date   : Mon Aug  7 22:09:55 2006
+****************************************
+
+Design allows ideal nets on clock nets.
+
+Library(s) Used:
+
+    tcbn90ghpwc (File: /home/alee/tcbn90ghpwc.db)
+
+Local Link Library:
+
+    {tcbn90ghpwc.db}
+
+Flip-Flop Types:
+
+    No flip-flop types specified.
+
+Latch Types:
+
+    No latch types specified.
+
+Operating Conditions:
+
+
+    Operating Condition Name : WCCOM
+    Library : tcbn90ghpwc
+    Process :   1.00
+    Temperature : 125.00
+    Voltage :   0.90
+    Interconnect Model : balanced_tree
+
+Wire Loading Model:
+
+    Selected automatically from the total cell area.
+
+Name           :   ZeroWireload
+Location       :   tcbn90ghpwc
+Resistance     :   1e-05
+Capacitance    :   1
+Area           :   0
+Slope          :   0
+Fanout   Length   Points Average Cap Std Deviation
+--------------------------------------------------------------
+     1     0.00
+     2     0.00
+     3     0.00
+     4     0.00
+     5     0.00
+     6     0.00
+     7     0.00
+     8     0.00
+     9     0.00
+    10     0.00
+    11     0.00
+    12     0.00
+    13     0.00
+    14     0.00
+    15     0.00
+    16     0.00
+    17     0.00
+    18     0.00
+    19     0.00
+    20     0.00
+
+
+
+Wire Loading Model Mode: segmented.
+
+Timing Ranges:
+
+    No timing ranges specified.
+
+Pin Input Delays:
+
+    None specified.
+
+Pin Output Delays:
+
+    None specified.
+
+Disabled Timing Arcs:
+
+    No arcs disabled.
+
+Required Licenses:
+
+    None Required
+
+Design Parameters:
+
+    None specified.
+1
+
+ eport_constraint
+****************************************
+Report : constraint
+Design : sha1v12
+Version: W-2004.12-SP2
+Date   : Mon Aug  7 22:09:55 2006
+****************************************
+
+
+                                                   Weighted
+    Group (max_delay/setup)      Cost     Weight     Cost
+    -----------------------------------------------------
+    clk_i                        0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    max_delay/setup                                  0.00
+
+                              Total Neg  Critical
+    Group (critical_range)      Slack    Endpoints   Cost
+    -----------------------------------------------------
+    clk_i                        0.00         0      0.00
+    default                      0.00         0      0.00
+    -----------------------------------------------------
+    critical_range                                   0.00
+
+                                                   Weighted
+    Group (min_delay/hold)       Cost     Weight     Cost
+    -----------------------------------------------------
+    clk_i (no fix_hold)          0.00      1.00      0.00
+    default                      0.00      1.00      0.00
+    -----------------------------------------------------
+    min_delay/hold                                   0.00
+
+
+    Constraint                                       Cost
+    -----------------------------------------------------
+    max_transition                                   0.00 (MET)
+    max_capacitance                                 26.21 (VIOLATED)
+    max_delay/setup                                  0.00 (MET)
+    critical_range                                   0.00 (MET)
+    max_area                                         0.00 (MET)
+
+
+1
+
+ eport_timing_requirements
+****************************************
+Report : timing_requirements
+        -attributes
+Design : sha1v12
+Version: W-2004.12-SP2
+Date   : Mon Aug  7 22:09:55 2006
+****************************************
+
+Description                            Setup               Hold
+--------------------------------------------------------------------------------
+TIMING EXCEPTION                       cycles=0            cycles=0
+        -from    { text_in[0]\
+                   text_in[10]\
+                   text_in[11]\
+                   text_in[12]\
+                   text_in[13]\
+                   text_in[14]\
+                   text_in[15]\
+                   text_in[16]\
+                   text_in[17]\
+                   text_in[18]\
+                   text_in[19]\
+                   text_in[1]\
+                   text_in[20]\
+                   text_in[21]\
+                   text_in[22]\
+                   text_in[23]\
+                   text_in[24]\
+                   text_in[25]\
+                   text_in[26]\
+                   text_in[27]\
+                   text_in[28]\
+                   text_in[29]\
+                   text_in[2]\
+                   text_in[30]\
+                   text_in[31]\
+                   text_in[3]\
+                   text_in[4]\
+                   text_in[5]\
+                   text_in[6]\
+                   text_in[7]\
+                   text_in[8]\
+                   text_in[9] }\
+        -to      { text_out[0]\
+                   text_out[10]\
+                   text_out[11]\
+                   text_out[12]\
+                   text_out[13]\
+                   text_out[14]\
+                   text_out[15]\
+                   text_out[16]\
+                   text_out[17]\
+                   text_out[18]\
+                   text_out[19]\
+                   text_out[1]\
+                   text_out[20]\
+                   text_out[21]\
+                   text_out[22]\
+                   text_out[23]\
+                   text_out[24]\
+                   text_out[25]\
+                   text_out[26]\
+                   text_out[27]\
+                   text_out[28]\
+                   text_out[29]\
+                   text_out[2]\
+                   text_out[30]\
+                   text_out[31]\
+                   text_out[3]\
+                   text_out[4]\
+                   text_out[5]\
+                   text_out[6]\
+                   text_out[7]\
+                   text_out[8]\
+                   text_out[9] }
+
+1
+
+ eport_timing
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : sha1v12
+Version: W-2004.12-SP2
+Date   : Mon Aug  7 22:09:56 2006
+****************************************
+
+Operating Conditions: WCCOM   Library: tcbn90ghpwc
+Wire Load Model Mode: segmented
+
+  Startpoint: round_reg[3]
+              (rising edge-triggered flip-flop clocked by clk_i)
+  Endpoint: A_reg[31] (rising edge-triggered flip-flop clocked by clk_i)
+  Path Group: clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  sha1v12            ZeroWireload          tcbn90ghpwc
+  sha1v12_DW01_inc_7_0
+                     ZeroWireload          tcbn90ghpwc
+  sha1v12_DW01_add_32_0
+                     ZeroWireload          tcbn90ghpwc
+  sha1v12_DW01_add_32_2
+                     ZeroWireload          tcbn90ghpwc
+  sha1v12_DW01_add_32_3
+                     ZeroWireload          tcbn90ghpwc
+  sha1v12_DW01_add_32_4
+                     ZeroWireload          tcbn90ghpwc
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk_i (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  round_reg[3]/CP (DFKCNQD1)                              0.00       0.00 r
+  round_reg[3]/Q (DFKCNQD1)                               0.25       0.25 f
+  U1938/ZN (INVD1)                                        0.08       0.34 r
+  U1765/ZN (AOI21D1)                                      0.05       0.39 f
+  U1763/ZN (NR2D1)                                        0.06       0.44 r
+  U1762/Z (BUFFD2)                                        0.38       0.83 r
+  U1741/ZN (INVD1)                                        0.13       0.95 f
+  U1761/ZN (MOAI22D1)                                     0.31       1.27 f
+  U262/Z (AO33D1)                                         0.24       1.51 f
+  U1891/Z (AO221D0)                                       0.30       1.81 f
+  add_3_root_add_75_4/B[0] (sha1v12_DW01_add_32_0)        0.00       1.81 f
+  add_3_root_add_75_4/U4/Z (AN2D0)                        0.10       1.91 f
+  add_3_root_add_75_4/U1_1/CO (FA1D0)                     0.13       2.03 f
+  add_3_root_add_75_4/U1_2/CO (FA1D0)                     0.13       2.16 f
+  add_3_root_add_75_4/U1_3/CO (FA1D0)                     0.13       2.29 f
+  add_3_root_add_75_4/U1_4/CO (FA1D0)                     0.13       2.42 f
+  add_3_root_add_75_4/U1_5/CO (FA1D0)                     0.13       2.55 f
+  add_3_root_add_75_4/U1_6/CO (FA1D0)                     0.13       2.68 f
+  add_3_root_add_75_4/U1_7/CO (FA1D0)                     0.13       2.81 f
+  add_3_root_add_75_4/U1_8/CO (FA1D0)                     0.13       2.95 f
+  add_3_root_add_75_4/U1_9/CO (FA1D0)                     0.13       3.08 f
+  add_3_root_add_75_4/U1_10/CO (FA1D0)                    0.13       3.21 f
+  add_3_root_add_75_4/U1_11/S (FA1D0)                     0.17       3.38 r
+  add_3_root_add_75_4/SUM[11] (sha1v12_DW01_add_32_0)     0.00       3.38 r
+  add_1_root_add_75_4/B[11] (sha1v12_DW01_add_32_2)       0.00       3.38 r
+  add_1_root_add_75_4/U1_11/S (FA1D0)                     0.25       3.63 f
+  add_1_root_add_75_4/SUM[11] (sha1v12_DW01_add_32_2)     0.00       3.63 f
+  add_0_root_add_75_4/B[11] (sha1v12_DW01_add_32_3)       0.00       3.63 f
+  add_0_root_add_75_4/U1_11/CO (FA1D0)                    0.23       3.85 f
+  add_0_root_add_75_4/U1_12/CO (FA1D0)                    0.13       3.99 f
+  add_0_root_add_75_4/U1_13/CO (FA1D0)                    0.13       4.12 f
+  add_0_root_add_75_4/U1_14/CO (FA1D0)                    0.13       4.25 f
+  add_0_root_add_75_4/U1_15/CO (FA1D0)                    0.13       4.38 f
+  add_0_root_add_75_4/U1_16/CO (FA1D0)                    0.13       4.51 f
+  add_0_root_add_75_4/U1_17/CO (FA1D0)                    0.13       4.64 f
+  add_0_root_add_75_4/U1_18/CO (FA1D0)                    0.13       4.77 f
+  add_0_root_add_75_4/U1_19/CO (FA1D0)                    0.13       4.90 f
+  add_0_root_add_75_4/U1_20/CO (FA1D0)                    0.13       5.03 f
+  add_0_root_add_75_4/U1_21/CO (FA1D0)                    0.13       5.16 f
+  add_0_root_add_75_4/U1_22/CO (FA1D0)                    0.13       5.29 f
+  add_0_root_add_75_4/U1_23/CO (FA1D0)                    0.13       5.42 f
+  add_0_root_add_75_4/U1_24/CO (FA1D0)                    0.13       5.55 f
+  add_0_root_add_75_4/U1_25/CO (FA1D0)                    0.13       5.68 f
+  add_0_root_add_75_4/U1_26/CO (FA1D0)                    0.13       5.81 f
+  add_0_root_add_75_4/U1_27/CO (FA1D0)                    0.13       5.94 f
+  add_0_root_add_75_4/U1_28/CO (FA1D0)                    0.13       6.07 f
+  add_0_root_add_75_4/U1_29/CO (FA1D0)                    0.13       6.20 f
+  add_0_root_add_75_4/U1_30/CO (FA1D0)                    0.13       6.33 f
+  add_0_root_add_75_4/U1_31/Z (XOR3D1)                    0.17       6.51 f
+  add_0_root_add_75_4/SUM[31] (sha1v12_DW01_add_32_3)     0.00       6.51 f
+  add_467/A[31] (sha1v12_DW01_add_32_4)                   0.00       6.51 f
+  add_467/U1_31/Z (XOR3D1)                                0.26       6.77 f
+  add_467/SUM[31] (sha1v12_DW01_add_32_4)                 0.00       6.77 f
+  U1937/Z (AO22D0)                                        0.16       6.92 f
+  A_reg[31]/D (EDFQD1)                                    0.00       6.92 f
+  data arrival time                                                  6.92
+
+  clock clk_i (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  A_reg[31]/CP (EDFQD1)                                   0.00      10.00 r
+  library setup time                                     -0.12       9.88
+  data required time                                                 9.88
+  --------------------------------------------------------------------------
+  data required time                                                 9.88
+  data arrival time                                                 -6.92
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.95
+
