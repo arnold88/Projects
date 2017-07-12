@@ -1,0 +1,95 @@
+<HTML>
+<HEAD>
+  <META HTTP-EQUIV="Content-Type" CONTENT="text/html;CHARSET=iso-8859-1">
+  <TITLE>AiboPet - WiFi LAN Setup Utility</TITLE>
+</HEAD>
+
+<H1><IMG SRC=aibopet.gif>
+AiboLife Plus - WiFi LAN Setup Utility
+</H1>
+
+
+<FORM METHOD="GET" ACTION="setup.cgi">
+
+<TD></TD>
+<HR>
+<H2>TCP/IP</H2>
+
+<TABLE>
+<TR>
+<TD WIDTH=320>Hostname</TD><TD><INPUT NAME="HOSTNAME" TYPE="text" SIZE="16" MAXLENGTH="8" VALUE="AIBO"></TD>
+</TR>
+
+<TR>
+<TD>IP Address</TD><TD><INPUT NAME="ETHER_IP" TYPE="text" SIZE="16" MAXLENGTH="15" VALUE="10.0.1.100"></TD>
+</TR>
+
+<TR>
+<TD>Subnet Mask</TD><TD><INPUT TYPE="text" SIZE="16" MAXLENGTH="15"
+NAME="ETHER_NETMASK" VALUE="255.255.255.0"></TD>
+</TR>
+
+<TR>
+<TD>IP Address of Default Gateway</TD><TD><INPUT NAME="IP_GATEWAY" TYPE="text"
+SIZE="16" MAXLENGTH="15" VALUE="10.0.0.1"></TD>
+</TR>
+</TABLE>
+
+<P></P>
+<HR>
+<H2>WiFi Wireless LAN</H2>
+
+<TABLE>
+<TR>
+<TD WIDTH=320>Network Name</TD><TD><INPUT NAME="ESSID" TYPE="text" SIZE="16" MAXLENGTH="32" VALUE="AIBONET"></TD>
+</TR>
+
+<TR>
+<TD>Enable WEP Encryption</TD><TD><INPUT TYPE="radio" VALUE="1" NAME="WEPENABLE" CHECKED>Yes<INPUT TYPE="radio" VALUE="0" NAME="WEPENABLE">No</TD>
+</TR>
+
+<TR>
+<TD>WEP Encryption Key</TD><TD><INPUT NAME="WEPKEY" TYPE="text" SIZE="16" MAXLENGTH="5" VALUE="AIBO2"></TD>
+</TR>
+
+<TR>
+<TD>Operating Mode</TD><TD>
+<INPUT TYPE="radio" NAME="APMODE" VALUE="0">Peer-to-Peer
+<INPUT TYPE="radio" NAME="APMODE" VALUE="1">Access Point
+<INPUT TYPE="radio" NAME="APMODE" VALUE="2" CHECKED>Auto (recommended)</TD>
+</TR>
+
+<TR>
+<TD>Wireless Channel (Peer-to-Peer only)</TD><TD><SELECT NAME="CHANNEL">
+<OPTION VALUE="1">1
+<OPTION VALUE="2">2
+<OPTION VALUE="3">3
+<OPTION VALUE="4">4
+<OPTION VALUE="5">5
+<OPTION VALUE="6">6
+<OPTION VALUE="7">7
+<OPTION VALUE="8">8
+<OPTION VALUE="9">9
+<OPTION VALUE="10" SELECTED>10
+<OPTION VALUE="11">11
+</SELECT></TD>
+</TR>
+</TABLE>
+
+<P></P>
+<HR>
+
+<center>
+<TD><INPUT NAME="send" TYPE="submit" VALUE="Change Settings"></TD>
+</center>
+
+</FORM>
+
+<TD></TD>
+<HR>
+
+<P></P>
+<A HREF=index.htm>Back to main index.</A>
+
+</BODY>
+</HTML>
