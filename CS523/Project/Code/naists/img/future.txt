@@ -1,0 +1,22 @@
+Future task / stuff it needs to be done
+
+****************************************
+
+Add class variables
+-players each will have a destination email address
+-add matrix coordinates
+
+Field operations
+-add matrix boxes
+
+TO DO:
+-LOAD PLAYERS
+-DRAW A BLUE DOT FOR EACH PLAYER
+-SIMULATE MOVING
+
+
+
+FINAL PAPER
+-how far between what we have now and the perfect situation
+-more advanced algorithm
+-

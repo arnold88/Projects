@@ -1,0 +1,42 @@
+2011-12-02 13:00:52
+F:4-4-2
+S:Possession
+1: NULL
+2: NULL
+3: "6302177322@txt.att.net"
+4: NULL
+5: NULL
+6: NULL
+7: "3125330693@vtext.com"
+8: NULL
+9: NULL
+10: "7732189615@txt.att.net"
+11:
+
+****************MATCH START
+
+0:30
+3: turn left / 2 / turn ball / stay
+7: with ball / pass LF 
+10: run to box / stay 
+
+1:00 
+3: take ball / kick to LF
+7: forward / 3 / turn ball
+10: stay
+
+1:16 
+change: F->352 / S->Wing Play
+
+1:30
+3: stay
+7: pass left / move forward / 6
+10: run to box / shoot ready
+
+1:52 
+*****GOAL Team A #10 assist #6
+3: Great job team!
+7: Great job team!
+10: Good goal!
+
+ 
