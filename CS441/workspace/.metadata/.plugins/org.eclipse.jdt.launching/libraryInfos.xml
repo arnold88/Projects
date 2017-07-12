@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<libraryInfos>
+<libraryInfo home="D:\user desktop\eclipse" version="1.6.0_23">
+<bootpath>
+<entry path="D:\user desktop\eclipse\jre\lib\resources.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\rt.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\jsse.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\jce.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\charsets.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\modules\jdk.boot.jar"/>
+<entry path="D:\user desktop\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\user desktop\eclipse\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\user desktop\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="E:\User folder\Desktop\eclipse" version="1.6.0_23">
+<bootpath>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\resources.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\rt.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\jsse.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\jce.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\charsets.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\modules\jdk.boot.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="D:\user desktop\eclipse\jre" version="1.6.0_23">
+<bootpath>
+<entry path="D:\user desktop\eclipse\jre\lib\resources.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\rt.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\jsse.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\jce.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\charsets.jar"/>
+<entry path="D:\user desktop\eclipse\jre\lib\modules\jdk.boot.jar"/>
+<entry path="D:\user desktop\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="D:\user desktop\eclipse\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="D:\user desktop\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+<libraryInfo home="E:\User folder\Desktop\eclipse\jre" version="1.6.0_23">
+<bootpath>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\resources.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\rt.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\sunrsasign.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\jsse.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\jce.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\charsets.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\modules\jdk.boot.jar"/>
+<entry path="E:\User folder\Desktop\eclipse\jre\classes"/>
+</bootpath>
+<extensionDirs>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\ext"/>
+<entry path="C:\Windows\Sun\Java\lib\ext"/>
+</extensionDirs>
+<endorsedDirs>
+<entry path="E:\User folder\Desktop\eclipse\jre\lib\endorsed"/>
+</endorsedDirs>
+</libraryInfo>
+</libraryInfos>
