@@ -1,0 +1,313 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+Io                  0x48              intermediate/io.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+UNPLACED_SECTIONS 0xffffffff         0x00000000         xw
+System_Controller 0xfffff000         0x00000000         xw
+User_Peripherals 0xf0000000         0x000000c8         xw
+SRAM             0x00200000         0x00010000         xw
+FLASH            0x00100000         0x00040000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0xfffff000                __System_Controller_segment_start__ = 0xfffff000
+                0xfffff000                __System_Controller_segment_end__ = 0xfffff000
+                0xf0000000                __User_Peripherals_segment_start__ = 0xf0000000
+                0xf00000c8                __User_Peripherals_segment_end__ = 0xf00000c8
+                0x00200000                __SRAM_segment_start__ = 0x200000
+                0x00210000                __SRAM_segment_end__ = 0x210000
+                0x00100000                __FLASH_segment_start__ = 0x100000
+                0x00140000                __FLASH_segment_end__ = 0x140000
+                0x00000000                __STACKSIZE__ = 0x0
+                0x00000100                __STACKSIZE_IRQ__ = 0x100
+                0x00000100                __STACKSIZE_FIQ__ = 0x100
+                0x00000000                __STACKSIZE_SVC__ = 0x0
+                0x00000000                __STACKSIZE_ABT__ = 0x0
+                0x00000000                __STACKSIZE_UND__ = 0x0
+                0x00000000                __HEAPSIZE__ = 0x0
+                0x00200000                __vectors_ram_load_start__ = __SRAM_segment_start__
+
+.vectors_ram    0x00200000       0x3c
+                0x00200000                __vectors_ram_start__ = .
+ *(.vectors_ram)
+                0x0020003c                . = ((__vectors_ram_start__ + 0x3c) MAX_K .)
+ *fill*         0x00200000       0x3c 00
+                0x0020003c                __vectors_ram_end__ = (__vectors_ram_start__ + SIZEOF (.vectors_ram))
+                0x00000001                . = ASSERT (((__vectors_ram_end__ >= __SRAM_segment_start__) && (__vectors_ram_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .vectors_ram is too large to fit in SRAM memory segment)
+                0x00100000                __vectors_load_start__ = __FLASH_segment_start__
+
+.vectors        0x00100000       0x3c
+                0x00100000                __vectors_start__ = .
+ *(.vectors .vectors.*)
+ .vectors       0x00100000       0x3c intermediate/AT91SAM7_Startup.o
+                0x0010003c                __vectors_end__ = (__vectors_start__ + SIZEOF (.vectors))
+                0x00000001                . = ASSERT (((__vectors_end__ >= __FLASH_segment_start__) && (__vectors_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .vectors is too large to fit in FLASH memory segment)
+                0x0010003c                __init_load_start__ = (__vectors_end__ ALIGN 0x4)
+
+.init           0x0010003c      0x27c
+                0x0010003c                __init_start__ = .
+ *(.init .init.*)
+ .init          0x0010003c      0x1e4 intermediate/crt0.o
+                0x0010003c                __start
+                0x0010003c                _start
+ .init          0x00100220       0x98 intermediate/AT91SAM7_Startup.o
+                0x00100288                undef_handler
+                0x00100290                pabort_handler
+                0x00100294                dabort_handler
+                0x00100220                __reset_handler
+                0x0010029c                fiq_handler
+                0x00100298                irq_handler
+                0x001002b8                __init_end__ = (__init_start__ + SIZEOF (.init))
+                0x00000001                . = ASSERT (((__init_end__ >= __FLASH_segment_start__) && (__init_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .init is too large to fit in FLASH memory segment)
+                0x001002b8                __text_load_load_start__ = (__init_end__ ALIGN 0x4)
+
+.text_load      0x001002b8        0x0
+                0x001002b8                __text_load_start__ = .
+ *(.text_load)
+                0x001002b8                __text_load_end__ = (__text_load_start__ + SIZEOF (.text_load))
+                0x00000001                . = ASSERT (((__text_load_end__ >= __FLASH_segment_start__) && (__text_load_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .text_load is too large to fit in FLASH memory segment)
+                0x001002b8                __text_load_start__ = (__text_load_end__ ALIGN 0x4)
+
+.text           0x001002b8      0xf54
+                0x001002b8                __text_start__ = .
+ *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.*)
+ .text          0x001002b8       0xa8 intermediate/main.o
+                0x001002b8                main
+                0x00100350                swi_handler
+ .text          0x00100360      0xcf0 intermediate/io.o
+                0x00100da0                Io_PullupDisable
+                0x001009e0                Io_SetFalse
+                0x00100ffc                Io_GetValueBits
+                0x00100e84                Io_SetValueBits
+                0x00100bf0                Io_SetPeripheralB
+                0x001008ac                Io_SetOutput
+                0x00100530                Io_StartBits
+                0x00100a4c                Io_SetValue
+                0x00100e48                Io_SetFalseBits
+                0x001007a8                Io_StopBits
+                0x00100f3c                Io_SetOutputBits
+                0x00100360                Io_Start
+                0x00100910                Io_SetInput
+                0x00100af0                Io_GetValue
+                0x00100c5c                Io_PioEnable
+                0x00100f78                Io_SetInputBits
+                0x00100974                Io_SetTrue
+                0x00100cc8                Io_PioDisable
+                0x00100b84                Io_SetPeripheralA
+                0x0010046c                Io_Stop
+                0x00100e0c                Io_SetTrueBits
+                0x00100d34                Io_PullupEnable
+ .text          0x00101050      0x1b0 intermediate/led.o
+                0x001010ac                Led_SetState
+                0x00101110                Led_GetState
+                0x00101050                Led_SetActive
+                0x00101084                Led_GetActive
+ .glue_7        0x00101200        0xc intermediate/led.o
+                0x00101200                __swi_handler_from_arm
+                0x0010120c                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x00000001                . = ASSERT (((__text_end__ >= __FLASH_segment_start__) && (__text_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .text is too large to fit in FLASH memory segment)
+                0x0010120c                __dtors_load_start__ = (__text_end__ ALIGN 0x4)
+
+.dtors          0x0010120c        0x0
+                0x0010120c                __dtors_start__ = .
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x0010120c                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x00000001                . = ASSERT (((__dtors_end__ >= __FLASH_segment_start__) && (__dtors_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .dtors is too large to fit in FLASH memory segment)
+                0x0010120c                __ctors_load_start__ = (__dtors_end__ ALIGN 0x4)
+
+.ctors          0x0010120c        0x0
+                0x0010120c                __ctors_start__ = .
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x0010120c                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x00000001                . = ASSERT (((__ctors_end__ >= __FLASH_segment_start__) && (__ctors_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .ctors is too large to fit in FLASH memory segment)
+                0x0010120c                __rodata_load_start__ = (__ctors_end__ ALIGN 0x4)
+
+.rodata         0x0010120c        0x0
+                0x0010120c                __rodata_start__ = .
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+                0x0010120c                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x00000001                . = ASSERT (((__rodata_end__ >= __FLASH_segment_start__) && (__rodata_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .rodata is too large to fit in FLASH memory segment)
+                0x0010120c                __fast_load_start__ = (__rodata_end__ ALIGN 0x4)
+
+.fast           0x0020003c        0x0 load address 0x0010120c
+                0x0020003c                __fast_start__ = .
+ *(.fast .fast.*)
+                0x0020003c                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
+                0x0010120c                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x00000001                . = ASSERT ((((__fast_load_start__ + SIZEOF (.fast)) >= __FLASH_segment_start__) && ((__fast_load_start__ + SIZEOF (.fast)) <= (__FLASH_segment_start__ + 0x40000))), error: .fast is too large to fit in FLASH memory segment)
+
+.fast_run       0x0020003c        0x0
+                0x0020003c                __fast_run_start__ = .
+                0x0020003c                . = ((__fast_run_start__ + SIZEOF (.fast)) MAX_K .)
+                0x0020003c                __fast_run_end__ = (__fast_run_start__ + SIZEOF (.fast_run))
+                0x00000001                . = ASSERT (((__fast_run_end__ >= __SRAM_segment_start__) && (__fast_run_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .fast_run is too large to fit in SRAM memory segment)
+                0x0010120c                __data_load_start__ = ((__fast_load_start__ + SIZEOF (.fast)) ALIGN 0x4)
+
+.data           0x0020003c        0x0 load address 0x0010120c
+                0x0020003c                __data_start__ = .
+ *(.data .data.* .gnu.linkonce.d.*)
+                0x0020003c                __data_end__ = (__data_start__ + SIZEOF (.data))
+                0x0010120c                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x0010120c                __FLASH_segment_used_end__ = (((__fast_load_start__ + SIZEOF (.fast)) ALIGN 0x4) + SIZEOF (.data))
+                0x00000001                . = ASSERT ((((__data_load_start__ + SIZEOF (.data)) >= __FLASH_segment_start__) && ((__data_load_start__ + SIZEOF (.data)) <= (__FLASH_segment_start__ + 0x40000))), error: .data is too large to fit in FLASH memory segment)
+
+.data_run       0x0020003c        0x0
+                0x0020003c                __data_run_start__ = .
+                0x0020003c                . = ((__data_run_start__ + SIZEOF (.data)) MAX_K .)
+                0x0020003c                __data_run_end__ = (__data_run_start__ + SIZEOF (.data_run))
+                0x00000001                . = ASSERT (((__data_run_end__ >= __SRAM_segment_start__) && (__data_run_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .data_run is too large to fit in SRAM memory segment)
+                0x0020003c                __bss_load_start__ = (__data_run_end__ ALIGN 0x4)
+
+.bss            0x0020003c       0x4c
+                0x0020003c                __bss_start__ = .
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0020003c        0x4 intermediate/led.o
+ *(COMMON)
+ COMMON         0x00200040       0x48 intermediate/io.o
+                0x00200040                Io
+                0x00200088                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
+                0x00000001                . = ASSERT (((__bss_end__ >= __SRAM_segment_start__) && (__bss_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .bss is too large to fit in SRAM memory segment)
+                0x00200088                __heap_load_start__ = (__bss_end__ ALIGN 0x4)
+
+.heap           0x00200088        0x0
+                0x00200088                __heap_start__ = .
+ *(.heap)
+                0x00200088                . = ((__heap_start__ + __HEAPSIZE__) MAX_K .)
+                0x00200088                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
+                0x00000001                . = ASSERT (((__heap_end__ >= __SRAM_segment_start__) && (__heap_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .heap is too large to fit in SRAM memory segment)
+                0x00200088                __stack_load_start__ = (__heap_end__ ALIGN 0x4)
+
+.stack          0x00200088        0x0
+                0x00200088                __stack_start__ = .
+ *(.stack)
+                0x00200088                . = ((__stack_start__ + __STACKSIZE__) MAX_K .)
+                0x00200088                __stack_end__ = (__stack_start__ + SIZEOF (.stack))
+                0x00000001                . = ASSERT (((__stack_end__ >= __SRAM_segment_start__) && (__stack_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack is too large to fit in SRAM memory segment)
+                0x00200088                __stack_irq_load_start__ = (__stack_end__ ALIGN 0x4)
+
+.stack_irq      0x00200088      0x190
+                0x00200088                __stack_irq_start__ = .
+ *(.stack_irq)
+                0x00200218                . = ((__stack_irq_start__ + 0x190) MAX_K .)
+ *fill*         0x00200088      0x190 00
+                0x00200218                __stack_irq_end__ = (__stack_irq_start__ + SIZEOF (.stack_irq))
+                0x00000001                . = ASSERT (((__stack_irq_end__ >= __SRAM_segment_start__) && (__stack_irq_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_irq is too large to fit in SRAM memory segment)
+                0x00200218                __stack_fiq_load_start__ = (__stack_irq_end__ ALIGN 0x4)
+
+.stack_fiq      0x00200218      0x190
+                0x00200218                __stack_fiq_start__ = .
+ *(.stack_fiq)
+                0x002003a8                . = ((__stack_fiq_start__ + 0x190) MAX_K .)
+ *fill*         0x00200218      0x190 00
+                0x002003a8                __stack_fiq_end__ = (__stack_fiq_start__ + SIZEOF (.stack_fiq))
+                0x00000001                . = ASSERT (((__stack_fiq_end__ >= __SRAM_segment_start__) && (__stack_fiq_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_fiq is too large to fit in SRAM memory segment)
+                0x002003a8                __stack_svc_load_start__ = (__stack_fiq_end__ ALIGN 0x4)
+
+.stack_svc      0x002003a8      0x190
+                0x002003a8                __stack_svc_start__ = .
+ *(.stack_svc)
+                0x00200538                . = ((__stack_svc_start__ + 0x190) MAX_K .)
+ *fill*         0x002003a8      0x190 00
+                0x00200538                __stack_svc_end__ = (__stack_svc_start__ + SIZEOF (.stack_svc))
+                0x00000001                . = ASSERT (((__stack_svc_end__ >= __SRAM_segment_start__) && (__stack_svc_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_svc is too large to fit in SRAM memory segment)
+                0x00200538                __stack_abt_load_start__ = (__stack_svc_end__ ALIGN 0x4)
+
+.stack_abt      0x00200538        0x0
+                0x00200538                __stack_abt_start__ = .
+ *(.stack_abt)
+                0x00400a70                . = ((__stack_abt_start__ + 0x0) MAX_K .)
+                0x00200538                __stack_abt_end__ = (__stack_abt_start__ + SIZEOF (.stack_abt))
+                0x00000001                . = ASSERT (((__stack_abt_end__ >= __SRAM_segment_start__) && (__stack_abt_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_abt is too large to fit in SRAM memory segment)
+                0x00200538                __stack_und_load_start__ = (__stack_abt_end__ ALIGN 0x4)
+
+.stack_und      0x00200538        0x0
+                0x00200538                __stack_und_start__ = .
+ *(.stack_und)
+                0x00400a70                . = ((__stack_und_start__ + 0x0) MAX_K .)
+                0x00200538                __stack_und_end__ = (__stack_und_start__ + SIZEOF (.stack_und))
+                0x00200538                __SRAM_segment_used_end__ = ((__stack_abt_end__ ALIGN 0x4) + SIZEOF (.stack_und))
+                0x00000001                . = ASSERT (((__stack_und_end__ >= __SRAM_segment_start__) && (__stack_und_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_und is too large to fit in SRAM memory segment)
+START GROUP
+LOAD intermediate/main.o
+LOAD intermediate/crt0.o
+LOAD intermediate/AT91SAM7_Startup.o
+LOAD intermediate/io.o
+LOAD intermediate/led.o
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libarmdi_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libm_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libcpp_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libgccfp_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfprintf_long_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfscanf_long_v4t_t_le.a
+END GROUP
+OUTPUT(output/tiny.elf elf32-littlearm)
+
+.debug_abbrev   0x00000000      0x2b9
+ .debug_abbrev  0x00000000       0x65 intermediate/main.o
+ .debug_abbrev  0x00000065       0x14 intermediate/crt0.o
+ .debug_abbrev  0x00000079       0x10 intermediate/AT91SAM7_Startup.o
+ .debug_abbrev  0x00000089      0x17f intermediate/io.o
+ .debug_abbrev  0x00000208       0xb1 intermediate/led.o
+
+.debug_info     0x00000000      0xcd5
+ .debug_info    0x00000000      0x112 intermediate/main.o
+ .debug_info    0x00000112       0x88 intermediate/crt0.o
+ .debug_info    0x0000019a       0x8c intermediate/AT91SAM7_Startup.o
+ .debug_info    0x00000226      0x862 intermediate/io.o
+ .debug_info    0x00000a88      0x24d intermediate/led.o
+
+.debug_line     0x00000000      0x3f5
+ .debug_line    0x00000000       0x61 intermediate/main.o
+ .debug_line    0x00000061       0xd2 intermediate/crt0.o
+ .debug_line    0x00000133       0xb1 intermediate/AT91SAM7_Startup.o
+ .debug_line    0x000001e4      0x177 intermediate/io.o
+ .debug_line    0x0000035b       0x9a intermediate/led.o
+
+.debug_frame    0x00000000      0x598
+ .debug_frame   0x00000000       0x60 intermediate/main.o
+ .debug_frame   0x00000060      0x428 intermediate/io.o
+ .debug_frame   0x00000488      0x110 intermediate/led.o
+
+.debug_loc      0x00000000      0x6ad
+ .debug_loc     0x00000000       0x61 intermediate/main.o
+ .debug_loc     0x00000061      0x50e intermediate/io.o
+ .debug_loc     0x0000056f      0x13e intermediate/led.o
+
+.debug_pubnames
+                0x00000000      0x226
+ .debug_pubnames
+                0x00000000       0x2b intermediate/main.o
+ .debug_pubnames
+                0x0000002b      0x1a3 intermediate/io.o
+ .debug_pubnames
+                0x000001ce       0x58 intermediate/led.o
+
+.debug_aranges  0x00000000       0xa8
+ .debug_aranges
+                0x00000000       0x20 intermediate/main.o
+ .debug_aranges
+                0x00000020       0x20 intermediate/crt0.o
+ .debug_aranges
+                0x00000040       0x28 intermediate/AT91SAM7_Startup.o
+ .debug_aranges
+                0x00000068       0x20 intermediate/io.o
+ .debug_aranges
+                0x00000088       0x20 intermediate/led.o
+
+.comment        0x00000000       0x81
+ .comment       0x00000000       0x2b intermediate/main.o
+ .comment       0x0000002b       0x2b intermediate/io.o
+ .comment       0x00000056       0x2b intermediate/led.o
+
+.debug_str      0x00000000       0x17
+ .debug_str     0x00000000       0x10 intermediate/io.o
+ .debug_str     0x00000010        0x7 intermediate/led.o

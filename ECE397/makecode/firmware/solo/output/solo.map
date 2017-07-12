@@ -1,0 +1,1773 @@
+Archive member included because of file (symbol)
+
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__int32_umod.o)
+                              intermediate/inet.o (__umodsi3)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__int32_div.o)
+                              intermediate/usb.o (__divsi3)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__int32_mod.o)
+                              intermediate/serial.o (__modsi3)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__int32_udivmod.o)
+                              intermediate/inet.o (__udivsi3)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strlen.o)
+                              intermediate/BasicWEB.o (strlen)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(memcpy.o)
+                              intermediate/USB-CDC.o (memcpy)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(memset.o)
+                              intermediate/tasks.o (memset)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strcpy.o)
+                              intermediate/BasicWEB.o (strcpy)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strcmp.o)
+                              intermediate/osc.o (strcmp)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strcat.o)
+                              intermediate/BasicWEB.o (strcat)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strchr.o)
+                              intermediate/osc.o (strchr)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strncmp.o)
+                              intermediate/BasicWEB.o (strncmp)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strncpy.o)
+                              intermediate/tasks.o (strncpy)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(snprintf.o)
+                              intermediate/BasicWEB.o (snprintf)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(sprintf.o)
+                              intermediate/BasicWEB.o (sprintf)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(vsnprintf.o)
+                              intermediate/debugosc.o (vsnprintf)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(sscanf.o)
+                              intermediate/network.o (sscanf)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(ctype.o)
+                              intermediate/osc.o (isdigit)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libgccfp_v4t_t_le.a(_addsubsf3.o)
+                              intermediate/osc.o (__floatsisf)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libgccfp_v4t_t_le.a(_fixsfsi.o)
+                              intermediate/osc.o (__fixsfsi)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libgccfp_v4t_t_le.a(_truncdfsf2.o)
+                              intermediate/osc.o (__truncdfsf2)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfprintf_long_v4t_t_le.a(__vfprintf_long.o)
+                              C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(snprintf.o) (__vfprintf)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfscanf_long_v4t_t_le.a(__vfscanf_long.o)
+                              C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(sscanf.o) (__vfscanf)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__getc.o)
+                              C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfscanf_long_v4t_t_le.a(__vfscanf_long.o) (__getc)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__digit.o)
+                              C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfscanf_long_v4t_t_le.a(__vfscanf_long.o) (__digit)
+C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__hex_lc_uc.o)
+                              C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfprintf_long_v4t_t_le.a(__vfprintf_long.o) (__hex_uc)
+
+Allocating common symbols
+Common symbol       size              file
+
+tcp_active_pcbs     0x4               intermediate/tcp.o
+tcp_ticks           0x4               intermediate/tcp.o
+tcp_listen_pcbs     0x4               intermediate/tcp.o
+xUSBInterruptQueue  0x4               intermediate/USB-CDC.o
+Io                  0x50              intermediate/io.o
+tcp_tmp_pcb         0x4               intermediate/tcp.o
+Timer               0x2c              intermediate/timer.o
+Osc                 0x5b4             intermediate/osc.o
+tcp_input_pcb       0x4               intermediate/tcp_in.o
+Serial              0x24              intermediate/serial.o
+DebugData           0xd8              intermediate/debugosc.o
+System_users        0x4               intermediate/system.o
+AnalogIn            0x2c              intermediate/analogin.o
+Can                 0xc               intermediate/can.o
+Spi                 0xc               intermediate/spi.o
+Pwm                 0x18              intermediate/pwm.o
+toggle              0x4               intermediate/main.o
+tcp_tw_pcbs         0x4               intermediate/tcp.o
+lwip_stats          0x124             intermediate/stats.o
+Usb_Running         0x4               intermediate/usb.o
+Network_Valid       0x4               intermediate/network.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+UNPLACED_SECTIONS 0xffffffff         0x00000000         xw
+System_Controller 0xfffff000         0x00000000         xw
+User_Peripherals 0xf0000000         0x000000c8         xw
+SRAM             0x00200000         0x00010000         xw
+FLASH            0x00100000         0x00040000         xr
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+                0xfffff000                __System_Controller_segment_start__ = 0xfffff000
+                0xfffff000                __System_Controller_segment_end__ = 0xfffff000
+                0xf0000000                __User_Peripherals_segment_start__ = 0xf0000000
+                0xf00000c8                __User_Peripherals_segment_end__ = 0xf00000c8
+                0x00200000                __SRAM_segment_start__ = 0x200000
+                0x00210000                __SRAM_segment_end__ = 0x210000
+                0x00100000                __FLASH_segment_start__ = 0x100000
+                0x00140000                __FLASH_segment_end__ = 0x140000
+                0x00000000                __STACKSIZE__ = 0x0
+                0x00000100                __STACKSIZE_IRQ__ = 0x100
+                0x00000100                __STACKSIZE_FIQ__ = 0x100
+                0x00000000                __STACKSIZE_SVC__ = 0x0
+                0x00000000                __STACKSIZE_ABT__ = 0x0
+                0x00000000                __STACKSIZE_UND__ = 0x0
+                0x00000000                __HEAPSIZE__ = 0x0
+                0x00200000                __vectors_ram_load_start__ = __SRAM_segment_start__
+
+.vectors_ram    0x00200000       0x3c
+                0x00200000                __vectors_ram_start__ = .
+ *(.vectors_ram)
+                0x0020003c                . = ((__vectors_ram_start__ + 0x3c) MAX_K .)
+ *fill*         0x00200000       0x3c 00
+                0x0020003c                __vectors_ram_end__ = (__vectors_ram_start__ + SIZEOF (.vectors_ram))
+                0x00000001                . = ASSERT (((__vectors_ram_end__ >= __SRAM_segment_start__) && (__vectors_ram_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .vectors_ram is too large to fit in SRAM memory segment)
+                0x00100000                __vectors_load_start__ = __FLASH_segment_start__
+
+.vectors        0x00100000       0x3c
+                0x00100000                __vectors_start__ = .
+ *(.vectors .vectors.*)
+ .vectors       0x00100000       0x3c intermediate/AT91SAM7_Startup.o
+                0x0010003c                __vectors_end__ = (__vectors_start__ + SIZEOF (.vectors))
+                0x00000001                . = ASSERT (((__vectors_end__ >= __FLASH_segment_start__) && (__vectors_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .vectors is too large to fit in FLASH memory segment)
+                0x0010003c                __init_load_start__ = (__vectors_end__ ALIGN 0x4)
+
+.init           0x0010003c      0x27c
+                0x0010003c                __init_start__ = .
+ *(.init .init.*)
+ .init          0x0010003c       0x98 intermediate/AT91SAM7_Startup.o
+                0x001000a4                undef_handler
+                0x001000ac                pabort_handler
+                0x001000b0                dabort_handler
+                0x0010003c                __reset_handler
+                0x001000b8                fiq_handler
+                0x001000b4                irq_handler
+ .init          0x001000d4      0x1e4 intermediate/crt0.o
+                0x001000d4                __start
+                0x001000d4                _start
+                0x001002b8                __init_end__ = (__init_start__ + SIZEOF (.init))
+                0x00000001                . = ASSERT (((__init_end__ >= __FLASH_segment_start__) && (__init_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .init is too large to fit in FLASH memory segment)
+                0x001002b8                __text_load_load_start__ = (__init_end__ ALIGN 0x4)
+
+.text_load      0x001002b8        0x0
+                0x001002b8                __text_load_start__ = .
+ *(.text_load)
+                0x001002b8                __text_load_end__ = (__text_load_start__ + SIZEOF (.text_load))
+                0x00000001                . = ASSERT (((__text_load_end__ >= __FLASH_segment_start__) && (__text_load_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .text_load is too large to fit in FLASH memory segment)
+                0x001002b8                __text_load_start__ = (__text_load_end__ ALIGN 0x4)
+
+.text           0x001002b8    0x20120
+                0x001002b8                __text_start__ = .
+ *(.text .text.* .glue_7t .glue_7 .gnu.linkonce.t.*)
+ .text          0x001002b8      0x114 intermediate/make.o
+                0x00100398                BlinkTask
+                0x001002b8                Make
+ .text          0x001003cc      0x2f0 intermediate/heap_2.o
+                0x001005b0                vPortFree
+                0x001003cc                pvPortMalloc
+                0x00100658                PortFreeMemory
+ .text          0x001006bc      0x378 intermediate/USBIsr.o
+                0x001006bc                vUSB_ISR
+ .text          0x00100a34      0xdc0 intermediate/USB-CDC.o
+                0x00100c2c                vUSBSendByte
+                0x00100a34                vUSBCDCTask
+                0x00100c58                cUSBGetByte
+ .text          0x001017f4      0x2c8 intermediate/BasicWEB.o
+                0x00101a44                vBasicWEBServer
+ .text          0x00101abc      0x11c intermediate/main.o
+                0x00101abc                MakeStarterTask
+                0x00101adc                main
+                0x00101bac                vApplicationIdleHook
+ .text          0x00101bd8      0x4b8 intermediate/eeprom.o
+                0x00101c34                Eeprom_Write
+                0x00101c0c                Eeprom_GetActive
+                0x00101dac                Eeprom_Read
+                0x00101f20                Eeprom_GetLastAddress
+                0x00101bd8                Eeprom_SetActive
+ .text          0x00102090     0x25c4 intermediate/osc.o
+                0x00103910                Osc_CreateMessage
+                0x001020c4                Osc_GetActive
+                0x0010302c                Osc_IndexIntReceiverHelper
+                0x00102580                Osc_RegisterSubsystem
+                0x00102ac0                Osc_Quicky
+                0x00103ffc                Osc_NumberMatch
+                0x001043dc                Osc_WritePaddedBlob
+                0x001038a8                Osc_ReadInt
+                0x00103458                Osc_ExtractData
+                0x00102928                Osc_SendPacket
+                0x0010279c                Osc_ReceiveMessage
+                0x00104190                Osc_PropertyLookup
+                0x00102544                Osc_ResetChannel
+                0x001021b0                Osc_UsbPacketSend
+                0x00102b0c                Osc_SubsystemError
+                0x00103fd4                Osc_Unlock
+                0x001038dc                Osc_ReadFloat
+                0x00102f0c                Osc_GeneralReceiverHelper
+                0x00102d90                Osc_IntReceiverHelper
+                0x00104218                Osc_FindDataTag
+                0x00104298                Osc_WritePaddedString
+                0x00103bf4                Osc_CreateMessageInternal
+                0x00102090                Osc_SetActive
+                0x001029dc                Osc_SendPacketInternal
+                0x00102b68                Osc_BlobReceiverHelper
+                0x00102280                Osc_UdpTask
+                0x00103f40                Osc_Lock
+                0x00104560                Osc_WriteTimetag
+                0x00104600                Osc_EndianSwap
+                0x001021f0                Osc_UdpPacketSend
+                0x00103388                Osc_SendError
+                0x00103e98                Osc_CreateBundle
+                0x00102a98                Osc_Poll
+                0x001024cc                Osc_SetReplyPort
+                0x00102454                Osc_SetReplyAddress
+                0x00102268                Osc_GetRunning
+                0x00102658                Osc_ReceivePacket
+                0x00102398                Osc_UsbTask
+                0x00102634                Osc_SendMessage
+ .text          0x00104654      0x578 intermediate/osc_patternmatch.o
+                0x00104654                Osc_PatternMatch
+ .text          0x00104bcc      0x3cc intermediate/pwm.o
+                0x00104f24                Pwm_GetChannelIo
+                0x00104c44                Pwm_Get
+                0x00104c8c                Pwm_Start
+                0x00104bcc                Pwm_Set
+                0x00104d8c                Pwm_Stop
+ .text          0x00104f98      0x700 intermediate/spi.o
+                0x00105270                Spi_Lock
+                0x001053f4                Spi_Stop
+                0x00104f98                Spi_Configure
+                0x0010529c                Spi_Unlock
+                0x001052bc                Spi_Start
+                0x001050c8                Spi_ReadWriteBlock
+ .text          0x00105698      0x118 intermediate/rtos.o
+                0x00105768                Malloc
+                0x00105698                Sleep
+                0x001056b8                TaskYield
+                0x00105790                Free
+                0x00105758                TaskExitCritical
+                0x00105748                TaskEnterCritical
+                0x00105728                TaskDelete
+                0x001056c8                TaskCreate
+ .text          0x001057b0     0x1530 intermediate/io.o
+                0x001067d4                Io_GetPortA
+                0x0010657c                Io_PullupDisable
+                0x001067fc                Io_SetPortB
+                0x00106794                Io_SetPortA
+                0x00106864                Io_SetPortAMask
+                0x00105ff4                Io_SetFalse
+                0x00106984                IoOsc_GetName
+                0x00106930                Io_GetValueBits
+                0x00105dcc                Io_SetDirection
+                0x00106664                Io_SetValueBits
+                0x00105e14                Io_GetDirection
+                0x00106210                Io_SetPeripheralB
+                0x00106488                Io_GetPullup
+                0x00105eac                Io_SetOutput
+                0x00105d1c                Io_SetActive
+                0x00105998                Io_StartBits
+                0x00106064                Io_SetValue
+                0x00106b3c                IoOsc_IndexIntPropertyGet
+                0x00106628                Io_SetFalseBits
+                0x00105d68                Io_GetActive
+                0x00106bec                IoOsc_IntPropertySet
+                0x001068a0                Io_SetPortBMask
+                0x001062c8                Io_GetPio
+                0x00105c18                Io_StopBits
+                0x001068c4                Io_GetPortBMask
+                0x0010671c                Io_SetOutputBits
+                0x001057b0                Io_Start
+                0x00106280                Io_SetPio
+                0x00105f18                Io_SetInput
+                0x0010610c                Io_GetValue
+                0x00106360                Io_PioEnable
+                0x00106758                Io_SetInputBits
+                0x00105f84                Io_SetTrue
+                0x001063d0                Io_PioDisable
+                0x001061a0                Io_SetPeripheralA
+                0x001058c8                Io_Stop
+                0x0010683c                Io_GetPortB
+                0x00106440                Io_SetPullup
+                0x00106a90                IoOsc_IndexIntPropertySet
+                0x00106c64                IoOsc_IntPropertyGet
+                0x001065ec                Io_SetTrueBits
+                0x0010699c                IoOsc_ReceiveMessage
+                0x0010650c                Io_PullupEnable
+                0x00106888                Io_GetPortAMask
+ .text          0x00106ce0      0x2ec intermediate/led.o
+                0x00106d3c                Led_SetState
+                0x00106da0                Led_GetState
+                0x00106ce0                Led_SetActive
+                0x00106d14                Led_GetActive
+                0x00106ea8                LedOsc_ReceiveMessage
+                0x00106f34                LedOsc_PropertySet
+                0x00106e90                LedOsc_GetName
+                0x00106f80                LedOsc_PropertyGet
+ .text          0x00106fcc      0x4cc intermediate/timer.o
+                0x0010710c                Timer_Set
+                0x00107054                Timer_GetActive
+                0x0010722c                Timer_Cancel
+                0x00106fcc                Timer_SetActive
+                0x0010707c                Timer_InitializeEntry
+ .text          0x00107498      0x36c intermediate/timer_isr.o
+                0x00107498                Timer_Isr
+ .text          0x00107804      0x408 intermediate/debugosc.o
+                0x00107ab0                DebugOsc_ReceiveMessage
+                0x00107a98                DebugOsc_GetName
+                0x00107804                Debug_SetActive
+                0x00107b18                DebugOsc_PropertySet
+                0x001078f0                Debug_SetUsb
+                0x001078b0                Debug_GetLevel
+                0x00107838                Debug_GetActive
+                0x00107950                Debug_GetUdp
+                0x00107b90                DebugOsc_PropertyGet
+                0x0010792c                Debug_SetUdp
+                0x00107968                Debug
+                0x00107860                Debug_SetLevel
+                0x00107914                Debug_GetUsb
+ .text          0x00107c0c       0xd8 intermediate/can_isr.o
+                0x00107c0c                CanIsr
+ .text          0x00107ce4      0x41c intermediate/can.o
+                0x00107d18                Can_GetActive
+                0x001080a0                CanOsc_PropertySet
+                0x00108004                CanOsc_ReceiveMessage
+                0x001080d0                CanOsc_PropertyGet
+                0x00107fec                CanOsc_GetName
+                0x00107e10                Can_GetMessage
+                0x00107d40                Can_SendMessage
+                0x00107ce4                Can_SetActive
+ .text          0x00108100     0x1484 intermediate/network.o
+                0x00108100                Network_SetActive
+                0x001081bc                Network_SetMask
+                0x001088c8                SocketClose
+                0x001089f4                DatagramSocketSend
+                0x00108c68                Network_Init
+                0x00108974                ServerSocketClose
+                0x00108138                Network_GetActive
+                0x00108340                Network_GetValid
+                0x00108e50                NetworkOsc_ReceiveMessage
+                0x001088f4                ServerSocket
+                0x00108eec                NetworkOsc_Poll
+                0x00108f00                NetworkOsc_PropertySet
+                0x00108940                ServerSocketAccept
+                0x00109210                NetworkOsc_PropertyGet
+                0x00108e38                NetworkOsc_GetName
+                0x00108aa4                DatagramSocketReceive
+                0x00108228                Network_SetGateway
+                0x001086c8                SocketRead
+                0x00108150                Network_SetAddress
+                0x001089a0                DatagramSocket
+                0x00108584                Network_GetGateway
+                0x00108bf4                Network_AddressConvert
+                0x001083dc                Network_GetAddress
+                0x00108bcc                DatagramSocketClose
+                0x0010885c                SocketWrite
+                0x00108658                Socket
+                0x00108294                Network_SetValid
+                0x001084b0                Network_GetMask
+ .text          0x00109584      0x3b0 intermediate/system.o
+                0x00109744                System_Start
+                0x00109584                System_SetActive
+                0x001098ac                SystemOsc_PropertyGet
+                0x001097b8                SystemOsc_ReceiveMessage
+                0x00109704                kill
+                0x00109670                System_GetVersionNumber
+                0x001095b8                System_GetActive
+                0x0010965c                System_GetBuildNumber
+                0x00109684                System_SetSamba
+                0x00109764                System_Stop
+                0x00109834                SystemOsc_PropertySet
+                0x00109820                SystemOsc_Poll
+                0x001097a0                SystemOsc_GetName
+                0x00109720                System_SetReset
+                0x001095e0                System_GetFreeMemory
+                0x001095f8                System_GetSerialNumber
+                0x00109630                System_SetSerialNumber
+ .text          0x00109934      0x3c0 intermediate/usb.o
+                0x001099d4                Usb_Get
+                0x00109934                Usb_SetActive
+                0x00109c2c                UsbOsc_ReceiveMessage
+                0x001099ac                Usb_GetActive
+                0x00109c14                UsbOsc_GetName
+                0x00109a1c                Usb_Put
+                0x00109c94                UsbOsc_PropertySet
+                0x00109cc4                UsbOsc_PropertyGet
+                0x00109ae4                Usb_SlipReceive
+                0x00109a54                Usb_SlipSend
+ .text          0x00109cf4      0x12c intermediate/analogin_isr.o
+                0x00109cf4                AnalogInIsr
+ .text          0x00109e20      0x8d0 intermediate/analogin.o
+                0x0010a190                AnalogIn_GetValueWait
+                0x00109e88                AnalogIn_GetActive
+                0x00109ed4                AnalogIn_GetValue
+                0x00109fe4                AnalogIn_GetValueMulti
+                0x0010a5ac                AnalogInOsc_ReceiveMessage
+                0x0010a690                AnalogInOsc_PropertyGet
+                0x00109e20                AnalogIn_SetActive
+                0x0010a594                AnalogInOsc_GetName
+                0x0010a650                AnalogInOsc_PropertySet
+ .text          0x0010a6f0      0xa70 intermediate/serial.o
+                0x0010a824                Serial_Read
+                0x0010afe4                SerialOsc_IntPropertyGet
+                0x0010abd0                Serial_GetStopBits
+                0x0010aa10                Serial_SetParity
+                0x0010a74c                Serial_GetActive
+                0x0010b08c                SerialOsc_BlobPropertyGet
+                0x0010ab64                Serial_GetBaud
+                0x0010abf4                Serial_GetHardwareHandshake
+                0x0010a990                Serial_SetBaud
+                0x0010a6f0                Serial_SetActive
+                0x0010a9c4                Serial_SetBits
+                0x0010aaa8                Serial_SetHardwareHandshake
+                0x0010af54                SerialOsc_IntPropertySet
+                0x0010a8d4                Serial_GetReadable
+                0x0010aa5c                Serial_SetStopBits
+                0x0010a8f8                Serial_SetChar
+                0x0010ae50                SerialOsc_GetName
+                0x0010ae68                SerialOsc_ReceiveMessage
+                0x0010aadc                Serial_GetChar
+                0x0010b120                SerialOsc_BlobPropertySet
+                0x0010a774                Serial_Write
+                0x0010ab88                Serial_GetBits
+                0x0010abac                Serial_GetParity
+ .text          0x0010b160      0x1d0 intermediate/serial_isr.o
+                0x0010b160                Serial_Isr
+ .text          0x0010b330     0x159c intermediate/tasks.o
+                0x0010b7bc                uxTaskPriorityGet
+                0x0010b5b8                TaskGetTimeouts
+                0x0010b810                vTaskPrioritySet
+                0x0010bc08                vTaskEndScheduler
+                0x0010c1fc                vTaskPlaceOnEventList
+                0x0010bab0                xTaskResumeFromISR
+                0x0010bf44                ulTaskEndTrace
+                0x0010bd84                xTaskGetTickCount
+                0x0010c294                xTaskRemoveFromEventList
+                0x0010beec                vTaskStartTrace
+                0x0010b504                vTaskDelete
+                0x0010c3bc                xTaskCheckForTimeOut
+                0x0010bc28                vTaskSuspendAll
+                0x0010b9fc                vTaskResume
+                0x0010c084                vTaskSwitchContext
+                0x0010b964                vTaskSuspend
+                0x0010bdb0                uxTaskGetNumberOfTasks
+                0x0010bf84                vTaskIncrementTick
+                0x0010bddc                vTaskList
+                0x0010b5f8                vTaskDelayUntil
+                0x0010c8a0                xTaskGetCurrentTaskHandle
+                0x0010c828                usTaskCheckFreeStackSpace
+                0x0010bc4c                xTaskResumeAll
+                0x0010bba8                vTaskStartScheduler
+                0x0010c458                vTaskMissedYield
+                0x0010b330                xTaskCreate
+                0x0010b714                vTaskDelay
+                0x0010c38c                vTaskSetTimeOutState
+ .text          0x0010c8cc      0x864 intermediate/queue.o
+                0x0010cbe0                xQueueSendFromISR
+                0x0010c8cc                xQueueCreate
+                0x0010ccd8                xQueueReceive
+                0x0010ca08                xQueueSend
+                0x0010cfd4                vQueueDelete
+                0x0010cea8                xQueueReceiveFromISR
+                0x0010cfa8                uxQueueMessagesWaiting
+ .text          0x0010d130      0x20c intermediate/list.o
+                0x0010d19c                vListInsertEnd
+                0x0010d2d0                vListRemove
+                0x0010d180                vListInitialiseItem
+                0x0010d130                vListInitialise
+                0x0010d218                vListInsert
+ .text          0x0010d33c      0x2b0 intermediate/portISR.o
+                0x0010d448                vPreemptiveTick
+                0x0010d580                vPortExitCritical
+                0x0010d50c                vPortDisableInterruptsFromThumb
+                0x0010d39c                swi_handler
+                0x0010d33c                vPortISRStartFirstTask
+                0x0010d524                vPortEnableInterruptsFromThumb
+                0x0010d53c                vPortEnterCritical
+ .text          0x0010d5ec      0x2bc intermediate/port.o
+                0x0010d818                xPortStartScheduler
+                0x0010d830                vPortEndScheduler
+                0x0010d5ec                pxPortInitialiseStack
+ .text          0x0010d8a8     0x1c64 intermediate/tcp_out.o
+                0x0010ed44                tcp_rst
+                0x0010d8a8                tcp_send_ctrl
+                0x0010f21c                tcp_keepalive
+                0x0010f0c4                tcp_rexmit_rto
+                0x0010d8f8                tcp_write
+                0x0010f178                tcp_rexmit
+                0x0010e2e4                tcp_output
+                0x0010d9b8                tcp_enqueue
+ .text          0x0010f50c      0xafc intermediate/inet.o
+                0x0010f888                inet_chksum
+                0x0010f62c                inet_chksum_pseudo
+                0x0010f8fc                inet_chksum_pbuf
+                0x0010f9f8                inet_addr
+                0x0010ffe0                ntohl
+                0x0010ff94                htonl
+                0x0010fa40                inet_aton
+                0x0010ff6c                ntohs
+                0x0010fde0                inet_ntoa
+                0x0010ff24                htons
+ .text          0x00110008      0x718 intermediate/mem.o
+                0x001101b8                mem_free
+                0x00110120                mem_init
+                0x001104dc                mem_malloc
+                0x00110298                mem_reallocm
+                0x0011031c                mem_realloc
+ .text          0x00110720      0x36c intermediate/memp.o
+                0x001109f8                memp_free
+                0x001108d0                memp_malloc
+                0x00110720                memp_init
+ .text          0x00110a8c      0x52c intermediate/netif.o
+                0x00110e8c                netif_set_netmask
+                0x00110a8c                netif_add
+                0x00110cf0                netif_set_ipaddr
+                0x00110ef8                netif_set_up
+                0x00110ed8                netif_set_default
+                0x00110f64                netif_set_down
+                0x00110b58                netif_set_addr
+                0x00110f28                netif_is_up
+                0x00110e40                netif_set_gw
+                0x00110bb4                netif_remove
+                0x00110f90                netif_init
+                0x00110c44                netif_find
+ .text          0x00110fb8      0xc90 intermediate/pbuf.o
+                0x00111490                pbuf_realloc
+                0x0011170c                pbuf_free
+                0x001118d8                pbuf_cat
+                0x00111894                pbuf_ref
+                0x00110fb8                pbuf_init
+                0x00111a0c                pbuf_dequeue
+                0x00111a54                pbuf_take
+                0x00111110                pbuf_alloc
+                0x00111854                pbuf_clen
+                0x001119a4                pbuf_queue
+                0x001115d4                pbuf_header
+                0x00111970                pbuf_chain
+                0x00111bb0                pbuf_dechain
+ .text          0x00111c48      0x49c intermediate/raw.o
+                0x00111d58                raw_bind
+                0x00111fc0                raw_send
+                0x00111e30                raw_sendto
+                0x00111c60                raw_input
+                0x00111da8                raw_connect
+                0x00112078                raw_new
+                0x00111ffc                raw_remove
+                0x00111c48                raw_init
+                0x00111df8                raw_recv
+ .text          0x001120e4       0x20 intermediate/stats.o
+                0x001120e4                stats_init
+ .text          0x00112104      0x5d4 intermediate/sys.o
+                0x0011269c                sys_msleep
+                0x00112364                sys_timeout
+                0x00112104                sys_mbox_fetch
+                0x0011261c                sys_sem_wait_timeout
+                0x00112240                sys_sem_wait
+                0x001124f4                sys_untimeout
+ .text          0x001126d8     0x1788 intermediate/tcp.o
+                0x00113e30                tcp_next_iss
+                0x00113c50                tcp_err
+                0x00113c08                tcp_recv
+                0x00113a58                tcp_alloc
+                0x00113be4                tcp_arg
+                0x0011275c                tcp_close
+                0x00112d84                tcp_recved
+                0x00113cd4                tcp_pcb_purge
+                0x00113bc8                tcp_new
+                0x0011376c                tcp_segs_free
+                0x00112a54                tcp_bind
+                0x001128ac                tcp_abort
+                0x00112c54                tcp_listen
+                0x001137c4                tcp_seg_free
+                0x001126d8                tcp_init
+                0x00112f7c                tcp_connect
+                0x00113c2c                tcp_sent
+                0x00112724                tcp_tmr
+                0x00113814                tcp_setprio
+                0x00113164                tcp_slowtmr
+                0x00113c74                tcp_accept
+                0x00113d48                tcp_pcb_remove
+                0x001136e8                tcp_fasttmr
+                0x00113838                tcp_seg_copy
+                0x00113c98                tcp_poll
+ .text          0x00113e60     0x2c1c intermediate/tcp_in.o
+                0x00113e60                tcp_input
+ .text          0x00116a7c      0xac0 intermediate/ip.o
+                0x00116f18                ip_output_if
+                0x00117464                ip_output
+                0x00116a7c                ip_init
+                0x00116a8c                ip_route
+                0x00116b1c                ip_input
+ .text          0x0011753c      0x16c intermediate/ip_addr.o
+                0x0011753c                ip_addr_isbroadcast
+ .text          0x001176a8      0x688 intermediate/icmp.o
+                0x001176a8                icmp_input
+                0x00117b50                icmp_dest_unreach
+ .text          0x00117d30      0x348 intermediate/tcpip.o
+                0x00118024                tcpip_init
+                0x00117f48                tcpip_callback
+                0x00117fc8                tcpip_apimsg
+                0x00117ebc                tcpip_input
+                0x00117d7c                tcp_timer_needed
+ .text          0x00118078     0x1414 intermediate/api_msg.o
+                0x00119438                api_msg_input
+                0x00119468                api_msg_post
+ .text          0x0011948c     0x1488 intermediate/api_lib.o
+                0x0011a5a4                netconn_write
+                0x001194d0                netbuf_delete
+                0x00119524                netbuf_alloc
+                0x0011a814                netconn_close
+                0x0011948c                netbuf_new
+                0x0011a08c                netconn_disconnect
+                0x00119ac8                netconn_new
+                0x00119c98                netconn_type
+                0x0011a1f8                netconn_accept
+                0x00119928                netbuf_fromport
+                0x001196d4                netbuf_data
+                0x00119f90                netconn_connect
+                0x001195a4                netbuf_free
+                0x0011a8f0                netconn_err
+                0x00119b28                netconn_delete
+                0x00119738                netbuf_next
+                0x0011978c                netbuf_first
+                0x0011966c                netbuf_chain
+                0x0011a4c4                netconn_send
+                0x00119948                netconn_new_with_proto_and_callback
+                0x00119dbc                netconn_addr
+                0x0011a128                netconn_listen
+                0x0011990c                netbuf_fromaddr
+                0x001196b0                netbuf_len
+                0x00119af4                netconn_new_with_callback
+                0x00119e7c                netconn_bind
+                0x001197ac                netbuf_copy_partial
+                0x001198d0                netbuf_copy
+                0x001195e4                netbuf_ref
+                0x0011a258                netconn_recv
+                0x00119cb4                netconn_peer
+ .text          0x0011a914     0x169c intermediate/etharp.o
+                0x0011bc44                etharp_request
+                0x0011a984                etharp_tmr
+                0x0011b230                etharp_arp_input
+                0x0011b928                etharp_query
+                0x0011b638                etharp_output
+                0x0011a914                etharp_init
+                0x0011b1b4                etharp_ip_input
+ .text          0x0011bfb0      0x46c intermediate/sys_arch.o
+                0x0011c304                sys_arch_timeouts
+                0x0011c2f4                sys_init
+                0x0011c2b0                sys_sem_signal
+                0x0011c034                sys_arch_mbox_fetch
+                0x0011c14c                sys_sem_new
+                0x0011bfd4                sys_mbox_free
+                0x0011c3f0                sys_arch_protect
+                0x0011c2d4                sys_sem_free
+                0x0011bfb0                sys_mbox_new
+                0x0011c330                sys_thread_new
+                0x0011c1c8                sys_arch_sem_wait
+                0x0011c404                sys_arch_unprotect
+                0x0011c004                sys_mbox_post
+ .text          0x0011c41c      0x568 intermediate/ethernetif.o
+                0x0011c8d4                ethernetif_init
+ .text          0x0011c984      0xb80 intermediate/SAM7_EMAC.o
+                0x0011cf28                vClearEMACTxBuffer
+                0x0011d4e4                vEMACWaitForInput
+                0x0011c984                lEMACSend
+                0x0011cb54                ulEMACInputLength
+                0x0011cc2c                vEMACRead
+                0x0011ce04                xEMACInit
+ .text          0x0011d504      0x1a0 intermediate/SAM7_EMAC_ISR.o
+                0x0011d66c                vPassEMACSemaphore
+                0x0011d504                vEMACISR
+ .text          0x0011d6a4      0xe34 intermediate/udp.o
+                0x0011e418                udp_remove
+                0x0011db54                udp_sendto
+                0x0011e38c                udp_disconnect
+                0x0011e3e0                udp_recv
+                0x0011e25c                udp_connect
+                0x0011e0f8                udp_bind
+                0x0011dc6c                udp_send
+                0x0011d6c8                udp_input
+                0x0011d6a4                udp_init
+                0x0011e494                udp_new
+ .text          0x0011e4d8      0xbf0 intermediate/ip_frag.o
+                0x0011e61c                ip_reass
+                0x0011ecf0                ip_frag
+                0x0011e5f4                ip_reass_tmr
+ *fill*         0x0011f0c8        0x8 00
+ .text          0x0011f0d0       0x20 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__int32_umod.o)
+                0x0011f0d0                __umodsi3
+                0x0011f0d0                __int32_umod
+ .text          0x0011f0f0       0x50 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__int32_div.o)
+                0x0011f0f0                __int32_div
+                0x0011f0f0                __divsi3
+ .text          0x0011f140       0x50 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__int32_mod.o)
+                0x0011f140                __int32_mod
+                0x0011f140                __modsi3
+ .text          0x0011f190       0x30 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__int32_udivmod.o)
+                0x0011f190                __int32_udiv
+                0x0011f190                __int32_udivmod
+                0x0011f190                __udivsi3
+ .text          0x0011f1c0       0x10 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strlen.o)
+                0x0011f1c0                strlen
+ .text          0x0011f1d0       0x18 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(memcpy.o)
+                0x0011f1d0                memcpy
+ .text          0x0011f1e8       0x14 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(memset.o)
+                0x0011f1e8                memset
+ .text          0x0011f1fc       0x10 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strcpy.o)
+                0x0011f1fc                strcpy
+ .text          0x0011f20c       0x14 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strcmp.o)
+                0x0011f20c                strcmp
+ .text          0x0011f220       0x24 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strcat.o)
+                0x0011f220                strcat
+ .text          0x0011f244       0x28 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strchr.o)
+                0x0011f244                strchr
+ .text          0x0011f26c       0x40 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strncmp.o)
+                0x0011f26c                strncmp
+ .text          0x0011f2ac       0x48 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strncpy.o)
+                0x0011f2ac                strncpy
+ .text          0x0011f2f4       0x28 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(snprintf.o)
+                0x0011f2f4                snprintf
+ .text          0x0011f31c       0x28 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(sprintf.o)
+                0x0011f31c                sprintf
+ .text          0x0011f344       0x20 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(vsnprintf.o)
+                0x0011f344                vsnprintf
+ .text          0x0011f364       0x24 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(sscanf.o)
+                0x0011f364                sscanf
+ .text          0x0011f388      0x160 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(ctype.o)
+                0x0011f4d4                isblank
+                0x0011f3b4                islower
+                0x0011f4b4                tolower
+                0x0011f40c                ispunct
+                0x0011f3f4                isspace
+                0x0011f3d4                isxdigit
+                0x0011f3a4                isupper
+                0x0011f388                isalpha
+                0x0011f470                isgraph
+                0x0011f434                isalnum
+                0x0011f454                isprint
+                0x0011f3c4                isdigit
+                0x0011f4a0                iscntrl
+                0x0011f4c4                toupper
+ .text          0x0011f4e8      0x2ac C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libgccfp_v4t_t_le.a(_addsubsf3.o)
+                0x0011f4f4                __aeabi_fadd
+                0x0011f4f0                __subsf3
+                0x0011f6b8                __aeabi_i2f
+                0x0011f4f0                __aeabi_fsub
+                0x0011f6e8                __floatdisf
+                0x0011f6b8                __floatsisf
+                0x0011f6d8                __floatundisf
+                0x0011f6b0                __aeabi_ui2f
+                0x0011f6e8                __aeabi_l2f
+                0x0011f6d8                __aeabi_ul2f
+                0x0011f4e8                __aeabi_frsub
+                0x0011f6b0                __floatunsisf
+                0x0011f4f4                __addsf3
+ .text          0x0011f794       0x5c C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libgccfp_v4t_t_le.a(_fixsfsi.o)
+                0x0011f794                __fixsfsi
+                0x0011f794                __aeabi_f2iz
+ .text          0x0011f7f0       0xa0 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libgccfp_v4t_t_le.a(_truncdfsf2.o)
+                0x0011f7f0                __aeabi_d2f
+                0x0011f7f0                __truncdfsf2
+ .text          0x0011f890      0x56c C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfprintf_long_v4t_t_le.a(__vfprintf_long.o)
+                0x0011f900                __vfprintf
+ .text          0x0011fdfc      0x4c0 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfscanf_long_v4t_t_le.a(__vfscanf_long.o)
+                0x0011ff9c                __vfscanf
+ .text          0x001202bc       0x2c C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__getc.o)
+                0x001202bc                __getc
+ .text          0x001202e8       0x48 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__digit.o)
+                0x001202e8                __digit
+ .glue_7        0x00120330       0x48 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__hex_lc_uc.o)
+                0x00120330                __xQueueSendFromISR_from_arm
+                0x0012036c                __kill_from_arm
+                0x00120360                __vClearEMACTxBuffer_from_arm
+                0x00120354                __vTaskIncrementTick_from_arm
+                0x00120348                __xQueueReceiveFromISR_from_arm
+                0x0012033c                __vTaskSwitchContext_from_arm
+ .glue_7t       0x00120378       0x60 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__hex_lc_uc.o)
+                0x0012037c                __vPortEnterCritical_change_to_arm
+                0x001203ac                ____modsi3_change_to_arm
+                0x0012038c                ____fixsfsi_change_to_arm
+                0x00120388                ____fixsfsi_from_thumb
+                0x00120384                __vPortExitCritical_change_to_arm
+                0x00120390                ____floatsisf_from_thumb
+                0x001203b8                __vPortISRStartFirstTask_from_thumb
+                0x001203c4                ____umodsi3_change_to_arm
+                0x001203b0                __vPortDisableInterruptsFromThumb_from_thumb
+                0x001203a8                ____modsi3_from_thumb
+                0x00120380                __vPortExitCritical_from_thumb
+                0x001203cc                ____udivsi3_change_to_arm
+                0x00120398                ____truncdfsf2_from_thumb
+                0x001203d4                __vPassEMACSemaphore_change_to_arm
+                0x001203c0                ____umodsi3_from_thumb
+                0x001203a0                ____divsi3_from_thumb
+                0x0012039c                ____truncdfsf2_change_to_arm
+                0x001203d0                __vPassEMACSemaphore_from_thumb
+                0x00120378                __vPortEnterCritical_from_thumb
+                0x00120394                ____floatsisf_change_to_arm
+                0x001203c8                ____udivsi3_from_thumb
+                0x001203bc                __vPortISRStartFirstTask_change_to_arm
+                0x001203b4                __vPortDisableInterruptsFromThumb_change_to_arm
+                0x001203a4                ____divsi3_change_to_arm
+                0x001203d8                __text_end__ = (__text_start__ + SIZEOF (.text))
+                0x00000001                . = ASSERT (((__text_end__ >= __FLASH_segment_start__) && (__text_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .text is too large to fit in FLASH memory segment)
+                0x001203d8                __dtors_load_start__ = (__text_end__ ALIGN 0x4)
+
+.dtors          0x001203d8        0x0
+                0x001203d8                __dtors_start__ = .
+ *(SORT(.dtors.*))
+ *(.dtors)
+                0x001203d8                __dtors_end__ = (__dtors_start__ + SIZEOF (.dtors))
+                0x00000001                . = ASSERT (((__dtors_end__ >= __FLASH_segment_start__) && (__dtors_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .dtors is too large to fit in FLASH memory segment)
+                0x001203d8                __ctors_load_start__ = (__dtors_end__ ALIGN 0x4)
+
+.ctors          0x001203d8        0x0
+                0x001203d8                __ctors_start__ = .
+ *(SORT(.ctors.*))
+ *(.ctors)
+                0x001203d8                __ctors_end__ = (__ctors_start__ + SIZEOF (.ctors))
+                0x00000001                . = ASSERT (((__ctors_end__ >= __FLASH_segment_start__) && (__ctors_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .ctors is too large to fit in FLASH memory segment)
+                0x001203d8                __rodata_load_start__ = (__ctors_end__ ALIGN 0x4)
+
+.rodata         0x001203d8      0xce0
+                0x001203d8                __rodata_start__ = .
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x001203d8       0x10 intermediate/make.o
+ .rodata        0x001203e8        0x2 intermediate/heap_2.o
+ *fill*         0x001203ea        0x2 00
+ .rodata        0x001203ec      0x1b0 intermediate/USB-CDC.o
+                0x00120476                pxDeviceDescriptor
+                0x001203f0                pxManufacturerStringDescriptor
+                0x00120458                pxInterfaceStringDescriptor
+                0x0012040a                pxProductStringDescriptor
+                0x001203ec                pxLanguageStringDescriptor
+                0x00120432                pxConfigurationStringDescriptor
+                0x00120488                pxConfigDescriptor
+ .rodata        0x0012059c      0x204 intermediate/BasicWEB.o
+ .rodata        0x001207a0        0x8 intermediate/main.o
+ .rodata        0x001207a8      0x150 intermediate/osc.o
+ .rodata        0x001208f8       0x78 intermediate/io.o
+ .rodata        0x00120970       0x14 intermediate/led.o
+ .rodata        0x00120984       0x34 intermediate/debugosc.o
+ .rodata        0x001209b8       0x14 intermediate/can.o
+ .rodata        0x001209cc      0x14c intermediate/network.o
+ .rodata        0x00120b18       0x74 intermediate/system.o
+ .rodata        0x00120b8c       0x10 intermediate/usb.o
+ .rodata        0x00120b9c       0x1c intermediate/analogin.o
+ .rodata        0x00120bb8       0xa0 intermediate/serial.o
+ .rodata        0x00120c58       0x20 intermediate/tasks.o
+ .rodata        0x00120c78       0x14 intermediate/inet.o
+ .rodata        0x00120c8c       0x2c intermediate/memp.o
+ .rodata        0x00120cb8       0x30 intermediate/tcp.o
+                0x00120cb8                tcp_backoff
+ .rodata        0x00120ce8       0x28 intermediate/tcp_in.o
+ .rodata        0x00120d10        0x8 intermediate/ip_addr.o
+                0x00120d10                ip_addr_any
+                0x00120d14                ip_addr_broadcast
+ .rodata        0x00120d18       0x3c intermediate/api_msg.o
+ .rodata        0x00120d54        0x6 intermediate/etharp.o
+ *fill*         0x00120d5a        0x2 00
+ .rodata        0x00120d5c        0xc intermediate/sys_arch.o
+ .rodata        0x00120d68       0x10 intermediate/ethernetif.o
+ .rodata        0x00120d78        0x8 intermediate/ip_frag.o
+ .rodata        0x00120d80      0x100 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(ctype.o)
+                0x00120d80                __ctype
+ .rodata        0x00120e80       0xc8 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfprintf_long_v4t_t_le.a(__vfprintf_long.o)
+ .rodata        0x00120f48      0x150 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfscanf_long_v4t_t_le.a(__vfscanf_long.o)
+ .rodata        0x00121098       0x20 C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__hex_lc_uc.o)
+                0x00121098                __hex_uc
+                0x001210a8                __hex_lc
+                0x001210b8                __rodata_end__ = (__rodata_start__ + SIZEOF (.rodata))
+                0x00000001                . = ASSERT (((__rodata_end__ >= __FLASH_segment_start__) && (__rodata_end__ <= (__FLASH_segment_start__ + 0x40000))), error: .rodata is too large to fit in FLASH memory segment)
+                0x001210b8                __fast_load_start__ = (__rodata_end__ ALIGN 0x4)
+
+.fast           0x0020003c        0x0 load address 0x001210b8
+                0x0020003c                __fast_start__ = .
+ *(.fast .fast.*)
+                0x0020003c                __fast_end__ = (__fast_start__ + SIZEOF (.fast))
+                0x001210b8                __fast_load_end__ = (__fast_load_start__ + SIZEOF (.fast))
+                0x00000001                . = ASSERT ((((__fast_load_start__ + SIZEOF (.fast)) >= __FLASH_segment_start__) && ((__fast_load_start__ + SIZEOF (.fast)) <= (__FLASH_segment_start__ + 0x40000))), error: .fast is too large to fit in FLASH memory segment)
+
+.fast_run       0x0020003c        0x0
+                0x0020003c                __fast_run_start__ = .
+                0x0020003c                . = ((__fast_run_start__ + SIZEOF (.fast)) MAX_K .)
+                0x0020003c                __fast_run_end__ = (__fast_run_start__ + SIZEOF (.fast_run))
+                0x00000001                . = ASSERT (((__fast_run_end__ >= __SRAM_segment_start__) && (__fast_run_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .fast_run is too large to fit in SRAM memory segment)
+                0x001210b8                __data_load_start__ = ((__fast_load_start__ + SIZEOF (.fast)) ALIGN 0x4)
+
+.data           0x0020003c      0x138 load address 0x001210b8
+                0x0020003c                __data_start__ = .
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0020003c       0x30 intermediate/io.o
+ .data          0x0020006c       0x10 intermediate/led.o
+ .data          0x0020007c       0x18 intermediate/debugosc.o
+ .data          0x00200094       0x10 intermediate/can.o
+ .data          0x002000a4       0x24 intermediate/network.o
+                0x002000a7                emacETHADDR3
+                0x002000a6                emacETHADDR2
+                0x002000a4                emacETHADDR0
+                0x002000a5                emacETHADDR1
+ .data          0x002000c8       0x24 intermediate/system.o
+ .data          0x002000ec        0xc intermediate/usb.o
+ .data          0x002000f8       0x10 intermediate/analogin.o
+ .data          0x00200108       0x30 intermediate/serial.o
+ .data          0x00200138        0x4 intermediate/tasks.o
+ .data          0x0020013c        0x4 intermediate/portISR.o
+                0x0020013c                ulCriticalNesting
+ .data          0x00200140        0x8 intermediate/tcp.o
+ .data          0x00200148       0x2c intermediate/api_msg.o
+                0x00200174                __data_end__ = (__data_start__ + SIZEOF (.data))
+                0x001211f0                __data_load_end__ = (__data_load_start__ + SIZEOF (.data))
+                0x001211f0                __FLASH_segment_used_end__ = (((__fast_load_start__ + SIZEOF (.fast)) ALIGN 0x4) + SIZEOF (.data))
+                0x00000001                . = ASSERT ((((__data_load_start__ + SIZEOF (.data)) >= __FLASH_segment_start__) && ((__data_load_start__ + SIZEOF (.data)) <= (__FLASH_segment_start__ + 0x40000))), error: .data is too large to fit in FLASH memory segment)
+
+.data_run       0x0020003c      0x138
+                0x0020003c                __data_run_start__ = .
+                0x00200174                . = ((__data_run_start__ + SIZEOF (.data)) MAX_K .)
+ *fill*         0x0020003c      0x138 00
+                0x00200174                __data_run_end__ = (__data_run_start__ + SIZEOF (.data_run))
+                0x00000001                . = ASSERT (((__data_run_end__ >= __SRAM_segment_start__) && (__data_run_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .data_run is too large to fit in SRAM memory segment)
+                0x00200174                __bss_load_start__ = (__data_run_end__ ALIGN 0x4)
+
+.bss            0x00200174     0xdd38
+                0x00200174                __bss_start__ = .
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00200174     0x3e98 intermediate/heap_2.o
+ .bss           0x0020400c       0x44 intermediate/USBIsr.o
+ .bss           0x00204050      0x134 intermediate/USB-CDC.o
+ .bss           0x00204184      0x61c intermediate/BasicWEB.o
+ .bss           0x002047a0        0x4 intermediate/eeprom.o
+ .bss           0x002047a4        0x4 intermediate/osc_patternmatch.o
+ .bss           0x002047a8        0x4 intermediate/led.o
+ .bss           0x002047ac       0x38 intermediate/network.o
+                0x002047ac                emacETHADDR4
+                0x002047ad                emacETHADDR5
+ .bss           0x002047e4        0x4 intermediate/usb.o
+ .bss           0x002047e8      0x158 intermediate/tasks.o
+                0x002047e8                pxCurrentTCB
+ .bss           0x00204940       0x10 intermediate/inet.o
+ .bss           0x00204950      0x7e8 intermediate/mem.o
+ .bss           0x00205138      0xef4 intermediate/memp.o
+ .bss           0x0020602c        0xc intermediate/netif.o
+                0x0020602c                netif_list
+                0x00206030                netif_default
+ .bss           0x00206038     0x1178 intermediate/pbuf.o
+ .bss           0x002071b0        0x4 intermediate/raw.o
+ .bss           0x002071b4        0x1 intermediate/tcp.o
+ *fill*         0x002071b5        0x3 00
+ .bss           0x002071b8       0x30 intermediate/tcp_in.o
+ .bss           0x002071e8       0x10 intermediate/tcpip.o
+ .bss           0x002071f8       0xf0 intermediate/etharp.o
+ .bss           0x002072e8        0x8 intermediate/sys_arch.o
+                0x002072e8                intlevel
+ .bss           0x002072f0        0xc intermediate/ethernetif.o
+ *fill*         0x002072fc        0x4 00
+ .bss           0x00207300     0x45f8 intermediate/SAM7_EMAC.o
+ .bss           0x0020b8f8        0x4 intermediate/SAM7_EMAC_ISR.o
+ .bss           0x0020b8fc        0x8 intermediate/udp.o
+                0x0020b8fc                udp_pcbs
+ .bss           0x0020b904     0x1cd0 intermediate/ip_frag.o
+ *(COMMON)
+ COMMON         0x0020d5d4        0x4 intermediate/USB-CDC.o
+                0x0020d5d4                xUSBInterruptQueue
+ COMMON         0x0020d5d8        0x4 intermediate/main.o
+                0x0020d5d8                toggle
+ COMMON         0x0020d5dc      0x5b4 intermediate/osc.o
+                0x0020d5dc                Osc
+ COMMON         0x0020db90       0x18 intermediate/pwm.o
+                0x0020db90                Pwm
+ COMMON         0x0020dba8        0xc intermediate/spi.o
+                0x0020dba8                Spi
+ COMMON         0x0020dbb4       0x50 intermediate/io.o
+                0x0020dbb4                Io
+ COMMON         0x0020dc04       0x2c intermediate/timer.o
+                0x0020dc04                Timer
+ COMMON         0x0020dc30       0xd8 intermediate/debugosc.o
+                0x0020dc30                DebugData
+ COMMON         0x0020dd08        0xc intermediate/can.o
+                0x0020dd08                Can
+ COMMON         0x0020dd14        0x4 intermediate/network.o
+                0x0020dd14                Network_Valid
+ COMMON         0x0020dd18        0x4 intermediate/system.o
+                0x0020dd18                System_users
+ COMMON         0x0020dd1c        0x4 intermediate/usb.o
+                0x0020dd1c                Usb_Running
+ COMMON         0x0020dd20       0x2c intermediate/analogin.o
+                0x0020dd20                AnalogIn
+ COMMON         0x0020dd4c       0x24 intermediate/serial.o
+                0x0020dd4c                Serial
+ COMMON         0x0020dd70      0x124 intermediate/stats.o
+                0x0020dd70                lwip_stats
+ COMMON         0x0020de94       0x14 intermediate/tcp.o
+                0x0020de94                tcp_active_pcbs
+                0x0020de98                tcp_ticks
+                0x0020de9c                tcp_listen_pcbs
+                0x0020dea0                tcp_tmp_pcb
+                0x0020dea4                tcp_tw_pcbs
+ COMMON         0x0020dea8        0x4 intermediate/tcp_in.o
+                0x0020dea8                tcp_input_pcb
+                0x0020deac                __bss_end__ = (__bss_start__ + SIZEOF (.bss))
+                0x00000001                . = ASSERT (((__bss_end__ >= __SRAM_segment_start__) && (__bss_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .bss is too large to fit in SRAM memory segment)
+                0x0020deac                __heap_load_start__ = (__bss_end__ ALIGN 0x4)
+
+.heap           0x0020deac        0x0
+                0x0020deac                __heap_start__ = .
+ *(.heap)
+                0x0020deac                . = ((__heap_start__ + __HEAPSIZE__) MAX_K .)
+                0x0020deac                __heap_end__ = (__heap_start__ + SIZEOF (.heap))
+                0x00000001                . = ASSERT (((__heap_end__ >= __SRAM_segment_start__) && (__heap_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .heap is too large to fit in SRAM memory segment)
+                0x0020deac                __stack_load_start__ = (__heap_end__ ALIGN 0x4)
+
+.stack          0x0020deac        0x0
+                0x0020deac                __stack_start__ = .
+ *(.stack)
+                0x0020deac                . = ((__stack_start__ + __STACKSIZE__) MAX_K .)
+                0x0020deac                __stack_end__ = (__stack_start__ + SIZEOF (.stack))
+                0x00000001                . = ASSERT (((__stack_end__ >= __SRAM_segment_start__) && (__stack_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack is too large to fit in SRAM memory segment)
+                0x0020deac                __stack_irq_load_start__ = (__stack_end__ ALIGN 0x4)
+
+.stack_irq      0x0020deac      0x190
+                0x0020deac                __stack_irq_start__ = .
+ *(.stack_irq)
+                0x0020e03c                . = ((__stack_irq_start__ + 0x190) MAX_K .)
+ *fill*         0x0020deac      0x190 00
+                0x0020e03c                __stack_irq_end__ = (__stack_irq_start__ + SIZEOF (.stack_irq))
+                0x00000001                . = ASSERT (((__stack_irq_end__ >= __SRAM_segment_start__) && (__stack_irq_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_irq is too large to fit in SRAM memory segment)
+                0x0020e03c                __stack_fiq_load_start__ = (__stack_irq_end__ ALIGN 0x4)
+
+.stack_fiq      0x0020e03c      0x190
+                0x0020e03c                __stack_fiq_start__ = .
+ *(.stack_fiq)
+                0x0020e1cc                . = ((__stack_fiq_start__ + 0x190) MAX_K .)
+ *fill*         0x0020e03c      0x190 00
+                0x0020e1cc                __stack_fiq_end__ = (__stack_fiq_start__ + SIZEOF (.stack_fiq))
+                0x00000001                . = ASSERT (((__stack_fiq_end__ >= __SRAM_segment_start__) && (__stack_fiq_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_fiq is too large to fit in SRAM memory segment)
+                0x0020e1cc                __stack_svc_load_start__ = (__stack_fiq_end__ ALIGN 0x4)
+
+.stack_svc      0x0020e1cc      0x190
+                0x0020e1cc                __stack_svc_start__ = .
+ *(.stack_svc)
+                0x0020e35c                . = ((__stack_svc_start__ + 0x190) MAX_K .)
+ *fill*         0x0020e1cc      0x190 00
+                0x0020e35c                __stack_svc_end__ = (__stack_svc_start__ + SIZEOF (.stack_svc))
+                0x00000001                . = ASSERT (((__stack_svc_end__ >= __SRAM_segment_start__) && (__stack_svc_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_svc is too large to fit in SRAM memory segment)
+                0x0020e35c                __stack_abt_load_start__ = (__stack_svc_end__ ALIGN 0x4)
+
+.stack_abt      0x0020e35c        0x0
+                0x0020e35c                __stack_abt_start__ = .
+ *(.stack_abt)
+                0x0041c6b8                . = ((__stack_abt_start__ + 0x0) MAX_K .)
+                0x0020e35c                __stack_abt_end__ = (__stack_abt_start__ + SIZEOF (.stack_abt))
+                0x00000001                . = ASSERT (((__stack_abt_end__ >= __SRAM_segment_start__) && (__stack_abt_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_abt is too large to fit in SRAM memory segment)
+                0x0020e35c                __stack_und_load_start__ = (__stack_abt_end__ ALIGN 0x4)
+
+.stack_und      0x0020e35c        0x0
+                0x0020e35c                __stack_und_start__ = .
+ *(.stack_und)
+                0x0041c6b8                . = ((__stack_und_start__ + 0x0) MAX_K .)
+                0x0020e35c                __stack_und_end__ = (__stack_und_start__ + SIZEOF (.stack_und))
+                0x0020e35c                __SRAM_segment_used_end__ = ((__stack_abt_end__ ALIGN 0x4) + SIZEOF (.stack_und))
+                0x00000001                . = ASSERT (((__stack_und_end__ >= __SRAM_segment_start__) && (__stack_und_end__ <= (__SRAM_segment_start__ + 0x10000))), error: .stack_und is too large to fit in SRAM memory segment)
+START GROUP
+LOAD intermediate/make.o
+LOAD intermediate/heap_2.o
+LOAD intermediate/USBIsr.o
+LOAD intermediate/USB-CDC.o
+LOAD intermediate/BasicWEB.o
+LOAD intermediate/main.o
+LOAD intermediate/eeprom.o
+LOAD intermediate/osc.o
+LOAD intermediate/osc_patternmatch.o
+LOAD intermediate/pwm.o
+LOAD intermediate/spi.o
+LOAD intermediate/rtos.o
+LOAD intermediate/io.o
+LOAD intermediate/led.o
+LOAD intermediate/timer.o
+LOAD intermediate/timer_isr.o
+LOAD intermediate/debugosc.o
+LOAD intermediate/can_isr.o
+LOAD intermediate/can.o
+LOAD intermediate/network.o
+LOAD intermediate/system.o
+LOAD intermediate/usb.o
+LOAD intermediate/analogin_isr.o
+LOAD intermediate/analogin.o
+LOAD intermediate/serial.o
+LOAD intermediate/serial_isr.o
+LOAD intermediate/tasks.o
+LOAD intermediate/queue.o
+LOAD intermediate/list.o
+LOAD intermediate/portISR.o
+LOAD intermediate/port.o
+LOAD intermediate/tcp_out.o
+LOAD intermediate/inet.o
+LOAD intermediate/mem.o
+LOAD intermediate/memp.o
+LOAD intermediate/netif.o
+LOAD intermediate/pbuf.o
+LOAD intermediate/raw.o
+LOAD intermediate/stats.o
+LOAD intermediate/sys.o
+LOAD intermediate/tcp.o
+LOAD intermediate/tcp_in.o
+LOAD intermediate/ip.o
+LOAD intermediate/ip_addr.o
+LOAD intermediate/icmp.o
+LOAD intermediate/tcpip.o
+LOAD intermediate/api_msg.o
+LOAD intermediate/err.o
+LOAD intermediate/api_lib.o
+LOAD intermediate/etharp.o
+LOAD intermediate/sys_arch.o
+LOAD intermediate/ethernetif.o
+LOAD intermediate/SAM7_EMAC.o
+LOAD intermediate/SAM7_EMAC_ISR.o
+LOAD intermediate/udp.o
+LOAD intermediate/ip_frag.o
+LOAD intermediate/AT91SAM7_Startup.o
+LOAD intermediate/crt0.o
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libarmdi_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libm_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libcpp_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libgccfp_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfprintf_long_v4t_t_le.a
+LOAD C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfscanf_long_v4t_t_le.a
+END GROUP
+OUTPUT(output/solo.elf elf32-littlearm)
+
+.debug_abbrev   0x00000000     0x46f8
+ .debug_abbrev  0x00000000       0x61 intermediate/make.o
+ .debug_abbrev  0x00000061      0x10d intermediate/heap_2.o
+ .debug_abbrev  0x0000016e       0xc5 intermediate/USBIsr.o
+ .debug_abbrev  0x00000233      0x1ae intermediate/USB-CDC.o
+ .debug_abbrev  0x000003e1      0x156 intermediate/BasicWEB.o
+ .debug_abbrev  0x00000537       0xa7 intermediate/main.o
+ .debug_abbrev  0x000005de      0x133 intermediate/eeprom.o
+ .debug_abbrev  0x00000711      0x1e5 intermediate/osc.o
+ .debug_abbrev  0x000008f6       0xa6 intermediate/osc_patternmatch.o
+ .debug_abbrev  0x0000099c      0x121 intermediate/pwm.o
+ .debug_abbrev  0x00000abd      0x14e intermediate/spi.o
+ .debug_abbrev  0x00000c0b       0xb7 intermediate/rtos.o
+ .debug_abbrev  0x00000cc2      0x191 intermediate/io.o
+ .debug_abbrev  0x00000e53       0xed intermediate/led.o
+ .debug_abbrev  0x00000f40      0x198 intermediate/timer.o
+ .debug_abbrev  0x000010d8       0xae intermediate/timer_isr.o
+ .debug_abbrev  0x00001186      0x146 intermediate/debugosc.o
+ .debug_abbrev  0x000012cc       0x7f intermediate/can_isr.o
+ .debug_abbrev  0x0000134b      0x1b1 intermediate/can.o
+ .debug_abbrev  0x000014fc      0x239 intermediate/network.o
+ .debug_abbrev  0x00001735      0x112 intermediate/system.o
+ .debug_abbrev  0x00001847      0x109 intermediate/usb.o
+ .debug_abbrev  0x00001950       0xc3 intermediate/analogin_isr.o
+ .debug_abbrev  0x00001a13      0x185 intermediate/analogin.o
+ .debug_abbrev  0x00001b98      0x1a5 intermediate/serial.o
+ .debug_abbrev  0x00001d3d       0xaf intermediate/serial_isr.o
+ .debug_abbrev  0x00001dec      0x19d intermediate/tasks.o
+ .debug_abbrev  0x00001f89      0x17e intermediate/queue.o
+ .debug_abbrev  0x00002107       0xd8 intermediate/list.o
+ .debug_abbrev  0x000021df       0x8b intermediate/portISR.o
+ .debug_abbrev  0x0000226a      0x108 intermediate/port.o
+ .debug_abbrev  0x00002372      0x1f0 intermediate/tcp_out.o
+ .debug_abbrev  0x00002562      0x11a intermediate/inet.o
+ .debug_abbrev  0x0000267c      0x103 intermediate/mem.o
+ .debug_abbrev  0x0000277f      0x11a intermediate/memp.o
+ .debug_abbrev  0x00002899      0x1fc intermediate/netif.o
+ .debug_abbrev  0x00002a95      0x190 intermediate/pbuf.o
+ .debug_abbrev  0x00002c25      0x158 intermediate/raw.o
+ .debug_abbrev  0x00002d7d       0x9c intermediate/stats.o
+ .debug_abbrev  0x00002e19      0x151 intermediate/sys.o
+ .debug_abbrev  0x00002f6a      0x248 intermediate/tcp.o
+ .debug_abbrev  0x000031b2      0x1ea intermediate/tcp_in.o
+ .debug_abbrev  0x0000339c      0x168 intermediate/ip.o
+ .debug_abbrev  0x00003504       0xc9 intermediate/ip_addr.o
+ .debug_abbrev  0x000035cd      0x105 intermediate/icmp.o
+ .debug_abbrev  0x000036d2      0x196 intermediate/tcpip.o
+ .debug_abbrev  0x00003868      0x1e3 intermediate/api_msg.o
+ .debug_abbrev  0x00003a4b       0x1f intermediate/err.o
+ .debug_abbrev  0x00003a6a      0x1f9 intermediate/api_lib.o
+ .debug_abbrev  0x00003c63      0x1c9 intermediate/etharp.o
+ .debug_abbrev  0x00003e2c      0x161 intermediate/sys_arch.o
+ .debug_abbrev  0x00003f8d      0x199 intermediate/ethernetif.o
+ .debug_abbrev  0x00004126      0x1ff intermediate/SAM7_EMAC.o
+ .debug_abbrev  0x00004325       0xb9 intermediate/SAM7_EMAC_ISR.o
+ .debug_abbrev  0x000043de      0x196 intermediate/udp.o
+ .debug_abbrev  0x00004574      0x160 intermediate/ip_frag.o
+ .debug_abbrev  0x000046d4       0x10 intermediate/AT91SAM7_Startup.o
+ .debug_abbrev  0x000046e4       0x14 intermediate/crt0.o
+
+.debug_info     0x00000000    0x1ee20
+ .debug_info    0x00000000      0x145 intermediate/make.o
+ .debug_info    0x00000145      0x41c intermediate/heap_2.o
+ .debug_info    0x00000561      0x2e6 intermediate/USBIsr.o
+ .debug_info    0x00000847      0xbdf intermediate/USB-CDC.o
+ .debug_info    0x00001426      0xe50 intermediate/BasicWEB.o
+ .debug_info    0x00002276      0x1f5 intermediate/main.o
+ .debug_info    0x0000246b      0x41b intermediate/eeprom.o
+ .debug_info    0x00002886     0x19b7 intermediate/osc.o
+ .debug_info    0x0000423d      0x25e intermediate/osc_patternmatch.o
+ .debug_info    0x0000449b      0x40e intermediate/pwm.o
+ .debug_info    0x000048a9      0x4cf intermediate/spi.o
+ .debug_info    0x00004d78      0x2ec intermediate/rtos.o
+ .debug_info    0x00005064      0xe93 intermediate/io.o
+ .debug_info    0x00005ef7      0x3f1 intermediate/led.o
+ .debug_info    0x000062e8      0x5f3 intermediate/timer.o
+ .debug_info    0x000068db      0x33d intermediate/timer_isr.o
+ .debug_info    0x00006c18      0x580 intermediate/debugosc.o
+ .debug_info    0x00007198      0x1a2 intermediate/can_isr.o
+ .debug_info    0x0000733a      0x52e intermediate/can.o
+ .debug_info    0x00007868     0x1d08 intermediate/network.o
+ .debug_info    0x00009570      0x525 intermediate/system.o
+ .debug_info    0x00009a95      0x46d intermediate/usb.o
+ .debug_info    0x00009f02      0x283 intermediate/analogin_isr.o
+ .debug_info    0x0000a185      0x6f7 intermediate/analogin.o
+ .debug_info    0x0000a87c      0xa17 intermediate/serial.o
+ .debug_info    0x0000b293      0x2fa intermediate/serial_isr.o
+ .debug_info    0x0000b58d     0x1449 intermediate/tasks.o
+ .debug_info    0x0000c9d6      0x7d3 intermediate/queue.o
+ .debug_info    0x0000d1a9      0x400 intermediate/list.o
+ .debug_info    0x0000d5a9      0x27d intermediate/portISR.o
+ .debug_info    0x0000d826      0x307 intermediate/port.o
+ .debug_info    0x0000db2d     0x10a7 intermediate/tcp_out.o
+ .debug_info    0x0000ebd4      0x6b3 intermediate/inet.o
+ .debug_info    0x0000f287      0x74d intermediate/mem.o
+ .debug_info    0x0000f9d4      0x71c intermediate/memp.o
+ .debug_info    0x000100f0      0xe46 intermediate/netif.o
+ .debug_info    0x00010f36      0xa7b intermediate/pbuf.o
+ .debug_info    0x000119b1      0x7a7 intermediate/raw.o
+ .debug_info    0x00012158      0x434 intermediate/stats.o
+ .debug_info    0x0001258c      0x560 intermediate/sys.o
+ .debug_info    0x00012aec     0x128f intermediate/tcp.o
+ .debug_info    0x00013d7b     0x120b intermediate/tcp_in.o
+ .debug_info    0x00014f86      0x97b intermediate/ip.o
+ .debug_info    0x00015901      0x3fc intermediate/ip_addr.o
+ .debug_info    0x00015cfd      0x92e intermediate/icmp.o
+ .debug_info    0x0001662b     0x13cb intermediate/tcpip.o
+ .debug_info    0x000179f6     0x1504 intermediate/api_msg.o
+ .debug_info    0x00018efa      0x105 intermediate/err.o
+ .debug_info    0x00018fff     0x1804 intermediate/api_lib.o
+ .debug_info    0x0001a803      0xe77 intermediate/etharp.o
+ .debug_info    0x0001b67a      0x6a9 intermediate/sys_arch.o
+ .debug_info    0x0001bd23      0xa93 intermediate/ethernetif.o
+ .debug_info    0x0001c7b6      0xc0d intermediate/SAM7_EMAC.o
+ .debug_info    0x0001d3c3      0x25a intermediate/SAM7_EMAC_ISR.o
+ .debug_info    0x0001d61d      0xcb4 intermediate/udp.o
+ .debug_info    0x0001e2d1      0xa4b intermediate/ip_frag.o
+ .debug_info    0x0001ed1c       0x84 intermediate/AT91SAM7_Startup.o
+ .debug_info    0x0001eda0       0x80 intermediate/crt0.o
+
+.debug_line     0x00000000     0x5a5d
+ .debug_line    0x00000000       0x6a intermediate/make.o
+ .debug_line    0x0000006a      0x109 intermediate/heap_2.o
+ .debug_line    0x00000173       0xc9 intermediate/USBIsr.o
+ .debug_line    0x0000023c      0x254 intermediate/USB-CDC.o
+ .debug_line    0x00000490      0x1b9 intermediate/BasicWEB.o
+ .debug_line    0x00000649       0x95 intermediate/main.o
+ .debug_line    0x000006de       0xf9 intermediate/eeprom.o
+ .debug_line    0x000007d7      0x3c9 intermediate/osc.o
+ .debug_line    0x00000ba0       0xe8 intermediate/osc_patternmatch.o
+ .debug_line    0x00000c88      0x107 intermediate/pwm.o
+ .debug_line    0x00000d8f      0x139 intermediate/spi.o
+ .debug_line    0x00000ec8       0x8d intermediate/rtos.o
+ .debug_line    0x00000f55      0x208 intermediate/io.o
+ .debug_line    0x0000115d       0xb0 intermediate/led.o
+ .debug_line    0x0000120d      0x120 intermediate/timer.o
+ .debug_line    0x0000132d       0xec intermediate/timer_isr.o
+ .debug_line    0x00001419      0x13b intermediate/debugosc.o
+ .debug_line    0x00001554       0x78 intermediate/can_isr.o
+ .debug_line    0x000015cc      0x11b intermediate/can.o
+ .debug_line    0x000016e7      0x30a intermediate/network.o
+ .debug_line    0x000019f1       0xd3 intermediate/system.o
+ .debug_line    0x00001ac4       0xcf intermediate/usb.o
+ .debug_line    0x00001b93       0xcc intermediate/analogin_isr.o
+ .debug_line    0x00001c5f      0x16f intermediate/analogin.o
+ .debug_line    0x00001dce      0x1d9 intermediate/serial.o
+ .debug_line    0x00001fa7       0xc4 intermediate/serial_isr.o
+ .debug_line    0x0000206b      0x337 intermediate/tasks.o
+ .debug_line    0x000023a2      0x1f3 intermediate/queue.o
+ .debug_line    0x00002595      0x10c intermediate/list.o
+ .debug_line    0x000026a1       0xb6 intermediate/portISR.o
+ .debug_line    0x00002757       0xfe intermediate/port.o
+ .debug_line    0x00002855      0x2a6 intermediate/tcp_out.o
+ .debug_line    0x00002afb      0x1d8 intermediate/inet.o
+ .debug_line    0x00002cd3      0x1a6 intermediate/mem.o
+ .debug_line    0x00002e79      0x12e intermediate/memp.o
+ .debug_line    0x00002fa7      0x195 intermediate/netif.o
+ .debug_line    0x0000313c      0x213 intermediate/pbuf.o
+ .debug_line    0x0000334f      0x19c intermediate/raw.o
+ .debug_line    0x000034eb       0xea intermediate/stats.o
+ .debug_line    0x000035d5      0x19d intermediate/sys.o
+ .debug_line    0x00003772      0x2fc intermediate/tcp.o
+ .debug_line    0x00003a6e      0x3cf intermediate/tcp_in.o
+ .debug_line    0x00003e3d      0x1d8 intermediate/ip.o
+ .debug_line    0x00004015      0x13e intermediate/ip_addr.o
+ .debug_line    0x00004153      0x19d intermediate/icmp.o
+ .debug_line    0x000042f0      0x1ea intermediate/tcpip.o
+ .debug_line    0x000044da      0x2fa intermediate/api_msg.o
+ .debug_line    0x000047d4       0x1d intermediate/err.o
+ .debug_line    0x000047f1      0x31d intermediate/api_lib.o
+ .debug_line    0x00004b0e      0x2b7 intermediate/etharp.o
+ .debug_line    0x00004dc5      0x1fb intermediate/sys_arch.o
+ .debug_line    0x00004fc0      0x251 intermediate/ethernetif.o
+ .debug_line    0x00005211      0x1dd intermediate/SAM7_EMAC.o
+ .debug_line    0x000053ee       0xc0 intermediate/SAM7_EMAC_ISR.o
+ .debug_line    0x000054ae      0x239 intermediate/udp.o
+ .debug_line    0x000056e7      0x1fb intermediate/ip_frag.o
+ .debug_line    0x000058e2       0xad intermediate/AT91SAM7_Startup.o
+ .debug_line    0x0000598f       0xce intermediate/crt0.o
+
+.debug_frame    0x00000000     0x6844
+ .debug_frame   0x00000000       0x68 intermediate/make.o
+ .debug_frame   0x00000068       0x94 intermediate/heap_2.o
+ .debug_frame   0x000000fc       0x20 intermediate/USBIsr.o
+ .debug_frame   0x0000011c      0x2f4 intermediate/USB-CDC.o
+ .debug_frame   0x00000410       0x6c intermediate/BasicWEB.o
+ .debug_frame   0x0000047c       0xb8 intermediate/main.o
+ .debug_frame   0x00000534      0x1d0 intermediate/eeprom.o
+ .debug_frame   0x00000704      0x748 intermediate/osc.o
+ .debug_frame   0x00000e4c       0xac intermediate/osc_patternmatch.o
+ .debug_frame   0x00000ef8      0x13c intermediate/pwm.o
+ .debug_frame   0x00001034      0x1b0 intermediate/spi.o
+ .debug_frame   0x000011e4      0x15c intermediate/rtos.o
+ .debug_frame   0x00001340      0x7cc intermediate/io.o
+ .debug_frame   0x00001b0c      0x1bc intermediate/led.o
+ .debug_frame   0x00001cc8      0x200 intermediate/timer.o
+ .debug_frame   0x00001ec8       0x44 intermediate/timer_isr.o
+ .debug_frame   0x00001f0c      0x288 intermediate/debugosc.o
+ .debug_frame   0x00002194       0x20 intermediate/can_isr.o
+ .debug_frame   0x000021b4      0x20c intermediate/can.o
+ .debug_frame   0x000023c0      0x4ec intermediate/network.o
+ .debug_frame   0x000028ac      0x2c8 intermediate/system.o
+ .debug_frame   0x00002b74      0x1c4 intermediate/usb.o
+ .debug_frame   0x00002d38       0x20 intermediate/analogin_isr.o
+ .debug_frame   0x00002d58      0x26c intermediate/analogin.o
+ .debug_frame   0x00002fc4      0x470 intermediate/serial.o
+ .debug_frame   0x00003434       0x20 intermediate/serial_isr.o
+ .debug_frame   0x00003454      0x5f8 intermediate/tasks.o
+ .debug_frame   0x00003a4c      0x1c8 intermediate/queue.o
+ .debug_frame   0x00003c14       0xec intermediate/list.o
+ .debug_frame   0x00003d00       0xd4 intermediate/portISR.o
+ .debug_frame   0x00003dd4       0xb0 intermediate/port.o
+ .debug_frame   0x00003e84      0x1c4 intermediate/tcp_out.o
+ .debug_frame   0x00004048      0x1f4 intermediate/inet.o
+ .debug_frame   0x0000423c      0x118 intermediate/mem.o
+ .debug_frame   0x00004354       0x98 intermediate/memp.o
+ .debug_frame   0x000043ec      0x218 intermediate/netif.o
+ .debug_frame   0x00004604      0x278 intermediate/pbuf.o
+ .debug_frame   0x0000487c      0x19c intermediate/raw.o
+ .debug_frame   0x00004a18       0x34 intermediate/stats.o
+ .debug_frame   0x00004a4c      0x144 intermediate/sys.o
+ .debug_frame   0x00004b90      0x51c intermediate/tcp.o
+ .debug_frame   0x000050ac      0x124 intermediate/tcp_in.o
+ .debug_frame   0x000051d0       0xe8 intermediate/ip.o
+ .debug_frame   0x000052b8       0x3c intermediate/ip_addr.o
+ .debug_frame   0x000052f4       0x6c intermediate/icmp.o
+ .debug_frame   0x00005360      0x168 intermediate/tcpip.o
+ .debug_frame   0x000054c8      0x3d8 intermediate/api_msg.o
+ .debug_frame   0x000058a0      0x564 intermediate/api_lib.o
+ .debug_frame   0x00005e04      0x1a4 intermediate/etharp.o
+ .debug_frame   0x00005fa8      0x240 intermediate/sys_arch.o
+ .debug_frame   0x000061e8      0x14c intermediate/ethernetif.o
+ .debug_frame   0x00006334      0x234 intermediate/SAM7_EMAC.o
+ .debug_frame   0x00006568       0x4c intermediate/SAM7_EMAC_ISR.o
+ .debug_frame   0x000065b4      0x1c8 intermediate/udp.o
+ .debug_frame   0x0000677c       0xc8 intermediate/ip_frag.o
+
+.debug_loc      0x00000000     0x7b73
+ .debug_loc     0x00000000       0x6e intermediate/make.o
+ .debug_loc     0x0000006e       0xa5 intermediate/heap_2.o
+ .debug_loc     0x00000113      0x39a intermediate/USB-CDC.o
+ .debug_loc     0x000004ad       0x6e intermediate/BasicWEB.o
+ .debug_loc     0x0000051b       0xcf intermediate/main.o
+ .debug_loc     0x000005ea      0x231 intermediate/eeprom.o
+ .debug_loc     0x0000081b      0x8dd intermediate/osc.o
+ .debug_loc     0x000010f8       0xc9 intermediate/osc_patternmatch.o
+ .debug_loc     0x000011c1      0x174 intermediate/pwm.o
+ .debug_loc     0x00001335      0x202 intermediate/spi.o
+ .debug_loc     0x00001537      0x193 intermediate/rtos.o
+ .debug_loc     0x000016ca      0x987 intermediate/io.o
+ .debug_loc     0x00002051      0x20d intermediate/led.o
+ .debug_loc     0x0000225e      0x260 intermediate/timer.o
+ .debug_loc     0x000024be       0x2a intermediate/timer_isr.o
+ .debug_loc     0x000024e8      0x305 intermediate/debugosc.o
+ .debug_loc     0x000027ed      0x26e intermediate/can.o
+ .debug_loc     0x00002a5b      0x5ef intermediate/network.o
+ .debug_loc     0x0000304a      0x34d intermediate/system.o
+ .debug_loc     0x00003397      0x219 intermediate/usb.o
+ .debug_loc     0x000035b0      0x2e8 intermediate/analogin.o
+ .debug_loc     0x00003898      0x55e intermediate/serial.o
+ .debug_loc     0x00003df6      0x753 intermediate/tasks.o
+ .debug_loc     0x00004549      0x226 intermediate/queue.o
+ .debug_loc     0x0000476f      0x113 intermediate/list.o
+ .debug_loc     0x00004882       0x7e intermediate/portISR.o
+ .debug_loc     0x00004900       0xc3 intermediate/port.o
+ .debug_loc     0x000049c3      0x20b intermediate/tcp_out.o
+ .debug_loc     0x00004bce      0x25f intermediate/inet.o
+ .debug_loc     0x00004e2d      0x14a intermediate/mem.o
+ .debug_loc     0x00004f77       0xa5 intermediate/memp.o
+ .debug_loc     0x0000501c      0x287 intermediate/netif.o
+ .debug_loc     0x000052a3      0x304 intermediate/pbuf.o
+ .debug_loc     0x000055a7      0x1e3 intermediate/raw.o
+ .debug_loc     0x0000578a       0x2b intermediate/stats.o
+ .debug_loc     0x000057b5      0x181 intermediate/sys.o
+ .debug_loc     0x00005936      0x641 intermediate/tcp.o
+ .debug_loc     0x00005f77      0x14c intermediate/tcp_in.o
+ .debug_loc     0x000060c3      0x107 intermediate/ip.o
+ .debug_loc     0x000061ca       0x37 intermediate/ip_addr.o
+ .debug_loc     0x00006201       0x6e intermediate/icmp.o
+ .debug_loc     0x0000626f      0x1ac intermediate/tcpip.o
+ .debug_loc     0x0000641b      0x4ba intermediate/api_msg.o
+ .debug_loc     0x000068d5      0x6a9 intermediate/api_lib.o
+ .debug_loc     0x00006f7e      0x1ef intermediate/etharp.o
+ .debug_loc     0x0000716d      0x2b2 intermediate/sys_arch.o
+ .debug_loc     0x0000741f      0x18d intermediate/ethernetif.o
+ .debug_loc     0x000075ac      0x2a5 intermediate/SAM7_EMAC.o
+ .debug_loc     0x00007851       0x2a intermediate/SAM7_EMAC_ISR.o
+ .debug_loc     0x0000787b      0x219 intermediate/udp.o
+ .debug_loc     0x00007a94       0xdf intermediate/ip_frag.o
+
+.debug_pubnames
+                0x00000000     0x2a09
+ .debug_pubnames
+                0x00000000       0x29 intermediate/make.o
+ .debug_pubnames
+                0x00000029       0x44 intermediate/heap_2.o
+ .debug_pubnames
+                0x0000006d       0x1f intermediate/USBIsr.o
+ .debug_pubnames
+                0x0000008c      0x12c intermediate/USB-CDC.o
+ .debug_pubnames
+                0x000001b8       0x26 intermediate/BasicWEB.o
+ .debug_pubnames
+                0x000001de       0x53 intermediate/main.o
+ .debug_pubnames
+                0x00000231       0x77 intermediate/eeprom.o
+ .debug_pubnames
+                0x000002a8      0x353 intermediate/osc.o
+ .debug_pubnames
+                0x000005fb       0x27 intermediate/osc_patternmatch.o
+ .debug_pubnames
+                0x00000622       0x62 intermediate/pwm.o
+ .debug_pubnames
+                0x00000684       0x7a intermediate/spi.o
+ .debug_pubnames
+                0x000006fe       0x87 intermediate/rtos.o
+ .debug_pubnames
+                0x00000785      0x354 intermediate/io.o
+ .debug_pubnames
+                0x00000ad9       0xb3 intermediate/led.o
+ .debug_pubnames
+                0x00000b8c       0x7d intermediate/timer.o
+ .debug_pubnames
+                0x00000c09       0x20 intermediate/timer_isr.o
+ .debug_pubnames
+                0x00000c29      0x11f intermediate/debugosc.o
+ .debug_pubnames
+                0x00000d48       0x1d intermediate/can_isr.o
+ .debug_pubnames
+                0x00000d65       0xc0 intermediate/can.o
+ .debug_pubnames
+                0x00000e25      0x2e3 intermediate/network.o
+ .debug_pubnames
+                0x00001108      0x19e intermediate/system.o
+ .debug_pubnames
+                0x000012a6       0xde intermediate/usb.o
+ .debug_pubnames
+                0x00001384       0x22 intermediate/analogin_isr.o
+ .debug_pubnames
+                0x000013a6      0x107 intermediate/analogin.o
+ .debug_pubnames
+                0x000014ad      0x232 intermediate/serial.o
+ .debug_pubnames
+                0x000016df       0x21 intermediate/serial_isr.o
+ .debug_pubnames
+                0x00001700      0x280 intermediate/tasks.o
+ .debug_pubnames
+                0x00001980       0x9f intermediate/queue.o
+ .debug_pubnames
+                0x00001a1f       0x71 intermediate/list.o
+ .debug_pubnames
+                0x00001a90       0xdb intermediate/portISR.o
+ .debug_pubnames
+                0x00001b6b       0x5a intermediate/port.o
+ .debug_pubnames
+                0x00001bc5       0x91 intermediate/tcp_out.o
+ .debug_pubnames
+                0x00001c56       0xa0 intermediate/inet.o
+ .debug_pubnames
+                0x00001cf6       0x5c intermediate/mem.o
+ .debug_pubnames
+                0x00001d52       0x3e intermediate/memp.o
+ .debug_pubnames
+                0x00001d90      0x109 intermediate/netif.o
+ .debug_pubnames
+                0x00001e99       0xd4 intermediate/pbuf.o
+ .debug_pubnames
+                0x00001f6d       0x8e intermediate/raw.o
+ .debug_pubnames
+                0x00001ffb       0x30 intermediate/stats.o
+ .debug_pubnames
+                0x0000202b       0x80 intermediate/sys.o
+ .debug_pubnames
+                0x000020ab      0x1ea intermediate/tcp.o
+ .debug_pubnames
+                0x00002295       0x32 intermediate/tcp_in.o
+ .debug_pubnames
+                0x000022c7       0x57 intermediate/ip.o
+ .debug_pubnames
+                0x0000231e       0x50 intermediate/ip_addr.o
+ .debug_pubnames
+                0x0000236e       0x37 intermediate/icmp.o
+ .debug_pubnames
+                0x000023a5       0x6a intermediate/tcpip.o
+ .debug_pubnames
+                0x0000240f       0x35 intermediate/api_msg.o
+ .debug_pubnames
+                0x00002444      0x258 intermediate/api_lib.o
+ .debug_pubnames
+                0x0000269c       0x90 intermediate/etharp.o
+ .debug_pubnames
+                0x0000272c      0x118 intermediate/sys_arch.o
+ .debug_pubnames
+                0x00002844       0x26 intermediate/ethernetif.o
+ .debug_pubnames
+                0x0000286a       0x7f intermediate/SAM7_EMAC.o
+ .debug_pubnames
+                0x000028e9       0x36 intermediate/SAM7_EMAC_ISR.o
+ .debug_pubnames
+                0x0000291f       0xae intermediate/udp.o
+ .debug_pubnames
+                0x000029cd       0x3c intermediate/ip_frag.o
+
+.debug_aranges  0x00000000      0x728
+ .debug_aranges
+                0x00000000       0x20 intermediate/make.o
+ .debug_aranges
+                0x00000020       0x20 intermediate/heap_2.o
+ .debug_aranges
+                0x00000040       0x20 intermediate/USBIsr.o
+ .debug_aranges
+                0x00000060       0x20 intermediate/USB-CDC.o
+ .debug_aranges
+                0x00000080       0x20 intermediate/BasicWEB.o
+ .debug_aranges
+                0x000000a0       0x20 intermediate/main.o
+ .debug_aranges
+                0x000000c0       0x20 intermediate/eeprom.o
+ .debug_aranges
+                0x000000e0       0x20 intermediate/osc.o
+ .debug_aranges
+                0x00000100       0x20 intermediate/osc_patternmatch.o
+ .debug_aranges
+                0x00000120       0x20 intermediate/pwm.o
+ .debug_aranges
+                0x00000140       0x20 intermediate/spi.o
+ .debug_aranges
+                0x00000160       0x20 intermediate/rtos.o
+ .debug_aranges
+                0x00000180       0x20 intermediate/io.o
+ .debug_aranges
+                0x000001a0       0x20 intermediate/led.o
+ .debug_aranges
+                0x000001c0       0x20 intermediate/timer.o
+ .debug_aranges
+                0x000001e0       0x20 intermediate/timer_isr.o
+ .debug_aranges
+                0x00000200       0x20 intermediate/debugosc.o
+ .debug_aranges
+                0x00000220       0x20 intermediate/can_isr.o
+ .debug_aranges
+                0x00000240       0x20 intermediate/can.o
+ .debug_aranges
+                0x00000260       0x20 intermediate/network.o
+ .debug_aranges
+                0x00000280       0x20 intermediate/system.o
+ .debug_aranges
+                0x000002a0       0x20 intermediate/usb.o
+ .debug_aranges
+                0x000002c0       0x20 intermediate/analogin_isr.o
+ .debug_aranges
+                0x000002e0       0x20 intermediate/analogin.o
+ .debug_aranges
+                0x00000300       0x20 intermediate/serial.o
+ .debug_aranges
+                0x00000320       0x20 intermediate/serial_isr.o
+ .debug_aranges
+                0x00000340       0x20 intermediate/tasks.o
+ .debug_aranges
+                0x00000360       0x20 intermediate/queue.o
+ .debug_aranges
+                0x00000380       0x20 intermediate/list.o
+ .debug_aranges
+                0x000003a0       0x20 intermediate/portISR.o
+ .debug_aranges
+                0x000003c0       0x20 intermediate/port.o
+ .debug_aranges
+                0x000003e0       0x20 intermediate/tcp_out.o
+ .debug_aranges
+                0x00000400       0x20 intermediate/inet.o
+ .debug_aranges
+                0x00000420       0x20 intermediate/mem.o
+ .debug_aranges
+                0x00000440       0x20 intermediate/memp.o
+ .debug_aranges
+                0x00000460       0x20 intermediate/netif.o
+ .debug_aranges
+                0x00000480       0x20 intermediate/pbuf.o
+ .debug_aranges
+                0x000004a0       0x20 intermediate/raw.o
+ .debug_aranges
+                0x000004c0       0x20 intermediate/stats.o
+ .debug_aranges
+                0x000004e0       0x20 intermediate/sys.o
+ .debug_aranges
+                0x00000500       0x20 intermediate/tcp.o
+ .debug_aranges
+                0x00000520       0x20 intermediate/tcp_in.o
+ .debug_aranges
+                0x00000540       0x20 intermediate/ip.o
+ .debug_aranges
+                0x00000560       0x20 intermediate/ip_addr.o
+ .debug_aranges
+                0x00000580       0x20 intermediate/icmp.o
+ .debug_aranges
+                0x000005a0       0x20 intermediate/tcpip.o
+ .debug_aranges
+                0x000005c0       0x20 intermediate/api_msg.o
+ .debug_aranges
+                0x000005e0       0x20 intermediate/api_lib.o
+ .debug_aranges
+                0x00000600       0x20 intermediate/etharp.o
+ .debug_aranges
+                0x00000620       0x20 intermediate/sys_arch.o
+ .debug_aranges
+                0x00000640       0x20 intermediate/ethernetif.o
+ .debug_aranges
+                0x00000660       0x20 intermediate/SAM7_EMAC.o
+ .debug_aranges
+                0x00000680       0x20 intermediate/SAM7_EMAC_ISR.o
+ .debug_aranges
+                0x000006a0       0x20 intermediate/udp.o
+ .debug_aranges
+                0x000006c0       0x20 intermediate/ip_frag.o
+ .debug_aranges
+                0x000006e0       0x28 intermediate/AT91SAM7_Startup.o
+ .debug_aranges
+                0x00000708       0x20 intermediate/crt0.o
+
+.comment        0x00000000      0xbc2
+ .comment       0x00000000       0x2b intermediate/make.o
+ .comment       0x0000002b       0x2b intermediate/heap_2.o
+ .comment       0x00000056       0x2b intermediate/USBIsr.o
+ .comment       0x00000081       0x2b intermediate/USB-CDC.o
+ .comment       0x000000ac       0x2b intermediate/BasicWEB.o
+ .comment       0x000000d7       0x2b intermediate/main.o
+ .comment       0x00000102       0x2b intermediate/eeprom.o
+ .comment       0x0000012d       0x2b intermediate/osc.o
+ .comment       0x00000158       0x2b intermediate/osc_patternmatch.o
+ .comment       0x00000183       0x2b intermediate/pwm.o
+ .comment       0x000001ae       0x2b intermediate/spi.o
+ .comment       0x000001d9       0x2b intermediate/rtos.o
+ .comment       0x00000204       0x2b intermediate/io.o
+ .comment       0x0000022f       0x2b intermediate/led.o
+ .comment       0x0000025a       0x2b intermediate/timer.o
+ .comment       0x00000285       0x2b intermediate/timer_isr.o
+ .comment       0x000002b0       0x2b intermediate/debugosc.o
+ .comment       0x000002db       0x2b intermediate/can_isr.o
+ .comment       0x00000306       0x2b intermediate/can.o
+ .comment       0x00000331       0x2b intermediate/network.o
+ .comment       0x0000035c       0x2b intermediate/system.o
+ .comment       0x00000387       0x2b intermediate/usb.o
+ .comment       0x000003b2       0x2b intermediate/analogin_isr.o
+ .comment       0x000003dd       0x2b intermediate/analogin.o
+ .comment       0x00000408       0x2b intermediate/serial.o
+ .comment       0x00000433       0x2b intermediate/serial_isr.o
+ .comment       0x0000045e       0x2b intermediate/tasks.o
+ .comment       0x00000489       0x2b intermediate/queue.o
+ .comment       0x000004b4       0x2b intermediate/list.o
+ .comment       0x000004df       0x2b intermediate/portISR.o
+ .comment       0x0000050a       0x2b intermediate/port.o
+ .comment       0x00000535       0x2b intermediate/tcp_out.o
+ .comment       0x00000560       0x2b intermediate/inet.o
+ .comment       0x0000058b       0x2b intermediate/mem.o
+ .comment       0x000005b6       0x2b intermediate/memp.o
+ .comment       0x000005e1       0x2b intermediate/netif.o
+ .comment       0x0000060c       0x2b intermediate/pbuf.o
+ .comment       0x00000637       0x2b intermediate/raw.o
+ .comment       0x00000662       0x2b intermediate/stats.o
+ .comment       0x0000068d       0x2b intermediate/sys.o
+ .comment       0x000006b8       0x2b intermediate/tcp.o
+ .comment       0x000006e3       0x2b intermediate/tcp_in.o
+ .comment       0x0000070e       0x2b intermediate/ip.o
+ .comment       0x00000739       0x2b intermediate/ip_addr.o
+ .comment       0x00000764       0x2b intermediate/icmp.o
+ .comment       0x0000078f       0x2b intermediate/tcpip.o
+ .comment       0x000007ba       0x2b intermediate/api_msg.o
+ .comment       0x000007e5       0x2b intermediate/err.o
+ .comment       0x00000810       0x2b intermediate/api_lib.o
+ .comment       0x0000083b       0x2b intermediate/etharp.o
+ .comment       0x00000866       0x2b intermediate/sys_arch.o
+ .comment       0x00000891       0x2b intermediate/ethernetif.o
+ .comment       0x000008bc       0x2b intermediate/SAM7_EMAC.o
+ .comment       0x000008e7       0x2b intermediate/SAM7_EMAC_ISR.o
+ .comment       0x00000912       0x2b intermediate/udp.o
+ .comment       0x0000093d       0x2b intermediate/ip_frag.o
+ .comment       0x00000968       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strcat.o)
+ .comment       0x00000993       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strchr.o)
+ .comment       0x000009be       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strncmp.o)
+ .comment       0x000009e9       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(strncpy.o)
+ .comment       0x00000a14       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(snprintf.o)
+ .comment       0x00000a3f       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(sprintf.o)
+ .comment       0x00000a6a       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(vsnprintf.o)
+ .comment       0x00000a95       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(sscanf.o)
+ .comment       0x00000ac0       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(ctype.o)
+ .comment       0x00000aeb       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfprintf_long_v4t_t_le.a(__vfprintf_long.o)
+ .comment       0x00000b16       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/lib_vfscanf_long_v4t_t_le.a(__vfscanf_long.o)
+ .comment       0x00000b41       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__getc.o)
+ .comment       0x00000b6c       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__digit.o)
+ .comment       0x00000b97       0x2b C:/Program Files/Rowley Associates Limited/CrossWorks for ARM 1.6/lib/libc_v4t_t_le.a(__hex_lc_uc.o)
+
+.debug_str      0x00000000      0xa88
+ .debug_str     0x00000000       0x28 intermediate/heap_2.o
+ .debug_str     0x00000028       0x12 intermediate/USBIsr.o
+ .debug_str     0x0000003a       0x4c intermediate/USB-CDC.o
+ .debug_str     0x00000086       0x50 intermediate/BasicWEB.o
+ .debug_str     0x000000d6       0x12 intermediate/main.o
+ .debug_str     0x000000e8       0x19 intermediate/eeprom.o
+ .debug_str     0x00000101       0xc7 intermediate/osc.o
+ .debug_str     0x000001c8        0x8 intermediate/osc_patternmatch.o
+ .debug_str     0x000001d0       0x1a intermediate/pwm.o
+ .debug_str     0x000001ea       0x26 intermediate/spi.o
+ .debug_str     0x00000210       0x31 intermediate/io.o
+ .debug_str     0x00000241       0x22 intermediate/led.o
+ .debug_str     0x00000263       0x17 intermediate/timer.o
+ .debug_str     0x0000027a       0x12 intermediate/timer_isr.o
+ .debug_str     0x0000028c       0x1b intermediate/debugosc.o
+ .debug_str     0x000002a7       0x12 intermediate/can_isr.o
+ .debug_str     0x000002b9       0x30 intermediate/can.o
+ .debug_str     0x000002e9       0xd0 intermediate/network.o
+ .debug_str     0x000003b9        0x9 intermediate/system.o
+ .debug_str     0x000003c2       0x22 intermediate/usb.o
+ .debug_str     0x000003e4       0x12 intermediate/analogin_isr.o
+ .debug_str     0x000003f6       0x2e intermediate/analogin.o
+ .debug_str     0x00000424       0x44 intermediate/serial.o
+ .debug_str     0x00000468       0x12 intermediate/serial_isr.o
+ .debug_str     0x0000047a       0xd6 intermediate/tasks.o
+ .debug_str     0x00000550       0x5e intermediate/queue.o
+ .debug_str     0x000005ae       0x2b intermediate/list.o
+ .debug_str     0x000005d9       0x12 intermediate/portISR.o
+ .debug_str     0x000005eb       0x12 intermediate/port.o
+ .debug_str     0x000005fd       0x49 intermediate/tcp_out.o
+ .debug_str     0x00000646       0x12 intermediate/inet.o
+ .debug_str     0x00000658       0x12 intermediate/mem.o
+ .debug_str     0x0000066a       0x1c intermediate/memp.o
+ .debug_str     0x00000686       0x68 intermediate/netif.o
+ .debug_str     0x000006ee       0x1c intermediate/pbuf.o
+ .debug_str     0x0000070a       0x22 intermediate/raw.o
+ .debug_str     0x0000072c       0x12 intermediate/stats.o
+ .debug_str     0x0000073e       0x28 intermediate/sys.o
+ .debug_str     0x00000766       0x79 intermediate/tcp.o
+ .debug_str     0x000007df       0x53 intermediate/tcp_in.o
+ .debug_str     0x00000832       0x18 intermediate/ip.o
+ .debug_str     0x0000084a       0x12 intermediate/ip_addr.o
+ .debug_str     0x0000085c       0x1d intermediate/icmp.o
+ .debug_str     0x00000879       0x5b intermediate/tcpip.o
+ .debug_str     0x000008d4       0x55 intermediate/api_msg.o
+ .debug_str     0x00000929       0x73 intermediate/api_lib.o
+ .debug_str     0x0000099c       0x3c intermediate/etharp.o
+ .debug_str     0x000009d8        0xa intermediate/sys_arch.o
+ .debug_str     0x000009e2       0x23 intermediate/ethernetif.o
+ .debug_str     0x00000a05       0x44 intermediate/SAM7_EMAC.o
+ .debug_str     0x00000a49       0x12 intermediate/SAM7_EMAC_ISR.o
+ .debug_str     0x00000a5b       0x1b intermediate/udp.o
+ .debug_str     0x00000a76       0x12 intermediate/ip_frag.o

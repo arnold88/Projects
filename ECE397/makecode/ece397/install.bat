@@ -1,0 +1,1 @@
+copy C:\cygwin\makecode\ece397\2ND_make.c c:\cygwin\makecode\firmware\heavy

@@ -1,0 +1,136 @@
+
+Allocating common symbols
+Common symbol       size              file
+
+Io                  0x50              ../controller/makingthings/io.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x00100000         0x00040000
+ram              0x00200000         0x0000fa24
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD ../controller/startup/Cstartup_SAM7.o
+LOAD main.o
+LOAD ../controller/makingthings/io.o
+LOAD ../controller/makingthings/led.o
+LOAD /cygdrive/c/DOCUME~1/DAVIDW~1/LOCALS~1/Temp/ccn5o4tw.o
+START GROUP
+LOAD /cygdrive/c/program files/gnuarm/bin/../lib/gcc/arm-elf/4.1.1/interwork/libgcc.a
+LOAD /cygdrive/c/program files/gnuarm/bin/../lib/gcc/arm-elf/4.1.1/../../../../arm-elf/lib/interwork/libc.a
+END GROUP
+                0x0020fffc                __stack_end__ = 0x20fffc
+                0x00000000                . = 0x0
+
+startup         0x00100000       0x44
+ *(.startup)
+ .startup       0x00100000       0x44 /cygdrive/c/DOCUME~1/DAVIDW~1/LOCALS~1/Temp/ccn5o4tw.o
+
+prog            0x00100044     0x1568
+ *(.text)
+ .text          0x00100044       0xdc ../controller/startup/Cstartup_SAM7.o
+                0x00100044                AT91F_LowLevelInit
+ .text          0x00100120       0xa8 main.o
+                0x00100120                main
+                0x001001b8                swi_handler
+ .text          0x001001c8     0x1164 ../controller/makingthings/io.o
+                0x0010117c                Io_GetPortA
+                0x00100f28                Io_PullupDisable
+                0x001011a4                Io_SetPortB
+                0x0010113c                Io_SetPortA
+                0x0010120c                Io_SetPortAMask
+                0x001009cc                Io_SetFalse
+                0x001012d8                Io_GetValueBits
+                0x001007c0                Io_SetDirection
+                0x0010100c                Io_SetValueBits
+                0x00100808                Io_GetDirection
+                0x00100bdc                Io_SetPeripheralB
+                0x00100e40                Io_GetPullup
+                0x00100898                Io_SetOutput
+                0x00100714                Io_SetActive
+                0x00100398                Io_StartBits
+                0x00100a38                Io_SetValue
+                0x00100fd0                Io_SetFalseBits
+                0x00100760                Io_GetActive
+                0x00101248                Io_SetPortBMask
+                0x00100c90                Io_GetPio
+                0x00100610                Io_StopBits
+                0x0010126c                Io_GetPortBMask
+                0x001010c4                Io_SetOutputBits
+                0x001001c8                Io_Start
+                0x00100c48                Io_SetPio
+                0x001008fc                Io_SetInput
+                0x00100adc                Io_GetValue
+                0x00100d20                Io_PioEnable
+                0x00101100                Io_SetInputBits
+                0x00100960                Io_SetTrue
+                0x00100d8c                Io_PioDisable
+                0x00100b70                Io_SetPeripheralA
+                0x001002d4                Io_Stop
+                0x001011e4                Io_GetPortB
+                0x00100df8                Io_SetPullup
+                0x00100f94                Io_SetTrueBits
+                0x00100ebc                Io_PullupEnable
+                0x00101230                Io_GetPortAMask
+ .text          0x0010132c      0x1b0 ../controller/makingthings/led.o
+                0x00101388                Led_SetState
+                0x001013ec                Led_GetState
+                0x0010132c                Led_SetActive
+                0x00101360                Led_GetActive
+ .text          0x001014dc       0xd0 /cygdrive/c/DOCUME~1/DAVIDW~1/LOCALS~1/Temp/ccn5o4tw.o
+                0x001014dc                start
+                0x0010158c                endless_loop
+ *(.rodata)
+ *(.rodata*)
+ *(.glue_7)
+ .glue_7        0x001015ac        0x0 ../controller/startup/Cstartup_SAM7.o
+ .glue_7        0x001015ac        0x0 main.o
+ .glue_7        0x001015ac        0x0 ../controller/makingthings/io.o
+ .glue_7        0x001015ac        0x0 ../controller/makingthings/led.o
+ .glue_7        0x001015ac        0x0 /cygdrive/c/DOCUME~1/DAVIDW~1/LOCALS~1/Temp/ccn5o4tw.o
+ *(.glue_7t)
+ .glue_7t       0x001015ac        0x0 ../controller/startup/Cstartup_SAM7.o
+ .glue_7t       0x001015ac        0x0 main.o
+ .glue_7t       0x001015ac        0x0 ../controller/makingthings/io.o
+ .glue_7t       0x001015ac        0x0 ../controller/makingthings/led.o
+ .glue_7t       0x001015ac        0x0 /cygdrive/c/DOCUME~1/DAVIDW~1/LOCALS~1/Temp/ccn5o4tw.o
+                0x001015ac                __end_of_text__ = .
+
+.data           0x00200000        0x0 load address 0x001015ac
+                0x00200000                __data_beg__ = .
+                0x001015ac                __data_beg_src__ = __end_of_text__
+ *(.data)
+ .data          0x00200000        0x0 ../controller/startup/Cstartup_SAM7.o
+ .data          0x00200000        0x0 main.o
+ .data          0x00200000        0x0 ../controller/makingthings/io.o
+ .data          0x00200000        0x0 ../controller/makingthings/led.o
+ .data          0x00200000        0x0 /cygdrive/c/DOCUME~1/DAVIDW~1/LOCALS~1/Temp/ccn5o4tw.o
+                0x00200000                __data_end__ = .
+
+.bss            0x00200000       0x54
+                0x00200000                __bss_beg__ = .
+ *(.bss)
+ .bss           0x00200000        0x0 ../controller/startup/Cstartup_SAM7.o
+ .bss           0x00200000        0x0 main.o
+ .bss           0x00200000        0x0 ../controller/makingthings/io.o
+ .bss           0x00200000        0x4 ../controller/makingthings/led.o
+ .bss           0x00200004        0x0 /cygdrive/c/DOCUME~1/DAVIDW~1/LOCALS~1/Temp/ccn5o4tw.o
+ COMMON         0x00200004       0x50 ../controller/makingthings/io.o
+                0x00200004                Io
+                0x00200054                . = ALIGN (0x4)
+                0x00200054                . = ALIGN (0x4)
+                0x00200054                _end = .
+                0x00200054                _bss_end__ = .
+                0x00200054                __bss_end__ = .
+                0x00200054                __end__ = .
+                0x00200054                PROVIDE (end, .)
+OUTPUT(output/tiny.elf elf32-littlearm)
+
+.comment        0x00000000       0x48
+ .comment       0x00000000       0x12 ../controller/startup/Cstartup_SAM7.o
+ .comment       0x00000012       0x12 main.o
+ .comment       0x00000024       0x12 ../controller/makingthings/io.o
+ .comment       0x00000036       0x12 ../controller/makingthings/led.o
