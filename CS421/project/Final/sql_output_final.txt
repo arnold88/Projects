@@ -1,0 +1,30 @@
+Question is: did mancuso win silver in super-combined?
+Corresponding SQL generated is: select count(*) from results r ,competitions c where r.comp_id=c.comp_id and r.medal="silver" and c.name="super-combined" and r.winner="mancuso";
+Answer to question 1 is
+Yes
+--------------------------------------------------------------------------------------------
+Question is: did razzoli arrive first in giantslalom?
+Corresponding SQL generated is: select count(*) from results r ,competitions c where r.comp_id=c.comp_id and r.medal="gold" and c.name="giantslalom" and r.winner="razzoli";
+Answer to question 2 is
+No
+--------------------------------------------------------------------------------------------
+Question is: did a slovakian woman win gold in biathlon?
+Corresponding SQL generated is: select count(*) from athletes a,results r ,competitions c where r.winner=a.name and r.comp_id=c.comp_id and r.medal="gold" and c.name="biathlon" and a.gender="F" and a.nationality="slovakia";
+Answer to question 3 is
+Yes
+--------------------------------------------------------------------------------------------
+Question is: did a swiss woman arrive first in skijumping?
+Corresponding SQL generated is: select count(*) from athletes a,results r ,competitions c where r.winner=a.name and r.comp_id=c.comp_id and r.medal="gold" and c.name="skijumping" and a.gender="F" and a.nationality="switzerland";
+Answer to question 4 is
+No
+--------------------------------------------------------------------------------------------
+Question is: Who won silver in shorttrack?
+Corresponding SQL generated is: select r.winner from results r ,competitions c where r.comp_id=c.comp_id and r.medal="silver" and c.name="shorttrack";
+Answer to question 5 is
+ohno
+--------------------------------------------------------------------------------------------
+Question is: who arrive third in crosscountry?
+Corresponding SQL generated is: select r.winner from results r ,competitions c where r.comp_id=c.comp_id and r.medal="bronze" and c.name="crosscountry";
+Answer to question 6 is
+huttary
+--------------------------------------------------------------------------------------------

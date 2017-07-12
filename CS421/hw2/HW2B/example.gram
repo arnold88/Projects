@@ -1,0 +1,30 @@
+S NP VP
+S Aux NP VP
+S VP
+NP Noun
+NP Noun NP
+NP Pronoun
+NP NP Noun
+NP Pronoun Noun
+NP NP Aux NP
+NP ProperNoun
+NP ProperNoun NP
+NP Det Noun 
+NP Det Pronoun 
+NP Det ProperNoun 
+NP Det ProperNoun NP VP
+NP Nom
+Nom Noun
+Nom Nom Noun
+Nom Nom PP
+NP NP PP
+VP Verb
+VP Verb PP
+VP Verb NP
+VP Verb NP NP
+VP Verb NP PP
+PP Prep NP
+
+
+
+

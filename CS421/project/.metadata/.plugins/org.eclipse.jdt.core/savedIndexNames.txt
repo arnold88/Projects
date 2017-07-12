@@ -1,0 +1,3 @@
+INDEX VERSION 1.126+D:\SCHOOL STUFF\Homework\cs421\project\.metadata\.plugins\org.eclipse.jdt.core
+803629352.index
+1681344714.index

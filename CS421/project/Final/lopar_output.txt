@@ -1,0 +1,50 @@
+(S (Aux did)(NP (ProperNoun lysacek))(VP (Verb arrive)(NP (NP (Noun first))(PP (Prep in)(NP (Noun figureskating))))))
+
+(S (Aux did)(NP (ProperNoun huttary))(VP (Verb win)(NP (NP (Noun gold))(PP (Prep in)(NP (Noun crosscountry))))))
+
+(S (Aux did)(NP (ProperNoun kostelic))(VP (Verb win)(NP (NP (Noun silver))(PP (Prep in)(NP (Noun super-combined))))))
+
+(S (Aux did)(NP (Adj italian)(NP (Noun man)))(VP (Verb win)(NP (NP (Noun gold))(PP (Prep in)(NP (Noun slalom))))))
+
+(S (Aux did)(NP (Adj korean)(NP (Noun woman)))(VP (Verb arrive)(NP (NP (Noun second))(PP (Prep in)(NP (Noun figureskating))))))
+
+(S (NP (Noun who))(VP (Verb won)(NP (NP (Noun bronze))(PP (Prep in)(NP (Noun shorttrack))))))
+
+(S (NP (Noun who))(VP (Verb won)(NP (NP (Noun silver))(PP (Prep in)(NP (Noun speedskating))))))
+
+(S (NP (Noun who))(VP (Verb arrived)(NP (NP (Noun first))(PP (Prep in)(NP (Noun slalom))))))
+
+(S (Aux did)(NP (ProperNoun lysacek))(VP (Verb arrive)(NP (NP (Noun first))(PP (Prep in)(NP (Noun figureskating))))))
+
+(S (Aux did)(NP (ProperNoun huttary))(VP (Verb win)(NP (NP (Noun gold))(PP (Prep in)(NP (Noun crosscountry))))))
+
+(S (Aux did)(NP (ProperNoun kostelic))(VP (Verb win)(NP (NP (Noun silver))(PP (Prep in)(NP (Noun super-combined))))))
+
+(S (Aux did)(NP (Adj italian)(NP (Noun man)))(VP (Verb win)(NP (NP (Noun gold))(PP (Prep in)(NP (Noun slalom))))))
+
+(S (Aux did)(NP (Adj korean)(NP (Noun woman)))(VP (Verb arrive)(NP (NP (Noun second))(PP (Prep in)(NP (Noun figureskating))))))
+
+(S (NP (Noun who))(VP (Verb won)(NP (NP (Noun bronze))(PP (Prep in)(NP (Noun shorttrack))))))
+
+(S (NP (Noun who))(VP (Verb won)(NP (NP (Noun silver))(PP (Prep in)(NP (Noun speedskating))))))
+
+(S (NP (Noun who))(VP (Verb arrived)(NP (NP (Noun first))(PP (Prep in)(NP (Noun slalom))))))
+
+(S (Aux did)(NP (ProperNoun lysacek))(VP (Verb arrive)(NP (NP (Noun first))(PP (Prep in)(NP (Noun figureskating))))))
+
+(S (Aux did)(NP (ProperNoun huttary))(VP (Verb win)(NP (NP (Noun gold))(PP (Prep in)(NP (Noun crosscountry))))))
+
+(S (Aux did)(NP (ProperNoun kostelic))(VP (Verb win)(NP (NP (Noun silver))(PP (Prep in)(NP (Noun super-combined))))))
+
+(S (Aux did)(NP (Adj italian)(NP (Noun man)))(VP (Verb win)(NP (NP (Noun gold))(PP (Prep in)(NP (Noun slalom))))))
+
+(S (Aux did)(NP (Adj korean)(NP (Noun woman)))(VP (Verb arrive)(NP (NP (Noun second))(PP (Prep in)(NP (Noun figureskating))))))
+
+(S (NP (Noun who))(VP (Verb won)(NP (NP (Noun bronze))(PP (Prep in)(NP (Noun shorttrack))))))
+
+(S (NP (Noun who))(VP (Verb won)(NP (NP (Noun silver))(PP (Prep in)(NP (Noun speedskating))))))
+
+(S (NP (Noun who))(VP (Verb arrived)(NP (NP (Noun first))(PP (Prep in)(NP (Noun slalom))))))
+
+(S (Aux did)(NP (ProperNoun svendsen))(VP (Verb win)(NP (NP (Noun silver))(PP (Prep in)(NP (Det the)(Noun 1000)(Noun biathlon))))))
+

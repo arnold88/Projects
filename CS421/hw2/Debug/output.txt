@@ -1,0 +1,423 @@
+********** Tag bigram probabilities *********
+
+ P ( NNP | , ) is ->0.0116959
+ P ( , | NNP ) is ->0.0116959
+ P ( TO | VB ) is ->0.0116959
+ P ( VB | IN ) is ->0.0116959
+ P ( IN | DT ) is ->0.0116959
+ P ( DT | NN ) is ->0.0116959
+ P ( IN | JJ ) is ->0.0116959
+ P ( , | PRP ) is ->0.0116959
+ P ( NNP | NN ) is ->0.0116959
+ P ( NN | CC ) is ->0.0116959
+ P ( RB | DT ) is ->0.0116959
+ P ( DT | NNS ) is ->0.0116959
+ P ( JJ | IN ) is ->0.0116959
+ P ( IN | NN ) is ->0.0116959
+ P ( , | VBD ) is ->0.0116959
+ P ( CD | WDT ) is ->0.0116959
+ P ( WDT | MD ) is ->0.0116959
+ P ( MD | VB ) is ->0.0116959
+ P ( RB | . ) is ->0.0116959
+ P ( JJ | , ) is ->0.0116959
+ P ( VBD | DT ) is ->0.0116959
+ P ( DT | RB ) is ->0.0116959
+ P ( . | WRB ) is ->0.0116959
+ P ( WRB | PP$ ) is ->0.0116959
+ P ( VBD | , ) is ->0.0116959
+ P ( VBD | CD ) is ->0.0116959
+ P ( NN | TO ) is ->0.0116959
+ P ( TO | DT ) is ->0.0116959
+ P ( CC | NN ) is ->0.0116959
+ P ( NNP | NNS ) is ->0.0116959
+ P ( IN | RB ) is ->0.0116959
+ P ( NNP | VBG ) is ->0.0116959
+ P ( , | JJ ) is ->0.0116959
+ P ( JJ | NNS ) is ->0.0116959
+ P ( NNS | . ) is ->0.0116959
+ P ( . | NN ) is ->0.0116959
+ P ( NNP | VBZ ) is ->0.0116959
+ P ( VBZ | VBG ) is ->0.0116959
+ P ( RB | $ ) is ->0.0116959
+ P ( $ | CD ) is ->0.0116959
+ P ( CD | CD ) is ->0.0116959
+ P ( CD | DT ) is ->0.0116959
+ P ( VBG | CC ) is ->0.0116959
+ P ( VB | RBR ) is ->0.0116959
+ P ( IN | VBN ) is ->0.0116959
+ P ( VBN | NN ) is ->0.0116959
+ P ( NN | VBZ ) is ->0.0116959
+ P ( JJ | JJ ) is ->0.0116959
+ P ( VBP | VBG ) is ->0.0116959
+ P ( VBG | VBN ) is ->0.0116959
+ P ( . | JJR ) is ->0.0116959
+ P ( JJR | IN ) is ->0.0116959
+ P ( VBP | IN ) is ->0.0116959
+ P ( IN | VBP ) is ->0.0116959
+ P ( VBN | DT ) is ->0.0116959
+ P ( NN | RB ) is ->0.0116959
+ P ( VBG | VBD ) is ->0.0116959
+ P ( IN | IN ) is ->0.0116959
+ P ( , | IN ) is ->0.0116959
+ P ( NNP | NNPS ) is ->0.0116959
+ P ( NNPS | CC ) is ->0.0116959
+ P ( NNS | DT ) is ->0.0116959
+ P ( , | NNS ) is ->0.0116959
+ P ( NN | MD ) is ->0.0116959
+ P ( VBP | NN ) is ->0.0116959
+ P ( NNP | VBP ) is ->0.0116959
+ P ( NN | WDT ) is ->0.0116959
+ P ( WDT | VBZ ) is ->0.0116959
+ P ( VBN | JJR ) is ->0.0116959
+ P ( CD | NN ) is ->0.0116959
+ P ( , | VBG ) is ->0.0116959
+ P ( JJ | CD ) is ->0.0116959
+ P ( . | CC ) is ->0.0116959
+ P ( CC | DT ) is ->0.0116959
+ P ( RB | VBP ) is ->0.0116959
+ P ( VBG | DT ) is ->0.0116959
+ P ( VBP | RB ) is ->0.0116959
+ P ( CC | MD ) is ->0.0116959
+ P ( VBN | RB ) is ->0.0116959
+ P ( NNP | IN ) is ->0.00584795
+ P ( IN | NNP ) is ->0.00584795
+ P ( NNP | NNP ) is ->0.00584795
+ P ( NNP | : ) is ->0.00584795
+ P ( : | IN ) is ->0.00584795
+ P ( IN | PP$ ) is ->0.00584795
+ P ( PP$ | NN ) is ->0.00584795
+ P ( NN | IN ) is ->0.00584795
+ P ( NNP | VBD ) is ->0.00584795
+ P ( VBD | TO ) is ->0.00584795
+ P ( JJ | NNP ) is ->0.00584795
+ P ( NNP | CD ) is ->0.00584795
+ P ( CD | IN ) is ->0.00584795
+ P ( NNP | . ) is ->0.00584795
+ P ( . | IN ) is ->0.00584795
+ P ( NN | , ) is ->0.00584795
+ P ( PRP | VBD ) is ->0.00584795
+ P ( VBD | IN ) is ->0.00584795
+ P ( IN | TO ) is ->0.00584795
+ P ( TO | NNP ) is ->0.00584795
+ P ( CC | VBD ) is ->0.00584795
+ P ( VB | RB ) is ->0.00584795
+ P ( NNS | IN ) is ->0.00584795
+ P ( JJ | NN ) is ->0.00584795
+ P ( NN | : ) is ->0.00584795
+ P ( : | NNS ) is ->0.00584795
+ P ( NNS | , ) is ->0.00584795
+ P ( , | NN ) is ->0.00584795
+ P ( : | CC ) is ->0.00584795
+ P ( CC | VBP ) is ->0.00584795
+ P ( VBP | JJ ) is ->0.00584795
+ P ( NN | . ) is ->0.00584795
+ P ( . | NNP ) is ->0.00584795
+ P ( , | DT ) is ->0.00584795
+ P ( DT | NNP ) is ->0.00584795
+ P ( VBD | VBG ) is ->0.00584795
+ P ( VBG | IN ) is ->0.00584795
+ P ( NN | NN ) is ->0.00584795
+ P ( DT | JJ ) is ->0.00584795
+ P ( , | CD ) is ->0.00584795
+ P ( VB | PRP ) is ->0.00584795
+ P ( PRP | TO ) is ->0.00584795
+ P ( VB | DT ) is ->0.00584795
+ P ( JJ | VBG ) is ->0.00584795
+ P ( VBG | CD ) is ->0.00584795
+ P ( CD | NNS ) is ->0.00584795
+ P ( NNS | RB ) is ->0.00584795
+ P ( . | VBN ) is ->0.00584795
+ P ( VBN | IN ) is ->0.00584795
+ P ( RB | VBN ) is ->0.00584795
+ P ( VBN | JJ ) is ->0.00584795
+ P ( NN | VBG ) is ->0.00584795
+ P ( NN | VBD ) is ->0.00584795
+ P ( RB | IN ) is ->0.00584795
+ P ( NNS | CC ) is ->0.00584795
+ P ( CC | NNS ) is ->0.00584795
+ P ( NNS | VBP ) is ->0.00584795
+ P ( VBP | DT ) is ->0.00584795
+ P ( NN | NNS ) is ->0.00584795
+ P ( VBP | VBN ) is ->0.00584795
+ P ( . | DT ) is ->0.00584795
+ P ( VBG | NNS ) is ->0.00584795
+ P ( NNS | VBD ) is ->0.00584795
+ P ( VBD | VBN ) is ->0.00584795
+ P ( VBN | TO ) is ->0.00584795
+ P ( NNP | RB ) is ->0.00584795
+ P ( RB | CD ) is ->0.00584795
+ P ( CD | , ) is ->0.00584795
+ P ( VBG | RB ) is ->0.00584795
+ P ( CC | VBG ) is ->0.00584795
+ P ( , | CC ) is ->0.00584795
+ P ( CC | VBZ ) is ->0.00584795
+ P ( NNS | TO ) is ->0.00584795
+ P ( RBR | JJ ) is ->0.00584795
+ P ( VBZ | RB ) is ->0.00584795
+ P ( RB | JJ ) is ->0.00584795
+ P ( CC | JJ ) is ->0.00584795
+ P ( NN | VBP ) is ->0.00584795
+ P ( VBN | . ) is ->0.00584795
+ P ( IN | CD ) is ->0.00584795
+ P ( NNP | CC ) is ->0.00584795
+ P ( CC | NNP ) is ->0.00584795
+ P ( RB | VBG ) is ->0.00584795
+ P ( JJ | CC ) is ->0.00584795
+ P ( VBZ | VBN ) is ->0.00584795
+ P ( NN | JJ ) is ->0.00584795
+ P ( VB | NNS ) is ->0.00584795
+ P ( IN | NNS ) is ->0.00584795
+ P ( VBP | NNS ) is ->0.00584795
+ P ( NNPS | VBZ ) is ->0.00584795
+ P ( VBZ | JJ ) is ->0.00584795
+ P ( VB | VBN ) is ->0.00584795
+
+**********lexical likelihood probabilities ************
+
+P ( Sam | NNP ) is ->0.00809717
+P ( he | PRP ) is ->0.00809717
+P ( XM | NNP ) is ->0.00809717
+P ( tried | VBD ) is ->0.00809717
+P ( put | VB ) is ->0.00809717
+P ( life | NN ) is ->0.00809717
+P ( laundry | NN ) is ->0.00809717
+P ( an | DT ) is ->0.00809717
+P ( was | VBD ) is ->0.00809717
+P ( day | NN ) is ->0.00809717
+P ( on | IN ) is ->0.00809717
+P ( a | DT ) is ->0.00809717
+P ( that | WDT ) is ->0.00809717
+P ( could | MD ) is ->0.00809717
+P ( require | VB ) is ->0.00809717
+P ( kill | VB ) is ->0.00809717
+P ( another | DT ) is ->0.00809717
+P ( being | VBG ) is ->0.00809717
+P ( away | RB ) is ->0.00809717
+P ( Seated | VBN ) is ->0.00809717
+P ( controlled | VBD ) is ->0.00809717
+P ( armed | VBN ) is ->0.00809717
+P ( When | WRB ) is ->0.00809717
+P ( pilots | NNS ) is ->0.00809717
+P ( are | VBP ) is ->0.00809717
+P ( vanguard | NN ) is ->0.00809717
+P ( U.S. | NNP ) is ->0.00809717
+P ( intelligence | NN ) is ->0.00809717
+P ( bet | VBN ) is ->0.00809717
+P ( The | DT ) is ->0.00809717
+P ( Predator | NNP ) is ->0.00809717
+P ( Sept. | NNP ) is ->0.00809717
+P ( 2001 | CD ) is ->0.00809717
+P ( terrorist | JJ ) is ->0.00809717
+P ( Today | NN ) is ->0.00809717
+P ( is | VBZ ) is ->0.00809717
+P ( spending | VBG ) is ->0.00809717
+P ( billion | CD ) is ->0.00809717
+P ( year | NN ) is ->0.00809717
+P ( buying | VBG ) is ->0.00809717
+P ( operating | VBG ) is ->0.00809717
+P ( drones | NNS ) is ->0.00809717
+P ( fly | VB ) is ->0.00809717
+P ( unmanned | JJ ) is ->0.00809717
+P ( than | IN ) is ->0.00809717
+P ( manned | VBN ) is ->0.00809717
+P ( Demand | NN ) is ->0.00809717
+P ( even | RB ) is ->0.00809717
+P ( as | IN ) is ->0.00809717
+P ( engineers | NNS ) is ->0.00809717
+P ( military | JJ ) is ->0.00809717
+P ( trained | VBN ) is ->0.00809717
+P ( 7,000 | CD ) is ->0.00809717
+P ( all | DT ) is ->0.00809717
+P ( use | VBP ) is ->0.00809717
+P ( played | VBN ) is ->0.00809717
+P ( carried | VBD ) is ->0.00809717
+P ( out | IN ) is ->0.00809717
+P ( Marja | NNP ) is ->0.00809717
+P ( Pentagon | NNP ) is ->0.00809717
+P ( adapted | VBN ) is ->0.00809717
+P ( consumer-driven | JJ ) is ->0.00809717
+P ( video | NN ) is ->0.00809717
+P ( commanders | NNS ) is ->0.00809717
+P ( headquarters | NNS ) is ->0.00809717
+P ( enemy | NN ) is ->0.00809717
+P ( screens | NNS ) is ->0.00809717
+P ( For | IN ) is ->0.00809717
+P ( time | NN ) is ->0.00809717
+P ( ground | NN ) is ->0.00809717
+P ( separate | JJ ) is ->0.00809717
+P ( killed | VBN ) is ->0.00809717
+P ( dozen | NN ) is ->0.00809717
+P ( senior | JJ ) is ->0.00809717
+P ( Al | NNP ) is ->0.00809717
+P ( Taliban | NNP ) is ->0.00809717
+P ( figures | NNS ) is ->0.00809717
+P ( months | NNS ) is ->0.00809717
+P ( But | CC ) is ->0.00809717
+P ( kill | VBP ) is ->0.00809717
+P ( sentiment | NN ) is ->0.00809717
+P ( skies | NNS ) is ->0.00809717
+P ( Some | DT ) is ->0.00809717
+P ( critics | NNS ) is ->0.00809717
+P ( problems | NNS ) is ->0.00809717
+P ( entire | JJ ) is ->0.00809717
+P ( should | MD ) is ->0.00809717
+P ( be | VB ) is ->0.00809717
+P ( Reporting | NNP ) is ->0.00404858
+P ( from | IN ) is ->0.00404858
+P ( Creech | NNP ) is ->0.00404858
+P ( Air | NNP ) is ->0.00404858
+P ( Force | NNP ) is ->0.00404858
+P ( Base | NNP ) is ->0.00404858
+P ( , | , ) is ->0.00404858
+P ( Nev. | NNP ) is ->0.00404858
+P ( - | : ) is ->0.00404858
+P ( From | IN ) is ->0.00404858
+P ( his | PP$ ) is ->0.00404858
+P ( apartment | NN ) is ->0.00404858
+P ( in | IN ) is ->0.00404858
+P ( Las | NNP ) is ->0.00404858
+P ( Vegas | NNP ) is ->0.00404858
+P ( Nelson | NNP ) is ->0.00404858
+P ( drove | VBD ) is ->0.00404858
+P ( to | TO ) is ->0.00404858
+P ( work | VB ) is ->0.00404858
+P ( through | IN ) is ->0.00404858
+P ( the | DT ) is ->0.00404858
+P ( desert | NN ) is ->0.00404858
+P ( along | IN ) is ->0.00404858
+P ( wind-whipped | JJ ) is ->0.00404858
+P ( Highway | NNP ) is ->0.00404858
+P ( 95 | CD ) is ->0.00404858
+P ( toward | IN ) is ->0.00404858
+P ( Indian | NNP ) is ->0.00404858
+P ( Springs | NNP ) is ->0.00404858
+P ( . | . ) is ->0.00404858
+P ( Along | IN ) is ->0.00404858
+P ( way | NN ) is ->0.00404858
+P ( tuned | VBD ) is ->0.00404858
+P ( radio | NN ) is ->0.00404858
+P ( and | CC ) is ->0.00404858
+P ( aside | RB ) is ->0.00404858
+P ( distractions | NNS ) is ->0.00404858
+P ( of | IN ) is ->0.00404858
+P ( daily | JJ ) is ->0.00404858
+P ( bills | NNS ) is ->0.00404858
+P ( rent | NN ) is ->0.00404858
+P ( get | VBP ) is ->0.00404858
+P ( ready | JJ ) is ->0.00404858
+P ( for | IN ) is ->0.00404858
+P ( work | NN ) is ->0.00404858
+P ( captain | NN ) is ->0.00404858
+P ( heading | VBG ) is ->0.00404858
+P ( shift | NN ) is ->0.00404858
+P ( new | JJ ) is ->0.00404858
+P ( kind | NN ) is ->0.00404858
+P ( job | NN ) is ->0.00404858
+P ( one | CD ) is ->0.00404858
+P ( him | PRP ) is ->0.00404858
+P ( human | JJ ) is ->0.00404858
+P ( 7,500 | CD ) is ->0.00404858
+P ( miles | NNS ) is ->0.00404858
+P ( padded | JJ ) is ->0.00404858
+P ( chair | NN ) is ->0.00404858
+P ( inside | IN ) is ->0.00404858
+P ( low | JJ ) is ->0.00404858
+P ( tan | NN ) is ->0.00404858
+P ( building | NN ) is ->0.00404858
+P ( heavily | RB ) is ->0.00404858
+P ( drone | JJ ) is ->0.00404858
+P ( aircraft | NN ) is ->0.00404858
+P ( soaring | VBG ) is ->0.00404858
+P ( over | IN ) is ->0.00404858
+P ( Afghanistan | NNP ) is ->0.00404858
+P ( ended | VBD ) is ->0.00404858
+P ( 40 | CD ) is ->0.00404858
+P ( minutes | NNS ) is ->0.00404858
+P ( back | RB ) is ->0.00404858
+P ( hustle | NN ) is ->0.00404858
+P ( neon | NN ) is ->0.00404858
+P ( Drone | NNP ) is ->0.00404858
+P ( crews | NNS ) is ->0.00404858
+P ( revolution | NN ) is ->0.00404858
+P ( warfare | NN ) is ->0.00404858
+P ( that | IN ) is ->0.00404858
+P ( military | NN ) is ->0.00404858
+P ( agencies | NNS ) is ->0.00404858
+P ( have | VBP ) is ->0.00404858
+P ( first | JJ ) is ->0.00404858
+P ( carrying | VBG ) is ->0.00404858
+P ( weapons | NNS ) is ->0.00404858
+P ( rushed | VBN ) is ->0.00404858
+P ( just | RB ) is ->0.00404858
+P ( four | CD ) is ->0.00404858
+P ( days | NNS ) is ->0.00404858
+P ( after | IN ) is ->0.00404858
+P ( 11 | CD ) is ->0.00404858
+P ( attacks | NNS ) is ->0.00404858
+P ( nearly | RB ) is ->0.00404858
+P ( $ | $ ) is ->0.00404858
+P ( 3 | CD ) is ->0.00404858
+P ( training | VBG ) is ->0.00404858
+P ( more | RBR ) is ->0.00404858
+P ( so | RB ) is ->0.00404858
+P ( strong | JJ ) is ->0.00404858
+P ( non-pilots | JJ ) is ->0.00404858
+P ( such | JJ ) is ->0.00404858
+P ( civil | JJ ) is ->0.00404858
+P ( police | NN ) is ->0.00404858
+P ( More | JJR ) is ->0.00404858
+P ( types | NNS ) is ->0.00404858
+P ( Iraq | NNP ) is ->0.00404858
+P ( planes | NNS ) is ->0.00404858
+P ( integral | JJ ) is ->0.00404858
+P ( part | NN ) is ->0.00404858
+P ( offensive | NN ) is ->0.00404858
+P ( now | RB ) is ->0.00404858
+P ( by | IN ) is ->0.00404858
+P ( Marines | NNPS ) is ->0.00404858
+P ( British | JJ ) is ->0.00404858
+P ( Afghan | JJ ) is ->0.00404858
+P ( troops | NNS ) is ->0.00404858
+P ( has | VBZ ) is ->0.00404858
+P ( technology | NN ) is ->0.00404858
+P ( satellite | NN ) is ->0.00404858
+P ( television | NN ) is ->0.00404858
+P ( digital | JJ ) is ->0.00404858
+P ( give | VB ) is ->0.00404858
+P ( combat | NN ) is ->0.00404858
+P ( at | IN ) is ->0.00404858
+P ( real-time | JJ ) is ->0.00404858
+P ( look | NN ) is ->0.00404858
+P ( computer | NN ) is ->0.00404858
+P ( can | MD ) is ->0.00404858
+P ( see | VB ) is ->0.00404858
+P ( live | VBP ) is ->0.00404858
+P ( feeds | NNS ) is ->0.00404858
+P ( strikes | NNS ) is ->0.00404858
+P ( Pakistan | NNP ) is ->0.00404858
+P ( CIA | NNP ) is ->0.00404858
+P ( program | NN ) is ->0.00404858
+P ( more | JJR ) is ->0.00404858
+P ( two | CD ) is ->0.00404858
+P ( Qaeda | NNP ) is ->0.00404858
+P ( including | VBG ) is ->0.00404858
+P ( leaders | NNS ) is ->0.00404858
+P ( Pakistani | JJ ) is ->0.00404858
+P ( last | JJ ) is ->0.00404858
+P ( six | CD ) is ->0.00404858
+P ( also | RB ) is ->0.00404858
+P ( civilians | NNS ) is ->0.00404858
+P ( inflaming | VBG ) is ->0.00404858
+P ( United | NNP ) is ->0.00404858
+P ( States | NNPS ) is ->0.00404858
+P ( fighting | VBG ) is ->0.00404858
+P ( undeclared | JJ ) is ->0.00404858
+P ( illegal | JJ ) is ->0.00404858
+P ( war | NN ) is ->0.00404858
+P ( that | DT ) is ->0.00404858
+P ( country | NN ) is ->0.00404858
+P ( say | VBP ) is ->0.00404858
+P ( serious | JJ ) is ->0.00404858
+P ( counterproductive | JJ ) is ->0.00404858
+P ( shut | VBN ) is ->0.00404858
+P ( down | RB ) is ->0.00404858

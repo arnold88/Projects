@@ -1,0 +1,59 @@
+[temp563@bert ~]$ cd lopar
+[temp563@bert ~/lopar]$ ./lopar -symbolic -trees ./data/example.gram -l ./data/example.lex ./data/example.txt
+reading grammar...finished
+reading lexicon...finished
+reading open class categories...finished
+reading start probabilities...finished
+processing...
+(S (NP (Det the)(Noun man))(VP (Verb saw)(NP (Det the)(Noun boy))(PP (Prep with)(NP (Det a)(Noun telescope)))))
+(S (NP (Det the)(Noun man))(VP (Verb saw)(NP (NP (Det the)(Noun boy))(PP (Prep with)(NP (Det a)(Noun telescope))))))
+
+1(S (NP (Noun davis))(VP (Verb won)(NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics)))))
+(S (NP (Noun davis))(VP (Verb won)(NP (NP (NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(Noun olympics))))
+(S (NP (Noun davis))(VP (Verb won)(NP (NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics))))))
+(S (NP (Noun davis))(VP (Verb won)(NP (NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(NP (Noun olympics))))
+(S (NP (Noun davis))(VP (Verb won)(NP (NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(NP (Nom (Noun olympics)))))
+(S (NP (Noun davis))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (Nom (Nom (Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver)))))(Noun olympics))))
+(S (NP (Noun davis))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (NP (Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(Noun olympics))))
+(S (NP (Noun davis))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (NP (Nom (Noun medal)))(PP (Prep at)(NP (Det the)(Noun vancouver))))(Noun olympics))))
+(S (NP (Noun davis))(VP (Verb won)(NP (Det a)(Noun gold))(NP (Nom (Nom (Nom (Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(Noun olympics)))))
+(S (NP (Noun davis))(VP (Verb won)(NP (Det a)(Noun gold))(NP (Nom (Nom (Noun medal))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics)))))))
+(S (NP (Noun davis))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (Noun medal))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics))))))
+(S (NP (Noun davis))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (Nom (Noun medal)))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics))))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics)))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (NP (NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(Noun olympics))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics))))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(NP (Noun olympics))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (NP (NP (Det a)(Noun gold))(Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(NP (Nom (Noun olympics)))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (Nom (Nom (Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver)))))(Noun olympics))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (NP (Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(Noun olympics))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (NP (Nom (Noun medal)))(PP (Prep at)(NP (Det the)(Noun vancouver))))(Noun olympics))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (Det a)(Noun gold))(NP (Nom (Nom (Nom (Noun medal))(PP (Prep at)(NP (Det the)(Noun vancouver))))(Noun olympics)))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (Det a)(Noun gold))(NP (Nom (Nom (Noun medal))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics)))))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (Noun medal))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics))))))
+(S (NP (Nom (Noun davis)))(VP (Verb won)(NP (Det a)(Noun gold))(NP (NP (Nom (Noun medal)))(PP (Prep at)(NP (NP (Det the)(Noun vancouver))(Noun olympics))))))
+
+2(S (NP (NP (Pronoun which)(Noun races))(Aux did)(NP (ProperNoun lindsey)(NP (ProperNoun vonn))))(VP (Verb win)))
+(S (NP (NP (NP (Pronoun which))(Noun races))(Aux did)(NP (ProperNoun lindsey)(NP (ProperNoun vonn))))(VP (Verb win)))
+
+3(S (NP (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Noun gold))))(PP (Prep in)(NP (ProperNoun torino))))(VP (Verb lost)(PP (Prep in)(NP (Noun vancouver)))))
+(S (NP (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Noun gold))))(PP (Prep in)(NP (ProperNoun torino))))(VP (Verb lost)(PP (Prep in)(NP (Nom (Noun vancouver))))))
+(S (NP (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Nom (Noun gold)))))(PP (Prep in)(NP (ProperNoun torino))))(VP (Verb lost)(PP (Prep in)(NP (Noun vancouver)))))
+(S (NP (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Nom (Noun gold)))))(PP (Prep in)(NP (ProperNoun torino))))(VP (Verb lost)(PP (Prep in)(NP (Nom (Noun vancouver))))))
+(S (NP (NP (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)))(Noun gold))(PP (Prep in)(NP (ProperNoun torino))))(VP (Verb lost)(PP (Prep in)(NP (Noun vancouver)))))
+(S (NP (NP (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)))(Noun gold))(PP (Prep in)(NP (ProperNoun torino))))(VP (Verb lost)(PP (Prep in)(NP (Nom (Noun vancouver))))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Noun gold))(PP (Prep in)(NP (ProperNoun torino)))))(VP (Verb lost)(PP (Prep in)(NP (Noun vancouver)))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Noun gold))(PP (Prep in)(NP (ProperNoun torino)))))(VP (Verb lost)(PP (Prep in)(NP (Nom (Noun vancouver))))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Nom (Noun gold)))(PP (Prep in)(NP (ProperNoun torino)))))(VP (Verb lost)(PP (Prep in)(NP (Noun vancouver)))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Nom (Noun gold)))(PP (Prep in)(NP (ProperNoun torino)))))(VP (Verb lost)(PP (Prep in)(NP (Nom (Noun vancouver))))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Nom (Nom (Noun gold))(PP (Prep in)(NP (ProperNoun torino)))))))(VP (Verb lost)(PP (Prep in)(NP (Noun vancouver)))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (Nom (Nom (Noun gold))(PP (Prep in)(NP (ProperNoun torino)))))))(VP (Verb lost)(PP (Prep in)(NP (Nom (Noun vancouver))))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (NP (Noun gold))(PP (Prep in)(NP (ProperNoun torino))))))(VP (Verb lost)(PP (Prep in)(NP (Noun vancouver)))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (NP (Noun gold))(PP (Prep in)(NP (ProperNoun torino))))))(VP (Verb lost)(PP (Prep in)(NP (Nom (Noun vancouver))))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (NP (Nom (Noun gold)))(PP (Prep in)(NP (ProperNoun torino))))))(VP (Verb lost)(PP (Prep in)(NP (Noun vancouver)))))
+(S (NP (Det the)(ProperNoun italian)(NP (ProperNoun skater)(NP (Pronoun who)))(VP (Verb won)(NP (NP (Nom (Noun gold)))(PP (Prep in)(NP (ProperNoun torino))))))(VP (Verb lost)(PP (Prep in)(NP (Nom (Noun vancouver))))))
+
+4
+4 sentences processed.
+0 sentences failed
+finished
