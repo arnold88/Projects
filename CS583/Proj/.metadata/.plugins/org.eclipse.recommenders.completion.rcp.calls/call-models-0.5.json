@@ -1,0 +1,32 @@
+{
+  "C:\\Program Files (x86)\\Java\\jre7\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files (x86)\\Java\\jre7\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "C:\\Users\\user\\Desktop\\CS583\\Proj\\one_final\\src": {
+    "location": "C:\\Users\\user\\Desktop\\CS583\\Proj\\one_final\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\user\\Desktop\\CS583\\Proj\\one_final\\src\u0027. Skipped."
+  },
+  "C:\\Users\\user\\Desktop\\CS583\\Proj\\example_1\\src": {
+    "location": "C:\\Users\\user\\Desktop\\CS583\\Proj\\example_1\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\user\\Desktop\\CS583\\Proj\\example_1\\src\u0027. Skipped."
+  },
+  "C:\\Users\\user\\Desktop\\CS583\\Proj\\one_midnight\\src": {
+    "location": "C:\\Users\\user\\Desktop\\CS583\\Proj\\one_midnight\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\user\\Desktop\\CS583\\Proj\\one_midnight\\src\u0027. Skipped."
+  },
+  "C:\\Users\\user\\Desktop\\CS583\\Proj\\one_new\\src": {
+    "location": "C:\\Users\\user\\Desktop\\CS583\\Proj\\one_new\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\user\\Desktop\\CS583\\Proj\\one_new\\src\u0027. Skipped."
+  },
+  "C:\\Users\\user\\Desktop\\CS583\\Proj\\thisisit\\src": {
+    "location": "C:\\Users\\user\\Desktop\\CS583\\Proj\\thisisit\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027C:\\Users\\user\\Desktop\\CS583\\Proj\\thisisit\\src\u0027. Skipped."
+  }
+}
