@@ -1,0 +1,2088 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xml:lang="en" dir="ltr" xmlns="http://www.w3.org/1999/xhtml"><head>
+
+
+<!-- base href="http://www.qtforum.org/" -->
+	<title>QMessage Box/text input box  - Qt Programming - QtForum.org</title>
+	
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-script-type" content="text/javascript">
+<meta http-equiv="content-style-type" content="text/css">
+<meta name="description" content="International Qt programming forum">
+<meta name="keywords" content="International Qt programming forum">
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<link rel="search" type="application/opensearchdescription+xml" title="QtForum.org" href="http://www.qtforum.org/index.php?page=OpenSearch">
+
+<script type="text/javascript" src="qmessage-box-text-input-box_files/protoaculous.js"></script>
+<script type="text/javascript" src="qmessage-box-text-input-box_files/default.js"></script>
+<script type="text/javascript" src="qmessage-box-text-input-box_files/PopupMenuList.js"></script>
+<script type="text/javascript" src="qmessage-box-text-input-box_files/AjaxRequest.js"></script>
+
+<!-- wbb styles -->
+<link rel="stylesheet" type="text/css" media="screen" href="qmessage-box-text-input-box_files/burningBoard.css">
+
+
+<!-- dynamic styles -->
+<link rel="stylesheet" type="text/css" media="screen" href="qmessage-box-text-input-box_files/style-1.css">
+
+<!-- print styles -->
+<link rel="stylesheet" type="text/css" media="print" href="qmessage-box-text-input-box_files/print.css">
+
+<!-- opera styles -->
+<script type="text/javascript">
+	//<![CDATA[
+	if (Prototype.Browser.Opera) {
+		document.write('<style type="text/css">	* { unicode-bidi: normal; } .columnContainer { border: 0; } </style>');
+	}
+	//]]>
+</script>
+
+<script type="text/javascript">
+	//<![CDATA[
+	var SID_ARG_2ND	= '&s=44bba13371e7d1c4728a8a40fc294786d66c4951';
+	var SECURITY_TOKEN = 'e8544e4b98bbc9ce8bf169cbb82cb804bf51870a';
+	var RELATIVE_WCF_DIR = 'wcf/';
+	var RELATIVE_WBB_DIR = '';
+	var LANG_DELETE_CONFIRM = 'Do you really want to delete this item?';
+	//]]>
+</script>
+
+<!-- hack styles -->
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.qtforum.org/wcf/style/extra/ie6-fix.css" />
+	<style type="text/css">
+								#header, #footer, #main, #mainMenu, #userPanel { /* note: non-standard style-declaration */
+							_width: expression(((document.body.clientWidth/screen.width)) < 0.7 ? "760px":"80%" );
+			}
+					</style>
+<![endif]-->
+
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.qtforum.org/wcf/style/extra/ie7-fix.css" />
+	<script type="text/javascript">
+		//<![CDATA[
+		document.observe('dom:loaded', function() {
+			if (location.hash) {
+				var columnContainer = null;
+				var columnContainerHeight = 0;
+				$$('.columnContainer > .column').each(function(column) {
+					if (columnContainer != column.up()) {
+						columnContainer = column.up();
+						columnContainerHeight = columnContainer.getHeight();
+					}
+					columnContainer.addClassName('columnContainerJS');
+					column.setStyle({ 'height': columnContainerHeight + 'px' });
+					columnContainer.up().setStyle({ 'height': columnContainerHeight + 1 + 'px' });
+					column.removeClassName('column').addClassName('columnJS');
+				});
+			}
+			$$('.layout-3 .second').each(function(column) {
+				column.insert('<div style="float: right; font-size: 0">&nbsp;</div>');
+			});
+		});
+		//]]>
+	</script>
+	<![endif]-->
+
+<!--[if IE 8]>
+	<link rel="stylesheet" type="text/css" media="screen" href="http://www.qtforum.org/wcf/style/extra/ie8-fix.css" />
+<![endif]-->
+
+<link rel="shortcut icon" href="http://www.qtforum.org/wcf/icon/favicon/faviconGreen.ico" type="image/x-icon">
+	
+	<script type="text/javascript" src="qmessage-box-text-input-box_files/ImageViewer.js"></script>
+<script type="text/javascript">
+	//<![CDATA[			
+	// when the window is fully loaded, add image viewer
+	Event.observe(window, 'load', function() {
+		new ImageViewer($$('.enlargable'), {
+			langCaption		: 'this.links.length > 1 ? "Image " + (this.currentIndex + 1) + " of " + this.links.length + (this.currentLink.title ? (" - " + this.currentLink.title) : "") : ""',
+			langPrevious		: 'Previous image',
+			langNext		: 'Next image',
+			langPlay		: 'Start slideshow (changes the image every 5 seconds)',
+			langPause		: 'Stop slideshow',
+			langEnlarge		: 'Show only this image (quits the image viewer)',
+			langClose		: 'Close',
+			imgBlankSrc		: 'wcf/images/imageViewer/blank.png',
+			imgMenuSrc		: 'wcf/images/imageViewer/menu.png',
+			imgPlaySrc		: 'wcf/icon/imageViewer/playM.png',
+			imgPreviousSrc		: 'wcf/icon/imageViewer/previousM.png',
+			imgNextSrc		: 'wcf/icon/imageViewer/nextM.png',
+			imgEnlargeSrc		: 'wcf/icon/imageViewer/enlargeM.png',
+			imgPauseSrc		: 'wcf/icon/imageViewer/pauseM.png',
+			imgCloseSrc		: 'wcf/icon/imageViewer/closeM.png',
+			imgPlayHoverSrc		: 'wcf/icon/imageViewer/playHoverM.png',
+			imgPreviousHoverSrc	: 'wcf/icon/imageViewer/previousHoverM.png',
+			imgNextHoverSrc		: 'wcf/icon/imageViewer/nextHoverM.png',
+			imgEnlargeHoverSrc	: 'wcf/icon/imageViewer/enlargeHoverM.png',
+			imgPauseHoverSrc	: 'wcf/icon/imageViewer/pauseHoverM.png',
+			imgCloseHoverSrc	: 'wcf/icon/imageViewer/closeHoverM.png'	
+		});
+	});
+//]]>
+</script>	
+	<!--[if IE]>
+		<script type="text/javascript">
+			//<![CDATA[
+			
+			onloadEvents.push(function() {
+				if (document.referrer) {
+					var postForm = document.referrer.search(/PostEdit|PostAdd/);
+					if (postForm != -1) {
+						var postID = (window.location + '').split('postID=');
+						if (!isNaN(postID[1])) window.location.href = '#post' + postID[1];
+					}
+				}
+				});
+			
+			//]]>
+		</script>
+	<![endif]-->
+	<script type="text/javascript" src="qmessage-box-text-input-box_files/MultiPagesLinks.js"></script>
+	<script type="text/javascript">
+		//<![CDATA[
+		var INLINE_IMAGE_MAX_WIDTH = 530;
+		//]]>
+	</script>
+	<script type="text/javascript" src="qmessage-box-text-input-box_files/ImageResizer.js"></script>
+		<script type="text/javascript">
+		//<![CDATA[
+		var language = new Object();
+		var postData = new Hash();
+		var url = 'index.php?page=Thread&threadID=26906&pageNo=1&s=44bba13371e7d1c4728a8a40fc294786d66c4951';
+		//]]>
+	</script>
+			<script type="text/javascript" src="qmessage-box-text-input-box_files/MultiQuote.js"></script>
+<script type="text/javascript">
+	//<![CDATA[
+	var quoteData = new Hash();
+	document.observe("dom:loaded", function() {
+		multiQuoteObj = new MultiQuote(quoteData, '', {
+			langButtonQuote			: 'Quote',
+			langButtonQuoteMultiple		: '"Quote" + (objectValue.quotes > 0 ? " ("+objectValue.quotes+")" : "")',
+			langQuoteDirectly		: 'Quote message directly',
+			langMarkToQuote			: 'Select message to quote',
+			langQuoteTextDirectly		: 'Quote selected text directly',
+			langMarkTextToQuote		: 'Quote selected text',
+			langRemoveQuotes		: 'Remove selected quotes',
+			langQuoteParagraphDirectly	: 'Quote selected paragraph directly',
+			langMarkParagraphToQuote	: 'Quote selected paragraph',
+			langQuoteParagraphsDirectly	: 'Quote paragraphs directly',
+			langMarkParagraphsToQuote	: 'Quote paragraphs',
+			iconMessageQuoteOptions		: 'wcf/icon/messageQuoteOptionsS.png'
+		});
+	});
+//]]>
+</script>			<link rel="alternate" type="application/rss+xml" href="http://www.qtforum.org/index.php?page=PostsFeed&amp;format=rss2&amp;threadID=26906" title="Feed of this thread (RSS2)">
+	<link rel="alternate" type="application/atom+xml" href="http://www.qtforum.org/index.php?page=PostsFeed&amp;format=atom&amp;threadID=26906" title="Feed of this thread (Atom)">
+</head><body id="tplThread">
+
+<p class="skipHeader hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipToContent" title="Skip navigation">Skip navigation</a></p><!-- support for disabled surfers -->
+
+
+
+	
+<div id="headerContainer">
+	<a id="top"></a>
+	<div id="userPanel" class="userPanel">
+		<div class="userPanelInner">
+			<p style="display: none;" id="userAvatar">
+				<img src="qmessage-box-text-input-box_files/avatar-default.png" alt="">			</p>
+			<p id="userNote">
+				You are not logged in.			</p>
+			<div id="userMenu">
+				<ul>
+											<li id="userMenuLogin" class="options"><a href="http://www.qtforum.org/index.php?form=UserLogin&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951" id="loginButton"><img src="qmessage-box-text-input-box_files/loginS.png" alt="" id="loginButtonImage"> <span>Login</span></a></li>
+
+						<li id="userMenuRegistration"><a href="http://www.qtforum.org/index.php?page=Register&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/registerS.png" alt=""> <span>Register</span></a></li>
+						
+															</ul>
+			</div>
+		</div>
+	</div>
+
+			<script type="text/javascript">
+			//<![CDATA[
+			document.observe("dom:loaded", function() {
+				var loginFormVisible = false;
+
+				var loginBox = $('quickLoginBox');
+				var loginButton = $('loginButton');
+
+				if (loginButton && loginBox) {
+					function showLoginForm(evt) {
+						if (loginBox.hasClassName('hidden')) {
+							loginBox.setStyle('display: none');
+							loginBox.removeClassName('hidden');
+						}
+
+						var top = (loginButton.cumulativeOffset()[1] + loginButton.getHeight() + 5);
+						var left = loginButton.cumulativeOffset()[0] > $$('body')[0].getWidth()/2 ? loginButton.cumulativeOffset()[0] - loginBox.getWidth() + loginButton.getWidth() : loginButton.cumulativeOffset()[0];
+						loginBox.setStyle('left: ' + left + 'px; top: ' + top + 'px;');
+						if (loginBox.visible()) {
+							new Effect.Parallel([
+								new Effect.BlindUp(loginBox),
+								new Effect.Fade(loginBox)
+							], { duration: 0.3 });
+							loginFormVisible = false;
+						}
+						else {
+							new Effect.Parallel([
+								new Effect.BlindDown(loginBox),
+								new Effect.Appear(loginBox)
+							], { duration: 0.3 });
+							loginFormVisible = true;
+						}
+						evt.stop();
+					}
+
+					loginButton.observe('click', showLoginForm);
+					loginButton.observe('dblclick', function() { document.location.href = fixURL('index.php?form=UserLogin&s=44bba13371e7d1c4728a8a40fc294786d66c4951'); });
+
+					document.getElementById('quickLoginUsername').onfocus = function() { if (this.value == 'Username') this.value=''; };
+					document.getElementById('quickLoginUsername').onblur = function() { if (this.value == '') this.value = 'Username'; };
+					$('loginButtonImage').src = $('loginButtonImage').src.gsub('loginS.png', 'loginOptionsS.png');
+				}
+			});
+			//]]>
+		</script>
+	
+	<div id="header">
+
+		
+
+																			
+		<div id="search">
+			<form method="post" action="index.php?form=Search">
+
+				<div class="searchContainer">
+					<input tabindex="5" id="searchInput" class="inputText" name="q" value="Search thread" type="text">
+					<input tabindex="6" id="searchSubmit" class="searchSubmit inputImage" src="qmessage-box-text-input-box_files/submitS.png" alt="Submit" type="image">
+					<input name="s" value="44bba13371e7d1c4728a8a40fc294786d66c4951" type="hidden">						<input name="threadID" value="26906" type="hidden">
+	<input name="types[]" value="post" type="hidden">
+	<input name="findThreads" value="0" type="hidden">
+
+					<script type="text/javascript">
+						//<![CDATA[
+						document.getElementById('searchInput').setAttribute('autocomplete', 'off');
+						document.getElementById('searchInput').onfocus = function() { if (this.value == 'Search thread') this.value=''; };
+						document.getElementById('searchInput').onblur = function() { if (this.value == '') this.value = 'Search thread'; };
+						document.getElementById('searchSubmit').ondblclick = function() { window.location = 'index.php?form=Search&s=44bba13371e7d1c4728a8a40fc294786d66c4951'; };
+													popupMenuList.register("searchInput");
+							document.getElementById('searchInput').className += " searchOptions";
+												//]]>
+					</script>
+											<div class="searchInputMenu">
+							<div class="hidden" id="searchInputMenu">
+								<div class="pageMenu smallFont">
+									<ul>
+														<li><a href="http://www.qtforum.org/index.php?form=Search&amp;action=unread&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Unread posts</a></li>
+				<li><a href="http://www.qtforum.org/index.php?form=Search&amp;action=unreplied&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Unreplied threads</a></li>
+				<li><a href="http://www.qtforum.org/index.php?form=Search&amp;action=24h&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Threads of the last 24 hours</a></li>
+																	<li><a href="http://www.qtforum.org/index.php?form=Search&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Advanced Search</a></li>									</ul>
+								</div>
+							</div>
+						</div>
+					
+											<noscript>
+							<p><a href="http://www.qtforum.org/index.php?form=Search&s=44bba13371e7d1c4728a8a40fc294786d66c4951">Advanced Search</a></p>
+						</noscript>
+									</div>
+			</form>
+		</div>
+		<div id="logo">
+			<div class="logoInner">
+				<h1 class="pageTitle"><a href="http://www.qtforum.org/index.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951">QtForum.org</a></h1>
+									<a href="http://www.qtforum.org/index.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951" class="pageLogo">
+						<img src="qmessage-box-text-input-box_files/logo.gif" title="QtForum.org" alt="">
+					</a>
+							</div>
+		</div>
+	</div>
+
+	
+	<div id="mainMenu" class="mainMenu">
+		<div class="mainMenuInner"><ul><li id="mainMenuItem8" class="first"><a href="http://www.qtforum.org/index.php?page=Portal&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Portal"><img src="qmessage-box-text-input-box_files/portalM.png" alt=""> <span>Portal</span></a></li><li id="mainMenuItem3" class="active"><a href="http://www.qtforum.org/index.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Forum"><img src="qmessage-box-text-input-box_files/indexM.png" alt=""> <span>Forum</span></a></li><li id="mainMenuItem2"><a href="http://www.qtforum.org/index.php?page=MembersList&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Members"><img src="qmessage-box-text-input-box_files/membersM.png" alt=""> <span>Members</span></a></li><li id="mainMenuItem5" class="last"><a href="http://www.qtforum.org/index.php?form=search&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Search"><img src="qmessage-box-text-input-box_files/searchM.htm" alt=""> <span>Search</span></a></li></ul>
+		</div>
+	</div>
+
+</div>
+<div id="mainContainer">
+
+<div id="main">
+	
+	<ul class="breadCrumbs">
+			<li><a href="http://www.qtforum.org/index.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/indexS.png" alt=""> <span>QtForum.org</span></a> »</li>
+		
+			<li><a href="http://www.qtforum.org/forum/45/qtforum-org.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/categoryS.png" alt=""> <span>QtForum.org</span></a> »</li>
+			<li><a href="http://www.qtforum.org/forum/12/qt.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/categoryS.png" alt=""> <span>Qt</span></a> »</li>
+		
+			<li><a href="http://www.qtforum.org/forum/2/qt-programming.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/boardS.png" alt=""> <span>Qt Programming</span></a> »</li>
+		
+	</ul>	
+	<a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#" id="skipToContent"></a><!-- support for disabled surfers -->
+	
+	<div class="mainHeadline">
+		<img id="threadEdit26906" src="qmessage-box-text-input-box_files/threadL.png" alt="">
+		<div class="headlineContainer">
+			<h2 id="threadTitle26906">
+				<span id="threadPrefix26906" class="prefix"><strong></strong></span>
+				<a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951">QMessage Box/text input box</a>
+			</h2>
+			<img src="qmessage-box-text-input-box_files/rating0.png" alt="" title="">		</div>
+	</div>
+	
+		
+		<p class="info">Dear visitor, welcome to QtForum.org. 
+If this is your first visit here, please <a href="http://www.qtforum.org/index.php?page=Help&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">read the Help</a>. It explains in detail how this page works. 
+To use all features of this page, you should consider registering. 
+Please use the <a href="http://www.qtforum.org/index.php?page=Register&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">registration form</a>, to register here or <a href="http://www.qtforum.org/index.php?page=Help&amp;item=user.login&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">read more information</a> about the registration process. 
+If you are already registered, please <a href="http://www.qtforum.org/index.php?form=UserLogin&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">login here</a>.</p>
+			
+	<div class="contentHeader">
+								<div class="largeButtons">
+					</div>
+	</div>
+	
+	
+				
+					
+			
+												
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-93416', {
+					objectID: 93416,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow93416" class="message threadStarterPost">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post93416"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint93416" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="mike phillips is offline">		
+												
+				<a href="http://www.qtforum.org/user/19927-mike-phillips/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;mike phillips&quot;">
+					<span>mike phillips</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Trainee</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank1S.png" alt=""></p>
+										
+					</div>
+		
+									
+					<div class="userSymbols">
+				<ul>
+											<li><img src="qmessage-box-text-input-box_files/threadStarterS.png" alt="&quot;mike phillips&quot; started this thread" title="&quot;mike phillips&quot; started this thread"></li>
+										
+									</ul>
+			</div>
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 52</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;mike phillips&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint93416"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-1">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/93416/qmessage-box-text-input-box.html#post93416" rel="nofollow" title="Permalink to post #1" class="messageNumber">1</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit93416" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Saturday, February 28th 2009, 2:11pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic93416" class="messageTitle"><span>QMessage Box/text input box</span></h3>
+							
+							<div class="messageBody">
+																<div id="postText93416">
+									Back again, I'm afraid! I can find nothing in the Troll class pages about <span class="highlight">input</span>ting text via a message box: only this from a Google search:-<br>
+<br>
+<em> bool ok;<br>
+  {textstring = Q<span class="highlight">Input</span>Dialog::getText(this, ("Enter Search String"),(""),QLineEdit::Normal,QString::null,&amp;ok);<br>
+     if (ok &amp;&amp; !textstring.isEmpty())</em><br>
+<br>
+problem is, while it passes the <span class="highlight">input</span>
+text fine, and cancels correctly, 'OK' with an empty string also closes
+the widget and I don't think it should! Anyone help please?<br>
+<br>
+I also found this<br>
+<br>
+<em>QString text=Q<span class="highlight">Input</span>Dialog::getText("<span class="highlight">input</span>","Enter your name", QString::null, &amp;ok, this );</em><br>
+<br>
+but I get 'no matching function' on compile.<br>
+<br>
+Q2: If there is no other option for a text <span class="highlight">input</span>, how can I:-<br>
+<br>
+1) Insert a longer prompt string into the box<br>
+2) Move its display position<br>
+3) Change its size?<br>
+<br>
+It doesn't appear in ui. or .ui so I cannot see its properties.								</div>
+							</div>
+							
+														
+														
+															<p class="editNote smallFont light">This post has been edited 1 times, last edit by "mike phillips" (Feb 28th 2009, 4:00pm)</p>
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons93416">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-93431', {
+					objectID: 93431,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow93431" class="message">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post93431"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint93431" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="TitCouille is offline">		
+												
+				<a href="http://www.qtforum.org/user/17612-titcouille/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;TitCouille&quot;">
+					<span>TitCouille</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Intermediate</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank2S.png" alt=""></p>
+										
+					</div>
+		
+									<div class="userAvatar">
+					<a href="http://www.qtforum.org/user/17612-titcouille/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;TitCouille&quot;"><img src="qmessage-box-text-input-box_files/avatar-268.jpg" alt="" style="width: 115px; height: 150px;"></a>
+				</div>
+							
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=17612&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 248</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=17612&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;TitCouille&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=17612&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint93431"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-2">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/93431/qmessage-box-text-input-box.html#post93431" rel="nofollow" title="Permalink to post #2" class="messageNumber">2</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit93431" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Sunday, March 1st 2009, 5:31am</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic93431" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText93431">
+									<em>Q<span class="highlight">Input</span>Dialog</em>
+is provided for convenience, as a standard dialog. It's not
+customizable (except for the parameters passed to its static
+functions). Also, <em>Q<span class="highlight">Input</span>Dialog::getText()</em> accepts empty strings and you cannot change this behaviour.<br>
+<br>
+You'll have to write your own dialog if you want a different behaviour
+or a different look. Here are the minimal steps to write a project that
+features your own <span class="highlight">input</span> dialog :<br>
+<br>
+<strong>1/</strong> Create a new project with a main window. In
+QDevelop the steps are : Project &gt; New project. Select "Application
+with Main Window".<br>
+<br>
+<strong>2/</strong> Add a dialog to this project. In QDevelop the steps
+are : Project &gt; Add a new element. Select "Dialog". A new .ui file
+is added to your project, which contains your dialog. Right-click the
+.ui file. Select "Subclass Dialog" and click on "New". The .cpp and .h
+files are generated and added to your project.<br>
+<br>
+<strong>3/</strong> Open the .ui file of the dialog in Qt Designer.
+Drop 1 line edit and 2 push buttons (label those "cancel" and "ok").
+With the visual signals &amp; slots editor, associate :<br>
+<ul style="list-style-type: disc;"><li><em>okButton.clicked()</em> with <em>Dialog.accept()</em><br></li><li><em>cancelButton.clicked()</em> with <em>Dialog.reject()</em><br></li></ul><br>
+<strong>4/</strong> In the source file of your main window, do :<br>
+<br>
+<div class="border codeBox">
+	<div>
+		<table>
+			<tbody><tr>
+				<td class="codeLineNumbers container-3">
+					<img src="qmessage-box-text-input-box_files/codeS.png" alt="">
+				</td>
+				<td class="codeLines container-4">
+					<h3>Source code</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="codeLineNumbers container-3">
+					<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+</pre>
+				</td>
+				<td class="codeLines container-4">
+					<pre>#include "my<span class="highlight">input</span>dialog.h"
+
+void MainWindowImpl::function() {
+	My<span class="highlight">Input</span>Dialog dialog(this, Qt::Dialog);
+	if(dialog.exec() == QDialog::Accepted) {
+		QString text(dialog.lineEdit-&gt;text());
+		//do something with text
+	}
+}</pre>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div>								</div>
+							</div>
+							
+														
+															<div class="signature">
+									Mandriva Linux release 2009.0 (Official) for i586<br>
+Kernel 2.6.27.10-desktop-1mnb on a Dual-processor i686								</div>
+														
+															<p class="editNote smallFont light">This post has been edited 1 times, last edit by "TitCouille" (Mar 1st 2009, 7:07pm)</p>
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons93431">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-93434', {
+					objectID: 93434,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow93434" class="message threadStarterPost">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post93434"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint93434" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="mike phillips is offline">		
+												
+				<a href="http://www.qtforum.org/user/19927-mike-phillips/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;mike phillips&quot;">
+					<span>mike phillips</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Trainee</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank1S.png" alt=""></p>
+										
+					</div>
+		
+									
+					<div class="userSymbols">
+				<ul>
+											<li><img src="qmessage-box-text-input-box_files/threadStarterS.png" alt="&quot;mike phillips&quot; started this thread" title="&quot;mike phillips&quot; started this thread"></li>
+										
+									</ul>
+			</div>
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 52</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;mike phillips&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint93434"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-1">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/93434/qmessage-box-text-input-box.html#post93434" rel="nofollow" title="Permalink to post #3" class="messageNumber">3</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit93434" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Sunday, March 1st 2009, 9:15am</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic93434" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText93434">
+									Thanks again, Sir(/Madam <img src="qmessage-box-text-input-box_files/smile.gif" alt=":)"> ) <br>
+<br>
+I am impressed as always by the knowledge (and help) on this forum and
+strive to follow. Where and how have you acquired this knowldege? I
+cannot see where it tells me that I cannot adjust 'pos' and 'rect' for
+the widget. There is very little in Blanchette. I have now found a
+(cumbersome) but working alternate way around the problem of entering
+multiple choices. </div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons93434">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-93441', {
+					objectID: 93441,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow93441" class="message">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post93441"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint93441" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="TitCouille is offline">		
+												
+				<a href="http://www.qtforum.org/user/17612-titcouille/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;TitCouille&quot;">
+					<span>TitCouille</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Intermediate</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank2S.png" alt=""></p>
+										
+					</div>
+		
+									<div class="userAvatar">
+					<a href="http://www.qtforum.org/user/17612-titcouille/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;TitCouille&quot;"><img src="qmessage-box-text-input-box_files/avatar-268.jpg" alt="" style="width: 115px; height: 150px;"></a>
+				</div>
+							
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=17612&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 248</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=17612&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;TitCouille&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=17612&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint93441"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-2">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/93441/qmessage-box-text-input-box.html#post93441" rel="nofollow" title="Permalink to post #4" class="messageNumber">4</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit93441" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Sunday, March 1st 2009, 7:11pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic93441" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText93441">
+									<blockquote class="quoteBox" cite="index.php?page=Thread&amp;amp;postID=93434#post93434">
+	<div class="quoteHeader container-4">
+		<h3><img src="qmessage-box-text-input-box_files/quoteS.png" alt="">
+									<a href="http://www.qtforum.org/post/93434/qmessage-box-text-input-box.html#post93434" rel="nofollow">Quoted from "mike phillips"</a>
+							</h3>
+	</div>
+	<div class="quoteBody container-4">
+		I cannot see where it tells me that I cannot adjust 'pos' and 'rect' for the widget.	</div>
+</blockquote><br>
+If you look at the documentation of <em>Q<span class="highlight">Input</span>Dialog</em>, you'll see that there's no public constructor, meaning : no public <em>Q<span class="highlight">Input</span>Dialog(...)</em> function. So you cannot instantiate this standard dialog, meaning : you cannot do :<br>
+<br>
+<div class="border codeBox">
+	<div>
+		<table>
+			<tbody><tr>
+				<td class="codeLineNumbers container-3">
+					<img src="qmessage-box-text-input-box_files/codeS.png" alt="">
+				</td>
+				<td class="codeLines container-4">
+					<h3>Source code</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="codeLineNumbers container-3">
+					<pre>1
+</pre>
+				</td>
+				<td class="codeLines container-4">
+					<pre>Q<span class="highlight">Input</span>Dialog dialog; // illegal</pre>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div><br>
+The only way to invoke this dialog is through the static functions.
+Therefore, the only adjustments possible are those provided by the
+static function parameters. </div>
+							</div>
+							
+														
+															<div class="signature">
+									Mandriva Linux release 2009.0 (Official) for i586<br>
+Kernel 2.6.27.10-desktop-1mnb on a Dual-processor i686								</div>
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons93441">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94604', {
+					objectID: 94604,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94604" class="message threadStarterPost">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94604"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94604" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="mike phillips is offline">		
+												
+				<a href="http://www.qtforum.org/user/19927-mike-phillips/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;mike phillips&quot;">
+					<span>mike phillips</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Trainee</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank1S.png" alt=""></p>
+										
+					</div>
+		
+									
+					<div class="userSymbols">
+				<ul>
+											<li><img src="qmessage-box-text-input-box_files/threadStarterS.png" alt="&quot;mike phillips&quot; started this thread" title="&quot;mike phillips&quot; started this thread"></li>
+										
+									</ul>
+			</div>
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 52</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;mike phillips&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94604"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-1">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94604/qmessage-box-text-input-box.html#post94604" rel="nofollow" title="Permalink to post #5" class="messageNumber">5</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94604" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Sunday, April 26th 2009, 11:57am</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94604" class="messageTitle"><span>QWidget width</span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94604">
+As an adjunct to this topic, in the interests of 'tidyness' I wish to
+display a line of text in a LineEdit which is sized to hold JUST that
+line. I have not found an easy way to set the width to string length,
+and wondered if the experts had a trick?<br>
+At the moment I have a wacky routine<br>
+<br>
+<div class="border codeBox">
+	<div>
+		<table>
+			<tbody><tr>
+				<td class="codeLineNumbers container-3">
+					<img src="qmessage-box-text-input-box_files/codeS.png" alt="">
+				</td>
+				<td class="codeLines container-4">
+					<h3>Source code</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="codeLineNumbers container-3">
+					<pre>1
+2
+3
+4
+5
+</pre>
+				</td>
+				<td class="codeLines container-4">
+					<pre>int x;
+str="ABCDE";
+x=5*(str.size()+.4);
+lineEdit-&gt;setGeometry(300,100,x,20);
+lineEdit-&gt;insert(str);</pre>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div><br>
+<br>
+which appears bizarrely to 'do the biz'.  EDIT: NO it does not cope with short str's. <img src="qmessage-box-text-input-box_files/cursing.png" alt=":cursing:"> <br>
+<br>
+I note a warning about use of 'Fontmetrics' which appears to handle character pixel size.								</div>
+							</div>
+							
+														
+														
+															<p class="editNote smallFont light">This post has been edited 2 times, last edit by "mike phillips" (Apr 26th 2009, 6:43pm)</p>
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94604">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94628', {
+					objectID: 94628,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94628" class="message">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94628"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94628" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="pfid is offline">		
+												
+				<a href="http://www.qtforum.org/user/17518-pfid/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;pfid&quot;">
+					<span>pfid</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Beginner</p>
+														
+					</div>
+		
+									
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=17518&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 36</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="mailto:pf@08.informationsdesign.aero"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;pfid&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=17518&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94628"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-2">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94628/qmessage-box-text-input-box.html#post94628" rel="nofollow" title="Permalink to post #6" class="messageNumber">6</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94628" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Monday, April 27th 2009, 3:54pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94628" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94628">
+									You might want to try <div class="border codeBox">
+	<div>
+		<table>
+			<tbody><tr>
+				<td class="codeLineNumbers container-3">
+					<img src="qmessage-box-text-input-box_files/codeS.png" alt="">
+				</td>
+				<td class="codeLines container-4">
+					<h3>Source code</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="codeLineNumbers container-3">
+					<pre>1
+</pre>
+				</td>
+				<td class="codeLines container-4">
+					<pre>void QWidget::adjustSize ()</pre>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div> I know it works for labels, but never tried with line edits.								</div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94628">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94800', {
+					objectID: 94800,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94800" class="message threadStarterPost">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94800"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94800" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="mike phillips is offline">		
+												
+				<a href="http://www.qtforum.org/user/19927-mike-phillips/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;mike phillips&quot;">
+					<span>mike phillips</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Trainee</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank1S.png" alt=""></p>
+										
+					</div>
+		
+									
+					<div class="userSymbols">
+				<ul>
+											<li><img src="qmessage-box-text-input-box_files/threadStarterS.png" alt="&quot;mike phillips&quot; started this thread" title="&quot;mike phillips&quot; started this thread"></li>
+										
+									</ul>
+			</div>
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 52</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;mike phillips&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94800"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-1">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94800/qmessage-box-text-input-box.html#post94800" rel="nofollow" title="Permalink to post #7" class="messageNumber">7</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94800" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Tuesday, May 5th 2009, 12:21pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94800" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94800">
+Thanks pfid - I could not find a way to run that. Any other ideas
+anyone? Set lineedit to show required length for contained text. </div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94800">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94809', {
+					objectID: 94809,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94809" class="message">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94809"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94809" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="Junior is offline">		
+												
+				<a href="http://www.qtforum.org/user/12737-junior/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;Junior&quot;">
+					<span>Junior</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Professional</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank3S.png" alt=""></p>
+										
+					</div>
+		
+									<div class="userAvatar">
+					<a href="http://www.qtforum.org/user/12737-junior/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;Junior&quot;"><img src="qmessage-box-text-input-box_files/avatar-188.png" alt="" style="width: 70px; height: 70px;"></a>
+				</div>
+							
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=12737&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 925</a></p>
+									<p>Location: San Antonio, TX  USA</p>
+									<p>Occupation: Senior Secure Systems Engineer</p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?page=ExternalLink&amp;url=http%3A%2F%2Fwww.trustedcs.com"><img src="qmessage-box-text-input-box_files/websiteS.png" alt="" title="Visit the personal website of &quot;Junior&quot;"></a></li>
+											<li><a href="mailto:rneal@satx.rr.com"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;Junior&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?page=Messenger&amp;userID=12737&amp;action=icq&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951" onclick="return !window.open(this.href, 'icq', 'width=350,height=400,scrollbars=yes,resizable=yes')"><img src="qmessage-box-text-input-box_files/icqS.png" alt="" title="Contact &quot;Junior&quot; by ICQ"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=12737&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94809"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-2">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94809/qmessage-box-text-input-box.html#post94809" rel="nofollow" title="Permalink to post #8" class="messageNumber">8</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94809" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Tuesday, May 5th 2009, 7:24pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94809" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94809">
+									Mike,<br>
+<br>
+You could try something like this:<br>
+<br>
+<div class="border codeBox">
+	<div>
+		<table>
+			<tbody><tr>
+				<td class="codeLineNumbers container-3">
+					<img src="qmessage-box-text-input-box_files/codeS.png" alt="">
+				</td>
+				<td class="codeLines container-4">
+					<h3>Source code</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="codeLineNumbers container-3">
+					<pre>1
+2
+</pre>
+				</td>
+				<td class="codeLines container-4">
+					<pre>// The extra chars '[' and ']' provide extra space left/right of the text for the boundrect
+lineEdit-&gt;setMaximumSize( lineEdit-&gt;fontMetrics().boundingRect( "["+lineEdit-&gt;text()+"]" ).size() );</pre>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div><br>
+<br>
+Junior								</div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94809">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94838', {
+					objectID: 94838,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94838" class="message threadStarterPost">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94838"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94838" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="mike phillips is offline">		
+												
+				<a href="http://www.qtforum.org/user/19927-mike-phillips/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;mike phillips&quot;">
+					<span>mike phillips</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Trainee</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank1S.png" alt=""></p>
+										
+					</div>
+		
+									
+					<div class="userSymbols">
+				<ul>
+											<li><img src="qmessage-box-text-input-box_files/threadStarterS.png" alt="&quot;mike phillips&quot; started this thread" title="&quot;mike phillips&quot; started this thread"></li>
+										
+									</ul>
+			</div>
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 52</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;mike phillips&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94838"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-1">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94838/qmessage-box-text-input-box.html#post94838" rel="nofollow" title="Permalink to post #9" class="messageNumber">9</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94838" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Wednesday, May 6th 2009, 1:27pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94838" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94838">
+Thanks Junior - I'll check that out. I did see, however, a warning that
+fontmetrics was likely to be severely 'hacked' in later Qt issues so I
+had kept away from using it. </div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94838">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94839', {
+					objectID: 94839,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94839" class="message">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94839"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94839" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="Junior is offline">		
+												
+				<a href="http://www.qtforum.org/user/12737-junior/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;Junior&quot;">
+					<span>Junior</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Professional</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank3S.png" alt=""></p>
+										
+					</div>
+		
+									<div class="userAvatar">
+					<a href="http://www.qtforum.org/user/12737-junior/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;Junior&quot;"><img src="qmessage-box-text-input-box_files/avatar-188.png" alt="" style="width: 70px; height: 70px;"></a>
+				</div>
+							
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=12737&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 925</a></p>
+									<p>Location: San Antonio, TX  USA</p>
+									<p>Occupation: Senior Secure Systems Engineer</p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?page=ExternalLink&amp;url=http%3A%2F%2Fwww.trustedcs.com"><img src="qmessage-box-text-input-box_files/websiteS.png" alt="" title="Visit the personal website of &quot;Junior&quot;"></a></li>
+											<li><a href="mailto:rneal@satx.rr.com"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;Junior&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?page=Messenger&amp;userID=12737&amp;action=icq&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951" onclick="return !window.open(this.href, 'icq', 'width=350,height=400,scrollbars=yes,resizable=yes')"><img src="qmessage-box-text-input-box_files/icqS.png" alt="" title="Contact &quot;Junior&quot; by ICQ"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=12737&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94839"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-2">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94839/qmessage-box-text-input-box.html#post94839" rel="nofollow" title="Permalink to post #10" class="messageNumber">10</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94839" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Wednesday, May 6th 2009, 2:16pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94839" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94839">
+									Mike,<br>
+<br>
+Interesting, but I think 'hacked' in this case means how the library
+was thrown together, not necessarily being vulnerable to hacker
+attacks. But if anyone knows this to be different than my take on this,
+please post on how this is being accomplished or if you can direct me
+to further reading on this I'd be thankful.<br>
+<br>
+Junior								</div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94839">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94847', {
+					objectID: 94847,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94847" class="message threadStarterPost">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94847"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94847" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="mike phillips is offline">		
+												
+				<a href="http://www.qtforum.org/user/19927-mike-phillips/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;mike phillips&quot;">
+					<span>mike phillips</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Trainee</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank1S.png" alt=""></p>
+										
+					</div>
+		
+									
+					<div class="userSymbols">
+				<ul>
+											<li><img src="qmessage-box-text-input-box_files/threadStarterS.png" alt="&quot;mike phillips&quot; started this thread" title="&quot;mike phillips&quot; started this thread"></li>
+										
+									</ul>
+			</div>
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 52</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;mike phillips&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94847"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-1">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94847/qmessage-box-text-input-box.html#post94847" rel="nofollow" title="Permalink to post #11" class="messageNumber">11</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94847" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Wednesday, May 6th 2009, 7:09pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94847" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94847">
+									By 'hacked' I meant 'hacked at' IE there are hints that it will be dropped from future Qt issues.<br>
+<br>
+Your solution did work, but still chopped off some leading characters.
+I had better luck by using " [" rather than "[" but still not reliable.
+There seems to be a disjoint between the pixel size and text string
+lengths in sizing widgets in Qt.<br>
+<br>
+NOW - WHERE did you find that gem, anyway? Even pasting the text of your solution into Google does not produce a hit.... <img src="qmessage-box-text-input-box_files/biggrin.png" alt=":D"> .<br>
+<br>
+The problem now is that I cannot turn the function into a void which I
+can call for several different QlIneEdIts as there is no way to turn
+the widget label into a useable string function that the proc will
+accept, so the prog is going to be very bloated with it for each
+lineEdit. </div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94847">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94849', {
+					objectID: 94849,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94849" class="message">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94849"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94849" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="Junior is offline">		
+												
+				<a href="http://www.qtforum.org/user/12737-junior/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;Junior&quot;">
+					<span>Junior</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Professional</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank3S.png" alt=""></p>
+										
+					</div>
+		
+									<div class="userAvatar">
+					<a href="http://www.qtforum.org/user/12737-junior/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;Junior&quot;"><img src="qmessage-box-text-input-box_files/avatar-188.png" alt="" style="width: 70px; height: 70px;"></a>
+				</div>
+							
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=12737&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 925</a></p>
+									<p>Location: San Antonio, TX  USA</p>
+									<p>Occupation: Senior Secure Systems Engineer</p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?page=ExternalLink&amp;url=http%3A%2F%2Fwww.trustedcs.com"><img src="qmessage-box-text-input-box_files/websiteS.png" alt="" title="Visit the personal website of &quot;Junior&quot;"></a></li>
+											<li><a href="mailto:rneal@satx.rr.com"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;Junior&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?page=Messenger&amp;userID=12737&amp;action=icq&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951" onclick="return !window.open(this.href, 'icq', 'width=350,height=400,scrollbars=yes,resizable=yes')"><img src="qmessage-box-text-input-box_files/icqS.png" alt="" title="Contact &quot;Junior&quot; by ICQ"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=12737&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94849"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-2">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94849/qmessage-box-text-input-box.html#post94849" rel="nofollow" title="Permalink to post #12" class="messageNumber">12</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94849" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Wednesday, May 6th 2009, 7:50pm</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94849" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94849">
+									Mike,<br>
+<br>
+Thought of it off the top of my head (which isn't always reliable). But
+it's a start. If your going to need this over and over and over... Then
+I would recommend overloading the QLineEdit class by creating your own
+and adding this into the constructor. Then just use your own lineEdit
+class verse the default, most programmers don't use the default classes
+as they are anyway, they just make a good starting point for further
+defining them to your requirements.<br>
+<br>
+Junior								</div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94849">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+																		
+		<script type="text/javascript">
+			//<![CDATA[
+				
+				quoteData.set('post-94861', {
+					objectID: 94861,
+					objectType: 'post',
+					quotes: 0				});
+				
+						//]]>
+		</script>
+		
+										
+					<div id="postRow94861" class="message threadStarterPost">
+				<div class="messageInner messageLeft dividers container-3">
+					<a id="post94861"></a>					
+					<div class="messageSidebar">
+	<p class="skipSidebar hidden"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#skipPoint94861" title="Skip user information">Skip user information</a></p><!-- support for disabled surfers -->
+			<div class="messageAuthor">
+			<p class="userName">
+															<img src="qmessage-box-text-input-box_files/offlineS.png" alt="" title="mike phillips is offline">		
+												
+				<a href="http://www.qtforum.org/user/19927-mike-phillips/?s=44bba13371e7d1c4728a8a40fc294786d66c4951" title="Open user profile from &quot;mike phillips&quot;">
+					<span>mike phillips</span>
+				</a>
+				
+							</p>
+
+												<p class="userTitle smallFont">Trainee</p>
+													<p class="userRank"><img src="qmessage-box-text-input-box_files/userRank1S.png" alt=""></p>
+										
+					</div>
+		
+									
+					<div class="userSymbols">
+				<ul>
+											<li><img src="qmessage-box-text-input-box_files/threadStarterS.png" alt="&quot;mike phillips&quot; started this thread" title="&quot;mike phillips&quot; started this thread"></li>
+										
+									</ul>
+			</div>
+				
+					<div class="userCredits">
+									<p><a href="http://www.qtforum.org/index.php?form=Search&amp;types[]=post&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951">Posts: 52</a></p>
+								
+							</div>
+				
+					<div class="userMessenger">
+				<ul>
+											<li><a href="http://www.qtforum.org/index.php?form=Mail&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/emailS.png" alt="" title="Send e-mail to &quot;mike phillips&quot;"></a></li>
+											<li><a href="http://www.qtforum.org/index.php?form=PMNew&amp;userID=19927&amp;s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/pmEmptyS.png" alt="Send private message" title="Send private message"></a></li>
+										
+									</ul>
+			</div>
+				
+		
+	<a id="skipPoint94861"></a><!-- support for disabled surfers -->
+</div>					
+					<div class="messageContent">
+						<div class="messageContentInner color-1">
+							<div class="messageHeader">
+								<p class="messageCount">
+									<a href="http://www.qtforum.org/post/94861/qmessage-box-text-input-box.html#post94861" rel="nofollow" title="Permalink to post #13" class="messageNumber">13</a>
+																	</p>
+								<div class="containerIcon">
+									<img id="postEdit94861" src="qmessage-box-text-input-box_files/postM.png" alt="">
+								</div>
+								<div class="containerContent">
+									<p class="smallFont light">Thursday, May 7th 2009, 8:54am</p>
+								</div>
+							</div>
+							
+							<h3 id="postTopic94861" class="messageTitle"><span></span></h3>
+							
+							<div class="messageBody">
+																<div id="postText94861">
+									I'll put the overloading on the back burner for the time being and I have settled for a less perfect <div class="border codeBox">
+	<div>
+		<table>
+			<tbody><tr>
+				<td class="codeLineNumbers container-3">
+					<img src="qmessage-box-text-input-box_files/codeS.png" alt="">
+				</td>
+				<td class="codeLines container-4">
+					<h3>Source code</h3>
+				</td>
+			</tr>
+			<tr>
+				<td class="codeLineNumbers container-3">
+					<pre>1
+</pre>
+				</td>
+				<td class="codeLines container-4">
+					<pre>lineEdit-&gt;setMaximumWidth(??*(text.length());</pre>
+				</td>
+			</tr>
+		</tbody></table>
+	</div>
+</div> which is giving reasonably tidy results. Say thanks to the top of your head... <img src="qmessage-box-text-input-box_files/smile.gif" alt=":)">								</div>
+							</div>
+							
+														
+														
+														
+														
+							<div class="messageFooterRight">
+								<div class="smallButtons">
+									<ul id="postButtons94861">
+										<li class="extraButton"><a href="http://www.qtforum.org/article/26906/qmessage-box-text-input-box.html#top" title="Go to the top of the page"><img src="qmessage-box-text-input-box_files/upS.png" alt="Go to the top of the page"> <span class="hidden">Go to the top of the page</span></a></li>
+																																																											</ul>
+								</div>
+							</div>
+							<hr>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+				
+				
+									
+		
+	<div class="contentFooter">
+				
+		<div id="threadEditMarked" class="optionButtons"></div>
+		<div id="postEditMarked" class="optionButtons"></div>
+		
+		<div class="largeButtons">
+					</div>
+	</div>
+	
+		
+			<div class="border infoBox">
+						
+							<div class="container-1">
+					<div class="containerIcon"><img src="qmessage-box-text-input-box_files/similarThreadsM.png" alt=""></div>
+					<div class="containerContent">
+						<h3>Similar threads</h3>
+						<ul class="similarThreads">
+															<li title="I have just started programming with Qt. I am used to using DELPHI.
+How do you create the text to describe what the input of a QLineEdit is.
+Say I want to ask you for your &quot;name&quot;, how do I get the &quot;name&quot; displayed before the input box?
+And autosizing the buttons to fit text, what comd do I use?">
+									<ul class="breadCrumbs">
+										<li><a href="http://www.qtforum.org/forum/2/qt-programming.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/boardS.png" alt=""> <span>Qt Programming</span></a> »</li>
+										<li>
+											<a href="http://www.qtforum.org/article/24500/qlineedit-text-to-describe-input.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/threadS.png" alt=""> <span>QLineEdit - text to describe input</span></a>
+											<span class="light">(Mar 27th 2008, 1:51pm)</span>
+										</li>
+									</ul>
+								</li>
+															<li title="Hello,
+
+Unless I am mistaken, there is no standard widget in Qt4.3 (or future 4.4) to *input rich text*, i.e. text with (conceptually) the _      _ tags.
+
+Such a rich text widget should not only display rich text (several widgets already do this) but also provide standard ways (maybe a standard menu, and also keyboard shortcuts for modes, like Alt I to swith to italics, Alt B to switch to bold, etc..) to input it.
+
+Do you know if there is an easy way to do it, and/or if there are some standar...">
+									<ul class="breadCrumbs">
+										<li><a href="http://www.qtforum.org/forum/2/qt-programming.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/boardS.png" alt=""> <span>Qt Programming</span></a> »</li>
+										<li>
+											<a href="http://www.qtforum.org/article/23771/rich-text-input.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/threadS.png" alt=""> <span>Rich Text input?</span></a>
+											<span class="light">(Jan 24th 2008, 9:36pm)</span>
+										</li>
+									</ul>
+								</li>
+															<li title="code:
+[code]ValueCEdit-&gt;text().toInt()=ValueBEdit-&gt;text().toInt()+ValueAEdit-&gt;text().toInt();[/code]
+compile error:
+---Quote---
+qtbase.cpp: In member function `void MyMainWindow::valuecompute()': qtbase.cpp:22: non-lvalue in assignment 
+---Quote end---
+
+
+I want to do:input number A(from ValueAEdit-&gt;text())+input number B(from ValueAEdit-&gt;text())=number C(ValueCEdit-&gt;text()),and ValueAEdit-&gt;text() display in window.
+Thank you in advance!">
+									<ul class="breadCrumbs">
+										<li><a href="http://www.qtforum.org/forum/2/qt-programming.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/boardS.png" alt=""> <span>Qt Programming</span></a> »</li>
+										<li>
+											<a href="http://www.qtforum.org/article/17650/a-compile-error-solved.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/threadS.png" alt=""> <span>a compile error(solved)</span></a>
+											<span class="light">(Jul 15th 2006, 7:29am)</span>
+										</li>
+									</ul>
+								</li>
+															<li title="I would like to know what is the best way to create a dialog based application using QT with KDevelop?">
+									<ul class="breadCrumbs">
+										<li><a href="http://www.qtforum.org/forum/2/qt-programming.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/boardS.png" alt=""> <span>Qt Programming</span></a> »</li>
+										<li>
+											<a href="http://www.qtforum.org/article/17565/dialog-based-application.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/threadS.png" alt=""> <span>Dialog based application</span></a>
+											<span class="light">(Jul 9th 2006, 2:46pm)</span>
+										</li>
+									</ul>
+								</li>
+															<li title="I wanna know.
+
+codes maybe like these
+===================
+QComBox Input;
+
+connect( (QObject*)Input-&gt;lineEdit(), SIGNAL(returnPressed()), this, SLOT(doOne());
+connect( (QObject*)Input, SIGNAL(textChanged(const QString&amp;)), this, SLOT(doTwo());
+===================
+
+And my result was:
+Press return , if the text of instance-Input IS empty, then doOne();
+Press return , if the text of instance-Input is NOT empty, then doTwo();
+
+Somebody helps. Thanks a lot.">
+									<ul class="breadCrumbs">
+										<li><a href="http://www.qtforum.org/forum/2/qt-programming.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/boardS.png" alt=""> <span>Qt Programming</span></a> »</li>
+										<li>
+											<a href="http://www.qtforum.org/article/4612/can-we-deal-with-qcombox-with-returnpressed-and-textchanged.html?s=44bba13371e7d1c4728a8a40fc294786d66c4951"><img src="qmessage-box-text-input-box_files/threadS.png" alt=""> <span>Can we deal with QCombox with returnPressed and textChanged?</span></a>
+											<span class="light">(Dec 27th 2004, 7:47am)</span>
+										</li>
+									</ul>
+								</li>
+													</ul>
+					</div>
+				</div>
+						
+			
+					</div>
+		
+	<div class="pageOptions">
+		
+		
+				
+									<script type="text/javascript" src="qmessage-box-text-input-box_files/Rating.js"></script>
+				<form method="post" action="index.php?page=Thread">
+					<div>
+						<input name="threadID" value="26906" type="hidden">
+						<input name="s" value="44bba13371e7d1c4728a8a40fc294786d66c4951" type="hidden">						<input name="pageNo" value="1" type="hidden">
+						<input id="threadRating" name="rating" value="0" type="hidden">
+
+						<span class="hidden" id="threadRatingSpan"></span>
+
+						<span>Rate this thread</span>
+
+						<noscript>
+							<div>
+								<select id="threadRatingSelect" name="rating">
+									<option selected="selected" value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+									<option value="5">5</option>
+								</select>
+								<input class="inputImage" src="qmessage-box-text-input-box_files/submitS.png" alt="Submit" type="image">
+							</div>
+						</noscript>
+					</div>
+				</form>
+				
+				<script type="text/javascript">
+					//<![CDATA[
+					new Rating('threadRating', 0);
+					//]]>
+				</script>
+						</div>
+	<form method="get" action="index.php" class="quickJump">
+	<div>
+		<input name="page" value="Board" type="hidden">
+		<select name="boardID" onchange="if (this.options[this.selectedIndex].value != 0) this.form.submit()">
+			<option value="0">Jump to:</option>
+			<option value="0">-----------------------</option>
+			<option label="QtForum.org" value="45">QtForum.org</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp; QtForum" value="14">&nbsp;&nbsp;&nbsp;&nbsp; QtForum</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tutorials, Tips and snippets" value="15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Tutorials, Tips and snippets</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp; Qt" value="12">&nbsp;&nbsp;&nbsp;&nbsp; Qt</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qt Embedded, Qtopia, QSA" value="10">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qt Embedded, Qtopia, QSA</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qt Programming" value="2" selected="selected">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qt Programming</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KDE Development" value="25">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KDE Development</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qt Designer" value="3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qt Designer</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Installing Qt" value="54">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Installing Qt</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp; Other Forums" value="13">&nbsp;&nbsp;&nbsp;&nbsp; Other Forums</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C++ programming" value="22">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C++ programming</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offtopic" value="9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Offtopic</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Job Forum" value="17">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Job Forum</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; commercial jobs" value="18">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; commercial jobs</option>
+<option label="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; non commercial" value="19">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; non commercial</option>
+		</select>
+		
+		<input name="s" value="44bba13371e7d1c4728a8a40fc294786d66c4951" type="hidden">		<input class="inputImage" src="qmessage-box-text-input-box_files/submitS.png" alt="Submit" type="image">
+	</div>
+</form></div>
+
+	<div id="footer">
+<p class="copyright"><a href="http://www.qtforum.org/index.php?page=LegalNotice" target="_blank"><u>Impressum / imprint / legal notice</u></a>
+<br><a href="http://www.qtforum.org/index.php?page=ExternalLink&amp;url=http%3A%2F%2Fwww.woltlab.com">Forum Software: <strong>Burning Board®</strong>, developed by <strong>WoltLab® GmbH</strong></a><br>
+
+<a href="http://www.linux-onlineshop.de/" target="_blank">Linux Computer</a>&nbsp;-&nbsp;<a href="http://www.cylex.pt/" target="_blank">Portugal Branchenverzeichnis</a>&nbsp;-&nbsp;<a href="http://www.firstaffair.de/" target="_blank">Kontaktanzeigen</a>&nbsp;-&nbsp;<a href="http://www.qtforum.org/lastminute.html" target="_blank">Lastminute</a>&nbsp;<br><a href="http://www.nagelstudio-linz.at/nageldesign_kurse.html" target="_blank">Naildesign Kurse</a>&nbsp;-&nbsp;<a href="http://www.citymap-24.com/" target="_blank">Stadtpläne</a>&nbsp;-&nbsp;<a href="http://www.qtforum.org/branchenbuch-stadtplan" target="_blank">Branchenbuch &amp; Stadtplan</a>&nbsp;-&nbsp;<a href="http://www.privatklinik-vitalitas.de/" target="_blank">Facelifting</a>&nbsp;<br><a href="http://www.klinik-am-ring.de/brustvergroesserung/brustvergroesserung.php" target="_blank">Brustvergrößerung</a>&nbsp;
+</p>
+	</div>
+</div>
+	<!-- special footers -->
+	<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-9404930-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>	<!-- Miscellaneous -->
+	<script type="text/javascript">
+		//<![CDATA[
+		function externalLinks() {
+			var anchors = document.getElementsByTagName('a');
+			for (var i = 0; i < anchors.length; i++ ) {
+				var anchor = anchors[i];
+				if ((anchor.className == 'externalURL') || anchor.href.search(/page=Attachment&/) != -1 || anchor.parentNode.className == 'columnHomepage') {
+					anchor.onclick = function() { window.open(this.href, '_blank'); return false; }
+				}
+								if (anchor.childNodes.length != 0 && anchor.childNodes[0].src && anchor.childNodes[0].src.search(/websiteS.png/) != -1 && anchor.parentNode.parentNode.parentNode.className == 'userMessenger') {
+					anchor.onclick = function() { window.open(this.href, '_blank'); return false; }
+				}			}
+		}
+		
+		onloadEvents.push(function() { new externalLinks(); })
+		//]]>
+	</script>
+</body></html>

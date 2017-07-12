@@ -1,0 +1,401 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>CS 340 - MP 3 - Sliding Block Puzzles</title>
+</head><body>
+<h1>CS 340 - Software Design</h1>
+<h1><a href="http://www.cs.uic.edu/%7Ei340/">Machine Problem 3, Fall 2001</a></h1>
+<h1>Sliding Block Puzzles</h1>
+<h3>Due: Thursday, March 4, 2010 at 11:59 pm</h3>
+<p>
+A sliding block puzzle consists of a number of pieces that
+fit into a confined area.  The goal is to move one of the 
+pieces to a specific position.  This piece will be called
+the "goal piece".  The goal can only be acheived
+by moving all of the pieces is a certain specified order
+of moves.  Each piece may be restricted in the direction 
+that it can move.
+
+
+</p><p>
+Consider the following puzzle:
+</p><p>
+<table border="5" cellspacing="5">
+<tbody><tr><td align="center" height="50" width="50">1</td><td align="center" width="50">2
+	</td><td width="50"></td><td width="50">
+</td></tr><tr><td align="center" width="50">3</td><td align="center" width="50">
+	</td><td colspan="2" align="center" height="50" width="100">4
+</td></tr><tr><td colspan="2" align="center" height="50" width="100">Z
+	</td><td rowspan="2" align="center" width="50">5</td><td width="50">
+</td></tr><tr><td colspan="2" align="center" height="50" width="100">6</td><td align="center" width="50">7
+</td></tr></tbody></table>
+
+</p><p>
+The puzzle contains 8 pieces.  The piece labeled "Z" is the "goal piece".
+This piece must be moved to the right hand edge of the puzzle.  In this
+puzzle all pieces can move any direction we wish (left/right or 
+up/down).  One solution is to move piece 4 left one space, then
+move piece 7 up 3 spaces and left 1 space, then move piece 5 right
+one space then up 2 spaces, then finally move piece Z right 2 spaces.
+The result looks like this:
+</p><p>
+
+<table border="5" cellspacing="5">
+<tbody><tr><td align="center" height="50" width="50">1</td><td align="center" width="50">2
+	</td><td align="center" width="50">7</td><td rowspan="2" align="center" width="50">5
+</td></tr><tr><td align="center" width="50">3
+	</td><td colspan="2" align="center" height="50" width="100">4
+</td></tr><tr><td width="50"></td><td width="50"></td><td colspan="2" align="center" height="50" width="100">Z
+</td></tr><tr><td colspan="2" align="center" height="50" width="100">6</td><td align="center" width="50">
+	</td><td width="50">
+
+</td></tr></tbody></table>
+
+</p><p>
+Your program is to find the shortest solution for these types
+of puzzles.  The solution will always have the goal piece move
+to the right hand side of the puzzle grid (i.e. once the goal
+piece moves into the last column).
+Your program is take a command line argument that
+will contain the name of a data file containing the needed 
+information about the puzzle.  The output of the puzzle will
+be a sequences of moves that give the shortest solutions.
+</p><p>
+The solution is to be given as an ordered list of moves.
+Each move is to show the Piece moved, the direction (up,
+down, left or right) and the number of spaces moved in that
+direction.  The solution for the above puzzle is as follows:
+</p><p>
+<table>
+<tbody><tr><td>1.</td><td>Piece 4</td><td>left</td><td>1 space
+</td></tr><tr><td>2.</td><td>Piece 7</td><td>up</td><td>3 spaces
+</td></tr><tr><td>3.</td><td>Piece 7</td><td>left</td><td>1 space
+
+
+</td></tr><tr><td>4.</td><td>Piece 5</td><td>right</td><td>1 space
+</td></tr><tr><td>5.</td><td>Piece 5</td><td>up</td><td>2 space
+</td></tr><tr><td>6.</td><td>Piece Z</td><td>right</td><td>2 space
+</td></tr></tbody></table>
+</p><p>
+The shortest solution will have the fewest number of moves.  Note
+that there could be multiple shortest solutions for a puzzle.
+Finding any one of these shortest solutions is good enough for
+this programming assignment.  The above solution could have 
+reversed moves 3 &amp; 4 and still have been the shortest solution.
+Your program is to treat the following as 1 move:
+</p><p>
+
+<table>
+<tbody><tr><td>2.</td><td>Piece 7</td><td>up</td><td>3 spaces
+</td></tr></tbody></table>
+</p><p>
+while the following is considered 3 moves:
+</p><p>
+<table>
+<tbody><tr><td>2.</td><td>Piece 7</td><td>up</td><td>1 space
+</td></tr><tr><td>3.</td><td>Piece 7</td><td>up</td><td>1 space
+
+
+</td></tr><tr><td>4.</td><td>Piece 7</td><td>up</td><td>1 space
+</td></tr></tbody></table>
+</p><p>
+The input for a puzzle will always come from a file.  
+</p><ul>
+<li>The first
+line of the file will contain 2 integers, the number of rows and
+the number of columns of the puzzle "grid".  If either of these values
+is zero or less, print an appropriate error message and end the
+program.  These values will be separated by one or more
+white space characters.  The puzzle will always use a rectangular
+grid.
+</li><li>The second line of the file will contain the starting position
+of the goal piece.  
+</li><li>The remaining lines of the file will contain the starting position
+of the other pieces in the puzzle.
+</li><li>Once the end of the file is read, then all of the pieces have
+been read in.
+</li></ul>
+Each piece will always have a rectangular shape (while such puzzles
+with non-rectangular shape do exist, it adds a complexity we don't
+need to deal with here).
+Each piece's starting position is given by 4
+integer values and one character value.  These values will be 
+separated by one or more white space characters.  
+<ul>
+<li>The first integer will be the starting row position.
+</li><li>The second integer will be the starting column position.
+
+
+</li><li>The third integer will be the width in columns.
+</li><li>The fourth integer will be the height in rows.
+</li><li>The character value will specify the direction of movement
+the piece can have.  This character can be either an "h" for
+horizontal movement (left or right), a "v" for vertical
+movement (up or down), a "b" for both horizontal and
+vertical movement, or a "n" for no movement (the piece cannot 
+move, it must stay in that space).
+</li></ul>
+<p>
+If a piece would fall outside of the puzzle grid, have an invalid
+direction of movement, or overlap with another piece, an appropriate
+error message should be printed and the piece should be discarded
+from the puzzle (i.e. don't quit the program).  If the goal piece
+is listed incorrectly, the first correctly listed piece becomes the
+goal piece.  The upper left corner of the grid has row = 1 and
+column = 1.  The input for the above puzzle would be as follows:
+</p><pre>	4  4
+	3  1  2  1  b
+	1  1  1  1  b
+	1  2  1  1  b
+	2  1  1  1  b
+	2  3  2  1  b
+	3  3  1  2  b
+	4  1  2  1  b
+	4  4  1  1  b
+</pre>
+Note that the names of the pieces are not specied in the input file.
+The goal piece will always have the name of "Z".  The next nine
+pieces will have the names from "1" to "9".  The next 26 pieces
+will be given names using the lower case letters from "a" to "z".
+The next 25 pieces will be given names using the upper case letters
+from "A" to "Y" (since "Z" is already in use).  If the file has
+more than 61 pieces, come up with some additional naming scheme.  You
+can assume a puzzle will have less than 128 pieces.
+The actual file is <a href="http://www.cs.uic.edu/%7Ei340/projects/proj3a.data">here in the file "proj3a.data"</a>.
+Other data files are:
+<ul>
+<li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3a.data">proj3a.data</a> (The one listed above)
+
+
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3b.data">proj3b.data</a> 
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3c.data">proj3c.data</a> This one has no solution.
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3d.data">proj3d.data</a> 
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3e.data">proj3e.data</a> 
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3f.data">proj3f.data</a> 
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3g.data">proj3g.data</a> Error in input
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3h.data">proj3h.data</a> Error in input
+
+
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3i.data">proj3i.data</a> Error in input
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3j.data">proj3j.data</a> Error in input
+</li><li><a href="http://www.cs.uic.edu/%7Ei340/projects/proj3k.data">proj3k.data</a> A 3 piece puzzle
+</li></ul>
+<p>
+It is possible that a puzzle may have no solution.
+Your output from the program should be written to standard output
+and should consist of four parts:
+</p><ol>
+<li>Any error messages generated by invalid input.<p>
+</p></li><li>A listing of the grid as the start of the puzzle.  This 
+can be a simple ASCII graphic as shown below:
+<pre>
+******
+*12  *
+*3 44*
+*ZZ5 *
+*6657*
+******
+</pre>
+
+Perhaps using periods instead of spaces makes this a bit more readable:
+<pre>******
+*12..*
+*3.44*
+*ZZ5.*
+*6657*
+******
+</pre>
+Of course, this grid is less readable if the grid so large that it
+causes line wrap (but this is not the programmer's problem).
+<p>
+</p></li><li> Then list out the moves that solve the puzzle or a message
+stating the puzzle is not solvable.<p>
+</p></li><li>A list of the grid showing the solution, if one exists.  For example:
+<pre>******
+*1275*
+*3445*
+*..ZZ*
+*66..*
+******
+</pre>
+
+</li></ol>
+
+<p>
+For 15 points extra credit, allow an optional flag to be
+read in from the command line.  The flag is "-h".  This flag will
+cause output to be placed in an html file as well as to the
+normal output to standard output.  The html filename
+will be the same as the input data filename with the file extension
+of ".html".  The output in the html file should contain the same
+information as the standard ouput, but it should be formatted better.
+The grid(s) in this html file should use html tag
+of &lt;table&gt; as was shown in the write-up of this assignment.
+The list of moves should show the information is some neat 
+arrangement.  How you do this is left completely up to you (do not
+expect hints from either the instructor or the TA).
+
+</p><p>
+Your program is to take full advantage of the C++ Standard Template
+Library.  This library contains classes for a number of data
+structures that can be used in solving this problem.  The idea
+is "why write your own code if someone else already has done it".
+This is not to be taken to the extreme of "borrowing code" from
+fellow class members.  Your program may not use the C style struct for
+any user defined data types.
+
+</p><p>
+To store your data, you will need to create a class to hold
+each piece.  The puzzle will be a collection of these pieces.
+Since the number of pieces is unknown, this should be dynamic.
+The use of the Standard Template Library (STL) classes of
+<b>vector</b> or <b>list</b> would be a good choice here.  When trying to
+find the shortest number of moves, the breadth-first search
+algorithm will work.  Since the breadth-first search uses a
+queue, the use of the STL class of <b>queue</b> is good
+choice when implementing a breadth-first search.
+
+
+</p><p>
+A good algorithm to solve this problem is to create a class
+that will hold a "snapshot" of the puzzle.  A snapshot is to 
+contain all needed information about the "current" state of the
+puzzle.  The current state is the current position of all pieces 
+in the puzzle and what moves it took to reach the current state
+from the initial state.  So the snapshot needs two main sets of
+data: the pieces with their positions and a list of moves.  The
+initial state/snapshot is the position of the pieces as given in the input 
+file and zero moves (an empty move list).  Then all of the 
+snapshots that could be created from moving a single piece
+from the initial snapshot are added  onto a queue (be sure
+to add the move information to the list of moves).  If moving
+the piece causes piece Z to move to the right-most column of
+the puzzle, the puzzle is solved and the move list which contains
+the solution is printed.  Then the first snapshot is removed
+from the queue and all of the snapshots that could be created 
+from moving a single piece from this snapshot are added  onto the 
+queue.  If we attempt to remove a snapshot from the queue and
+the queue is empty, the puzzle has no solution.
+</p><p>
+Of course, we have to make sure that arrangement of pieces
+only is added  onto the queue one time; otherwise, we may get into
+an infinite loop.  One way yo do this is to create a simplified 
+version of the current layout of the pieces and to store and
+compare this simplified version using an STL <b>set</b>.  One
+way to create a simplied version is to create a string from the
+puzzle.  The string would have (# of rows)x(# of column) characters
+and the first (row-length)-th character would have the piece names from the
+first row (using a space character for an empty position in the puzzle.
+, the second (row-length)-th characters would have the
+piece names from the second row...  For example the initial
+puzzle from above would have the following 16 character string:
+</p><pre>	"12  3 44ZZ5 6657"
+</pre>
+and the solution of the puzzle would have the following 16 character string:
+<pre>	"12753445  ZZ66  "
+</pre>
+This idea is nice, since comparisons are already defined for strings,
+we don't have to make up some complicated algorithm to determine
+if two snapshots have all of their pieces in the same positions.
+<p>
+
+What are the possible first moves from the initial puzzle shown
+above?  The first piece I would check would be the Z piece, since
+moving that piece determines if the puzzle is solved and if a solution
+is found, the remaining pieces don't have to be moved.  The following
+is a piece by piece listing of the first moves from the inital puzzle:
+</p><ul>
+<li>Piece Z
+<ul>
+<li>Can not be moved
+</li></ul>
+</li><li>Piece 1
+<ul>
+<li>Can not be moved
+</li></ul>
+</li><li>Piece 2
+<ul>
+<li>Move down 1 space
+</li><li>Move right 1 space
+</li><li>Move right 2 spaces
+</li></ul>
+
+</li><li>Piece 3
+
+<ul>
+<li>Move right 1 space
+</li></ul>
+</li><li>Piece 4
+<ul>
+<li>Move up 1 space
+</li><li>Move left 1 space
+</li></ul>
+</li><li>Piece 5
+<ul>
+<li>Can not be moved
+</li></ul>
+</li><li>Piece 6
+<ul>
+<li>Can not be moved
+</li></ul>
+
+</li><li>Piece 7
+
+<ul>
+<li>Move up 1 space
+</li></ul>
+</li></ul>
+Therefore, after the first initial snapshot is taken care of, the
+queue should have 7 snapshots on it.  One for each of the moves
+mentioned above.
+
+<p>
+This program will require the use of multiple source code files and
+separate compilation. 
+The division of the subroutines between the
+multiple source code files must be logical.  One suggestion would
+be to have each class in its own file (or one file with all classes) and the
+command interface code in another source code file.  
+Note: a "source code file"
+is not the same as a "header file".  Source code files will have
+a file extension of .c (or .cpp, .C, .CC, etc.), while a header file
+will have a file extension of .h.  To perform separate compilation, 
+your makefile must separately compile
+the source code files into ".o" files and then link the ".o" files together.  
+Using a #include
+statement with a source code file (a .c file) will NOT satisfy a 
+requirement of separate compilation.
+</p><p>
+In addition to using and submitting a makefile, this program will also require 
+a 1-2 page write up of the data structures
+used in the program and the logical division of your program into multiple
+source code files (i.e. which routines are where).  Remember that
+this write-up is to be written in ASCII format and is to be electronically
+turned in with your program.  The name of this file should be "readme.txt".
+Also recall that your program will be given to another student to
+write a critique.  Therefore, it is suggested that you do not include
+your Social Security Number in your program.  Instead use your name and
+your CS User ID to identify yourself.
+</p><p>
+Your program must be written in good programming style.  This includes
+(but is not limited to) meaningful identifier names, a file header at
+the beginning of each source code file, a function header at the beginning
+of the function, proper use of blank lines and indentation to aide in the
+reading of your code, explanatory "value-added" in-line comments, etc.
+</p><p>
+The work you turn in must be 100% your own.  You are not allowed to
+share code with any other person (inside this class or not).  You may
+discuss the project with other persons; however, you may not show any
+code you write to another person nor may you look at any other person's
+written code.
+</p><p>
+You are to submit this project using the CS Department's UNIX machine's
+turnin command.  The project name for this assignment is <b>proj3</b>.
+Be sure to submit all source code, header files, makefile as well as your
+program description.  Failure to turnin all required pieces will result 
+in a lower grade for the assignment.
+
+
+</p><p>
+
+</p></body></html>

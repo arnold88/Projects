@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\mancala.o
+./release\inputhi.o
+./release\hiscore1.o
+./release\mconnect.o
+./release\mreceive.o
+./release\moc_mancala.o
+./release\moc_inputhi.o
+./release\moc_hiscore1.o
+./release\moc_mconnect.o
+./release\moc_mreceive.o
+);
