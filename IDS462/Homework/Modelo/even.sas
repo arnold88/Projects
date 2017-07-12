@@ -1,0 +1,2208 @@
+*--------------------------------------------------------------------------*
+| Programs and Data from Applied Statistics and the SAS Programming        |
+| Language, 5th edition                                                    |
+|                                                                          |
+| The following file are available for downloading:                        |
+|                                                                          |
+| PROGRAMS.SAS - This file contains the programs used in this book         |
+|                                                                          |
+| HOMEWORK.DAT - Homework data and program files                           |
+|                                                                          |
+| HW_SOLUTIONS_ODD.SAS - Solutions to the odd-numbered homework problems   |                                                    |
+|                                                                          |
+| HW_SOLUTIONS_EVEN.SAS - Solutions to the even-numbered homework          |
+|                         problems (available only to faculty)             |
+*--------------------------------------------------------------------------*;
+ 
+***Applied Statistics and the SAS Programming Language, 5th edition
+   Solutions to the even-numbered problems;
+
+***Problem 1-2;
+DATA PROB1_2;
+   INPUT SUBJ    $ 1-3
+         HEIGHT    4-5
+         WT_INIT   6-8
+         WT_FINAL  9-11;
+   ***Convert to metric;
+   WT_INIT = WT_INIT/2.2;
+   WT_FINAL = WT_FINAL/2.2;
+   HEIGHT = HEIGHT*.0254;
+   BMI_INIT = WT_INIT/HEIGHT**2;
+   BMI_FINAL = WT_FINAL/HEIGHT**2;
+   BMI_DIFF = BMI_FINAL – BMI_INIT;
+DATALINES;
+00768155150
+00272250240
+00563240200
+00170345298
+;
+PROC SORT DATA=PROB1_2;
+   BY SUBJ;
+RUN;
+PROC PRINT DATA=PROB1_2;
+   TITLE "PROB1_2";
+   ID SUBJ;
+   VAR HEIGHT BMI_INIT BMI_FINAL BMI_DIFF;
+RUN;
+
+***Program 1_4;
+DATA IQ_AND_TEST_SCORES;
+   INPUT ID      1-3
+         IQ      4-6
+         MATH    7-9
+         SCIENCE 10-12;
+***Added lines;
+OVERALL = (IQ + MATH + SCIENCE)/(3*500);
+IF IQ GE 0 AND IQ LE 100 THEN GROUP = 1;
+ELSE IF IQ GE 101 AND IQ LE 140 THEN GROUP = 2;
+ELSE IF IQ GT 140 THEN GROUP = 3;
+DATALINES;
+001128550590
+002102490501
+003140670690
+004115510510
+;
+PROC SORT DATA=PROB1_4;
+   BY IQ;
+RUN;
+PROC PRINT DATA=PROB1_4;
+   TITLE "PROB1_4";
+RUN;
+PROC FREQ DATA=PROB1_4;
+   TABLES GROUP;
+RUN;
+
+*Problem 1-6;
+DATA PROB1_6;
+   INPUT QUES1 $ 1
+         QUES2 $ 2
+         QUES3 $ 3
+         QUES4 $ 4
+         QUES5 $ 5;
+   ***See Chapter 12 for an easier way to do this;
+DATALINES;
+ABCDE
+AACCE
+BBBBB
+CABDA
+DDAAC
+CABBB
+EEBBB
+ACACA
+;
+PROC FREQ DATA=PROB1_6;
+   TITLE "PROB1_6";
+   TABLES QUES1-QUES5 / NOCUM;
+RUN;
+
+***Problem 1_8;
+DATA ANYTHING_YOU_LIKE;
+   INPUT EMPID $ SALARY JCLASS $;
+   IF JCLASS = '1' THEN BONUS = .01*SALARY;
+   ELSE IF JCLASS = '2' THEN BONUS = .15*SALARY;
+   ELSE IF JCLASS = '3' THEN BONUS = .20*SALARY;
+   NEW_SALARY = SALARY + BONUS;
+DATALINES;
+137  28000  1 
+214  98000    3
+199 150000 3
+355   57000    2
+;
+PROC PRINT DATA=ANYTHING_YOU_LIKE;
+   TITLE "Listing of Salaries and Bonuses";
+RUN;
+
+***Problem 1-10;
+DATA RAIN;
+   INPUT CITY $ RAIN_JUNE RAIN_JULY RAIN_AUGUST;
+   AVERAGE = (RAIN_JUNE + RAIN_JULY + RAIN_AUGUST)/3;
+   PERCENT_JUNE   = 100*(RAIN_JUNE/AVERAGE);
+   PERCENT_JULY   = 100*(RAIN_JULY/AVERAGE);
+   PERCENT_AUGUST = 100*(RAIN_AUGUST/AVERAGE);
+DATALINES;
+Trenton  23 25 30
+Newark   18 27 22
+Albany   22 21 27
+;
+PROC SORT DATA=RAIN;
+   BY CITY;
+RUN;
+PROC PRINT DATA=RAIN;
+   TITLE "Rain Data";
+   ID CITY;
+RUN;
+PROC MEANS DATA=RAIN MEAN STD CLM MAXDEC=2;
+   TITLE "Average Rainfall";
+   VAR RAIN_JUNE RAIN_JULY RAIN_AUGUST;
+RUN;
+
+***Problem 2-2;
+DATA CLINIC;
+   INPUT ID     $ 1-3
+         GENDER $   4
+         RACE   $   5
+         HR       6-8
+         SBP      9-11
+         DBP     12-14
+         N_PROC  15-16;
+   AVE_BP = DBP + (SBP - DBP)/3;
+DATALINES;
+001MW08013008010
+002FW08811007205
+003MB05018810002
+004FB   10806801
+005MW06812208204
+006FB101   07404
+007FW07810406603
+008MW04811207006
+009FB07719011009
+010FB06616410610
+;
+PROC MEANS DATA=CLINIC N MEAN STD CLM MEDIAN;
+   TITLE "Clinic Data";
+   VAR SBP DBP AVE_BP;
+RUN;
+
+***Problem 2-4;
+PROC FREQ DATA=CLINIC;
+   TABLES GENDER / NOCUM NOPERCENT;
+RUN;
+PROC GCHART DATA=CLINIC; /* Alternate PROC CHART */
+   TITLE "Bar Chart for GENDER";
+   VBAR GENDER;
+RUN;
+
+***Problem 2-6;
+PROC UNIVARIATE DATA=CLINIC PLOT;
+   TITLE "Problem 2-6";
+   VAR SBP DBP;
+RUN;
+
+***Problem 2-8;
+PROC CHART DATA=CLINIC;
+   TITLE "Problem 2-8";
+   VBAR GENDER / GROUP=RACE;
+   VBAR HR / GROUP=GENDER MIDPOINTS=50 TO 100 BY 10;
+RUN;
+
+***Problem 2-10;
+***a;
+SYMBOL V=DOT COLOR=BLACK;
+PROC GPLOT DATA=CLINIC;
+   TITLE "Plot of SBP by HR";
+   PLOT SBP * HR;
+***b;
+   SYMBOL2 V=SQUARE COLOR=BLACK;
+   PLOT SBP * HR = GENDER;
+RUN;
+***c;
+PROC SORT DATA=CLINIC;
+   BY RACE;
+RUN;
+PROC GPLOT DATA=CLINIC;
+   TITLE "Separte Graphs for Each Race";
+   BY RACE;
+   PLOT SBP * HR;
+   PLOT SBP * HR = GENDER;
+RUN;
+
+***Problem 2-12;
+PATTERN1 COLOR=BLACK VALUE=X1;
+PATTERN2 COLOR=BLACK VALUE=L2;
+ 
+PROC GCHART DATA=CLINIC;
+   TITLE "Number of Procedures by GENDER and RACE";
+   VBAR GENDER / SUMVAR=N_PROC TYPE=SUM SUBGROUP=RACE;
+RUN;
+QUIT;
+
+***Problem 3-2;
+PROC FORMAT;
+   VALUE GENDER 1 = 'Male' 
+                2 = 'Female';
+   VALUE $SES 'L' = 'Low'
+              'M' = 'Medium'
+              'H' = 'High';
+   VALUE AGEGRP LOW-20  = '<= 20'
+                21-40   = '21 to 40'
+                41-HIGH = '41+';
+RUN;
+DATA QUES2;
+   INPUT ID $ GENDER SES $ DRUG $ AGE;
+   FORMAT GENDER GENDER. SES $SES.;
+   LABEL SES = 'Socio-economic Status'
+         DRUG = 'Drug Group'
+         AGE  = 'Age of Subject';
+   IF DRUG IN ('A' 'C' 'F' 'B') THEN COST = 'HIGH';
+   ELSE IF DRUG NE ' ' THEN COST = 'LOW';
+   /******  Alternative  ***********************************
+   IF DRUG = 'A' OR DRUG = 'C' OR DRUG = 'F' OR DRUG = 'B'
+      THEN  COST = 'HIGh';
+   ELSE IF DRUG NE ' ' THEN COST = 'LOW';
+   *********************************************************/
+DATALINES;
+001 1   L B 15
+002 2 M    Z   35
+003    2 H  F 76
+004 1 L C 21
+005 2 H . 58
+;
+PROC PRINT DATA=QUES2 NOOBS;
+   TITLE "Listing of Data Set QUES2";
+RUN;
+PROC FREQ DATA=QUES2;
+   TITLE "Frequencies";
+   TABLES SES COST AGE;
+   FORMAT AGE AGEGRP.;
+RUN;
+
+***Problem 3-4;
+***Program to create data set BLOOD;
+DATA BLOOD;
+   DO I = 1 TO 500;
+      WBC = INT(RANNOR(1368)*2000 + 5000);
+      X = RANUNI(0);
+      IF X LT .05 THEN WBC = .;
+      ELSE IF X LT .1 THEN WBC = WBC - 3000;
+      ELSE IF X LT .15 THEN WBC = WBC + 4000;
+      OUTPUT;
+   END;
+   DROP I X;
+RUN;
+***Part A: Using a DATA step to recode WBC values;
+DATA PARTA;
+   SET BLOOD;
+   ***Note: The SET statement brings in observations
+      from data set BLOOD;
+   LENGTH WBCGRP $ 15;
+
+   ***Note: We need the LENGTH statement since the first
+      value of WBCGRP is Low which is 3 characters in length.
+      Without the LENGTH statement, all the other value of 
+      WBCGRP would be truncated to 3 characters.;
+   IF WBC GE 3000 AND WBC LE 4000 THEN WBCGRP = 'Low';
+   ELSE IF WBC GE 4001 AND WBC LE 6000 THEN WBCGRP = 'Medium';
+   ELSE IF WBC GE 6001 AND WBC LE 12000 THEN WBCGRP = 'High';
+   ELSE IF WBC GT 12000 THEN WBCGRP = 'Abnormally High';
+   ELSE IF WBC LT 3000 AND WBC NE . THEN WBCGRP = 'Abnormally Low';
+   ELSE WBCGRP = 'Not Available';
+RUN;
+PROC FREQ DATA=PARTA;
+   TITLE "WBC Frequencies";
+   TABLES WBCGRP / MISSING NOCUM;
+RUN;
+***Part B: Using a format to recode WBC values; 
+PROC FORMAT;
+   VALUE WBC 3000 - 4000   = 'Low'
+             4001 - 6000   = 'Medium'
+             6001 - 12000  = 'High'
+             LOW - <3000   = 'Abnormally Low'
+             >12000 - HIGH = 'Abnormally High'
+             .             = 'Not Available';
+RUN;
+PROC FREQ DATA=BLOOD;
+   TITLE "WBC Frequencies";
+   TABLES WBC / MISSING NOCUM;
+   FORMAT WBC WBC.;
+RUN;
+
+***Problem 3-6;
+DATA QUES3_6;
+   INPUT OUTCOME $ EXPOSURE $ COUNT;
+DATALINES;
+CASE 1-YES 50 
+CASE 2-NO 500
+CONTROL 1-YES 40
+CONTROL 2-NO 500
+;
+PROC FREQ DATA=QUES3_6;
+   TITLE "Case-control Study";
+   TABLES EXPOSURE * OUTCOME / CMH;
+   WEIGHT COUNT;
+RUN;
+
+***Problem 3-8;
+DATA ASTHMA;
+   INPUT ASTHMA $ SES $ COUNT;
+DATALINES;
+YES LOW 40
+NO LOW 100
+YES HIGH 30
+NO HIGH 130
+;
+PROC FREQ DATA = ASTHMA ORDER=DATA;
+   *Note: ORDER=DATA uses the order that data values appear
+    in the data set;
+   TITLE "Relationship between Asthma and SES";
+   TABLES SES*ASTHMA / CHISQ CMH;
+   WEIGHT COUNT;
+RUN;
+
+***Problem 3-10;
+DATA QUES3_10;
+   INPUT METHOD1 : $10. METHOD2 : $10. COUNT;
+DATALINES;
+OCCULED OCCULED 15
+OCCULED NON-OCCULED 8
+NON-OCCULED OCCULED 10
+NON-OCCULED NON-OCCULED 67
+;
+PROC FREQ DATA=QUES3_10;
+   TITLE "Problem 3-10";
+   TABLES METHOD1 * METHOD2 / AGREE;
+   WEIGHT COUNT;
+RUN;
+***Problem 3-12;
+DATA QUES3_12;
+   INPUT DISEASE $ GROUP $ OUTCOME $ COUNT;
+DATALINES;
+MI ASPIRIN 1-YES 80
+MI ASPIRIN 2-NO 920
+MI PLACEBO 1-YES 240
+MI PLACEBO 2-NO 1760
+STROKE ASPIRIN 1-YES 65
+STROKE ASPIRIN 2-NO 935
+STROKE PLACEBO 1-YES 165
+STROKE PLACEBO 2-NO 1835
+;
+PROC FREQ DATA=QUES3_12;
+   TITLE "Problem 3-12";
+   BY DISEASE;
+   TABLES GROUP*OUTCOME / CHISQ CMH;
+   WEIGHT COUNT;
+RUN;
+
+***Problem 3-14;
+PROC FORMAT;
+   VALUE PAIN 1 = 'YES' 2 = 'NO';
+   VALUE DOSE 1='LOW' 2='MEDIUM' 3='HIGH';
+RUN;
+DATA DOSE;
+   DO DOSE = 1 TO 3;
+      DO I = 1 TO 50;
+         PAIN = 2 - (RANUNI(135) GT (.6 + .08*DOSE));
+         OUTPUT;
+      END;
+   END;
+   FORMAT PAIN PAIN. DOSE DOSE.;
+RUN;
+PROC FREQ DATA=DOSE;
+   TITLE "Problem 3-14";
+   TABLES PAIN * DOSE / CHISQ CMH;
+RUN;
+
+***Problem 3-16;
+DATA QUES3_16;
+   INPUT GROUP $ OUTCOME $ COUNT_MI COUNT_STROKE;
+DATALINES;
+ASPIRIN 1-YES 80 65
+ASPIRIN 2-NO 920 935
+PLACEBO 1-YES 240 165
+PLACEBO 2-NO 1760 1835
+;
+PROC FREQ DATA=QUES3_16;
+   TITLE "Problem 3-16 - MI Data";
+   TABLES GROUP*OUTCOME / CMH;
+   WEIGHT COUNT_MI;
+RUN;
+PROC FREQ DATA=QUES3_16;
+   TITLE "Problem 3-16 - Stroke Data";
+   TABLES GROUP*OUTCOME / CMH;
+   WEIGHT COUNT_STROKE;
+RUN;
+
+***Problem 3-18;
+DATA MAGNESIUM;
+   INPUT STUDY $ GROUP $ OUTCOME : $10. COUNT;
+DATALINES;
+ONE MGSO4 1-SURVIVED 20
+ONE MGSO4 2-DIED 100
+ONE PLACEBO 1-SURVIVED  25
+ONE PLACEBO 2-DIED 155
+TWO MGSO4 1-SURVIVED 25
+TWO MGSO4 2-DIED 150
+TWO PLACEBO 1-SURVIVED  21
+TWO PLACEBO 2-DIED 150
+THREE MGSO4 1-SURVIVED 30
+THREE MGSO4 2-DIED 200
+THREE PLACEBO 1-SURVIVED  28
+THREE PLACEBO 2-DIED 240
+;
+PROC FREQ DATA=MAGNESIUM;
+   TITLE "Meta-Analysis on Magnesium Studies";
+   TABLES STUDY*GROUP*OUTCOME / CHISQ CMH;
+   WEIGHT COUNT;
+RUN;
+
+***Problem 3-20;
+PROC FORMAT;
+   VALUE COMPOSER 1  = 'Bach'
+                  2  = 'Handel'
+                  3  = 'Scarlatti'
+                  4  = 'Hayden'
+                  5  = 'Mozart'
+                  6  = 'Beethoven'
+                  7  = 'Schubert'
+                  8  = 'Brahms'
+                  9  = 'Schumann'
+                  10 = 'Stravinsky'
+                  11 = 'Shostakovich';
+RUN;
+DATA CLASSICAL;
+   INPUT SUBJ $ GENDER : $1. CHOICE1 CHOICE2 CHOICE3;
+DATALINES;
+1  M  6  4  5
+2  F  2  4  3
+3  M  7  11 9
+4  M  5  6  3
+5  F  7  8  10
+6  F  1  2  4
+7  M  6  5  9
+8  M  2  9  11
+9  F  5  1  2
+;
+DATA CHOICES;
+   SET CLASSICAL(DROP=GENDER);
+   CHOICE = CHOICE1;
+   OUTPUT;
+   CHOICE = CHOICE2;
+   OUTPUT;
+   CHOICE = CHOICE3;
+   OUTPUT;
+   KEEP CHOICE;
+   FORMAT CHOICE COMPOSER.;
+RUN;
+PROC FREQ DATA=CHOICES ORDER=FREQ;
+   TITLE "Favorite Composers";
+   TABLES CHOICE / NOCUM;
+RUN;
+
+***Problem 4-2;
+***Program to create data set ABC_CORP;
+DATA ABC_CORP;
+   DO SUBJ = 1 TO 10;
+      DOB = INT(RANUNI(1234)*15000);
+      VISIT_DATE = INT(RANUNI(0)*1000) + '01JAN2000'D;
+      OUTPUT;
+   END;
+   FORMAT DOB VISIT_DATE DATE9.;
+RUN;
+DATA AGES;
+   SET ABC_CORP;
+   AGE_ACTUAL = YRDIF(DOB,'15JAN2005'D,'ACTUAL');
+   AGE_TODAY = ROUND(YRDIF(DOB,TODAY(),'ACTUAL'),.1);
+   AGE = INT(YRDIF(DOB,VISIT_DATE,'ACTUAL'));
+RUN;
+PROC PRINT DATA=AGES;
+   TITLE "Listing of Data Set AGES";
+RUN;
+
+***Problem 4-4;
+DATA CLINICAL;
+   *Use LENGTH statement to control the order of
+    variables in the data set;
+   LENGTH PATIENT VISIT DATE_VISIT 8;
+   RETAIN DATE_VISIT WEIGHT;
+   DO PATIENT = 1 TO 25;
+      IF RANUNI(135) LT .5 THEN GENDER = 'Female';
+      ELSE GENDER = 'Male';
+      X = RANUNI(135);
+      IF X LT .33 THEN GROUP = 'A';
+      ELSE IF X LT .66 THEN GROUP = 'B';
+      ELSE GROUP = 'C';
+      DO VISIT = 1 TO INT(RANUNI(135)*5);
+         IF VISIT = 1 THEN DO;
+             DATE_VISIT = INT(RANUNI(135)*100) + 15800;
+             WEIGHT = INT(RANNOR(135)*10 + 150);
+         END;
+         ELSE DO;
+            DATE_VISIT = DATE_VISIT + VISIT*(10 + INT(RANUNI(135)*50));
+            WEIGHT = WEIGHT + INT(RANNOR(135)*10);
+         END;
+         OUTPUT;
+         IF RANUNI(135) LT .2 THEN LEAVE;
+      END;
+   END;
+   DROP X;
+   FORMAT DATE_VISIT DATE9.;
+RUN;
+***Note data set is alreay in PATIENT-VISIT order, but we
+   will sort anyway;
+PROC SORT DATA=CLINICAL;
+   BY PATIENT VISIT;
+RUN;
+DATA DIFF_WT;
+   SET CLINICAL;
+   BY PATIENT;
+   DIFF_WT = DIF(WEIGHT);
+   IF NOT FIRST.PATIENT THEN OUTPUT;
+RUN;
+PROC PRINT DATA=DIFF_WT NOOBS;
+   TITLE "Listing of Data Set DIFF_WT";
+RUN;
+
+***Problem 4-6;
+***Data set already sorted by PATIENT and VISIT;
+DATA PROB4_6;
+   SET CLINICAL;
+   BY PATIENT;
+   IF FIRST.PATIENT AND LAST.PATIENT THEN DELETE;
+   RETAIN FIRST_WEIGHT FIRST_DATE;
+   IF FIRST.PATIENT THEN DO;
+      FIRST_WEIGHT = WEIGHT;
+      FIRST_DATE = DATE_VISIT;
+   END;
+   IF LAST.PATIENT THEN DO;
+      DIFF_WT = WEIGHT - FIRST_WEIGHT;
+      NUM_DAYS = DATE_VISIT - FIRST_DATE;
+      OUTPUT;
+   END;
+   KEEP PATIENT WEIGHT DIFF_WT NUM_DAYS;
+RUN;
+PROC PRINT DATA=PROB4_6 NOOBS;
+   TITLE "Listing of Data Set PROB4_6";
+RUN;
+
+***Problem 4-8;
+PROC MEANS DATA=CLINICAL NWAY NOPRINT;
+   CLASS PATIENT;
+   VAR WEIGHT;
+   OUTPUT OUT=SUMMARY(DROP=_TYPE_ RENAME=(_FREQ_ = NUM_OF_VISITS))
+          MEAN=
+          MEDIAN=
+          MIN=
+          MAX= / AUTONAME;
+RUN;
+PROC PRINT DATA=SUMMARY NOOBS;
+   TITLE "Listing of Data Set SUMMARY";
+RUN;
+***Problem 4-10;
+PROC MEANS DATA=CLINICAL NOPRINT CHARTYPE;
+   CLASS GENDER GROUP;
+   VAR WEIGHT;
+   OUTPUT OUT=SUMMARY
+          MEAN=
+          MEDIAN=
+          STDDEV= / AUTONAME;
+RUN;
+PROC PRINT DATA=SUMMARY NOOBS;
+   TITLE "Listing of Data Set SUMMARY";
+RUN;
+
+***Problem 4-12;
+DATA GRAND BY_GENDER BY_GROUP BY_GENDER_GROUP;
+   SET SUMMARY;
+   IF _TYPE_ = '00' THEN OUTPUT GRAND;
+   ELSE IF _TYPE_ = '10' THEN OUTPUT BY_GENDER;
+   ELSE IF _TYPE_ = '01' THEN OUTPUT BY_GROUP;
+   ELSE IF _TYPE_ = '11' THEN OUTPUT BY_GENDER_GROUP;
+RUN;
+
+***Problem 5-2;
+DATA EXAM;
+   INPUT (Q1-Q8)(1.);
+   ***See Chapter 12 on variable lists and
+      INFORMAT lists;
+DATALINES;
+10101010
+11111111
+11110101
+01100000
+11110001
+11111111
+11111101
+11111101
+10110101
+00010110
+;
+DATA POINT_BISERIAL;
+   SET EXAM;
+   RAW = SUM(OF Q1-Q8);
+RUN;
+PROC CORR DATA=POINT_BISERIAL NOSIMPLE;
+   TITLE "Problem 5-2";
+   VAR Q1-Q8;
+   WITH RAW;
+RUN;
+
+***Problem 5-4;
+DATA SCORES;
+   DO SUBJECT = 1 TO 100;
+      IF RANUNI(1357) LT .5 THEN GROUP = 'A';
+      ELSE GROUP = 'B';
+      MATH = ROUND(RANNOR(1357)*20 + 550 + 10*(GROUP EQ 'A'));
+      SCIENCE = ROUND(RANNOR(1357)*15 + .4*MATH + 300);
+      ENGLISH = ROUND(RANNOR(1357)*20 + 500 + .05*SCIENCE +
+               .05*MATH);
+      SPELLING = ROUND(RANNOR(1357)*15 + 500 + .1*ENGLISH);
+      VOCAB = ROUND(RANNOR(1357)*5 + 400 + .1*SPELLING +
+             .2*ENGLISH);
+      PHYSICAL = ROUND(RANNOR(1357)*20 + 550);
+      OVERALL = ROUND(MEAN(MATH, SCIENCE, ENGLISH, SPELLING, VOCAB, 
+                     PHYSICAL));
+      OUTPUT;
+   END;
+RUN;
+***a;
+PROC CORR DATA=SCORES NOSIMPLE;
+   TITLE "Correlation Matrix for Problem 5-4";
+   VAR MATH -- OVERALL;
+RUN;
+***b;
+/* Since PHYSICAL is one of the six scores making up the overall
+   score, you would expect a non-zero correlation between the two */
+***c;
+PROC CORR DATA=SCORES NOSIMPLE;
+   TITLE "Correlation Matrix for Problem 5-4";
+   VAR MATH -- PHYSICAL;
+   WITH OVERALL;
+RUN;
+
+***Problem 5-6;
+***a;
+SYMBOL V=DOT COLOR=BLACK;
+PROC REG DATA=SCORES;
+   TITLE "Problem 5-6";
+   MODEL SCIENCE = MATH;
+   PLOT SCIENCE * MATH
+        RESIDUAL. * MATH;
+RUN;
+QUIT;
+***b;
+SYMBOL1 V=DOT COLOR=BLACK I=RLCLM95;
+PROC GPLOT DATA=SCORES;
+   TITLE "Regression Plot";
+   PLOT SCIENCE * MATH;
+RUN;
+
+***Problem 5-8;
+DATA DOSE_RESPONSE;
+   INPUT DOSE  SBP DBP;
+DATALINES;
+4  180 110
+4  190 108
+4  178 100
+8  170 100
+8  180  98
+8  168  88
+16 160  80
+16 172  86
+16 170  86
+32 140  80
+32 130  72
+32 128  70
+;
+SYMBOL1 V=DOT I=NONE COLOR=BLACK;
+PROC REG DATA=DOSE_RESPONSE;
+   TITLE "Dose-Response Regression";
+   MODEL SBP = DOSE;
+   PLOT SBP * DOSE  
+        RESIDUAL. * DOSE;
+   MODEL DBP = DOSE;
+   PLOT DBP * DOSE 
+        RESIDUAL. * DOSE;
+RUN;
+QUIT;
+
+***Problem 5-10;
+DATA LOG_DOSE;
+   SET DOSE_RESPONSE;
+   LOG_DOSE = LOG(DOSE);
+RUN;
+SYMBOL1 V=DOT I=NONE COLOR=BLACK;
+PROC REG DATA=LOG_DOSE;
+   TITLE "Dose-Response Regression";
+   MODEL SBP = LOG_DOSE;
+   PLOT SBP * LOG_DOSE  
+        RESIDUAL. * LOG_DOSE;
+   MODEL DBP = LOG_DOSE;
+   PLOT DBP * LOG_DOSE 
+        RESIDUAL. * LOG_DOSE;
+RUN;
+QUIT;
+
+***Problem 5-12;
+PROC SORT DATA=SCORES;
+   BY GROUP;
+RUN;
+PROC CORR DATA=SCORES NOSIMPLE;
+   BY GROUP;
+   TITLE "Correlation Matrix for Problem 5-4";
+   VAR MATH -- OVERALL;
+RUN;
+
+***Problem 6-2;
+DATA READING;
+   LENGTH METHOD $ 5;
+   DO METHOD = 'CODY','SMITH';
+      DO SUBJ = 1 TO 14;
+         INPUT SPEED @;
+         OUTPUT;
+      END;
+   END;
+DATALINES;
+500 450 505 404 555 567 588 577 566 644 511 522 543 578 
+355 388 440 600 510 501 502 489 499 489 515 520 520 480
+;
+PROC TTEST DATA=READING;
+   TITLE "T-test Comparing Reading Speed";
+   CLASS METHOD;
+   VAR SPEED;
+RUN;
+PROC NPAR1WAY DATA=READING WILCOXON;
+   TITLE "Wilcoxon Rank Sum Test";
+   CLASS METHOD;
+   VAR SPEED;
+   EXACT WILCOXON;
+RUN;
+
+***Problem 6-4;
+DATA QUES6_4;
+   DO GROUP = 'A','B','C';
+      DO I = 1 TO 10;
+         X = ROUND(RANNOR(135)*10 + 300 + 
+                   5*(GROUP EQ 'A') - 7*(GROUP EQ 'C'));
+         Y = ROUND(RANUNI(135)*100 + X);
+         OUTPUT;
+      END;
+   END;
+   DROP I;
+RUN;
+PROC TTEST DATA=QUES6_4;
+   TITLE "Comparing Groups A and C";
+   WHERE GROUP IN ('A' 'C');
+   CLASS GROUP;
+   VAR X Y;
+RUN;
+
+***Problem 6-6;
+***Easy Way;
+DATA DIET;
+   DO SUBJECT = 1 TO 12;
+      INPUT WEIGHT_BEFORE WEIGHT_AFTER @;
+      OUTPUT;
+   END;
+DATALINES;
+300 290 350 331 190 200 400 395 244 240 321 300 
+330 332 250 242 190 185 160 158 260 256 240 220
+;
+DATA DIET;
+   ARRAY BEFORE[12] _TEMPORARY_;
+   ARRAY AFTER[12]  _TEMPORARY_;
+   DO TIME = 'BEFORE','AFTER';
+      DO SUBJ = 1 TO 12;
+         IF TIME = 'BEFORE' THEN INPUT BEFORE[SUBJ] @;
+         ELSE INPUT AFTER[SUBJ] @;
+      END;
+   END;
+   DO SUBJ = 1 TO 12;
+      WEIGHT_BEFORE = BEFORE[SUBJ];
+      WEIGHT_AFTER  = AFTER[SUBJ];
+      OUTPUT;
+   END;
+   DROP TIME;
+DATALINES;
+300   350   190   400   244   321   330   250   190   160   260   240
+290   331   200   395   240   300   332   242   185   158   256   220
+;
+PROC TTEST DATA=DIET;
+   TITLE "Paired T-test";
+   PAIRED WEIGHT_BEFORE * WEIGHT_AFTER;
+RUN;
+***Data set for unpaired analysis;
+DATA UNPAIRED;
+   SET DIET;
+   TIME = 'BEFORE';
+   WEIGHT = WEIGHT_BEFORE;
+   OUTPUT;
+   TIME = 'AFTER';
+   WEIGHT = WEIGHT_AFTER;
+   OUTPUT;
+   KEEP TIME WEIGHT;
+RUN;
+PROC TTEST DATA=UNPAIRED;
+   TITLE "Unpaired T-test";
+   CLASS TIME;
+   VAR WEIGHT;
+RUN;
+
+***Problem 6-8;
+DATA RANDOM;
+   DO SUBJ = 1 TO 48;
+      GROUP = RANUNI(0);
+      OUTPUT;
+   END;
+RUN;
+PROC RANK DATA=RANDOM OUT=ASSIGN GROUPS=2;
+   VAR GROUP;
+RUN;
+PROC FORMAT;
+   VALUE GRP 0 = 'Placebo'
+             1 = 'Drug';
+RUN;
+PROC PRINT DATA=ASSIGN;
+   TITLE "Random Assignment";
+   ID SUBJ;
+   VAR GROUP;
+   FORMAT GROUP GRP.;
+RUN;
+***Blocked every 8;
+DATA RANDOM;
+   DO BLOCK = 1 TO 6;
+      DO I = 1 TO 8;
+         SUBJ + 1;
+         GROUP = RANUNI(0);
+         OUTPUT;
+      END;
+   END;
+RUN;
+PROC RANK DATA=RANDOM OUT=ASSIGN GROUPS=2;
+   BY BLOCK;
+   VAR GROUP;
+RUN;
+PROC PRINT DATA=ASSIGN;
+   TITLE "Random Assignment";
+   TITLE2 "Balanced Every 8 Subjects";
+   ID SUBJ;
+   VAR GROUP;
+   FORMAT GROUP GRP.;
+RUN;
+
+***Problem 7-2;
+DATA CHOL;
+   LENGTH TREAT $ 7;
+   DO TREAT = 'A','B','PLACEBO';
+      DO I = 1 TO 10;
+         INPUT CHOLESTEROL @;
+         OUTPUT;
+      END;
+   END;
+   DROP I;
+DATALINES;
+220  190  180  185  210  170  178  200  177  189
+160  168  178  200  172  155  159  167  185  199
+240  220  246  244  198  238  277  255  190  188
+;
+PROC ANOVA DATA=CHOL;
+   TITLE "Comparison of Cholesterol Treatments";
+   CLASS TREAT;
+   MODEL CHOLESTEROL = TREAT;
+   MEANS TREAT / SNK;
+RUN;
+QUIT;
+
+***Problem 7-4;
+DATA COLLEGE;
+   DO METHOD = 'A','B','C','D';
+      DO I = 1 TO 8*(METHOD IN ('A','B')) + 7*(METHOD IN ('C','D'));
+         INPUT SCORE @;
+         OUTPUT;
+      END;
+   END;
+   DROP I;
+DATALINES;
+560   520   530   525   575   527   580   620
+565   522   520   530   510   522   600   590
+512   518   555   502   510   520   516   
+505   508   512   520   543   523   517   
+;
+***Note: Using GLM so we can use CONTRAST statement, not because
+   the design is unbalanced (you may use ANOVA for unbalanced
+   oneway designs);
+PROC GLM DATA=COLLEGE;
+   TITLE "Analysis of Exam Preparation Methods";
+   CLASS METHOD;
+   MODEL SCORE = METHOD / SS3;
+   LSMEANS SCORE;
+   CONTRAST 'A and B vs C and D' METHOD -1 -1 1 1;
+   CONTRAST 'D vs. Others' METHOD 1 1 1 -3;
+RUN;
+QUIT;
+
+***Problem 7-6;
+DATA QUES7_6;
+   DO GROUP = 'DEFICIENT','NORMAL';
+      DO I = 1 TO 4;
+         DO TREAT = 'DRUG   ','PLACEBO';
+            INPUT DEPRESSION @@;
+            OUTPUT;
+         END;
+      END;
+   END;
+   DROP I;
+DATALINES;
+9  9
+11 6
+10 6
+10 7
+5  12
+4  11
+7  10
+7  11
+;
+PROC ANOVA DATA=QUES7_6;
+   TITLE "Anti-depression Study";
+   CLASS GROUP TREAT;
+   MODEL DEPRESSION = GROUP | TREAT;
+   MEANS GROUP | TREAT / SNK;
+RUN;
+PROC MEANS DATA=QUES7_6 NOPRINT NWAY;
+   CLASS GROUP TREAT;
+   VAR DEPRESSION;
+   OUTPUT OUT=MEANS MEAN=;
+RUN;
+SYMBOL1 V=SQUARE C=BLACK I=JOIN;
+SYMBOL2 V=CIRCLE C=BLACK I=JOIN;
+PROC GPLOT DATA=MEANS;
+   TITLE "Interaction Plot";
+   PLOT DEPRESSION * TREAT = GROUP;
+RUN;
+DATA ONEWAY;
+   SET QUES7_6;
+   FACTOR = TRIM(GROUP) || '-' || TREAT;
+RUN;
+PROC ANOVA DATA=ONEWAY;
+   TITLE "Figuring out the Interaction";
+   CLASS FACTOR;
+   MODEL DEPRESSION = FACTOR;
+   MEANS FACTOR / SNK;
+RUN;
+QUIT;
+
+***Problem 7-8;
+DATA CO_VARY;
+   DO I = 1 TO 20;
+      DO GROUP = 'A','B';
+         SUBJ + 1;
+         IQ = INT(RANNOR(124)*10 + 120 + 15*(GROUP EQ 'A'));
+         SCORE = INT(.7*IQ + RANNOR(0)*10 + 100 + 10*(GROUP EQ 'B'));
+         OUTPUT;
+      END;
+   END;
+   DROP I;
+RUN;
+PROC PRINT DATA=CO_VARY NOOBS;
+   TITLE "Listing of CO_VARY";
+RUN;
+PROC CORR DATA=CO_VARY NOSIMPLE;
+   VAR IQ SCORE;
+RUN;
+PROC TTEST DATA=CO_VARY;
+   TITLE "T-tests";
+   CLASS GROUP;
+   VAR IQ SCORE;
+RUN;
+PROC GLM DATA=CO_VARY;
+   TITLE "Testing for Homogeneity of Slope";
+   CLASS GROUP;
+   MODEL SCORE = IQ GROUP IQ*GROUP / SS3;
+RUN;
+PROC GLM DATA=CO_VARY;
+   TITLE "Analysis of Covariance";
+   CLASS GROUP;
+   MODEL SCORE = IQ GROUP / SS3;
+   LSMEANS GROUP;
+RUN;
+QUIT;
+
+***Problem 7-10;
+DATA QUES7_10;
+   DO AGE = '3 Mo.','6 Mo.','9 Mo.';
+      DO STRAIN = 'A','B';
+         DO I = 1 to 7 + (AGE EQ '3 Mo.') - 3*(STRAIN EQ 'B');
+            SPEED = INT(RANNOR(1345)*5 + 20 + 4*(AGE EQ '6 Mo.')
+
+                    + 5*(AGE EQ '9 Mo.') - 8*(STRAIN EQ 'A'));
+            OUTPUT;
+         END;
+      END;
+   END;
+   DROP I;
+RUN;
+PROC REPORT DATA=QUES7_10 NOWD PANELS=99 HEADLINE PSPACE=3;
+   TITLE "RAT MAZE DATA";
+   COLUMN AGE STRAIN SPEED;
+
+   DEFINE AGE / "Age" WIDTH=5 CENTER;
+   DEFINE STRAIN / "Strain" WIDTH=6  CENTER;
+   DEFINE SPEED / "Speed" WIDTH=5 CENTER;
+RUN;
+
+***Problem 7-10;
+PROC GLM DATA=QUES7_10;
+   TITLE "Two-way Analysis of Variance - Unbalanced Design";
+   CLASS AGE STRAIN;
+   MODEL SPEED = AGE | STRAIN / SS3;
+   LSMEANS AGE | STRAIN;
+RUN;
+QUIT;
+***Problem 8-2;
+DATA STATIN;
+   DO SUBJ = 1 TO 20;
+      IF RANUNI(1557) LT .5 THEN GENDER = 'FEMALE';
+      ELSE GENDER = 'MALE';
+      IF RANUNI(0) LT .3 THEN DIET = 'HIGH FAT';
+      ELSE DIET = 'LOW FAT';
+      DO DRUG = 'A','B','C';
+         LDL = ROUND(RANNOR(1557)*20 + 110 
+                     + 5*(DRUG EQ 'A') 
+                     - 10*(DRUG EQ 'B')
+                     - 5*(GENDER EQ 'FEMALE')
+                     + 10*(DIET EQ 'HIGH FAT'));
+         HDL = ROUND(RANNOR(1557)*10 + 20 
+                     + .2*LDL 
+                     + 12*(DRUG EQ 'B'));
+         TOTAL = ROUND(RANNOR(1557)*20 + LDL + HDL + 50
+                     -10*(GENDER EQ 'FEMALE')
+                     +10*(DIET EQ 'HIGH FAT'));
+         OUTPUT;
+      END;
+   END;
+RUN;
+PROC GLM DATA=STATIN;
+   TITLE "Comparing Statin Drugs";
+   CLASS DRUG SUBJ;
+   MODEL LDL HDL TOTAL = SUBJ DRUG / SS3;
+   MEANS DRUG / SNK;
+RUN;
+QUIT;
+
+***Problem 8-4;
+PROC GLM DATA=STATIN;
+   TITLE "Comparing DRUG and GENDER on Cholesterol Levels";
+   CLASS SUBJ DRUG GENDER;
+   MODEL LDL HDL TOTAL = GENDER SUBJ(GENDER) DRUG
+                        GENDER*DRUG DRUG*SUBJ(GENDER);
+   LSMEANS GENDER|DRUG;
+   TEST H = GENDER             E = SUBJ(GENDER);
+   TEST H = DRUG GENDER*DRUG   E = DRUG*SUBJ(GENDER);
+RUN;
+QUIT;
+PROC MEANS DATA=STATIN NOPRINT NWAY;
+   CLASS DRUG GENDER;
+   VAR LDL HDL TOTAL;
+   OUTPUT OUT=INTERACT MEAN=;
+RUN;
+
+SYMBOL1 V=SQUARE COLOR=BLACK I=JOIN;
+SYMBOL2 V=CIRCLE COLOR=BLACK I=JOIN;
+PROC GPLOT DATA=INTERACT;
+   TITLE "Interaction Plot";
+   PLOT (LDL HDL TOTAL)*DRUG = GENDER;
+RUN;
+QUIT;
+
+***Problem 8-6;
+PROC GLM DATA=STATIN;
+   TITLE "Three-way ANOVA with a Repeated Measure on One Factor";
+   CLASS GENDER DRUG DIET SUBJ;
+   MODEL LDL HDL TOTAL = GENDER DIET GENDER*DIET SUBJ(GENDER DIET)
+                         DRUG GENDER*DRUG DIET*DRUG GENDER*DIET*DRUG
+                         DRUG*SUBJ(GENDER DIET) / SS3;
+   TEST H = GENDER DIET GENDER*DIET
+        E = SUBJ(GENDER DIET);
+   TEST H = DRUG GENDER*DRUG DIET*DRUG GENDER*DIET*DRUG
+        E = DRUG*SUBJ(GENDER DIET);
+RUN;
+QUIT;
+
+***Problem 8-8;
+PROC SORT DATA=STATIN;
+   BY SUBJ;
+RUN;
+DATA REPEAT;
+   DO I = 1 TO 3;
+      SET STATIN;
+      IF I = 1 THEN LDL_A = LDL;
+      ELSE IF I = 2 THEN LDL_B = LDL;
+      ELSE IF I = 3 THEN DO;
+         LDL_C = LDL;
+         OUTPUT;
+      END;
+   END;
+   DROP LDL I DRUG;
+RUN;
+PROC GLM DATA=REPEAT;
+   TITLE "Using the REPEATED Statement of GLM";
+   CLASS GENDER;
+   MODEL LDL_A LDL_B LDL_C = GENDER / SS3 NOUNI;
+   REPEATED DRUG / NOM;
+RUN;
+QUIT;
+
+***Problem 8-10;
+PROC GLM DATA=REPEAT;
+   TITLE "Using the REPEATED Statement of GLM";
+   CLASS GENDER DIET;
+   MODEL LDL_A LDL_B LDL_C = GENDER|DIET / NOUNI;
+   REPEATED DRUG / NOM;
+RUN;
+QUIT;
+
+***Problem 9-2;
+DATA TOMATO;
+   DO LIGHT = 5,10,15;
+      DO WATER = 1 TO 2;
+         DO I = 1 TO 3;
+            IF LIGHT = 10 THEN TEN_HOURS = 1;
+            ELSE TEN_HOURS = 0;
+            IF LIGHT = 15 THEN FIFTEEN_HOURS = 1;
+            ELSE FIFTEEN_HOURS = 0; 
+            IF WATER = 1 THEN ONE_QUART = 1;
+            ELSE ONE_QUART = 0;
+            INPUT YIELD @;
+            OUTPUT;
+         END;
+      END;
+   END;
+   DROP I LIGHT;
+DATALINES;
+12 9 8 13 15 14 16 14 12 20 16 16 18 25 20 25 27 29
+;
+PROC REG DATA = TOMATO;
+   TITLE "Problem 9-2";
+   MODEL YIELD = TEN_HOURS FIFTEEN_HOURS ONE_QUART;
+RUN;
+QUIT;
+
+***Problem 9-4;
+DATA LIBRARY;
+   INPUT BOOKS ENROLL DEGREE AREA;
+   MASTERS = (DEGREE EQ 2);
+   ***Note: This produces values of 1 and 0 for MASTERS;
+   ***Also note that there are no missing values;
+   DOCTORATE = (DEGREE EQ 3);
+   LOG_AREA = LOG(AREA);
+DATALINES;
+ 4   5  3   20
+ 5   8  3   40
+10  40  3  100
+ 1   4  2   50
+ 5   2  1  300
+ 2   8  1  400
+ 7  30  3   40
+ 4  20  2  200
+ 1  10  2    5
+ 1  12  1  100
+;
+PROC REG DATA = LIBRARY;
+   MODEL BOOKS = ENROLL MASTERS DOCTORATE LOG_AREA / SELECTION = FORWARD;
+RUN;
+QUIT;
+
+***Problem 9-6;
+DATA EXERCISE;
+   DO SUBJ = 1 TO 500;
+      IF RANUNI(155) LT .5 THEN GENDER = 'Female';
+      ELSE GENDER = 'Male';
+      PRESS = INT(RANNOR(0)*20 + 95 + 50*(GENDER EQ 'Male'));
+      CURL = RANNOR(0)*10 + 30 + .2*PRESS;
+      PUSHUPS = INT(RANNOR(0)*3 + 5 + 5*(GENDER EQ 'Male')
+                + .1*CURL);
+      SITUPS = INT(RANNOR(0)*10 + 20 + .1*PRESS + PUSHUPS);
+      OUTPUT;
+   END;
+RUN;
+PROC CORR DATA=EXERCISE NOSIMPLE;
+   VAR PRESS CURL PUSHUPS SITUPS;
+RUN;
+DATA NEW;
+   SET EXERCISE;
+   IF GENDER = 'Male' THEN MALE = 1;
+   ELSE IF GENDER = 'Female' THEN MALE = 0;
+RUN;
+PROC REG DATA=NEW;
+   TITLE "Stepwise Multiple Regression";
+   MODEL PRESS = MALE CURL PUSHUPS SITUPS / SELECTION = STEPWISE;
+RUN;
+QUIT;
+
+***Problem 9-8;
+PROC FORMAT;
+   VALUE YESNO 1='Yes' 0='No';
+   VALUE OUTCOME 1='Case' 0='Control';
+RUN;
+DATA SMOKING;
+   DO SUBJECT = 1 TO 1000;
+      DO OUTCOME = 0,1;
+         IF RANUNI(567) LT .1 OR RANUNI(0)*OUTCOME GT .5 THEN SMOKING = 1;
+         ELSE SMOKING = 0;
+         IF RANUNI(0) LT .05 OR (RANUNI(0)*OUTCOME + .1*SMOKING) GT .6 THEN ASBESTOS = 1;
+         ELSE ASBESTOS = 0;
+         IF RANUNI(0) LT .3 OR OUTCOME*RANUNI(0) GT .9 THEN SES = '1-Low   ';
+         ELSE IF RANUNI(0) LT .3 OR OUTCOME*RANUNI(0) GT .8 THEN SES = '2-Medium';
+         ELSE SES = '3-High';
+         OUTPUT;
+      END;
+   END;
+   FORMAT SMOKING ASBESTOS YESNO. OUTCOME OUTCOME.;
+RUN;
+PROC FREQ DATA=SMOKING;
+   TITLE "Relationship between Smoking and Outcome";
+   TABLES SMOKING*OUTCOME/ CHISQ CMH;
+RUN;
+PROC LOGISTIC DATA=SMOKING ORDER=FORMATTED;
+   TITLE "SMOKING Only";
+   MODEL OUTCOME = SMOKING / CTABLE PPROB=0 TO 1 BY .1
+                                          OUTROC=ROCDATA;
+RUN;
+
+***Problem 9-10;
+PROC LOGISTIC DATA=SMOKING ORDER=FORMATTED;
+   ***Note: ORDER=FORMATTED is the default, included
+      just to remind ourselves;   TITLE "SMOKING, ASBESTOS, AND SES IN THE MODEL";
+   CLASS SES (PARAM=REF REF='2-Medium');
+   MODEL OUTCOME = SMOKING ASBESTOS SES / CTABLE PPROB=0 TO 1 BY .1
+                                          OUTROC=ROCDATA;
+RUN;
+SYMBOL1 V=DOT I=SM60 COLOR=BLACK WIDTH=2;
+PROC GPLOT DATA=ROCDATA;
+   TITLE "ROC Curve";
+   PLOT _SENSIT_ * _1MSPEC_ ;
+   LABEL _SENSIT_ = 'Sensitivity'
+         _1MSPEC_ = '1 - Specificity';
+RUN;
+
+***Problem 9-12;
+DATA PROB9_12;
+   SET SMOKING;
+   IF SES = '1-Low' then LOW_SES = 1;
+   ELSE IF NOT MISSING(SES) THEN LOW_SES=0;
+   IF SES = '3-High' THEN HIGH_SES = 1;
+   ELSE IF NOT MISSING(SAS) THEN HIGH_SES = 0;
+RUN;
+PROC LOGISTIC DATA=PROB9_12;
+   TITLE "SMOKING, ASBESTOS, AND SES IN THE MODEL";
+   MODEL OUTCOME = SMOKING ASBESTOS LOW_SES HIGH_SES / CTABLE PPROB=0 TO 1 BY .1
+                                          OUTROC=ROCDATA;
+RUN;
+
+***Problem 10-2;
+DATA PRINCIPAL;
+   DO SUBJ = 1 TO 200;
+      X1 = ROUND(RANNOR(123)*50 + 500);
+      X2 = ROUND(RANNOR(123)*50 + 100 + .8*X1);
+      X3 = ROUND(RANNOR(123)*50 + 100 + X1 - .5*X2);
+      X4 = ROUND(RANNOR(123)*50 + .3*X1 + .3*X2 + .3*X3);
+      OUTPUT;
+   END;
+RUN;
+PROC FACTOR DATA=PRINCIPAL SCREE;
+   TITLE "Example of Factor Analysis";
+   VAR X1-X4;
+RUN;
+PROC FACTOR DATA=PRINCIPAL NFACTORS=2 ROTATE=VARIMAX PLOT;
+   TITLE "Example of Factor Analysis";
+   VAR X1-X4;
+RUN;
+
+***Problem 10-4;
+PROC FACTOR DATA=PRINCIPAL NFACTORS=2 ROTATE=PROMAX PLOT OUT=SCORING;
+   TITLE "Example of Factor Analysis";
+   VAR X1-X4;
+RUN;
+PROC PRINT DATA=SCORING(OBS=10) NOOBS;
+   TITLE "Scoring Data Set";
+RUN;
+DATA SCORE;
+   SET SCORING;
+   FACT1 = MEAN(OF X1,X2,X4);
+   FACT2 = X3;
+RUN;
+PROC CORR DATA=SCORE NOSIMPLE;
+   TITLE "Correlating Factor Scores to Simple Scoring";
+   VAR FACTOR1 FACTOR2;
+   WITH FACT1 FACT2;
+RUN;
+
+***Problem 11-2;
+DATA PROB11_2;
+   INPUT @1 ID $3.
+         @5 (Q1-Q10)($1.);
+   ARRAY KEY[10] $ _TEMPORARY_ ('A','B','C','D','E','A','B','C','D','E');
+   ARRAY Q[10];
+   ARRAY SCORE[10];
+   DO QUESTION = 1 TO 10;
+      SCORE[QUESTION] = (Q[QUESTION] EQ KEY[QUESTION]);
+   END;
+   RAW = SUM(OF SCORE1-SCORE10);
+   PERCENT = 100 * RAW / 10;
+   DROP QUESTION;
+DATALINES;
+001 ABCDBECDBE
+002 ABCDEABCDE
+003 ABCDEABCDD
+004 ABCEDABCCE
+005 BBCDEBBCDE
+006 CABEDACBED
+007 DECAACEDAA
+008 ABCDEBBBEE
+009 DDDDDABCDE
+010 ABECDABCDE
+;
+PROC CORR DATA=PROB11_2 NOSIMPLE;
+   TITLE "Problem 11-2";
+   VAR SCORE1-SCORE10;
+   WITH RAW;
+RUN;
+
+***Problem 11-4;
+***Easy way, with data in subject order;
+DATA PROB11_4;
+   LENGTH ONE TWO $ 1;
+   INPUT ONE $ TWO $ @@;
+   SUBJ + 1;
+DATALINES;
+S S  N N  S S  N N  S N  S S  N S  N N  N N  S N  
+S S  N N  N N  S S  N S  S S  N N  S S  S S
+;
+***Hard (stupid) way to solve the problem;
+DATA PROB11_4;
+   ARRAY _ONE[19] $ 1;
+   ARRAY _TWO[19] $ 1;
+   INPUT _ONE[*];
+   INPUT _TWO[*];
+   DO SUBJ = 1 TO 19;
+      ONE = _ONE[SUBJ];
+      TWO = _TWO[SUBJ];
+      OUTPUT;
+   END;
+   KEEP SUBJ ONE TWO;
+DATALINES;
+S  N  S  N  S  S  N  N  N  S  S  N  N  S  N  S  N  S  S
+S  N  S  N  N  S  S  N  N  N  S  N  N  S  S  S  N  S  S
+;
+PROC FREQ DATA=PROB11_4;
+   TITLE "Coefficient Kappa Calculation";
+   TABLE ONE * TWO / NOCUM NOPERCENT KAPPA;
+RUN;
+
+***Problem 12-2;
+DATA PROB12_2;
+   INFILE DATALINES DLM=',';
+   INFORMAT DOB MMDDYY10. VISIT DATE9. GENDER $1. NAME $10.;
+   INPUT DOB VISIT GENDER NAME;
+   FORMAT DOB VISIT MMDDYY10.;
+DATALINES;
+10/21/1950,03MAY2004,M,Schneider
+11/12/1944,05DEC2004,F,Strawderman
+01/01/1960,25APR2004,M,Smith
+;
+PROC PRINT DATA=PROB12_2 NOOBS;
+   TITLE "Listing of PROB12_2";
+RUN;
+
+***Problem 12-4;
+DATA PROB12_4;
+   INFILE DATALINES DSD;
+   LENGTH NAME $ 20;
+   INPUT NAME AGE HEIGHT WEIGHT;
+DATALINES;
+Bradley,35,68,155
+"Bill Johnson",,70,200
+"Smith,Jeff",27,70,188
+;
+PROC PRINT DATA=PROB12_4;
+   TITLE "Listing of PROB12_4";
+RUN;
+
+***Problem 12_6;
+DATA PROB12_6;
+   INPUT NAME    $ 1-10
+         GENDER  $   12
+         DOB     $ 13-22;
+DATALINES;
+Cody       M05/11/1981
+McMaster   F11/11/1967
+Bill Smith M12/25/1999
+;
+PROC PRINT DATA=PROB12_6;
+   TITLE "Listing of PROB12_6";
+RUN;
+
+***Problem 12_8;
+DATA PROB12_8;
+   INFILE DATALINES FIRSTOBS=2 MISSOVER;
+   INFORMAT ID $3. GENDER $1. DOB MMDDYY10.;
+   INPUT ID GENDER DOB SCORE1 SCORE2;
+   FORMAT DOB DATE9.;
+DATALINES;
+***Header line: ID GENDER DOB SCORE1 SCORE2
+001 M 10/10/1976 100 99
+002 F 01/01/1960 89
+003 M 05/07/2001 90 98
+PROC PRINT DATA=PROB12_8;
+   TITLE "Listing of PROB12_8";
+RUN;
+
+***Problem 12_10;
+***Original program;
+DATA PAIRS;
+   INPUT @1  GROUP1 $1.
+         @2  SCORE1  3. 
+         @6  GROUP2 $1.
+         @7  SCORE2  3.
+         @11 GROUP3 $1.
+         @12 SCORE3  3.;
+DATALINES;
+A100 B 90 C 76
+C 87 A 86 B 88
+C 93 B 92 A 90
+;
+***Using relative column pointers;
+DATA PAIRS;
+   INPUT @1  (GROUP1-GROUP3)($1. + 4)
+         @2  (SCORE1-SCORE3)(3. + 2);
+DATALINES;
+A100 B 90 C 76
+C 87 A 86 B 88
+C 93 B 92 A 90
+;
+
+***Problem 12_12;
+DATA PROB12_12;
+   ARRAY SCORE[5];
+   INPUT NUMBER @;
+   SUBJ + 1;
+   DO I = 1 TO NUMBER;
+      INPUT SCORE[I] @;
+   END;
+   INPUT AGE;
+   DROP I;
+DATALINES;
+5 90 80 70 77 88 23
+2 100 99 25
+3 87 85 88 35
+;
+PROC PRINT DATA=PROB12_12;
+   TITLE "Listing of PROB12_12";
+RUN;
+
+***Problem 12_14;
+DATA PROB12_14;
+   INPUT @1  (THREE1-THREE4)(3. + 6)
+         @4  (TWO1-TWO4)(2. + 7)
+         @6  (FOUR1-FOUR4)(4. + 5);
+DATALINES;
+123121234217874444123872345873235432
+192837465748392919283747372818182838
+;
+PROC PRINT DATA=PROB12_14;
+   TITLE "Listing of PROB12_14";
+RUN;
+
+***Problem 12-16;
+DATA PROB12_16;
+   INFILE DATALINES DLM=',';
+   INPUT #1 ID : $3. GENDER : $1. DOB : MMDDYY10.
+         #2 HEIGHT WEIGHT;
+   FORMAT DOB MMDDYY10.;
+DATALINES;
+001,M,06/14/1944
+68,155
+002,F,12/25/1967
+52,99
+003,M,07/04/1983
+72,128
+;
+PROC PRINT DATA=PROB12_16;
+   TITLE "Listing of PROB12_16";
+RUN;
+
+***Problem 12-18;
+DATA FEMALES;
+   INPUT @11 GENDER $1. @;
+   IF GENDER NE 'F' THEN DELETE;
+   INPUT @1 DATE MMDDYY10. @12 AGE 2. @14 SCORE 3.;
+   FORMAT DATE MMDDYY10.;
+DATALINES;
+04/04/2004M15 90
+05/12/2004F16 95
+07/23/2004M18 88
+01/20/2004F17100
+;
+PROC PRINT DATA=FEMALES NOOBS;
+   TITLE "Listing of PROB12_18";
+RUN;
+
+***Problem 13-2;
+DATA _NULL_;
+   INFILE 'C:\BOOKS\APPLIED_5TH\INPUT.DAT' MISSOVER DLM=',';
+   FILE 'C:\BOOKS\APPLIED_5TH\OUTPUT.DAT' DLM=',';
+   INPUT X Y Z;
+   IF X = 9999 THEN X = .;
+   IF Y = 9999 THEN Y = .;
+   IF Z = 9999 THEN Z = .;
+   PUT X Y Z;
+RUN;
+***To check the contents of the output file, bring it
+   into an application like Notebook or use FSLIST
+   as below;
+PROC FSLIST FILE='C:\BOOKS\APPLIED_5TH\OUTPUT.DAT';
+RUN;
+
+***Problem 13-4;
+DATA READ_THREE;
+   INFILE 'C:\BOOKS\APPLIED_5TH\FILE?.CSV' DSD;
+   INPUT ID $ X Y Z;
+RUN;
+
+***Problem 13-6;
+DATA BIG;
+   DO I = 1 TO 1000000;
+      X = RANUNI(0);
+      OUTPUT;
+   END;
+   DROP I;
+RUN;
+DATA SMALL;
+   X = .5;
+   OUTPUT;
+   X = .6;
+   OUTPUT;
+RUN;
+DATA BIG;
+   SET BIG SMALL;
+RUN;
+***In theory, need to recreate BIG, since it is now two observations
+   longer, but doesn't matter for timing purposes;
+PROC APPEND BASE=BIG DATA=SMALL;
+RUN;
+
+***Problem 13-8;
+LIBNAME RON 'C:\BOOKS\APPLIED_5TH';
+OPTIONS FMTSEARCH=(RON);
+PROC FORMAT LIBRARY=RON;
+   VALUE $GENDER 'M'='Male' 'F'='Female';
+   VALUE YESNO 1='Yes' 0='No';
+RUN;
+DATA RON.SURVEY;
+   INFILE 'C:\BOOKS\APPLIED_5TH\SURVEY.DAT' FIRSTOBS=2;
+   LENGTH GENDER $ 1;
+   INPUT GENDER $ Q1-Q5;
+   FORMAT GENDER $GENDER. Q1-Q5 YESNO.;
+RUN;
+
+***Problem 14-2;
+***Program to create data set BLOOD;
+DATA BLOOD;
+   LENGTH GROUP $ 1;
+   INPUT ID GROUP $ TIME WBC RBC @@;
+DATALINES;
+1 A 1 8000 4.5 1 A 2 8200 4.8 1 A 3 8400 5.2
+1 A 4 8300 5.3 1 A 5 8400 5.5
+2 A 1 7800 4.9 2 A 2 7900 5.0
+3 B 1 8200 5.4 3 B 2 8300 5.4 3 B 3 8300 5.2
+3 B 4 8200 4.9 3 B 5 8300 5.0
+4 B 1 8600 5.5
+5 A 1 7900 5.2 5 A 2 8000 5.2 5 A 3 8200 5.4
+5 A 4 8400 5.5 
+;
+***a;
+DATA TIME_ONE;
+   SET BLOOD;
+   WHERE TIME = 1;
+   DROP TIME;
+RUN;
+PROC PRINT DATA=TIME_ONE NOOBS;
+   TITLE "Listing of Data Set TIME_ONE";
+RUN;
+***b;
+DATA HIGH_A;
+   SET BLOOD;
+   WHERE GROUP = 'A' AND (WBC GE 8000 OR RBC GE 5.0);
+RUN;
+PROC PRINT DATA=HIGH_A OBS;
+   TITLE "Listing of Data Set HIGH";
+RUN;
+
+***Problem 14-4;
+DATA ONE TWO THREE;
+   DO I = 1 TO 5;
+      DO TIME = 1 TO 3;
+         DOB = INT(10000 + RANUNI(0)*365);
+         WEIGHT = RANNOR(0)*50 + 150;
+         IF TIME = 1 THEN OUTPUT ONE;
+         ELSE IF TIME = 2 THEN OUTPUT TWO;
+         ELSE IF TIME = 3 THEN OUTPUT THREE;
+      END;
+   END;
+   DROP I;
+   FORMAT DOB DATE9.;
+RUN;
+DATA TOGETHER;
+   SET ONE TWO THREE;
+RUN;
+PROC PRINT DATA=TOGETHER NOOBS;
+   TITLE "Listing of Data Set TOGETHER";
+RUN;
+
+***Problem 14-6;
+DATA TEMP;
+   INPUT T @@;
+   IF _N_ = 1 THEN DATE = '01JAN2004'D;
+   ELSE DATE + 1;
+   FORMAT DATE MMDDYY10.;
+DATALINES;
+30 32 28 26 25 12 18 20 22 24 36 38 38 39 44 
+;
+DATA MI;
+   IF _N_ = 1 THEN DATE = '01JAN2004'D;
+   ELSE DATE + 1;   
+   FORMAT DATE MMDDYY10.;
+   INPUT NUMBER @@;
+DATALINES;
+9 7 11 12 15 23 20 18 8 9 13 12 14 13 14
+;
+PROC SORT DATA=TEMP;
+   BY DATE;
+RUN;
+PROC SORT DATA=MI;
+   BY DATE;
+RUN;
+DATA BOTH;
+   MERGE TEMP MI;
+   BY DATE;
+RUN;
+PROC PRINT DATA=BOTH;
+   TITLE "Listing of Data Set BOTH";
+RUN;
+
+***Problem 14-8;
+DATA STUDENT;
+   INPUT ID NAME & $30. @@;
+DATALINES;
+1 John Torres  5 Alex Antoniou  3 Thomas Friend  
+2 Sheldon Goldstein  11 Joanne Dipietro  12 Bill Murray
+21 Janet Reno  4 Deborah Smith  6 Don Dubin  7 Alice Ford
+8 Diane Farley  9 Laura Easton  10 Brian Fishmann
+13 Eric Garrett  14 James Galt  15 Toni Gilman
+;
+DATA TEST;
+   INPUT ID SCORE @@;
+DATALINES;
+15 95  1 80  3 98  21 75  4 87  14 67  13 91  11 85  12 57 
+29 93
+;
+PROC SORT DATA=STUDENT;
+   BY ID;
+RUN;
+PROC SORT DATA=TEST;
+   BY ID;
+RUN;
+DATA ROSTER;
+   MERGE STUDENT(IN=IN_STUDENT)
+         TEST(IN=IN_TEST);
+   BY ID;
+   IF IN_TEST;
+   IF NOT IN_STUDENT THEN NAME = 'Not in Student File';
+RUN;
+PROC PRINT DATA=ROSTER;
+   TITLE "Student Test Scores";
+   ID NAME;
+   VAR ID SCORE;
+RUN;
+***Bonus;
+DATA ROSTER;
+   MERGE STUDENT(IN=IN_STUDENT)
+         TEST(IN=IN_TEST);
+   BY ID;
+   IF IN_TEST;
+   IF NOT IN_STUDENT THEN DO;
+      NAME = 'Not in Student File';
+      LAST = 'ZZZ';
+   END;
+   ELSE LAST = SCAN(NAME,-1);
+RUN;
+PROC SORT DATA=ROSTER;
+   BY LAST;
+RUN;
+PROC PRINT DATA=ROSTER;
+   TITLE "Student Test Scores in Alphabetical Order";
+   ID NAME;
+   VAR ID SCORE;
+RUN;
+
+***Problem 14-10;
+DATA PRICES;
+   INPUT PART_NUMBER QUANTITY PRICE @@;
+DATALINES;
+100 23 29.95  102 12 9.95  103 21 15.99  123 9 119.95  113 40 56.66
+111 55 39.95  105 500 .59
+;
+DATA NEW;
+   INPUT PART_NUMBER QUANTITY PRICE @@;
+DATALINES;
+103 . 18.99  111 45 29.95  113 35 .  123 . 129.96
+;
+/***************************************************
+An alternative using "named" input
+DATA NEW;
+   INPUT PART_NUMBER= QUANTITY= PRICE=;
+DATALINES;
+PART_NUMBER=103 PRICE=18.99
+PART_NUMBER=111 QUANTITY=45 PRICE=29.95
+PART_NUMBER=113 QUANTITY=35
+PART_NUMBER=123 PRICE=129.96
+;
+****************************************************/
+PROC SORT DATA=PRICES;
+   BY PART_NUMBER;
+RUN;
+PROC SORT DATA=NEW;
+   BY PART_NUMBER;
+RUN;
+DATA PRICES;
+   UPDATE PRICES NEW;
+   BY PART_NUMBER;
+RUN;
+PROC PRINT DATA=PRICES NOOBS;
+   TITLE "List of Updated Prices";
+RUN;
+
+***Problem 15-2;
+DATA TEMPERATURE;
+   INPUT TF1-TF10;
+   ARRAY TF[10];
+   ARRAY TC[10];
+   DO I = 1 TO 10;
+      TC[I] = 5/9*(TF[I] - 32);
+   END;
+   DROP I;
+DATALINES;
+32 212 -40 10 20 30 40 50 60 70
+-10 0 10 20 30 40 50 60 70 80
+;
+PROC PRINT DATA=TEMPERATURE NOOBS;
+   TITLE "Listing of Data Set TEMPERATURE";
+RUN;
+
+***Problem 15-4;
+DATA MIXED;
+   INFORMAT A1-A3 B C $5.;
+   INPUT X1-X3 Y Z A1-A3 B C;
+   ARRAY CHARS[*] A1-A3 B C;
+   ARRAY NUMS[*] X1-X3 Y Z;
+   ARRAY LOGS[*] LX1-LX3 LY LZ;
+   DO I = 1 TO 5;
+      LOGS[I] = LOG(NUMS[I]);
+      IF CHARS[I] = '?' THEN CHARS[I] = ' ';
+   END;
+   DROP I;
+DATALINES;
+10 20 30 40 50 ONE TWO THREE ? ?
+11 22 33 44 55 ? LLL MMM ? VVV
+;
+PROC PRINT DATA=MIXED NOOBS;
+   TITLE "Listing of Data Set MIXED";
+RUN;
+
+***Problem 15-6;
+DATA ANSWERS;
+   ***Passing grades: 65, 70, 60, 75, and 66;
+   INPUT ID $ SCORE1-SCORE5;
+DATALINES;
+001 50 70 62 78 85 
+002 90 86 87 91 94
+003 63 72 58 73 68
+;
+DATA PASSING;
+   SET ANSWERS;
+   N_PASS = 0;
+   ARRAY SCORE[5];
+   ARRAY PASS[5] _TEMPORARY_ (65 70 60 75 66);
+   DO EXAM = 1 TO 5;
+      IF SCORE[EXAM] GE PASS[EXAM] THEN N_PASS + 1;
+   END;
+   DROP EXAM;
+RUN;
+PROC PRINT DATA=PASSING;
+   TITLE "Number of Passing Scores";
+   ID ID;
+RUN;
+
+***Problem 15-8;
+DATA EXPER;
+   INPUT TIME0-TIME4;
+DATALINES;
+100 200 300 400 500
+55 110 130 150 170 
+;
+DATA MINUTES;
+   SET EXPER;
+   ARRAY TIME[0:4] TIME0 - TIME4;
+   DO I = 0 TO 4;
+      TIME[I] = ROUND(TIME[I] / 60,.1);
+   END;
+   DROP I;
+RUN;
+PROC PRINT DATA=MINUTES NOOBS;
+   TITLE "Listing of Data Set MINUTES";
+RUN;
+
+***Problem 16-2;
+DATA QUES;
+   INPUT ID $ REASON1-REASON4;
+DATALINES;
+001 3 6 13 17
+002 8 3 4 . 
+003 20 2 . . 
+004 8 4 20 19
+;
+DATA COUNT_IT;
+   SET QUES;
+   ARRAY R[4] REASON1-REASON4;
+   DO I = 1 TO 4;
+      IF NOT MISSING(R[I]) THEN DO;
+         REASON = R[I];
+         OUTPUT;
+      END;
+   END;
+RUN;
+PROC FREQ DATA=COUNT_IT;
+   TITLE "Reason Frequencies";
+   TABLES REASON / NOCUM NOPERCENT;
+RUN;
+
+***Problem 16-4;
+DATA THIN;
+   INPUT ID $ TIME X @@;
+DATALINES;
+001 1 10  001 2 12  001 3 15
+004 1 17
+003 1 14  003 2 18  003 3 22  003 4 28
+002 1 18  004 2 28
+;
+PROC SORT DATA=THIN;
+   BY ID TIME;
+RUN;
+DATA WIDE;
+   SET THIN;
+   BY ID;
+   RETAIN X1-X4;
+   ARRAY XXX[4] X1-X4;
+   IF FIRST.ID THEN DO I = 1 TO 4;
+      XXX[I] = .;
+   END;
+   XXX[TIME] = X;
+   IF LAST.ID THEN OUTPUT;
+   DROP I X TIME;
+RUN;
+PROC PRINT DATA=WIDE NOOBS;
+   TITLE "Listing of Data Set WIDE";
+RUN;
+***An alternative solution where the SET statement is
+   placed inside the DO loop.;
+PROC SORT DATA=THIN;
+   BY ID TIME;
+RUN;
+DATA WIDE;
+   ARRAY XXX[4] X1-X4;
+   DO I = 1 TO 4 UNTIL (LAST.ID);
+      SET THIN;
+      BY ID;
+      XXX[TIME] = X;
+      IF LAST.ID THEN OUTPUT;
+   END;
+   DROP I X TIME;
+RUN;
+PROC PRINT DATA=WIDE NOOBS;
+   TITLE "Listing of Data Set WIDE";
+RUN;
+
+***Problem 17-2;
+DATA FUNCTIONS;
+   INPUT @1  SUBJECT        $3.
+         @4  DOB      MMDDYY10.
+         @14 VISIT    MMDDYY10.
+         @23 (SCORE1-SCORE6)(2.);
+   FORMAT DOB VISIT MMDDYY10.;
+DATALINES;
+00110/21/195011/11/2004908070757688
+00205/05/200312/20/200499  98  9790
+00307/15/194107/06/2004        9896
+00406/24/193709/25/2004777879808182
+;
+PROC FORMAT;
+   VALUE DAYFMT 1='SUN' 2='TUE' 3='WED' 4='THU' 5='FRI' 6='SAT' 7='SUN';
+RUN;
+DATA QUES2;
+   SET FUNCTIONS;
+   AGE_AT_VISIT = ROUND(YRDIF(DOB,VISIT,'ACTUAL'),.1);
+   AGE_JAN = YRDIF(DOB,'01JAN2004'D,'ACTUAL');
+   IF N(OF SCORE1-SCORE6) ge 4 THEN SCORE = MEAN(OF SCORE1-SCORE6);
+   MIN_SCORE = MIN(OF SCORE1-SCORE6);
+   MAX_SCORE = MAX(OF SCORE1-SCORE6);
+   DAY = WEEKDAY(VISIT);
+   FORMAT DAY DAYFMT.;
+RUN;
+PROC PRINT DATA=QUES2 NOOBS;
+   TITLE "Listing of QUES2";
+RUN;
+
+***Problem 17-4;
+DATA BIG;
+   DO SUBJ = 1 TO 100;
+      X = INT(RANUNI(123)*100 + 1);
+      OUTPUT;
+   END;
+RUN;
+DATA TEN_PERCENT;
+   SET BIG;
+   IF RANUNI(0) LT .1;
+RUN;
+PROC PRINT DATA=TEN_PERCENT NOOBS;
+   TITLE "Listing of TEN_PERCENT";
+RUN;
+
+***Problem 17-6;
+DATA TMP;
+   SET BIG;
+   Y = RANUNI(0);
+RUN;
+PROC SORT DATA=TMP;
+   BY Y;
+RUN;
+DATA EXACT;
+   SET TMP(OBS=20 DROP=Y);
+RUN;
+PROC PRINT DATA=EXACT NOOBS;
+   TITLE "Listing of EXACT";
+RUN;
+
+***Problem 17-8;
+DATA ASSIGN;
+   DO SUBJ = 1 TO 100;
+      IF RANUNI(0) LT .5 THEN GROUP = 'A';
+      ELSE GROUP = 'B';
+      OUTPUT;
+   END;
+RUN;
+PROC FREQ DATA=ASSIGN;
+   TABLES GROUP / NOCUM;
+RUN;
+
+***Problem 17-10;
+DATA NUM_CHAR;
+   INPUT X $ Y $ Z $ DATE : $10. NUMERAL DOB : DATE9.;
+   FORMAT DOB MMDDYY10.;
+DATALINES;
+10 20 30 10/21/1946 123 09SEP2004
+1 2 3 11/11/2004 999 01JAN1960
+;
+DATA CORRECT;
+   SET NUM_CHAR(RENAME=(X=CHAR_X 
+                        Y=CHAR_Y
+                        Z=CHAR_Z
+                        DATE=CHAR_DATE
+                        NUMERAL=N));
+   X = INPUT(CHAR_X,9.);
+   Y = INPUT(CHAR_Y,9.);
+   Z = INPUT(CHAR_Z,9.);
+   DATE = INPUT(CHAR_DATE,MMDDYY10.);
+   CHAR_DATE = PUT(DOB,MMDDYY10.);
+   NUMERAL = PUT(N,9.);
+   FORMAT DATE DATE9.;
+   DROP CHAR: N;
+   ***Note: The expression CHAR: refers to all variables
+   starting with the letters CHAR;
+RUN;
+PROC PRINT DATA=CORRECT NOOBS;
+   TITLE "Listing of CORRECT";
+RUN;
+
+***Problem 18-2;
+DATA ADDRESS;
+   INPUT #1 @1 LINE1 $50.
+         #2 @1 LINE2 $50.
+         #3 @1 LINE3 $50.;
+DATALINES;
+Mr. Jason    Simmons
+123  Sesame Street
+Madison, WI 
+Dr.  Justin  Case
+78     River Road
+Flemington, NJ 
+Ms.   Marilyn Crow
+777 Jewell    Place
+Quakertown, NJ
+;
+DATA CORRECT;
+   SET ADDRESS;
+   LINE1 = TRANWRD(LINE1,'Mr.','');
+   LINE1 = TRANWRD(LINE1,'Mrs.','');
+   LINE1 = TRANWRD(LINE1,'Ms.','');
+   LINE1 = TRANWRD(LINE1,'Dr.','');
+   LINE1 = COMPBL(LINE1);
+   LINE2 = TRANWRD(LINE2,'Street','St.');
+   LINE2 = TRANWRD(LINE2,'Road','Rd.');
+   LINE2 = TRANWRD(LINE2,'Place','Pl.');
+   LINE2 = COMPBL(LINE2);
+   LINE3 = COMPBL(LINE3);
+   LINE1 = LEFT(LINE1);
+   LINE2 = LEFT(LINE2);
+   LINE3 = LEFT(LINE3);
+RUN;
+
+***Problem 18-4;
+DATA STRING;
+   INPUT STRING $10.;
+DATALINES;
+123nj76543
+892NY10203
+876pA83745
+;
+DATA PROB18_4;
+   SET STRING;
+   LENGTH STATE $ 2;
+   X = INPUT(SUBSTR(STRING,1,2),2.);
+   Y = INPUT(SUBSTR(STRING,3,1),1.);
+   STATE = UPCASE(SUBSTR(STRING,4,2));
+   ARRAY N[5];
+   DO I = 1 TO 5;
+      N[I] = INPUT(SUBSTR(STRING,I + 5,1),1.);
+   END;
+   DROP I;
+RUN;
+PROC PRINT DATA=PROB18_4 NOOBS;
+   TITLE "Listing of PROB18_4";
+RUN;
+
+***Problem 18-6;
+DATA GOOD_BAD;
+   INPUT STRING $40.;
+DATALINES;
+1324AcB876acccCCC
+123 456
+aabbccAABBCC123123
+abcde12345
+invalid
+;
+DATA VALID INVALID;
+   SET GOOD_BAD;
+   IF VERIFY(TRIM(STRING),'ABCabc0123456789') EQ 0 THEN OUTPUT VALID;
+      ELSE OUTPUT INVALID;
+RUN;
+PROC PRINT DATA=VALID NOOBS;
+   TITLE "VALID";
+RUN;
+PROC PRINT DATA=INVALID NOOBS;
+   TITLE "INVALID";
+RUN;
+
+***Problem 8-8;
+DATA ONE;
+   INPUT @1  ID   $11.
+         @12 NAME $15.;
+DATALINES;
+123-45-6789Jeff Smith
+111-22-3333Stephen King
+999-88-7777Jan Chambliss
+;
+DATA TWO;
+   INPUT @1  ID 9.
+         @11 SCORE 3.;
+DATALINES;
+999887777 100
+123456789  65
+111223333  59
+;
+PROC SORT DATA=ONE;
+   BY ID;
+RUN;
+PROC SORT DATA=TWO;
+   BY ID;
+RUN;
+DATA ONE_PRIME;
+   SET ONE(RENAME=(ID=CHAR_ID));
+   ID = INPUT(COMPRESS(CHAR_ID,'-'),9.);
+   DROP CHAR_ID;
+RUN;
+DATA BOTH;
+   MERGE ONE_PRIME TWO;
+   BY ID;
+   FORMAT ID SSN11.;
+RUN;
+PROC PRINT DATA=BOTH NOOBS;
+   TITLE "Listing of Data Set BOTH";
+RUN;
+
+***Problem 18-10;
+DATA WT;
+   INPUT SUBJ DUMMY $ @@;
+   DUMMY = UPCASE(DUMMY);
+   WEIGHT = INPUT(COMPRESS(DUMMY,'KGLBS.'),8.);
+   IF INDEX(DUMMY,'K') GT 0 THEN WEIGHT = 2.2*WEIGHT;
+   KEEP SUBJ WEIGHT;
+DATALINES;
+1 50kg  2 120  3 121Lbs.  4 88KG.  5 200
+6 80kG  7 250lb
+;
+PROC PRINT DATA=WT NOOBS;
+   TITLE "WT";
+RUN;
+
+***Problem 18-12;
+***a;
+DATA FINDIT;
+   INPUT STRING $30.;
+   POSITION = INDEX(STRING,'XYZ');
+   NUMBER = INPUT(SUBSTR(STRING,POSITION + 3,2),2.);
+DATALINES;
+ABC123XYZ7823
+NONE HERE
+XYZ12345
+12345XYZ9876
+;
+PROC PRINT DATA=FINDIT NOOBS;
+   TITLE "Listing of FINDIT";
+RUN;
+***b;
+DATA HARDER;
+   INPUT STRING $30.;
+   POS = INDEXC(STRING,'XYZ');
+   IF POS THEN N1 = INPUT(SUBSTR(STRING,POS + 1,1),1.);
+   SUBSTRING = SUBSTR(STRING,POS + 2);
+   POS = INDEXC(SUBSTRING,'XYZ');
+   IF POS THEN N2 = INPUT(SUBSTR(SUBSTRING,POS + 1,1),1.);
+DATALINES;
+B4Y7999Z5V8
+NONE HERE
+ONLY ONE X8
+Z8Z9
+;
+PROC PRINT DATA=HARDER NOOBS;
+   TITLE "Listing of HARDER";
+RUN;
+
+***Problem 18-14;
+DATA VERSE;
+   INPUT LONG_STRING $50.;
+DATALINES;
+The time was early and the sky was still dark
+This line does not contain any
+Four the last time, the man walked the plank
+;
+DATA COUNT_IT;
+   SET VERSE;
+   LENGTH WORD $ 10;
+   LONG_STRING = LOWCASE(LONG_STRING);
+   COUNT = 0;
+   DO I = 1 TO 99 UNTIL (WORD = ' ');
+      WORD = SCAN(LONG_STRING,I,', ');
+      IF WORD = 'the' THEN COUNT + 1;
+   END;
+   KEEP LONG_STRING COUNT;
+RUN;
+PROC PRINT DATA=COUNT_IT NOOBS;
+   TITLE "COUNT_IT";
+RUN;
+***Version 9 Solution with COUNT function;
+DATA COUNT_IT;
+   SET VERSE;
+   LONG_STRING = LOWCASE(LONG_STRING);
+   COUNT = COUNT(LONG_STRING,'the');
+RUN;
+PROC PRINT DATA=COUNT_IT NOOBS;
+   TITLE "COUNT_IT";
+RUN;

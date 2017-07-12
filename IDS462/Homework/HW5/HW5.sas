@@ -1,0 +1,162 @@
+*Arnold Lee;
+*IDS 462 HW #5;
+*06/01/2009;
+
+******Problem 14.1 part (a)*********;
+
+
+DATA GYM;
+   LENGTH GENDER $ 1;
+   INPUT ID GENDER AGE VAULT FLOOR P_BAR;
+
+DATALINES;
+3   M    8   7.5   7.2   6.5
+5   F   14   7.9   8.2   6.8
+2   F   10   5.6   5.7   5.8
+7   M    9   5.4   5.9   6.1
+6   F   15   8.2   8.2   7.9
+;
+
+******Problem 14.1 part (b)*********;
+
+DATA MALE_GYM;
+      SET GYM;
+      WHERE GENDER = 'M';
+   RUN;
+
+******Problem 14.1 part (c)*********;
+
+DATA OLDER_F;
+   SET GYM;
+   WHERE GENDER = 'F' AND AGE >= 10; 
+RUN;
+
+
+******Problem 14.3*******;
+
+DATA YEAR1996;
+   INPUT ID HEIGHT WEIGHT;
+DATALINES;
+2 68 155
+1 63 102
+4 61 111
+;
+
+DATA YEAR1997;
+   INPUT ID HEIGHT WEIGHT;
+DATALINES;
+7 72 202
+5 78 220
+3 66 105
+;
+
+DATA BOTH;
+   SET YEAR1996 YEAR1997;
+RUN;
+
+***Problem 14.5*******;
+
+DATA MONEY;
+   INPUT ID INCOME : $1. L_NAME : $10.;
+DATALINES;
+3 A LAU
+7 B KORBA
+8 A ALI
+1 B LEE
+5 A HAPPEL
+2 B ALKHAWAM
+;
+
+PROC SORT DATA=GYM;
+   BY ID;
+RUN;
+
+PROC SORT DATA=MONEY;
+   BY ID;
+RUN;
+
+DATA GYMMONEY;
+   MERGE GYM(IN=IN_GYM) MONEY;
+   BY ID;
+   IF IN_GYM;
+RUN;
+
+PROC PRINT DATA=GYMMONEY;
+   TITLE "Problem 14.5 - Listing of Gym and Financial Data";
+   ID ID;
+   VAR L_NAME GENDER AGE;
+RUN;
+
+***Problem 14.7*************;
+
+PROC SORT DATA=BOTH;
+   BY ID;
+RUN;
+
+DATA FREDDY;
+   MERGE GYMMONEY(IN=ONE)
+         BOTH(IN=TWO);
+   BY ID;
+   IF ONE AND TWO;
+RUN;
+
+PROC PRINT DATA=FREDDY NOOBS;
+   TITLE "Problem 14.7 - Listing of Data Set FREDDY";
+RUN;
+
+***Problem 14.9**********;
+
+DATA FINANCE;
+   LENGTH INCOME GENDER PLAN $ 1;
+   INPUT INCOME GENDER PLAN @@;
+DATALINES;
+A M W A F X B M Y B F Z
+;
+
+PROC SORT DATA=FINANCE;
+   BY GENDER INCOME;
+RUN;
+
+PROC SORT DATA=GYMMONEY;
+   BY GENDER INCOME;
+RUN;
+
+DATA FINAL;
+   MERGE FINANCE GYMMONEY;
+   BY GENDER INCOME;
+RUN;
+
+PROC PRINT DATA=FINAL NOOBS;
+   TITLE "Problem 14.9 - Listing of Data Set FINAL";
+RUN;
+
+***Problem 14.11******;
+
+DATA NEW;
+   LENGTH GENDER $ 1;
+   INPUT ID = GENDER = $ AGE = VAULT = P_BAR = ;
+DATALINES;
+ID = 3 P_BAR = 6.7
+ID = 5 AGE = 15 VAULT = 8.1 P_BAR = 7.2
+ID = 7 GENDER = F
+;
+
+PROC SORT DATA=NEW;
+   BY ID;
+RUN;
+
+PROC SORT DATA=GYM;
+   BY ID;
+RUN;
+
+DATA GYM_2;
+   UPDATE GYM NEW;
+   BY ID;
+RUN;
+
+PROC PRINT DATA=GYM_2 NOOBS;
+   TITLE "Problem 14.11 - Listing of Data Set GYM_2";
+RUN;
+
+
+

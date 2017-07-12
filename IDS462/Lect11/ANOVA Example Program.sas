@@ -1,0 +1,15 @@
+
+DATA READING;
+   INPUT GROUP $ WORDS @@;
+DATALINES;
+X 700   X 850   X 820   X 640   X 920
+Y 480   Y 460   Y 500   Y 570   Y 580
+Z 500   Z 550   Z 480   Z 600   Z 610
+;
+PROC ANOVA DATA=READING;
+   TITLE "Analysis of Reading Data";
+   CLASS GROUP;
+   MODEL WORDS = GROUP;
+   MEANS GROUP /snk;
+RUN;
+quit;

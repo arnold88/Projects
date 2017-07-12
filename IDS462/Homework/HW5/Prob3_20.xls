@@ -1,0 +1,881 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.2, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.Batch
+{
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #000000;
+}
+.ByContentFolder
+{
+  margin-left: 6pt;
+}
+.BylineContainer
+{
+  width: 100%;
+}
+.ContentFolder
+{
+  margin-left: 6pt;
+}
+.ContentItem
+{
+  margin-left: 6pt;
+}
+.Contents
+{
+}
+.FolderAction
+{
+  margin-left: 6pt;
+}
+.Graph
+{
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #000000;
+}
+.IndexAction
+{
+  margin-left: 6pt;
+}
+.IndexItem
+{
+  margin-left: 6pt;
+}
+.List
+{
+  list-style-type: disc;
+  width: 100%;
+  text-align: left;
+}
+.List10
+{
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List2
+{
+  list-style-type: circle;
+  width: 100%;
+  text-align: left;
+}
+.List3
+{
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List4
+{
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List5
+{
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List6
+{
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List7
+{
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List8
+{
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List9
+{
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.Output
+{
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #000000;
+}
+.Pages
+{
+}
+.PagesItem
+{
+  margin-left: 6pt;
+}
+.Paragraph
+{
+  width: 100%;
+  text-align: left;
+}
+.SysTitleAndFooterContainer
+{
+  width: 100%;
+}
+.Table
+{
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #000000;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+}
+.TitleAndNoteContainer
+{
+  width: 100%;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="Body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="SysTitleAndFooterContainer" width="100%" summary="Page Layout">
+<tr>
+<td class="c SystemTitle">Chi-Square Test for Composer Preference</td>
+</tr>
+</table><br>
+<div class="c ProcTitle">The FREQ Procedure</div>
+<p>
+<div>
+<div align="center">
+<table  summary="Page Layout"><tr>
+<td class="c t"><div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="all" frame="box" border="1" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+</colgroup>
+<tr>
+<th class="l t Header" scope="col">Frequency<br>Percent<br>Row Pct<br>Col Pct</th>
+</tr>
+</table>
+</div>
+</td>
+<td><div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="all" frame="box" border="1" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c Header" colspan="4" scope="colgroup">Table&nbsp;of&nbsp;VOTE&nbsp;by&nbsp;GENDER</th>
+</tr>
+<tr>
+<th class="c b Header" rowspan="2" scope="col">VOTE</th>
+<th class="c b Header" colspan="3" scope="colgroup">GENDER</th>
+</tr>
+<tr>
+<th class="r Header" scope="col">F</th>
+<th class="r Header" scope="col">M</th>
+<th class="r Header" scope="col">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t RowHeader" scope="row">Bach        </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">2</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">7.41</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">16.67</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">0.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">2</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">7.41</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Handel      </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">11.11</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">75.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">25.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">25.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">6.67</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">4</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">14.81</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Scarlatti   </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">50.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">8.33</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">50.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">6.67</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">2</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">7.41</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Hayden      </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">2</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">7.41</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">66.67</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">16.67</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">33.33</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">6.67</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">11.11</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Mozart      </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">25.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">8.33</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">11.11</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">75.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">20.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">4</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">14.81</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Beethoven   </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">0.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">11.11</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">20.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">11.11</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Schubert    </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">50.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">8.33</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">50.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">6.67</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">2</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">7.41</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Brahms      </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">8.33</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">0.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Schumann    </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">0.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">11.11</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">20.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">11.11</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Stravinsky  </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">8.33</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">0.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">1</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">3.70</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t RowHeader" scope="row">Shostakovich</th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">0</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">0.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">0.00</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">2</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">7.41</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">100.00</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">13.33</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">2</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">7.41</td>
+</tr>
+<tr>
+<td class="r t Data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t Header" scope="col">Total       </th>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">12</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">44.44</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">15</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">55.56</td>
+</tr>
+</table></td>
+<td class="stacked_cell Data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t Data top_stacked_value">27</td>
+</tr>
+<tr>
+<td class="r t Data bottom_stacked_value">100.00</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+</div>
+</tr>
+</table>
+</div>
+</div>
+<br>
+<br>
+<p>
+<div class="c ProcTitle">Statistics for Table of VOTE by GENDER</div>
+<p>
+<a name="IDX1"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="all" frame="box" border="1" summary="Procedure Freq: Chi-Square Tests">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l b Header" scope="col">Statistic</th>
+<th class="r b Header" scope="col">DF</th>
+<th class="r b Header" scope="col">Value</th>
+<th class="r b Header" scope="col">Prob</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Chi-Square</th>
+<td class="r Data">10</td>
+<td class="r Data">14.1750</td>
+<td class="r Data">0.1652</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Likelihood Ratio Chi-Square</th>
+<td class="r Data">10</td>
+<td class="r Data">18.7343</td>
+<td class="r Data">0.0438</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Mantel-Haenszel Chi-Square</th>
+<td class="r Data">1</td>
+<td class="r Data">4.3594</td>
+<td class="r Data">0.0368</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Phi Coefficient</th>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">0.7246</td>
+<td class="r Data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Contingency Coefficient</th>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">0.5867</td>
+<td class="r Data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Cramer&#39;s V</th>
+<td class="r Data">&nbsp;</td>
+<td class="r Data">0.7246</td>
+<td class="r Data">&nbsp;</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<th class="c b Footer" colspan="4">WARNING: 100% of the cells have expected counts less<br>         than 5. Chi-Square may not be a valid test.</th>
+</tr>
+</tfoot>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX2"></a>
+<div>
+<div align="center">
+<table class="Table" cellspacing="1" cellpadding="7" rules="all" frame="box" border="1" summary="Procedure Freq: Fisher&#39;s Exact Test">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b Header" colspan="2" scope="colgroup">Fisher&#39;s Exact Test</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l RowHeader" scope="row">Table Probability (P)</th>
+<td class="r Data" nowrap>1.104E-05</td>
+</tr>
+<tr>
+<th class="l RowHeader" scope="row">Pr &lt;= P</th>
+<td class="r Data">0.1312</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+<br>
+<p>
+<div class="c ProcTitle">Sample Size = 27</div>
+<p>
+</div>
+</body>
+</html>

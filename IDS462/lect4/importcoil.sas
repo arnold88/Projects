@@ -1,0 +1,10 @@
+PROC IMPORT OUT= WORK.COIL 
+            DATAFILE= "E:\IDS462\lect3\Coil1.xls" 
+            DBMS=EXCEL REPLACE;
+     SHEET="Sheet1$"; 
+     GETNAMES=YES;
+     MIXED=NO;
+     SCANTEXT=YES;
+     USEDATE=YES;
+     SCANTIME=YES;
+RUN;
